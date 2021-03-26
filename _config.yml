@@ -1,6 +1,6 @@
-title: Your awesome title
+title: Developer Handbook
 lang: en
-description: Write an awesome description for your new site here
+description: A developers handbook
 
 remote_theme: rundocs/jekyll-rtd-theme
 
@@ -13,6 +13,6 @@ exclude:
   - Gemfile.lock
 
 plugins:
-  - jemoji
   - jekyll-avatar
-  - jekyll-mentions
+# - jemoji
+# - jekyll-mentions
