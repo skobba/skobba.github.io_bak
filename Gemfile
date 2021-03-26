@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll-rtd-theme", "~> 2.0.5"
+gem "jekyll-rtd-theme", "~> 2.0.10"
 
 # gem "jemoji"
 gem "jekyll-avatar"
