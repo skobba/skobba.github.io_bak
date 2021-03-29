@@ -3,6 +3,8 @@
 source: `{{ page.path }}`
 ## Query
 ```
+import { useQuery, gql } from '@apollo/client';
+
 const USERS = gql`
   {
     users {
@@ -26,6 +28,6 @@ mutation CreateReviewForEpisode($name: String!, $email: String!, $password: Stri
 {
   "name": "Gjermund Skobba",
   "email": "gjermund@skobba.net",
-  "password": "dontShareThis1234!"
+  "password": "supersecret"
 }
 ```
