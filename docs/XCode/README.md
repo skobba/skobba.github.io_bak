@@ -1,5 +1,5 @@
 # XCode
 
-source: `{{ page.path }}`
+## Remove Swift Packagge
+![an image](xcode-remove-swift-package.png "Remove Swift Package")
 
-![an image](testimage.png "Logo Title Image")
