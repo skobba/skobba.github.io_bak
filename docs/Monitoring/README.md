@@ -1,3 +1,3 @@
-# VS Code
+# Kibana
 
 source: `{{ page.path }}`
