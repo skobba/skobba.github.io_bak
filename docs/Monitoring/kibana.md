@@ -1,2 +1,2 @@
-# Graphana
-"Grafana is the open source analytics & monitoring solution for every database." A visual representation of data for analysis and monitoring.
+# Kibana
+Kibana is tool visualizing data from Elasticsearch. Filebeat can collect such data from devices, cloud, containers and hosts.
