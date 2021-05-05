@@ -1,3 +1,3 @@
-# Kibana
+# Monitoring
 
 source: `{{ page.path }}`
