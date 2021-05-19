@@ -1,16 +1,22 @@
 # ElasticSearch
+Elastic Stack: Indexes, Shards, and Replicas
+
+Data in Elasticsearch is organized into indices. Each index is made up of one or more shards. Each shard is an instance of a Lucene index, which you can think of as a self-contained search engine that indexes and handles queries for a subset of the data in an Elasticsearch cluster.
+
 
 ## Red or Yellow Status
 > https://aws.amazon.com/premiumsupport/knowledge-center/elasticsearch-red-yellow-status/
 
-### List the unassigned shard
-> curl -XGET 'ES_Endpoint/_cat/shards?h=index,shard,prirep,state,unassigned.reason' | grep UNASSIGNED
+List the unassigned shard
+```
+curl -XGET 'ES_Endpoint/_cat/shards?h=index,shard,prirep,state,unassigned.reason' | grep UNASSIGNED
+```
 
-### Retrieve the details for why the shard is unassigned
+Retrieve the details for why the shard is unassigned
 > curl -XGET 'ES_Endpoint/_cluster/allocation/explain?pretty' -H 'Content-Type:application/json' -d'{"index": "<index name>", "shard": <shardId>, "primary":<true or false>}'
 
-### For red cluster status, delete the indices of concern and identify and address the root cause
+For red cluster status, delete the indices of concern and identify and address the root cause
 > curl -XDELETE 'ES_Endpoint/<index names>'
 
-### Then, identify the available snapshots and restore your indices from a snapshot
+Then, identify the available snapshots and restore your indices from a snapshot
 > curl -XGET 'elasticsearch-domain-endpoint/_snapshot?pretty'
