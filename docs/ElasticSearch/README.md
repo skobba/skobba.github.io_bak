@@ -13,6 +13,9 @@ Data in Elasticsearch is organized into indices. Each index is made up of one or
 > curl http://server/_cat/health
 > curl http://server/_cat/indices?v
 
+## Set replica set to 0
+> curl -XPUT "elasticsearch:9200/_all/_settings?pretty" -H 'Content-Type: application/json' -d' { "number_of_replicas": 0 }'
+
 ## Red or Yellow Status
 > https://aws.amazon.com/premiumsupport/knowledge-center/elasticsearch-red-yellow-status/
 
