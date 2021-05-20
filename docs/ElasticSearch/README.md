@@ -3,6 +3,15 @@ Elastic Stack: Indexes, Shards, and Replicas
 
 Data in Elasticsearch is organized into indices. Each index is made up of one or more shards. Each shard is an instance of a Lucene index, which you can think of as a self-contained search engine that indexes and handles queries for a subset of the data in an Elasticsearch cluster.
 
+## Ref
+> https://www.datadoghq.com/blog/elasticsearch-unassigned-shards/
+
+## Nodes
+> curl http://loalhost:9200/_cat/nodes?v
+
+## Health Check
+> curl http://server/_cat/health
+> curl http://server/_cat/indices?v
 
 ## Red or Yellow Status
 > https://aws.amazon.com/premiumsupport/knowledge-center/elasticsearch-red-yellow-status/
