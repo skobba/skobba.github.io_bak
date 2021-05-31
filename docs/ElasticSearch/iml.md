@@ -36,18 +36,28 @@ curl -X PUT "http://elasticsearch:9200/_ilm/policy/2days" -H 'Content-Type: appl
 ```
 
 ## View Templates
-> curl elasticsearch:9200/_template
+```
+curl elasticsearch:9200/_template
 
 Only top level keys
-> curl elasticsearch:9200/_template | jq '. |= keys'
+curl elasticsearch:9200/_template | jq '. |= keys'
+
+or
+
+curl http://elasticsearch:9200/_cat/templates?v
+
+```
+
+curl elasticsearch:9200/_template | jq '. |= keys'
 
 ## Creating or Applying a policy to an index template
 ```
 curl -X PUT "elasticsearch:9200/_template/2days?pretty" -H 'Content-Type: application/json' -d'
 {
-  "index_patterns": ["someindex-*"], 
+  "index_patterns": ["datafangst-logs-utv-*"], 
   "settings": {
-    "index.lifecycle.name": "2days"
+    "index.lifecycle.name": "2days",
+    "index.lifecycle.rollover_alias": "myalias"
   }
 }
 '
@@ -55,3 +65,6 @@ curl -X PUT "elasticsearch:9200/_template/2days?pretty" -H 'Content-Type: applic
 
 ## Delete Template
 > curl -X DELETE elasticsearch:9200/_template/templatetodelete
+
+## Check lifecycle progressedit
+> curl elasticsearch:9200/datafangst-logs-utv-*/_ilm/explain
