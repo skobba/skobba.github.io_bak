@@ -14,6 +14,8 @@ curl elasticsearch:9200/my*/_ilm/explain | jq
 ### View
 > curl elasticsearch:9200/_cat/aliases?v
 
-### Update
 ## Update Alias
 > curl -XPUT http://elasticsearch:9200/myindex/_alias/myalias
+
+## Delete
+> curl -XDELETE http://elasticsearch:9200/myindex/_alias/myalias
