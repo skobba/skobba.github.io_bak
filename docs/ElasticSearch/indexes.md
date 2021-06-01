@@ -10,6 +10,18 @@
 curl elasticsearch:9200/my*/_ilm/explain | jq
 ```
 
+## Apply a policy to multiple indices
+```
+curl -X PUT http://elasticsearch:9200/my-index-*/_settings  -H 'Content-Type: application/json' -d'
+ {
+  "index": {
+    "lifecycle": {
+      "name": "90days"
+    }
+  }
+}'
+```
+
 ## Aliases
 ### View
 > curl elasticsearch:9200/_cat/aliases?v
