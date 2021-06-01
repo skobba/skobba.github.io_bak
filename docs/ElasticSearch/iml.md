@@ -8,23 +8,19 @@
 ## View Policy
 > curl http://elasticsearch:9200/_ilm/policy/2days
 
-## Create Policy
+## Create Policy w/ 7 Days Retention Time
 ```
-curl -X PUT "http://elasticsearch:9200/_ilm/policy/2days" -H 'Content-Type: application/json' -d'
+curl -X PUT "http://elasticsearch:9200/_ilm/policy/7days" -H 'Content-Type: application/json' -d'
 {
   "policy": {
     "phases": {
       "hot": {
         "min_age": "0ms",
         "actions": {
-          "rollover": {
-            "max_size": "50gb",
-            "max_age": "2d"
-          }
         }
       },
       "delete": {
-        "min_age": "2d",
+        "min_age": "7d",
         "actions": {
           "delete": {}
         }
@@ -39,25 +35,22 @@ curl -X PUT "http://elasticsearch:9200/_ilm/policy/2days" -H 'Content-Type: appl
 ```
 curl elasticsearch:9200/_template
 
-Only top level keys
+Only top level keys:
 curl elasticsearch:9200/_template | jq '. |= keys'
-
-or
-
+or:
 curl http://elasticsearch:9200/_cat/templates?v
 
 ```
 
-curl elasticsearch:9200/_template | jq '. |= keys'
-
-## Creating or Applying a policy to an index template
+## Creating or Update an Index Template Using the 7days Policy
 ```
-curl -X PUT "elasticsearch:9200/_template/2days?pretty" -H 'Content-Type: application/json' -d'
+curl -X PUT "http://elasticsearch:9200/_template/my-index-template" -H 'Content-Type: application/json' -d'
 {
-  "index_patterns": ["datafangst-logs-utv-*"], 
+  "index_patterns": [
+    "my-index-*"
+    ],
   "settings": {
-    "index.lifecycle.name": "2days",
-    "index.lifecycle.rollover_alias": "myalias"
+    "index.lifecycle.name": "7days"
   }
 }
 '
@@ -66,5 +59,4 @@ curl -X PUT "elasticsearch:9200/_template/2days?pretty" -H 'Content-Type: applic
 ## Delete Template
 > curl -X DELETE elasticsearch:9200/_template/templatetodelete
 
-## Check lifecycle progressedit
 > curl elasticsearch:9200/datafangst-logs-utv-*/_ilm/explain
