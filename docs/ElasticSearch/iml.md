@@ -8,6 +8,9 @@
 ## View Policy
 > curl http://elasticsearch:9200/_ilm/policy/2days
 
+## Delete Policy
+> curl -X DELETE http://elasticsearch:9200/_ilm/policy/policy-to-delete
+
 ## Create Policy w/ 7 Days Retention Time
 ```
 curl -X PUT "http://elasticsearch:9200/_ilm/policy/7days" -H 'Content-Type: application/json' -d'
