@@ -1,5 +1,7 @@
-# rsync
+# Terminal
+
+## rsync
 > rsync -a theuser@host:/home/theuser/thefile.txt ./
 
-# scp
+## scp
 > scp theuser@host:/home/theuser/thefile.txt ./
