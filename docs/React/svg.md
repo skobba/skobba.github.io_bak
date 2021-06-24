@@ -48,5 +48,4 @@ rules: [
 
 import Image from 'path/image.svg';
 const App = () => <Image width={50} height={50} />;
-
-´´´
+```
