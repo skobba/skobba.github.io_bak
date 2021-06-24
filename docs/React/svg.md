@@ -49,3 +49,11 @@ rules: [
 import Image from 'path/image.svg';
 const App = () => <Image width={50} height={50} />;
 ```
+
+## Change Colors
+<iframe src="https://codesandbox.io/embed/react-using-svg-br42s?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="react-using-svg"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
