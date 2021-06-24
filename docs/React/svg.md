@@ -1,4 +1,7 @@
 # SVG in React
+* https://css-tricks.com/change-color-of-svg-on-hover/
+* https://react.christmas/2018/18
+
 ## Static
 The easiest way.
 
