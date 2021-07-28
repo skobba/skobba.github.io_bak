@@ -1,6 +1,7 @@
-# Screensaver
-## Set to 1 hour
+# OSX
+## Screensaver
+### Set to 1 hour
 > sudo defaults write /Library/Preferences/com.apple.screensaver loginWindowIdleTime 600
 
-## Disable
+### Disable
 > sudo defaults write /Library/Preferences/com.apple.screensaver loginWindowIdleTime 0
