@@ -1,10 +1,14 @@
 # SharedArrayBuffer
 
 ## Chrome message
+Scheduler's use of SharedArrayBuffer will require cross-origin isolation.
+
 ```
+scheduler.development.js:298 
 [Deprecation] SharedArrayBuffer will require cross-origin isolation as of M92, around July 2021.
 See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.
 ```
+
 ## History
 SharedArrayBuffer arrived in Chrome 60 (that's July 2017, for those of you who think of time in dates rather than Chrome versions), and everything was great. For 6 months.
 
