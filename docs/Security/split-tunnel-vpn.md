@@ -11,6 +11,27 @@ apt install openvpn
 ```
 adduser --disabled-login vpn
 ```
+## Create /dev/net/tun
+Check with:
+```
+ls -lad /dev/net/tun
+
+Result:
+crw-rw-rw- 1 root root 10, 200 Jul 21 06:09 /dev/net/tun
+```
+
+```
+#!/bin/bash
+
+mkdir -p /dev/net
+mknod /dev/net/tun c 10 200
+chmod 600 /dev/net/tun
+
+/etc/init.d/openvpn restart
+```
+
+### LXC Container
+> lxc.mount.entry = /dev/net/tun /dev/net/tun none bind create=file
 
 ## Create VPN Config
 Download from NordVPN:
