@@ -29,14 +29,24 @@ script-security 2
 route-noexec
 ```
 
-Create /etc/openvpn/login.txt:
+Change login cred:
+> sed -i -e 's/auth-user-pass/auth-user-pass \/etc\/openvpn\/login.txt/g' /etc/openvpn/openvpn.conf
+
+Add up/down scrips:
+```
+#up and down scripts to be executed when VPN starts or stops
+up /etc/openvpn/iptables.sh
+down /etc/openvpn/update-resolv-conf
+```
+
+
+## Create vpn credentials file
+> vi /etc/openvpn/login.txt:
 ```
 yourusername
 yourpassword
 ```
 
-Change login cred:
-> sed -i -e 's/auth-user-pass/auth-user-pass \/etc\/openvpn\/login.txt/g' /etc/openvpn/openvpn.conf
 
 ## Create systemd Service for OpenVPN
 vi /etc/systemd/system/openvpn@openvpn.service
@@ -72,8 +82,17 @@ WantedBy=multi-user.target
 Create service:
 > systemctl enable openvpn@openvpn.service
 
+## Prevent user from accessing internet
+Flush iptables:
+> sudo iptables -F
+
+Add rule to block vpn user's access to Internet (except the loopback device).
+> iptables -A OUTPUT ! -o lo -m owner --uid-owner vpn -j DROP
+
 ## Create iptables
 vi /etc/openvpn/iptables.sh
+
+Update LOCALIP and NETIF!
 
 ```
 #! /bin/bash
@@ -119,20 +138,74 @@ iptables -A OUTPUT ! --src $LOCALIP -o $NETIF -j REJECT
 
 exit 0
 ```
+
 Make executable
 chmod +x /etc/openvpn/iptables.sh
 
 
 ## Create Resolv
 vi /etc/openvpn/update-resolv-conf
+```
 foreign_option_1='dhcp-option DNS 209.222.18.222'
 foreign_option_2='dhcp-option DNS 209.222.18.218'
 foreign_option_3='dhcp-option DNS 8.8.8.8'
-
-up and down scripts to be executed when VPN starts or stops:
-```
-up /etc/openvpn/iptables.sh
-down /etc/openvpn/update-resolv-conf
 ```
 
-sudo iptables -A OUTPUT ! -o lo -m owner --uid-owner vpn -j DROP
+## Create the routing script
+vi /etc/openvpn/routing.sh
+
+```
+#! /bin/bash
+# Niftiest Software – www.niftiestsoftware.com
+# Modified version by HTPC Guides – www.htpcguides.com
+
+VPNIF="tun0"
+VPNUSER="vpn"
+GATEWAYIP=$(ifconfig $VPNIF | egrep -o '([0-9]{1,3}\.){3}[0-9]{1,3}' | egrep -v '255|(127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})' | tail -n1)
+if [[ `ip rule list | grep -c 0x1` == 0 ]]; then
+ip rule add from all fwmark 0x1 lookup $VPNUSER
+fi
+ip route replace default via $GATEWAYIP table $VPNUSER
+ip route append default via 127.0.0.1 dev lo table $VPNUSER
+ip route flush cache
+
+# run update-resolv-conf script to set VPN DNS
+/etc/openvpn/update-resolv-conf
+
+exit 0
+```
+
+Make executable:
+> sudo chmod +x /etc/openvpn/routing.sh
+
+## Configure Split Tunnel VPN Routing
+> vi /etc/iproute2/rt_tables
+
+Add the vpn user table at the bottom of the file
+
+> 200     vpn
+
+## Change Reverse Path Filtering
+> vi /etc/sysctl.d/9999-vpn.conf
+
+Update the eth0 interface!
+
+```
+net.ipv4.conf.all.rp_filter = 2
+net.ipv4.conf.default.rp_filter = 2
+net.ipv4.conf.eth0.rp_filter = 2
+```
+
+Apply new sysctl rules:
+> sysctl --system
+
+# Test OpenVPN service
+```
+systemctl stop openvpn@openvpn.service
+systemctl start openvpn@openvpn.service
+systemctl status openvpn@openvpn.service
+systemctl restart openvpn@openvpn.service
+```
+
+## Test vpn user
+> sudo -u vpn -i -- curl ipinfo.io
