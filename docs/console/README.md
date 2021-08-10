@@ -7,5 +7,29 @@
 > scp theuser@host:/home/theuser/thefile.txt ./
 
 # jq
-NB: Note the single quotes!
-> echo '[{"username":"user1"},{"username":"user2"}]' | jq '. | length'
+```
+echo '[{"username":"user1"},{"username":"user2"}]' | jq '. | length'
+
+echo '[{"username":"user1"},{"username":"user2"}]' | jq '.[] | .username'
+
+
+myjson='[
+  {
+    "name": "apple",
+    "color": "green",
+    "price": 1.2
+  },
+  {
+    "name": "banana",
+    "color": "yellow",
+    "price": 0.5
+  },
+  {
+    "name": "kiwi",
+    "color": "green",
+    "price": 1.25
+  }
+]'
+
+echo $myjson | jq '.[] | .name'
+```
