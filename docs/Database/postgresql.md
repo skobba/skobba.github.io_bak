@@ -29,7 +29,7 @@ ORDER BY role_name desc;
 ```
 
 ## Create User
-> createuser --interactive postgre
+> CREATE USER postgres WITH PASSWORD 'qwe123qwe123';
 
 ## Connect to DB
 >\connect dbname
