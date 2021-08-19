@@ -36,3 +36,6 @@ ORDER BY role_name desc;
 
 ## List all Tables
 > \dt
+
+## Describe a Table
+> \d tablename
