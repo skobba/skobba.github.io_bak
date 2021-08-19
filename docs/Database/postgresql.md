@@ -39,3 +39,6 @@ ORDER BY role_name desc;
 
 ## Describe a Table
 > \d tablename
+
+## Restore Backup
+> pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d dbname ./dumpfile
