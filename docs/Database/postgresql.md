@@ -32,5 +32,7 @@ ORDER BY role_name desc;
 > CREATE USER postgres WITH PASSWORD 'qwe123qwe123';
 
 ## Connect to DB
->\connect dbname
+> \c dbname
 
+## List all Tables
+> \dt
