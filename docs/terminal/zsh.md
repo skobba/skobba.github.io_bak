@@ -16,4 +16,13 @@
 
 Now open a new shell and configure Powerlevel10k
 
-Done!
+## Install Zsh-autosuggestions
+> git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+
+> echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh'>>~/.zshrc
+
+## Install Zsh-syntax-highlighting
+
+> git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+> echo 'source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'>>~/.zshrc
