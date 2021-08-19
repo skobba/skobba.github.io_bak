@@ -8,3 +8,12 @@
 ## Login
 > psql postgres
 
+## List Users
+> \du
+
+## Create User
+> createuser --interactive postgre
+
+## Connect to DB
+>\connect dbname
+
