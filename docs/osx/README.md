@@ -1,4 +1,7 @@
 # OSX
+## Create user in Console
+> createuser --interactive newuser
+
 ## Screensaver
 ### Set to 1 hour
 > sudo defaults write /Library/Preferences/com.apple.screensaver loginWindowIdleTime 600
