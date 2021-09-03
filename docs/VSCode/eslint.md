@@ -1,36 +1,21 @@
 # VS Code Setup ESLint
 
+## VS Code Settings
+Setup in ```.vscode/settings.json``` for project/repo or ```~/Library/Application Support/Code/User/settings.json``` for VS Code User Settings.
+
 ```json
 {
-        "eslint.validate": [
-        {
-            "language": "html",
-            "autoFix": true
-        },
-        {
-            "language": "vue",
-            "autoFix": true
-        },
-        {
-            "language": "javascript",
-            "autoFix": true
-        },
-        {
-            "language": "typescript",
-            "autoFix": true
-        },
-        {
-            "language": "javascriptreact",
-            "autoFix": true
-        },
-        {
-            "language": "typescriptreact",
-            "autoFix": true
-        }
-    ],
-    "editor.formatOnSave": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+  ],
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
 ```
