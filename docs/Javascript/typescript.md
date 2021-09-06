@@ -1,7 +1,7 @@
 # Typescript
 
 ## Generics
-In .tsx files you cannot just write <T>, you need to add an ",":
+In .tsx files you cannot just write ```<T>```, you need to add an ```,```:
 ```typescript
 
 const working = <T,>(x: T) => x;
