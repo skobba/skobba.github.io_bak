@@ -18,8 +18,10 @@
 ## Remove Package
 ```brew uninstall packageName``` or ```brew remove packageName``` removes a Homebrew package.
 
-## Start/stop Services
-```brew services start packageName```
+## Services
+```brew services start <service>``` starts a service.
+
+```brew services list``` lists services.
 
 
 
