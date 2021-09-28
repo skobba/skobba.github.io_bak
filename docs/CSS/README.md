@@ -1,8 +1,8 @@
 # CSS
 ## Grid
-> https://css-tricks.com/snippets/css/complete-guide-grid/
+[Guide](https://css-tricks.com/snippets/css/complete-guide-grid)
+[cssgridgarden](https://cssgridgarden.com)
 
-> https://cssgridgarden.com/
 
 ## Popper - Tooltip & Popover
-> https://popper.js.org/
+[Popper](https://popper.js.org)
