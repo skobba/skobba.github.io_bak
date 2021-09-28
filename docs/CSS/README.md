@@ -1,7 +1,7 @@
 # CSS
 ## Grid
-[Guide](https://css-tricks.com/snippets/css/complete-guide-grid)
-[cssgridgarden](https://cssgridgarden.com)
+* [Guide](https://css-tricks.com/snippets/css/complete-guide-grid)
+* [cssgridgarden](https://cssgridgarden.com)
 
 
 ## Popper - Tooltip & Popover
