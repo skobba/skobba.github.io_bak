@@ -1,15 +1,27 @@
 # postgresql
 ## Install w/ brew
-> brew install postgresql
-
+```
+brew install postgresql
+```
 ## Start
-> brew services start postgresql
-
+```
+brew services start postgresql
+```
 ## Login
-> psql postgres
+```
+psql postgres
+```
+
+# Databases
+List all databes with sizes 
+```
+\l+
+```
 
 ## List Users
-> \du+
+```
+\du+
+```
 
 With sql:
 ```
@@ -29,16 +41,26 @@ ORDER BY role_name desc;
 ```
 
 ## Create User
-> CREATE USER postgres WITH PASSWORD 'qwe123qwe123';
+```
+CREATE USER postgres WITH PASSWORD 'supersecret';
+```
 
 ## Connect to DB
-> \c dbname
+```
+\c dbname
+```
 
 ## List all Tables
-> \dt
+```
+\dt
+```
 
 ## Describe a Table
-> \d tablename
+```
+\d tablename
+```
 
 ## Restore Backup
-> pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d dbname ./dumpfile
+```
+pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d dbname ./dumpfile
+```
