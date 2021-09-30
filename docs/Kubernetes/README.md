@@ -151,3 +151,41 @@ Create cluster
 kubeadm init --pod-network-cidr=10.250.0.0/16 --apiserver-advertise-address 10.10.2.210 --ignore-preflight-errors=all
 ```
 
+Need overlay driver for docker...
+Ref:
+* https://docs.docker.com/storage/storagedriver/overlayfs-driver/#prerequisites
+* https://stackoverflow.com/questions/54128045/errors-while-creating-master-in-cluster-of-kubernetes-in-lxc-container
+* https://www.youtube.com/watch?v=nfPf0pJ1YLI&ab_channel=JustmeandOpensource
+
+
+LXC Config for k8s;
+https://github.com/debiasej/k8s-lxc/blob/master/lxd-provisioning/profile-config
+
+lxc launch images:ubuntu/16.04 CONTAINER_NAME --profile PROFILE_NAME
+
+
+LXC Profile
+```
+config:
+  limits.cpu: "2"
+  limits.memory: 2GB
+  limits.memory.swap: "false"
+  linux.kernel_modules: ip_tables,ip6_tables,netlink_diag,nf_nat,overlay,br_netfilter
+  raw.lxc: "lxc.apparmor.profile=unconfined\nlxc.cap.drop= \nlxc.cgroup.devices.allow=a\nlxc.mount.auto=proc:rw
+    sys:rw"
+  security.privileged: "true"
+  security.nesting: "true"
+description: LXD profile for Kubernetes
+devices:
+  eth0:
+    name: eth0
+    nictype: bridged
+    parent: lxdbr0
+    type: nic
+  root:
+    path: /
+    pool: default
+    type: disk
+name: k8s
+used_by: []
+```
