@@ -66,3 +66,45 @@ mkfs.ext4 /dev/zvol/mypool/my-dockervol
 mkfs.ext4 /dev/zvol/mypool/my-kubeletvol
 ```
 
+Mount it inside of the container:
+```
+pct set 210 -mp0 /dev/zvol/mypool/my-dockervol,mp=/var/lib/docker,backup=0
+pct set 210 -mp1 /dev/zvol/mypool/my-kubeletvol,mp=/var/lib/kubelet,backup=0
+```
+
+To make sure we start the vpn on boot, and to fix some other small issues create the following rc.local file:
+
+```
+cat > /etc/rc.local
+#!/bin/sh -e
+
+# Kubeadm 1.15 needs /dev/kmsg to be there, but it's not in lxc, but we can just use /dev/console instead
+# see: https://github.com/kubernetes-sigs/kind/issues/662
+if [ ! -e /dev/kmsg ]; then
+    ln -s /dev/console /dev/kmsg
+fi
+
+# https://medium.com/@kvaps/run-kubernetes-in-lxc-container-f04aa94b6c9c
+mount --make-rshared /' > /etc/rc.local
+
+exit 0
+```
+
+Install kubernetes:
+
+```
+apt-get update --allow-releaseinfo-change
+apt-get install -y apt-transport-https curl
+
+apt-get install -y gnupg
+
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+
+cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+deb https://apt.kubernetes.io/ kubernetes-xenial main
+EOF
+
+apt-get update
+apt-get install -y kubelet kubeadm kubectl
+apt-mark hold kubelet kubeadm kubectl
+```
