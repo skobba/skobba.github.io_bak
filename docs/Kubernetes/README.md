@@ -130,3 +130,24 @@ apt-get install docker-ce docker-ce-cli containerd.io
 docker run hello-world
 ```
  
+Pull images
+```
+kubeadm config images pull
+...
+[config/images] Pulled k8s.gcr.io/kube-apiserver:v1.22.2
+[config/images] Pulled k8s.gcr.io/kube-controller-manager:v1.22.2
+[config/images] Pulled k8s.gcr.io/kube-scheduler:v1.22.2
+[config/images] Pulled k8s.gcr.io/kube-proxy:v1.22.2
+[config/images] Pulled k8s.gcr.io/pause:3.5
+[config/images] Pulled k8s.gcr.io/etcd:3.5.0-0
+[config/images] Pulled k8s.gcr.io/coredns/coredns:v1.8.4
+```
+
+Create cluster
+
+```
+--service-cidr string     Default: "10.96.0.0/12"
+
+kubeadm init --pod-network-cidr=10.250.0.0/16 --apiserver-advertise-address 10.10.2.210 --ignore-preflight-errors=all
+```
+
