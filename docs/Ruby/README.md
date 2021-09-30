@@ -1,4 +1,5 @@
 # Ruby
+## Install
 :warning: Every time you update Ruby to a version in which the first two digits change, update your path to match.
 
 1. For Mac - Install commandline tools and set SDKROOT
@@ -21,6 +22,17 @@ echo 'export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$P
 ```
 which ruby
 gem env
+```
+
+## Gem
+### List installed gems
+```
+gem list
+```
+
+### Remove all installed gems
+```bash
+for x in `gem list --no-versions`; do gem uninstall $x -a -x -I; done
 ```
 
 ## Jekyll
