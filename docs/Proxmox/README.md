@@ -14,6 +14,7 @@ qm destory 100
 ## LXC
 
 ### Create
+Create command and div setup:
 ```
 pct create <id> /var/lib/vz/template/cache/debian-10-standard_10.5-1_amd64.tar.gz \
     -arch amd64 \
@@ -36,6 +37,7 @@ pct exec <id> -- bash -c "yum update -y &&\
     echo "somepassword" | passwd --stdin someuser"
 ```
 
+Sample of creating an unprivileged container:
 ```
 pct create 210 /var/lib/vz/template/cache/debian-10-standard_10.5-1_amd64.tar.gz \
     -arch amd64 \
