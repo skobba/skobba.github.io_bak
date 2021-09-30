@@ -43,14 +43,12 @@ export CPPFLAGS="-I/usr/local/opt/ruby/include"
 ```
 
 2. Install Jekyll for Ruby
-Use the first for system install
 ```
 gem install bundler jekyll
-
-gem install --user-install bundler jekyll
 ```
 
 3. Install gems from Gemfile
 ```
 bundle install
 ```
+
