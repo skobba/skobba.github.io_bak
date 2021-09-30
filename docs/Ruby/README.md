@@ -23,8 +23,6 @@ which ruby
 gem env
 ```
 
-
-
 ## Jekyll
 1. For compilers to find ruby you may need to set:
 ```
@@ -33,10 +31,10 @@ export CPPFLAGS="-I/usr/local/opt/ruby/include"
 ```
 
 2. Install Jekyll for Ruby
+Use the first for system install (second installs to ~/ but needs path setup)
 ```
 gem install bundler jekyll
 
-# Install to ~/ but need to set path (use the one above for system install)
 gem install --user-install bundler jekyll
 ```
 
