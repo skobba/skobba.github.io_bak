@@ -1,6 +1,8 @@
 # Kubernetes
 
 ## Running Kubernetes on Linux Containers (LXC)
+Ref: https://github.com/MarijnKoesen/kubernetes-in-proxmox-with-kubeadm-lxc-and-wireshark/blob/master/README.md
+
 Prepare the proxmox host
 
 ```
