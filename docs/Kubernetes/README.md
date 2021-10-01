@@ -214,7 +214,7 @@ used_by: []
 pct create 200 /var/lib/vz/template/cache/debian-10-standard_10.7-1_amd64.tar.gz \
     -arch amd64 \
     -ostype ubuntu \
-    -hostname debcons \
+    -hostname k8smaster \
     -cores 2 \
     -memory 4096 \
     -swap 0 \
