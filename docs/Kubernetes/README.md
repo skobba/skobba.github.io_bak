@@ -11,7 +11,6 @@ $ <- execite inside the container
 ```
 
 Ensure the following modules are loaded:
-
 ```
 cat /proc/sys/net/bridge/bridge-nf-call-iptables
 ```
@@ -19,6 +18,20 @@ or
 ```
 grep 'BRIDGE_NETFILTER' /boot/config-$(uname -r)
 CONFIG_BRIDGE_NETFILTER=y
+```
+
+Ensure overlay module is loaded
+```
+lsmod | grep overlay
+```
+
+enable the kernel module with
+```
+modprobe overlay
+```
+or add overlay to systemd :
+```
+echo "overlay" > /etc/modules-load.d/overlay.conf
 ```
 
 Now make sure swapiness is on 0, so that swap will not be used, otherwise kubernetes will not start:
