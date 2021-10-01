@@ -63,14 +63,40 @@ Now wait for swap to be empty.
 ### Step 2: Creating the kubernetes container
 
 1) Create a new container in proxmox, making sure to give it 0 swap, and make it a privileged container
-2) Edit the config file `/etc/pve/lxc/$ID.conf` and add the following part:
+```
+pct create 200 /var/lib/vz/template/cache/debian-10-standard_10.7-1_amd64.tar.gz \
+    -arch amd64 \
+    -ostype ubuntu \
+    -hostname k8smaster \
+    -cores 2 \
+    -memory 4096 \
+    -swap 0 \
+    -storage local-zfs \
+    -password \
+    -unprivileged 0 \
+    -net0 name=eth0,bridge=vmbr0,gw=10.10.2.1,ip=10.10.2.200/24,type=veth
+```
 
+
+3) Edit the config file `/etc/pve/lxc/$ID.conf` and add the following part:
+
+```
+features: keyctl=1,nesting=1
+``` 
+
+do i need this?
 ```
 lxc.apparmor.profile: unconfined
 lxc.cgroup.devices.allow: a
 lxc.cap.drop:
 lxc.mount.auto: "proc:rw sys:rw"
 ```
+
+4) Change the storage driver to overlay2.
+```
+echo -e '{\n  "storage-driver": "overlay2"\n}' >> /etc/docker/daemon.json
+```
+
 
 If you are using zfs on proxmos, make sure to create a ext4 volume, as zfs is not supported with kubeadm
 See: https://github.com/corneliusweig/kubernetes-lxd
@@ -213,17 +239,3 @@ name: k8s
 used_by: []
 ```
 
-# Create LXC
-```
-pct create 200 /var/lib/vz/template/cache/debian-10-standard_10.7-1_amd64.tar.gz \
-    -arch amd64 \
-    -ostype ubuntu \
-    -hostname k8smaster \
-    -cores 2 \
-    -memory 4096 \
-    -swap 0 \
-    -storage local-zfs \
-    -password \
-    -unprivileged 0 \
-    -net0 name=eth0,bridge=vmbr0,gw=10.10.2.1,ip=10.10.2.200/24,type=veth
-```
