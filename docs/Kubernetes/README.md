@@ -128,7 +128,7 @@ apt-get install -y kubelet kubeadm kubectl
 apt-mark hold kubelet kubeadm kubectl
 ```
 
-Install docker
+#### Install docker
 ```
 apt-get install \
     apt-transport-https \
@@ -148,7 +148,11 @@ apt-get install docker-ce docker-ce-cli containerd.io
 
 docker run hello-world
 ```
- 
+Check docker storage driver
+```
+docker info
+```
+
 Pull images
 ```
 kubeadm config images pull
