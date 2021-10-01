@@ -10,7 +10,7 @@
 * raid1 (mirroring)
     - excellent redundancy as you can lose every drive except one
 
-* raid 2, raid 3 and raid 4
+* :warning: raid 2, raid 3 and raid 4
     - No longer used by the IT industry. Raid2 uses an equal amount of disks as dedicated
     ECC drives. Raid 3 and 4 use a single dedicated parity drive. None of these raids are
     used in production anymore due to horrible random read and write performance.
