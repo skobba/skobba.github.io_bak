@@ -33,6 +33,10 @@ or add overlay to systemd :
 ```
 echo "overlay" > /etc/modules-load.d/overlay.conf
 ```
+or add to startup
+```
+echo overlay >> /etc/modules
+```
 
 Now make sure swapiness is on 0, so that swap will not be used, otherwise kubernetes will not start:
 
