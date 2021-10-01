@@ -12,6 +12,10 @@ qm destory 100
 ```
 
 ## LXC
+### Config files
+```
+/etc/pve/lxc/
+``` 
 
 ### Create
 Create command and div setup:
