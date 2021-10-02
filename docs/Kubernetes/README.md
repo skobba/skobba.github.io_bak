@@ -100,16 +100,17 @@ List zpools with ```zpool list```.
 
 Create zfs volumes:
 ```
-zfs create -V 50G mypool/my-dockervol
-zfs create -V 5G mypool/my-kubeletvol
-mkfs.ext4 /dev/zvol/mypool/my-dockervol
-mkfs.ext4 /dev/zvol/mypool/my-kubeletvol
+zfs create -V 50G rpool/my-dockervol
+zfs create -V 5G rpool/my-kubeletvol
+mkfs.ext4 /dev/zvol/rpool/my-dockervol
+mkfs.ext4 /dev/zvol/rpool/my-kubeletvol
 ```
 
 Mount it inside of the container:
+Ref. security: https://stgraber.org/2017/06/15/custom-user-mappings-in-lxd-containers/
 ```
-pct set 210 -mp0 /dev/zvol/mypool/my-dockervol,mp=/var/lib/docker,backup=0
-pct set 210 -mp1 /dev/zvol/mypool/my-kubeletvol,mp=/var/lib/kubelet,backup=0
+pct set 200 -mp0 /dev/zvol/rpool/my-dockervol,mp=/var/lib/docker,backup=0
+pct set 200 -mp1 /dev/zvol/rpool/my-kubeletvol,mp=/var/lib/kubelet,backup=0
 ```
 
 To make sure we start the vpn on boot, and to fix some other small issues create the following rc.local file:
@@ -133,6 +134,8 @@ exit 0
 
 ### Install docker
 ```
+apt-get update --allow-releaseinfo-change
+
 apt-get -y install \
     apt-transport-https \
     ca-certificates \
@@ -174,7 +177,7 @@ apt-get install -y gnupg
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 
 cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
-deb https://apt.kubernetes.io/ kubernetes-xenial main
+deb https://apt.kubernetes.io/ kubernetes-bionic main
 EOF
 
 apt-get update

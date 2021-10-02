@@ -1,7 +1,17 @@
 # zfs
+## Commands
+Listing ZFS Datasets
+```
+zfs list
 
-## Raid types
-# zfs
+zfs list -o name
+```
+
+Destroy dataset recursive
+```
+zfs destroy
+zfs list -o name | grep my | xargs -n1 zfs destroy -r
+```
 
 ## Raid types
 * raid0 (striping)

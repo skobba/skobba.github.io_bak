@@ -2,10 +2,21 @@
 
 ## Directories
 * Template ```/var/lib/vz/template/iso```
+* LXC Template ```/var/lib/vz/template/cache```
 * LXC Config ```/etc/pve/lxc```
+## Some Commands
+List ids
+```
+cat /etc/pve/.vmlist | jq '.ids |= keys | .ids  | .[]' | tr -d '"'
+```
+Stop all lxc
+```
+cat /etc/pve/.vmlist | jq '.ids |= keys | .ids  | .[]' | tr -d '"' | xargs -n1 pct stop
+```
+Destroy all lxc
+cat /etc/pve/.vmlist | jq '.ids |= keys | .ids  | .[]' | tr -d '"' | xargs -n1 pct destroy
 
 ## VM
-### Commands
 ```
 qm unlock 100
 qm stop 100
@@ -13,10 +24,6 @@ qm destory 100
 ```
 
 ## LXC
-### Config files
-```
-/etc/pve/lxc/
-``` 
 
 ### Create
 Create command and div setup:
@@ -42,19 +49,20 @@ pct exec <id> -- bash -c "yum update -y &&\
     echo "somepassword" | passwd --stdin someuser"
 ```
 
-Sample of creating an unprivileged container:
+Sample of creating an container:
 ```
-pct create 210 /var/lib/vz/template/cache/debian-10-standard_10.5-1_amd64.tar.gz \
+pct create 200 /var/lib/vz/template/cache/debian-10-standard_10.7-1_amd64.tar.gz \
     -arch amd64 \
     -ostype ubuntu \
-    -hostname debcons \
+    -hostname deb10 \
+    -features keyctl=1,nesting=1 \
     -cores 2 \
     -memory 4096 \
     -swap 0 \
     -storage local-zfs \
     -password \
-    -unprivileged 0 \
-    -net0 name=eth0,bridge=vmbr0,gw=10.10.2.1,ip=10.10.2.210/24,type=veth
+    -unprivileged 1 \
+    -net0 name=eth0,bridge=vmbr0,gw=10.10.2.1,ip=10.10.2.200/24,type=veth
 ```
 
 
