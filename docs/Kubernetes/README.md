@@ -6,7 +6,7 @@ Ref
 * https://kvaps.medium.com/run-kubernetes-in-lxc-container-f04aa94b6c9c
 * [proxmox-lxc-docker-fuse-overlayfs](https://c-goes.github.io/posts/proxmox-lxc-docker-fuse-overlayfs)
 
-### Step 1: Prepare the proxmox host
+## Step 1: Prepare the proxmox host
 
 ```
 # <- execute inside the (proxmox) host
@@ -61,7 +61,7 @@ swapoff -a
 
 Now wait for swap to be empty.
 
-### Step 2: Creating the kubernetes container
+## Step 2: Creating the LXC kubernetes container
 
 1) Create a new container in proxmox, making sure to give it 0 swap, and make it a privileged container
 ```
@@ -92,12 +92,6 @@ lxc.cgroup.devices.allow: a
 lxc.cap.drop:
 lxc.mount.auto: "proc:rw sys:rw"
 ```
-
-4) Change the storage driver to overlay2.
-```
-echo -e '{\n  "storage-driver": "overlay2"\n}' >> /etc/docker/daemon.json
-```
-
 
 If you are using zfs on proxmos, make sure to create a ext4 volume, as zfs is not supported with kubeadm
 See: https://github.com/corneliusweig/kubernetes-lxd
@@ -136,7 +130,40 @@ mount --make-rshared /' > /etc/rc.local
 exit 0
 ```
 
-Install kubernetes:
+
+### Install docker
+```
+apt-get -y install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+    
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
+  $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
+  
+apt-get update
+
+apt-get -y install docker-ce docker-ce-cli containerd.io
+
+docker run hello-world
+```
+Check docker storage driver
+```
+docker info
+```
+
+Change the storage driver to overlay2.
+```
+echo -e '{\n  "storage-driver": "overlay2"\n}' >> /etc/docker/daemon.json
+```
+
+
+### Install kubernetes
 
 ```
 apt-get update --allow-releaseinfo-change
@@ -155,30 +182,8 @@ apt-get install -y kubelet kubeadm kubectl
 apt-mark hold kubelet kubeadm kubectl
 ```
 
-#### Install docker
-```
-apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
-    
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-echo \
-  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
-  $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
-  
-apt-get update
-apt-get install docker-ce docker-ce-cli containerd.io
 
-docker run hello-world
-```
-Check docker storage driver
-```
-docker info
-```
 
 Pull images
 ```
