@@ -1,6 +1,6 @@
 # Terminal
 ## cp
-- Copy with permissions ```cp -a ./data ./data.bk```
+- Copy with permissions ```cp -au ./data ./data.bk```
 
 ## rsync
 - ```rsync -a theuser@host:/home/theuser/thefile.txt ./```
@@ -8,7 +8,7 @@
 ## scp
 - ```scp theuser@host:/home/theuser/thefile.txt ./```
 
-# jq
+## jq
 ```
 echo '[{"username":"user1"},{"username":"user2"}]' | jq '. | length'
 
