@@ -6,6 +6,7 @@
 
 ### Setup fuse-overlayfs
 Ref: https://c-goes.github.io/posts/proxmox-lxc-docker-fuse-overlayfs/
+
 In Proxmox VE create a unprivileged LXC container with fuse=1,keyctl=1,mknod=1,nesting=1 (I’m not sure if all are needed). In this case I use a Ubuntu 18.04 container.
 
 1. Installation of fuse-overlayfs
