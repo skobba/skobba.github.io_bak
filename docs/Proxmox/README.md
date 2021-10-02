@@ -1,7 +1,8 @@
 # Proxmox
 
-## IOS Image Directory
-> /var/lib/vz/template/iso
+## Directories
+* Template ```/var/lib/vz/template/iso```
+* LXC Config ```/etc/pve/lxc```
 
 ## VM
 ### Commands
