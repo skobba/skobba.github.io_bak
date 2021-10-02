@@ -1,10 +1,12 @@
 # Terminal
+## cp
+- Copy with permissions ```cp -a ./data ./data.bk```
 
 ## rsync
-> rsync -a theuser@host:/home/theuser/thefile.txt ./
+- ```rsync -a theuser@host:/home/theuser/thefile.txt ./```
 
 ## scp
-> scp theuser@host:/home/theuser/thefile.txt ./
+- ```scp theuser@host:/home/theuser/thefile.txt ./```
 
 # jq
 ```
