@@ -8,3 +8,8 @@
 
 ### Disable
 > sudo defaults write /Library/Preferences/com.apple.screensaver loginWindowIdleTime 0
+
+## Screenshot save location
+```
+defaults write com.apple.screencapture location /Users/gjermundskobba/Downloads
+```
