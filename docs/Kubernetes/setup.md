@@ -208,6 +208,11 @@ kubeadm config images pull
 [config/images] Pulled k8s.gcr.io/coredns/coredns:v1.8.4
 ```
 
+Make sure kubelet can connect
+```
+echo "KUBELET_EXTRA_ARGS=--node-ip=10.10.2.200" >> /etc/default/kubelet
+```
+
 Create cluster
 ```
 kubeadm init
