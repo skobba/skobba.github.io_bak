@@ -8,11 +8,6 @@ Ref
 
 ## Step 1: Prepare the proxmox host
 
-```
-# <- execute inside the (proxmox) host
-$ <- execite inside the container
-```
-
 Ensure the following modules are loaded:
 ```
 cat /proc/sys/net/bridge/bridge-nf-call-iptables
@@ -61,14 +56,15 @@ swapoff -a
 
 Now wait for swap to be empty.
 
-## Step 2: Creating the LXC kubernetes container
+## Step 2: Creating a privileged LXC kubernetes container
 
 1) Create a new container in proxmox, making sure to give it 0 swap, and make it a privileged container
 ```
-pct create 200 /var/lib/vz/template/cache/debian-10-standard_10.7-1_amd64.tar.gz \
+pct create 200 /var/lib/vz/template/cache/ubuntu-18.04-standard_18.04.1-1_amd64.tar.gz \
     -arch amd64 \
     -ostype ubuntu \
-    -hostname k8smaster \
+    -hostname k8s \
+    -features keyctl=1,nesting=1 \
     -cores 2 \
     -memory 4096 \
     -swap 0 \
@@ -78,14 +74,7 @@ pct create 200 /var/lib/vz/template/cache/debian-10-standard_10.7-1_amd64.tar.gz
     -net0 name=eth0,bridge=vmbr0,gw=10.10.2.1,ip=10.10.2.200/24,type=veth
 ```
 
-
-3) Edit the config file `/etc/pve/lxc/$ID.conf` and add the following part:
-
-```
-features: keyctl=1,nesting=1
-``` 
-
-do i need this?
+3) Edit the config file `/etc/pve/lxc/$ID.conf` and add the following part if needed
 ```
 lxc.apparmor.profile: unconfined
 lxc.cgroup.devices.allow: a
@@ -113,7 +102,7 @@ pct set 200 -mp0 /dev/zvol/rpool/my-dockervol,mp=/var/lib/docker,backup=0
 pct set 200 -mp1 /dev/zvol/rpool/my-kubeletvol,mp=/var/lib/kubelet,backup=0
 ```
 
-To make sure we start the vpn on boot, and to fix some other small issues create the following rc.local file:
+Fix some other small issues and create the following rc.local file:
 
 ```
 cat > /etc/rc.local
@@ -151,10 +140,13 @@ echo \
   
 apt-get update
 
+# For later debian
 apt-get -y install docker-ce docker-ce-cli containerd.io
 
-docker run hello-world
+# For ubuntu 18
+apt-get -y install docker.io
 ```
+
 Check docker storage driver
 ```
 docker info
@@ -165,28 +157,43 @@ Change the storage driver to overlay2.
 echo -e '{\n  "storage-driver": "overlay2"\n}' >> /etc/docker/daemon.json
 ```
 
+Test
+```
+docker run hello-world
+```
+
+
 
 ### Install kubernetes
 
 ```
 apt-get update --allow-releaseinfo-change
 apt-get install -y apt-transport-https curl
-
 apt-get install -y gnupg
 
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+```
 
+For later debian
+```
 cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
 deb https://apt.kubernetes.io/ kubernetes-bionic main
 EOF
+```
 
+For ubuntu 18
+```
+cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+deb https://apt.kubernetes.io/ kubernetes-xenial main
+EOF
+```
+
+Install kubernetes
+```
 apt-get update
 apt-get install -y kubelet kubeadm kubectl
 apt-mark hold kubelet kubeadm kubectl
 ```
-
-
-
 
 Pull images
 ```
@@ -202,25 +209,27 @@ kubeadm config images pull
 ```
 
 Create cluster
-
+```
+kubeadm init
+```
+or
 ```
 --service-cidr string     Default: "10.96.0.0/12"
 
 kubeadm init --pod-network-cidr=10.250.0.0/16 --apiserver-advertise-address 10.10.2.210 --ignore-preflight-errors=all
 ```
 
-Need overlay driver for docker...
-Ref:
+
+## Just some refs
 * https://docs.docker.com/storage/storagedriver/overlayfs-driver/#prerequisites
 * https://stackoverflow.com/questions/54128045/errors-while-creating-master-in-cluster-of-kubernetes-in-lxc-container
 * https://www.youtube.com/watch?v=nfPf0pJ1YLI&ab_channel=JustmeandOpensource
+* https://github.com/debiasej/k8s-lxc/blob/master/lxd-provisioning/profile-config
 
-
-LXC Config for k8s;
-https://github.com/debiasej/k8s-lxc/blob/master/lxd-provisioning/profile-config
-
+Create LXC from profile (how is this done on Proxmox+?)
+```
 lxc launch images:ubuntu/16.04 CONTAINER_NAME --profile PROFILE_NAME
-
+```
 
 LXC Profile
 ```
