@@ -9,7 +9,7 @@
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-# Generator (kpce.html)
+# Generator (PKCE.html)
 ```html
 <!DOCTYPE html>
 <html>
