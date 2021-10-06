@@ -28,6 +28,11 @@ Create app
 az ad app create --display-name "myapp"
 ```
 
+Delete app
+```
+az ad app delete --id xxxxxxxx-xxxxxxxxx-xxxxxxx-xxxxxxx
+```
+
 List app
 ```
 az ad app show --id xxxxxxxx-xxxxxxxxx-xxxxxxx-xxxxxxx
