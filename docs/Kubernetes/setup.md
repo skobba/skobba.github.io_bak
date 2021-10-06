@@ -172,6 +172,8 @@ EOF
 Fix some other small issues and create the following rc.local file:
 
 Create /dev/kmsg and run make-rshared (then add to /etc/rc.local)
+
+NB: chmod +x /etc/rc.local
 ```
 #!/bin/sh -e
 
