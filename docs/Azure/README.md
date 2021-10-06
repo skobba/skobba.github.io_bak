@@ -40,4 +40,7 @@ az ad app credential reset --id xxxxxxxx-xxxxxxxxx-xxxxxxx-xxxxxxx --credential-
 az ad app credential reset --id xxxxxxxx-xxxxxxxxx-xxxxxxx-xxxxxxx --credential-description "Secret2" --append
 ```
 
-
+Add reply/redirect url
+```
+az ad app update --id xxxxxxxx-xxxxxxxxx-xxxxxxx-xxxxxxx --add replyUrls "http://localhost:3000/redirect"
+```
