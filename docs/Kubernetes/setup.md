@@ -1,4 +1,4 @@
-# Kubernetes
+# Setup
 
 ## Running Kubernetes on Linux Containers (LXC)
 Ref
