@@ -104,8 +104,9 @@ pct set 200 -mp1 /dev/zvol/rpool/my-kubeletvol,mp=/var/lib/kubelet,backup=0
 
 Fix some other small issues and create the following rc.local file:
 
+Create /dev/kmsg and make-rshared (and add to /etc/rc.local).
+the 
 ```
-cat > /etc/rc.local
 #!/bin/sh -e
 
 # Kubeadm 1.15 needs /dev/kmsg to be there, but it's not in lxc, but we can just use /dev/console instead
@@ -115,9 +116,7 @@ if [ ! -e /dev/kmsg ]; then
 fi
 
 # https://medium.com/@kvaps/run-kubernetes-in-lxc-container-f04aa94b6c9c
-mount --make-rshared /' > /etc/rc.local
-
-exit 0
+mount --make-rshared /
 ```
 
 
@@ -255,5 +254,9 @@ devices:
     type: disk
 name: k8s
 used_by: []
+```
+## Errors
+```
+"Failed to run kubelet" err="failed to run Kubelet: failed to create kubelet: open /dev/kmsg: no such file or directory"
 ```
 
