@@ -1,6 +1,7 @@
 # Azure
 
 ## AD
+[Authentication flows and application scenarios](https://docs.microsoft.com/en-gb/azure/active-directory/develop/authentication-flows-app-scenarios)
 
 ### Login
 Ways to login
