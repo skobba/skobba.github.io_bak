@@ -12,6 +12,11 @@ kubectl label node kworker1 node-role.kubernetes.io/worker=worker
 Access a cluster
 > copy ~/.kube/config to your machine
 
+List kube-system
+```
+kubectl get pods -n kube-system
+```
+
 ##  Dashboard
 Deploy
 ``` 
