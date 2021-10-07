@@ -4,6 +4,11 @@ Join a new node
 kubeadm token create --print-join-command
 ```
 
+Assign worker role to a node
+```
+kubectl label node kworker1 node-role.kubernetes.io/worker=worker
+``` 
+
 ##  Dashboard
 Deploy
 ``` 
