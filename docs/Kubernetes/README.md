@@ -1,4 +1,8 @@
 # Kubernetes
+Join a new node
+```
+kubeadm token create --print-join-command
+```
 
 ##  Dashboard
 Deploy
