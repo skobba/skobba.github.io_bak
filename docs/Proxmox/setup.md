@@ -16,3 +16,9 @@ apt update && apt -y full-upgrade
 reboot
 ```
 
+# zsh
+TEST WITH ORDINARY USER FIRST!
+```
+apt -y install zsh
+chsh -s /bin/zsh
+```
