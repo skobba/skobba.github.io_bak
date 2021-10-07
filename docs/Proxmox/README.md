@@ -4,17 +4,27 @@
 * Template ```/var/lib/vz/template/iso```
 * LXC Template ```/var/lib/vz/template/cache```
 * LXC Config ```/etc/pve/lxc```
+
 ## Some Commands
 List ids
 ```
 cat /etc/pve/.vmlist | jq '.ids |= keys | .ids  | .[]' | tr -d '"'
 ```
+
 Stop all lxc
 ```
 cat /etc/pve/.vmlist | jq '.ids |= keys | .ids  | .[]' | tr -d '"' | xargs -n1 pct stop
 ```
+
 Destroy all lxc
+```
 cat /etc/pve/.vmlist | jq '.ids |= keys | .ids  | .[]' | tr -d '"' | xargs -n1 pct destroy
+```
+
+Run script on lxc
+```
+cat shellscript.sh | lxc-attach <id> bash
+```
 
 ## VM
 ```
