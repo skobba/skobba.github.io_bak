@@ -13,7 +13,7 @@ lsblk
 
 Create pool
 ```
-zpool create tank raidz sdc sdd sde sdf
+zpool create tank raidz2 sdc sdd sde sdf
 ```
 
 Create a container for individual file systems
