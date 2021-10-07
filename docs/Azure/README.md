@@ -16,7 +16,8 @@ az login --allow-no-subscriptions
 ``` 
 
 ### Apps
-https://docs.microsoft.com/en-us/cli/azure/ad/app
+* https://docs.microsoft.com/en-us/cli/azure/ad/app
+* Issue with SPA: https://github.com/Azure/azure-cli/issues/14880
 
 Ways to list apps
 ```
