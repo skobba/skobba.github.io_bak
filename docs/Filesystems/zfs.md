@@ -6,6 +6,31 @@
 
 
 ## Commands
+List disks
+```
+lsblk
+```
+
+Create pool
+```
+zpool create tank raidz sdc sdd sde sdf
+```
+
+Create a container for individual file systems
+```
+zfs create tank/kubernetes
+```
+Set the inherited properties.
+
+After the file system hierarchy is established, set up any properties to be shared among all users:
+
+```
+# Allready mounted: zfs set mountpoint=/tank/kubernetes tank/kubernetes
+zfs set sharenfs=on tank/kubernetes
+zfs set compression=on tank/kubernetes
+zfs get compression tank/kubernetes
+```
+
 Listing ZFS Datasets
 ```
 zfs list
