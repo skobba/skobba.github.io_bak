@@ -7,7 +7,10 @@ kubeadm token create --print-join-command
 Assign worker role to a node
 ```
 kubectl label node kworker1 node-role.kubernetes.io/worker=worker
-``` 
+```
+
+Access a cluster
+> copy ~/.kube/config to your machine
 
 ##  Dashboard
 Deploy
