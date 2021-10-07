@@ -24,6 +24,8 @@ cat /etc/pve/.vmlist | jq '.ids |= keys | .ids  | .[]' | tr -d '"' | xargs -n1 p
 Run script on lxc
 ```
 cat shellscript.sh | lxc-attach <id> bash
+lxc-attach -n <id> -- /sbin/ip a
+lxc-attach -n <id> -- /usr/bin/apt update
 ```
 
 ## VM
