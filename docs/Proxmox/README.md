@@ -11,14 +11,14 @@ List ids
 cat /etc/pve/.vmlist | jq '.ids |= keys | .ids  | .[]' | tr -d '"'
 ```
 
-Stop all lxc
+Stop all running lxc
 ```
-cat /etc/pve/.vmlist | jq '.ids |= keys | .ids  | .[]' | tr -d '"' | xargs -n1 pct stop
+lxc-ls --running | xargs -n1 pct stop
 ```
 
 Destroy all lxc
 ```
-cat /etc/pve/.vmlist | jq '.ids |= keys | .ids  | .[]' | tr -d '"' | xargs -n1 pct destroy
+lxc-ls | xargs -n1 pct destroy
 ```
 
 Run script on lxc
