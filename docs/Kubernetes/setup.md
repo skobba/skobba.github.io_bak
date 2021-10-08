@@ -275,7 +275,15 @@ name: k8s
 used_by: []
 ```
 ## Errors
+/dev/kmsg
 ```
 "Failed to run kubelet" err="failed to run Kubelet: failed to create kubelet: open /dev/kmsg: no such file or directory"
 ```
+nf_conntrack
+
+* [Tuning nf_conntrack](https://ixnfo.com/en/tuning-nf_conntrack.html)
+* [Kubernetes in LXC/LXD containers due to kube-proxy and nf_conntrack_max values](https://www.claudiokuenzler.com/blog/1106/unable-to-deploy-rancher-managed-kubernetes-cluster-lxc-lxd-nodes)
+* [Persisting nf_conntrack_max Across Reboots](https://serverfault.com/questions/161530/persisting-nf-conntrack-max-across-reboots)
+
+
 
