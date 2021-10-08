@@ -17,6 +17,11 @@ List kube-system
 kubectl get pods -n kube-system
 ```
 
+Get log from pod
+```
+kubectl -n kube-system logs kube-proxy-xxxxx
+```
+
 ##  Dashboard
 Deploy
 ``` 
