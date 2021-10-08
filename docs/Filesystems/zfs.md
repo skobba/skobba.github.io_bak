@@ -44,6 +44,9 @@ zfs destroy
 zfs list -o name | grep my | xargs -n1 zfs destroy -r
 ```
 
+## Encryption
+[https://arstechnica.com/gadgets/2021/06/a-quick-start-guide-to-openzfs-native-encryption/](https://arstechnica.com/gadgets/2021/06/a-quick-start-guide-to-openzfs-native-encryption/)
+
 ## Raid types
 * raid0 (striping)
     - no redundancy and best performance
