@@ -6,7 +6,7 @@ Ref
 * https://kvaps.medium.com/run-kubernetes-in-lxc-container-f04aa94b6c9c
 * [proxmox-lxc-docker-fuse-overlayfs](https://c-goes.github.io/posts/proxmox-lxc-docker-fuse-overlayfs)
 
-## Step 1: Prepare the proxmox host
+## Step 1: Prepare the proxmox (7.0-11) host
 
 Ensure the following modules are loaded:
 ```
@@ -53,8 +53,17 @@ Disable SWAP, it'll take some times to clean the SWAP area
 ```
 swapoff -a
 ```
-
 Now wait for swap to be empty.
+
+Set hashsize and nf_conntrack_max
+```
+/sbin/sysctl -w net.netfilter.nf_conntrack_max=524288
+echo "131072" > /sys/module/nf_conntrack/parameters/hashsize
+
+and check values
+/proc/sys/net/nf_conntrack_max
+cat /sys/module/nf_conntrack/parameters/hashsize
+```
 
 ## Step 2: Creating a privileged LXC kubernetes container
 
@@ -143,7 +152,10 @@ Test
 docker run hello-world
 ```
 
-
+Make sure conntrack is running
+```
+conntrack -L
+```
 
 ### Install kubernetes
 
