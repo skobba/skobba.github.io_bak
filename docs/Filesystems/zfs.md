@@ -9,10 +9,14 @@
 List disks
 ```
 lsblk
+
+ls -lh /dev/disk/by-path/
 ```
 
 Create raid 10 pool
+
 *Creating a RAID1 pool of two drives, and then adding another pair of mirroring drives creates a RAID 10 pool where data is striped over two mirrors.*
+
 ```
 zpool create myRaid10Pool \
   mirror disk1 disk2 \
@@ -33,7 +37,12 @@ config:
           mirror-1  ONLINE       0     0     0
             sdd     ONLINE       0     0     0
             sde     ONLINE       0     0     0
-            zpool create tank raidz2 sdc sdd sde sdf
+
+```
+
+Create a raid2 pool
+```
+zpool create tank raidz2 sdc sdd sde sdf
 ```
 
 Create a container for individual file systems
