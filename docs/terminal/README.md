@@ -8,6 +8,11 @@
 ## scp
 - ```scp theuser@host:/home/theuser/thefile.txt ./```
 
+## watch
+```
+watch kubectl get pods -n kube-system
+```
+
 ## jq
 ```
 echo '[{"username":"user1"},{"username":"user2"}]' | jq '. | length'
