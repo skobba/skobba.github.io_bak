@@ -11,9 +11,29 @@ List disks
 lsblk
 ```
 
-Create pool
+Create raid 10 pool
+*Creating a RAID1 pool of two drives, and then adding another pair of mirroring drives creates a RAID 10 pool where data is striped over two mirrors.*
 ```
-zpool create tank raidz2 sdc sdd sde sdf
+zpool create myRaid10Pool \
+  mirror disk1 disk2 \
+  mirror disk3 disk4
+
+zpool status 
+
+pool: myRaid10Pool
+ state: ONLINE
+  scan: none requested
+config:
+
+        NAME        STATE     READ WRITE CKSUM
+        myPool      ONLINE       0     0     0
+          mirror-0  ONLINE       0     0     0
+            sdb     ONLINE       0     0     0
+            sdc     ONLINE       0     0     0
+          mirror-1  ONLINE       0     0     0
+            sdd     ONLINE       0     0     0
+            sde     ONLINE       0     0     0
+            zpool create tank raidz2 sdc sdd sde sdf
 ```
 
 Create a container for individual file systems
