@@ -60,3 +60,14 @@ kubectl create secret docker-registry <registry-credential-secrets> \
   --docker-username=<private-registry-user> \
   --docker-password=<private-registry-password>
 ```
+
+View secret
+```
+kubectl get secret <registry-credential-secrets> -o=yaml
+```
+
+New pods that are created in the default namespace now includes credentials and have access to your container images in a private registry
+```
+kubectl patch serviceaccount default -p "{\"imagePullSecrets\": [{\"name\": \"container-registry\"}]}"
+```
+
