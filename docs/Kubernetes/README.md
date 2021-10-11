@@ -9,7 +9,9 @@ Building blocks:
 * Volume
 * Ingress
 * Deployment
+  - For stateless services, but also non-clustered databases together with a persistant Volume.
 * StatefulSet
+  - For scaling databases across noded, where one gets to write and the rest gets to read.
 
 Join a new node
 ```
