@@ -36,6 +36,11 @@ Get log from pod
 kubectl -n kube-system logs kube-proxy-xxxxx
 ```
 
+Set worker role on node
+```
+kubectl label node nodename node-role.kubernetes.io/worker=worker
+```
+
 ##  Dashboard
 Deploy
 ``` 
