@@ -49,3 +49,14 @@ kubectl proxy
 
 URL
 > [http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/)
+
+## Private Registry
+Creates a imagePullSecrets object that contains your credentials as a list of secrets:
+
+```
+kubectl create secret docker-registry <registry-credential-secrets> \
+  --docker-server=<private-registry-url> \
+  --docker-email=<private-registry-email> \
+  --docker-username=<private-registry-user> \
+  --docker-password=<private-registry-password>
+```
