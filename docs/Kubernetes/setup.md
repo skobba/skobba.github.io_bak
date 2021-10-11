@@ -279,6 +279,12 @@ used_by: []
 ```
 "Failed to run kubelet" err="failed to run Kubelet: failed to create kubelet: open /dev/kmsg: no such file or directory"
 ```
+
+```
+error execution phase preflight: [preflight] Some fatal errors occurred:
+        [ERROR SystemVerification]: failed to parse kernel config: unable to load kernel module: "configs", output: "modprobe: FATAL: Module configs not found in directory /lib/modules/5.11.22-4-pve\n", err: exit status 1
+```
+
 nf_conntrack
 
 * [Tuning nf_conntrack](https://ixnfo.com/en/tuning-nf_conntrack.html)
