@@ -1,4 +1,16 @@
 # Kubernetes
+*Created by Google*
+
+Building blocks:
+* Pod
+* Service
+* ConfigMap
+* Secret
+* Volume
+* Ingress
+* Deployment
+* StatefulSet
+
 Join a new node
 ```
 kubeadm token create --print-join-command
