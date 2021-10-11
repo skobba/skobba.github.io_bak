@@ -71,3 +71,25 @@ New pods that are created in the default namespace now includes credentials and 
 kubectl patch serviceaccount default -p "{\"imagePullSecrets\": [{\"name\": \"container-registry\"}]}"
 ```
 
+Verify
+```
+kubectl apply -f - <<EOF
+apiVersion: v1
+kind: Pod
+metadata:
+  name: private-image-test-1
+spec:
+  containers:
+    - name: uses-private-image
+      image: $PRIVATE_IMAGE_NAME
+      imagePullPolicy: Always
+      command: [ "echo", "SUCCESS" ]
+EOF
+```
+
+Output log (SUCCESS)
+```
+kubectl logs private-image-test-1
+```
+
+
