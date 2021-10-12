@@ -1,4 +1,5 @@
 # PKCE
+*PKCE adds an additional step which allows us to protect the authorization code so that even if it is stolen during the redirect it will be useless by itself.*
 
 # Generator
 
