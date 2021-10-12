@@ -28,3 +28,15 @@ Auth Server (AS) and Client (SPA) flow:
 3. SPA calls API until it gets 401. (or uses some other mechanism to figure out time to get new access token)
 4. SPA does a silent GET to the AS authorize endpoint in attempt to get new access token.
 5. I IF AND ONLY user still has a valid session with AS (some sort of auth cookie likely) then AS will respond with valid access token (if AS believes the request is valid).
+
+## Implicit Flow for Existing Apps
+Ref.: [https://developer.okta.com/blog/2019/05/01/is-the-oauth-implicit-flow-dead[(https://developer.okta.com/blog/2019/05/01/is-the-oauth-implicit-flow-dead)
+
+*The important thing to remember here is that there was no new vulnerability found in the Implicit flow. If you have an existing app that uses the Implicit flow, it’s not that your app is suddenly now insecure after this new guidance has been published.*
+
+*That said, it is – and always has been – extremely challenging to implement the Implicit flow securely. If you have gone to the trouble of thoroughly auditing your source code, knowing exactly which third-party libraries you’re using in your application, have a strong Content Security Policy, and are confident in your ability to build a secure JavaScript application, then your application is probably fine.*
+
+*So should you immediately switch all your apps to using PKCE instead of the Implicit flow? Probably not, it depends on your risk tolerance. But at this point I would definitely not recommend creating new apps using the Implicit flow.*
+
+
+
