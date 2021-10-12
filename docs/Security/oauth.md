@@ -8,8 +8,16 @@
     * [Authorization Code Grant](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1)
 2. [Proof Key for Code Exchange by OAuth Public Clients](https://datatracker.ietf.org/doc/html/rfc7636)
 
+## Grant Types
+OAuth 2.0 has different grant types for various scenarios. Here are a few of them.
 
-## Authorization Code Flow with PKCE in conjunction with Silent Refresh
+* __Password__: for logging in with username and password
+* __Client credentials__: for when a user is not present
+* __Authorization Code__: for mobile and web apps, and now also server side apps
+* __Implicit__: historically used for single-page JavaScript apps where secrets cannot be securely stored
+
+
+## Authorization Code with PKCE in conjunction with Silent Refresh
 *Use of the Implicit Flow in SPAs presents security challenges requiring explicit mitigation strategies. You can use the Authorization Code Flow with PKCE in conjunction with Silent Authentication to renew sessions in SPAs.*
 
 * [https://auth0.com/docs/login/configure-silent-authentication](https://auth0.com/docs/login/configure-silent-authentication)
