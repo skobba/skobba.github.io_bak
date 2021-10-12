@@ -4,3 +4,9 @@
 Microsoft Authentication Library for JavaScript (MSAL.js)
 
 ![an image](msal.png "Package Structure")
+
+## msal-express-wrapper
+*Wrapper for express*
+
+* [https://github.com/Azure-Samples/msal-express-wrapper](ttps://github.com/Azure-Samples/msal-express-wrapper)
+
