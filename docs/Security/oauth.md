@@ -9,7 +9,9 @@
 2. [Proof Key for Code Exchange by OAuth Public Clients](https://datatracker.ietf.org/doc/html/rfc7636)
 
 
-## Silent Refresh
+## Authorization Code Flow with PKCE in conjunction with Silent Refresh
+*Use of the Implicit Flow in SPAs presents security challenges requiring explicit mitigation strategies. You can use the Authorization Code Flow with PKCE in conjunction with Silent Authentication to renew sessions in SPAs.*
+
 * [https://auth0.com/docs/login/configure-silent-authentication](https://auth0.com/docs/login/configure-silent-authentication)
 
 Auth Server (AS) and Client (SPA) flow:
