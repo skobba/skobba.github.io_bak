@@ -10,7 +10,10 @@ export NVM_DIR="$HOME/.nvm"
 ```
 
 ## List Versions
-> nvm ls-remote
+```
+nvm ls
+nvm ls-remote
+```
 
 ## Install and Use Specific Version
 ```
