@@ -5,7 +5,7 @@
 iptables -A INPUT -p tcp -s x.x.x.x --dport 22 -j ACCEPT
 
 ## ipcalc
-* [http://jodies.de/ipcalc?host=10.10.0.0&mask1=24&mask2](http://jodies.de/ipcalc?host=10.10.0.0&mask1=24&mask2)
+* [http://jodies.de/ipcalc?host=10.10.0.0&mask1=16&mask2=255.255.150](http://jodies.de/ipcalc?host=10.10.0.0&mask1=16&mask2=255.255.150)
 * ```apt -y install ipcalc```
 
 ## Disable IPv6 on Debian
