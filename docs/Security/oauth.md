@@ -2,6 +2,24 @@
 
 *Up until 2019, the OAuth 2.0 spec only recommended using the PKCE extension for mobile and JavaScript apps. The latest OAuth Security BCP now recommends using PKCE also for server-side apps, as it provides some additional benefits there as well. It is likely to take some time before common OAuth services adapt to this new recommendation, but if you’re building a server from scratch you should definitely support PKCE for all types of clients.*
 
+## Considerations
+[Cookie vs Access Token](https://authguidance.com/2019/09/08/ui-token-management/)
+
+___Cookie___
+
+Cookie based authentication requires a Backend For Frontend pattern and do not scale well in an microservice landscape.
+
+___Token___
+
+Token based authentication must keep refreshing the token and keeping it hidden.
+
+___2021 Security Update___
+
+*In 2021 it is instead recommended to use a Back End for Front End approach for SPA security. This requires more moving parts*
+
+[https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps)
+
+
 ## Ref
 * [https://authguidance.com/](https://authguidance.com/)
 
