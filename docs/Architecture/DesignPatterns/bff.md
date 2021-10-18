@@ -3,4 +3,4 @@
 ## Considreations
 * How many backends?
 
-![BFF](bff.png "Backend for Frontend")
+![BFF](bff-pattern.png "Backend for Frontend")
