@@ -52,6 +52,6 @@ mkdir -p /nfs/kubedata
 
 Mount nfs share
 ```
-mount host_ip:/var/nfs/general /nfs/general
+mount host_ip:/mnt/kubedata /nfs/kubedata
 ```
 
