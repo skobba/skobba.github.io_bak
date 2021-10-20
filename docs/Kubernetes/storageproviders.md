@@ -1,4 +1,6 @@
 # Storage Providers
+Ref.:
+* [Forbs - Critical Capabilities For Container-Native Storage Running In Kubernetes Environment - Part 1](https://www.forbes.com/sites/janakirammsv/2020/07/26/critical-capabilities-for-container-native-storage-running-in-kubernetes-environmentpart-1/?sh=5d0b1904c1af)
 * [https://vadosware.io/post/k8s-storage-provider-benchmarks-round-2-part-5](https://vadosware.io/post/k8s-storage-provider-benchmarks-round-2-part-5/)
 
 ## OpenEBS
