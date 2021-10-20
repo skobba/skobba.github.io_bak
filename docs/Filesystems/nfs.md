@@ -3,7 +3,7 @@
 ## Server
 Install server that allows you to share directories
 ```
-apt install nfs-kernel-server
+apt -y install nfs-kernel-server
 ```
 
 Create folder
@@ -42,7 +42,7 @@ systemctl enable nfs-kernel-server
 
 ## Client
 ```
-apt install nfs-common
+apt -y install nfs-common
 ```
 
 Create directory for the mount
