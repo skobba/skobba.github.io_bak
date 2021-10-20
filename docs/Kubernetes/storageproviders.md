@@ -4,6 +4,9 @@ Ref.:
 * [OpenEBS - Using ZFS Volumes with Kubernetes](https://huttenga.net/blog/2020/03/using-zfs-volumes-with-kubernetes)
 * [https://vadosware.io/post/k8s-storage-provider-benchmarks-round-2-part-5](https://vadosware.io/post/k8s-storage-provider-benchmarks-round-2-part-5/)
 
+## Dynamic Volume Provisioning
+*Dynamic volume provisioning allows storage volumes to be created on-demand. Without dynamic provisioning, cluster administrators have to manually make calls to their cloud or storage provider to create new storage volumes*
+
 ## OpenEBS
 * [https://openebs.io](https://openebs.io)
 
