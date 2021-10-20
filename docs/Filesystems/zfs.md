@@ -66,6 +66,10 @@ zfs list
 
 zfs list -o name
 ```
+Mount dataset
+```
+zfs set mountpoint=/mnt/data tank/data
+```
 
 Destroy dataset recursive
 ```
