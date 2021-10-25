@@ -56,7 +56,7 @@ az ad app update --id xxxxxxxx-xxxxxxxxx-xxxxxxx-xxxxxxx --add replyUrls "http:/
 
 All apps created by the currently logged in user:
 ```
-az ad app list --show-mine --query "[].{id:appId, name:displayName}"
+az ad app list --show-mine --query "[].{id:appId, name:displayName, graphId:objectId}"
 ```
 
 All service principals created by the currently logged in user:
