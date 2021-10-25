@@ -54,6 +54,17 @@ Add reply/redirect url
 az ad app update --id xxxxxxxx-xxxxxxxxx-xxxxxxx-xxxxxxx --add replyUrls "http://localhost:3000/redirect"
 ```
 
+All apps created by the currently logged in user:
+```
+az ad app list --show-mine --query "[].{id:appId, name:displayName}"
+```
+
+All service principals created by the currently logged in user:
+```
+az ad sp list --show-mine --query "[].{id:appId, name:displayName, tenant:appOwnerTenantId}"
+
+```
+
 ## Using Microsoft Graph REST
 Get the appId and the corresponding objectId for the app
 ```
