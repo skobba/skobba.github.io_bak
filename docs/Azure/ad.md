@@ -8,5 +8,17 @@
 * [Azure AD SPA Code Sample](https://authguidance.com/2017/12/01/azure-ad-spa-code-sample/)
 * [Configure authentication in a sample single-page application by using Azure AD B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/configure-authentication-sample-spa-app)
 * [gary-archer/oauth.websample.azure](https://github.com/gary-archer/oauth.websample.azure)
+
 ## Tokens
 Access tokens enable clients to securely call protected web APIs, and are used by web APIs to perform authentication and authorization. Per the OAuth specification, access tokens are opaque strings without a set format - some identity providers (IDPs) use GUIDs, others use encrypted blobs. The Microsoft identity platform uses a variety of access token formats depending on the configuration of the API that accepts the token. Custom APIs registered by developers on the Microsoft identity platform can choose from two different formats of JSON Web Tokens (JWTs), called "v1" and "v2", and Microsoft-developed APIs like Microsoft Graph or APIs in Azure have additional proprietary token formats. These proprietary formats might be encrypted tokens, JWTs, or special JWT-like tokens that will not validate.
+
+## Service Principal
+To access resources that are secured by an Azure AD tenant, the entity that requires access must be represented by a security principal. 
+
+[MS Graph Doc](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
+
+
+All service principals created by the currently logged in user:
+```
+az ad sp list --show-mine --query "[].{id:appId, tenant:appOwnerTenantId}"
+```
