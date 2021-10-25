@@ -18,7 +18,3 @@ To access resources that are secured by an Azure AD tenant, the entity that requ
 [MS Graph Doc](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 
 
-All service principals created by the currently logged in user:
-```
-az ad sp list --show-mine --query "[].{id:appId, tenant:appOwnerTenantId}"
-```
