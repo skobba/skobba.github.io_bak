@@ -1,5 +1,10 @@
 # AD
 
+## well-known
+```
+https://login.microsoftonline.com/{tenant}/v2.0/.well-known/openid-configuration
+```
+
 ## Securing Web APIs
 * [Microsoft identity platform access tokens](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens#validating-tokens)
 * [Microsoft identity platform code samples](https://docs.microsoft.com/en-us/azure/active-directory/develop/sample-v2-code)
