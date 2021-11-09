@@ -1,6 +1,5 @@
 # VS Code Setup ESLint
 
-## VS Code Settings
 Setup in ```.vscode/settings.json``` for project/repo or ```~/Library/Application Support/Code/User/settings.json``` for VS Code User Settings.
 
 * Enable ESLint
