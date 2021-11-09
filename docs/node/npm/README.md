@@ -39,28 +39,43 @@ user/repo See 'GitHub URLs' below
 tag A specific version tagged and published as tag See npm dist-tag
 path/path/path See Local Paths below
 ```
-## Audit
-### npm audit
-> npm audit fix --force
+# Audit
+npm audit
+```
+npm audit fix --force
+```
 
-### npm-check-updates
--u updates package.json
-> npx npm-check-updates -u
+Discover outdated packages w/ npm-check-updates (-u updates package.json)
+```
+npx npm-check-updates -u
 
-### Update package to latest
-> npm update ini --depth 6
+or 
 
-> npm install webpack-cli@latest
+npx ncu -u
+```
 
-### Discover outdated packages
-> npm outdated
+Discover outdated packages w/ npm
+```
+npm outdated
+```
+
+Update one package to latest w/ npm
+```
+npm update react --depth 6
+```
+
+Update one package to the latest w/ npm
+```
+npm install react@latest
+```
 
 # Yarn
 Yarn does not have a function like “npm audit --fix”.
 
-## npx yarn-audit-fix
 Automates the process under.
-> npm i --package-lock-only
+```
+npm i --package-lock-only
+```
 
 This creates a temp package-lock.json you can perform fix operation on.
 ```
