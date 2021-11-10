@@ -1,18 +1,24 @@
 # postgresql
-## Install w/ brew
+Install w/ brew
 ```
 brew install postgresql
 ```
-## Start
+
+Start
 ```
 brew services start postgresql
 ```
-## Login
+
+If failed to start via brew
+```
+rm /usr/local/var/postgresql@12/postmaster.pid
+```
+
+Login
 ```
 psql postgres
 ```
 
-# Databases
 List all databes with sizes 
 ```
 \l+
@@ -23,12 +29,12 @@ Create database
 CREATE DATABASE testdb;
 ```
 
-## List Users
+List Users
 ```
 \du+
 ```
 
-With sql:
+With sql
 ```
 SELECT usename AS role_name,
  CASE
@@ -45,16 +51,17 @@ FROM pg_catalog.pg_user
 ORDER BY role_name desc;
 ```
 
-## Create User
+Create User
 ```
 CREATE USER postgres WITH PASSWORD 'supersecret';
 ```
 
-## Connect to DB
+Connect to DB
 ```
 \c dbname
 ```
-## Create table
+
+Create table
 ```
 CREATE TABLE films (
     code        char(5) CONSTRAINT firstkey PRIMARY KEY,
@@ -66,17 +73,17 @@ CREATE TABLE films (
 );
 ```
 
-## List all Tables
+List all Tables
 ```
 \dt
 ```
 
-## Describe a Table
+Describe a Table
 ```
 \d tablename
 ```
 
-## Restore Backup
+Restore Backup
 ```
 pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d dbname ./dumpfile
 ```
