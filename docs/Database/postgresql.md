@@ -26,7 +26,16 @@ List all databes with sizes
 
 Create database
 ```
-CREATE DATABASE testdb;
+CREATE DATABASE mydb;
+```
+
+Delete database
+```
+drop database mydb;
+
+or from terminal:
+
+dropdb -U db_owner_username -i [-h host] mysitedb
 ```
 
 List Users
