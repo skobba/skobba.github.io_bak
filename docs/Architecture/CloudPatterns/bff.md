@@ -45,6 +45,8 @@ A vital point to note is that a single BFF should cater to a specific user exper
 A BFF is merely a translation layer. Yes, it provides a certain level of security to the application too. But, you should not rely on it more than you should. Your API layer and frontend layer should take care of all the functionality and security aspects regardless of the presence of a BFF or not. Because the BFF is supposed to fill a gap, not add any functionality or service to the application.
 
 
-![BFF](bff-pattern.png "Backend for Frontend")
+![BFF](api-overview.png "Overview")
+
+![BFF](bff-pattern-with-microservices.png "Backend for Frontend")
 
 ![BFF](bff-pattern-with-microservices.png "Backend for Frontend")
