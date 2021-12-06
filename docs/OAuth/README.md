@@ -2,22 +2,19 @@
 
 *Up until 2019, the OAuth 2.0 spec only recommended using the PKCE extension for mobile and JavaScript apps. The latest OAuth Security BCP now recommends using PKCE also for server-side apps, as it provides some additional benefits there as well. It is likely to take some time before common OAuth services adapt to this new recommendation, but if you’re building a server from scratch you should definitely support PKCE for all types of clients.*
 
-## Authentication - Session vs Token
-Session based authentication drawbacks:
-* Unsecure
-* Database lookup
-* Difficult to scale in production
+## Authentication - Session/Cookie vs Token
+Session/Cookie based authentication drawbacks:
+* Requires tokens to be stored in an database to scale in production
 
 Token based authentication drawbacks:
-* Difficult to implement 
-* Difficult to keep token secret
+* Must keep token a secret in frontend
 
 ## Considerations
 [Cookie vs Access Token](https://authguidance.com/2019/09/08/ui-token-management/)
 
-___Cookie___
+___Session/Cookie___
 
-Cookie based authentication requires a Backend For Frontend pattern and do not scale well in an microservice landscape.
+Session/Cookie based authentication requires a Backend For Frontend pattern and do not scale well in an microservice landscape.
 
 ___Token___
 
@@ -28,11 +25,6 @@ ___2021 Security Update___
 *In 2021 it is instead recommended to use a Back End for Front End approach for SPA security. This requires more moving parts*
 
 [https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps)
-
-
-
-
-
 
 ## Ref
 * [https://authguidance.com/](https://authguidance.com/)
@@ -50,7 +42,6 @@ OAuth 2.0 has different grant types for various scenarios. Here are a few of the
 * __Client credentials__: for when a user is not present
 * __Authorization Code__: for mobile and web apps, and now also server side apps
 * __Implicit__: historically used for single-page JavaScript apps where secrets cannot be securely stored
-
 
 ## Authorization Code with PKCE in conjunction with Silent Refresh
 *Use of the Implicit Flow in SPAs presents security challenges requiring explicit mitigation strategies. You can use the Authorization Code Flow with PKCE in conjunction with Silent Authentication to renew sessions in SPAs.*
