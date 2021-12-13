@@ -2,9 +2,12 @@
 
 
 Ingredients for a good react applicaiton:
-* ESLint
-* Webpack
+* ESLint (code standard)
+* Webpack (bundling)
 * State Managment System (Redux, Mobx)
+* Jest (snapshot and function testing + code coverage report) 
+* Cypress (e2e testing)
+* Gatling (API performance testing)
 
 Ingredients for a good frontend platform:
 * Docker container
