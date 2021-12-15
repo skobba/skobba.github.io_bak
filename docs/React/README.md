@@ -8,6 +8,7 @@ Ingredients for a good react applicaiton:
 * Jest (snapshot and function testing + code coverage report) 
 * Cypress (e2e testing)
 * Gatling (API performance testing)
+* Component Library (storybook)
 
 Ingredients for a good frontend platform:
 * Docker container
