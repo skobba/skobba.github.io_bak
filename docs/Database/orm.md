@@ -8,3 +8,6 @@ When used properly, ORM enables you to:
 * Easily switch between databases
 * Query for multiple tables (ORM converts the object-oriented query approach to SQL)
 * Focus more on business logic and less on writing interfaces
+
+Caveats:
+* https://blog.logrocket.com/why-you-should-avoid-orms-with-examples-in-node-js-e0baab73fa5/#whatisorminnodejs
