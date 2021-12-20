@@ -1,9 +1,18 @@
 # memo
 
-React.memo is a higher order component.
+HOC
+```js
+const MyComponent = React.memo(function MyComponent(props) {
+  /* render using props */
+});
+```
+
+Hook
+```js
+const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+```
 
 If your component renders the same result given the same props, you can wrap it in a call to React.memo for a performance boost in some cases by memoizing the result. This means that React will skip rendering the component, and reuse the last rendered result.
-
 
 <iframe src="https://codesandbox.io/embed/react-memo-demo-bv31j?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
