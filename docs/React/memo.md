@@ -6,7 +6,7 @@ const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 
 HOC
 ```js
-export const MemoizedMovie = React.memo(Movie(props));
+export const memoizedValue = useMemo(MemoizedMovie(props));
 ```
 
 Hook
