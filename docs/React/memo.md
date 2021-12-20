@@ -6,12 +6,12 @@ const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 
 HOC
 ```js
-export const memoizedValue = useMemo(MemoizedMovie(props));
+export const MemoizedMovie = useMemo(MemoizedMovie);
 ```
 
 Hook
 ```js
-export const MemoizedMovie = React.memo(Movie(props));
+export const MemoizedMovie = React.memo(Movie);
 ```
 
 If your component renders the same result given the same props, you can wrap it in a call to React.memo for a performance boost in some cases by memoizing the result. This means that React will skip rendering the component, and reuse the last rendered result.
