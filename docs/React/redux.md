@@ -16,6 +16,10 @@ ___Store___
 
 Redux has one or more immutable stores.
 
+# Redux Thunk
+With a plain basic Redux store, you can only do simple synchronous updates by dispatching an action. Middleware extends the store's abilities, and lets you write async logic that interacts with the store.
+
+# Codesandbox 
 ## Plain Redux
 <iframe src="https://codesandbox.io/embed/react-redux-demo-xg0sy?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
