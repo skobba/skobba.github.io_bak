@@ -10,4 +10,5 @@ When used properly, ORM enables you to:
 * Focus more on business logic and less on writing interfaces
 
 Caveats:
+* How does your ORM handle N+1 problem, most ORMs have multiple ways to prevent the N+1 problem
 * https://blog.logrocket.com/why-you-should-avoid-orms-with-examples-in-node-js-e0baab73fa5/#whatisorminnodejs
