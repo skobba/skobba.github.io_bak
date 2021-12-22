@@ -4,6 +4,7 @@ ORM helps you maintain objects even when the sources and apps they access change
 ORM is commonly used to streamline the migration of data between databases.
 
 When used properly, ORM enables you to:
+* Version control on the database and abillity to checkout a specific version
 * Avoid redundant code
 * Easily switch between databases
 * Query for multiple tables (ORM converts the object-oriented query approach to SQL)
