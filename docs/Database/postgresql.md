@@ -19,7 +19,7 @@ Login
 psql postgres
 ```
 
-List all databes with sizes 
+List all databases with sizes 
 ```
 \l+
 ```
