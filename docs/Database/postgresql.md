@@ -96,3 +96,17 @@ Restore Backup
 ```
 pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d dbname ./dumpfile
 ```
+
+Create user:
+```
+CREATE USER root;
+ALTER USER root WITH SUPERUSER;
+```
+
+Set detailed permissions
+```
+ALTER USER myrole WITH OPTION1 OPTION2 OPTION3;
+These options range from CREATEDB, CREATEROLE, CREATEUSER
+
+ALTER USER librarian WITH NOSUPERUSER;
+```
