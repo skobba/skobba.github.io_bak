@@ -1,4 +1,7 @@
 # Terminal
+## Open Finder from terminal
+```open .```
+
 ## cp
 - Copy with permissions ```cp -au ./data ./data.bk```
 
