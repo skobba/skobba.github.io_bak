@@ -1,7 +1,7 @@
 # Kubernetes
 *Created by Google*
 
-**There is not such thing as a statefull architetchture, just someone elses problem.**
+**There is not such thing as a stateless architetchture, just someone elses problem.**
 
 
 Building blocks:
