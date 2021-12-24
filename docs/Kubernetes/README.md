@@ -1,6 +1,9 @@
 # Kubernetes
 *Created by Google*
 
+**There is not such thing as a statefull architetchture, just someone elses problem.**
+
+
 Building blocks:
 * Pod
 * Service
