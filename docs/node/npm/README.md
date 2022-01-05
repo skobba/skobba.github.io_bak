@@ -20,6 +20,8 @@ Hope this helps! Nice article! 👍🏼
 ## Semantic version
 https://docs.npmjs.com/cli/v6/configuring-npm/package-json
 
+Semver Calculator: [https://semver.npmjs.com](https://semver.npmjs.com)
+
 ```
 version Must match version exactly
 >version Must be greater than version
