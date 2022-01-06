@@ -1,5 +1,6 @@
 # VS Code Extensions
 
+* [mhutchie.git-graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 * vscode-styled-components
 * [Dependency Analytics](https://marketplace.visualstudio.com/items?itemName=redhat.fabric8-analytics)
 * lintlense
