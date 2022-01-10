@@ -23,6 +23,10 @@ Config file on Mac:
 
       /Users/username/.config/verdaccio/config.yaml:
 
+Packages directory:
+
+     /Users/username/.local/share/verdaccio/storage
+
 npm proxy settings in config:
 ```
 # a list of other known repositories we can talk to
