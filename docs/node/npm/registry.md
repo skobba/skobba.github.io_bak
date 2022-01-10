@@ -35,3 +35,6 @@ uplinks:
     url: https://registry.npmjs.org/
 ```
 
+Remove package:
+
+    Stop server and remove the content from https://verdaccio.org/docs/en/cli#default-storage-location and restart.
