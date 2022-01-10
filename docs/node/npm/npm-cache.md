@@ -1,4 +1,8 @@
 # Cache
+Folder:
+
+        ~/.npm/_cacache
+
 Verify cache:
 
     npm cache verify
