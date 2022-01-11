@@ -12,6 +12,11 @@ EOF
 )
 ```
 
+Copy files and flattening folder structure
+```
+find ./src -iname '*.tgz' -exec cp \{\} ./dest/ \;
+```
+
 Remove double quotes
 ```
 MYVAR='"Variable with double quotes"'
