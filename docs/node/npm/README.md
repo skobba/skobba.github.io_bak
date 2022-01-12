@@ -1,5 +1,15 @@
 # npm
-# History of package-lock.json
+## Dependencies
+Direct vs Transitive:
+```
+┌─────────────┐       ┌──────────┐      ┌────────────┐
+│             │       │          │      │            │
+│  MyPackage  ├───────►  Direct  ├──────► Transitiv  │
+│             │       │          │      │            │
+└─────────────┘       └──────────┘      └────────────┘
+```
+
+## History of package-lock.json
 ```
 Kat Marchán
 twitter
