@@ -1,8 +1,26 @@
-# Create React App
+# Create React App (CRA)
+
 ## Craco
 > https://www.npmjs.com/package/@craco/craco
 
 Extend Webpack-features without using eject.
+
+## Proxy
+We need to add this file called setupProxy.js under the src folder of the React App. You do not need to import this file anywhere. It is automatically registered when you start the development server.
+
+```js
+const { createProxyMiddleware } = require('http-proxy-middleware');
+
+module.exports = function(app) {
+  app.use(
+    '/api',
+    createProxyMiddleware({
+      target: 'http://localhost:3080',
+      changeOrigin: true,
+    })
+  );
+};
+```
 
 ## Eject
 ```
