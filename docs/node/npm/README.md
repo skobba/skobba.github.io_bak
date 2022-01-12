@@ -8,6 +8,18 @@ Direct vs Transitive:
 │             │       │          │      │            │
 └─────────────┘       └──────────┘      └────────────┘
 ```
+### dependencies
+Main dependencies.
+
+### devDependencies
+Dependencies needed for building.
+
+### peerDependencies
+Usually used for plugins like "react-redux" and "redux-thunk" to express the compatibility of your package with a host tool or library, like "react" and "redux".
+
+In npm versions 3 through 6, peerDependencies were not automatically installed, and would raise a warning if an invalid version of the peer dependency was found in the tree. As of npm v7, peerDependencies are installed by default.
+
+Trying to install another plugin with a conflicting requirement may cause an error if the tree cannot be resolved correctly. For this reason, make sure your plugin requirement is as broad as possible, and not to lock it down to specific patch versions.
 
 ## Scope
 A scope allows you to create a package with the same name as a package created by another user or organization without conflict.
@@ -83,7 +95,7 @@ rm package-lock.json
 ```
 
 ## package-json
-Specifics of npm's package.json handling: [https://docs.npmjs.com/cli/v6/configuring-npm/package-json](https://docs.npmjs.com/cli/v6/configuring-npm/package-json)
+Specifics of npm's package.json handling: [https://docs.npmjs.com/cli/v8/configuring-npm/package-json](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
 
 ## History of package-lock.json
 Kat Marchán
