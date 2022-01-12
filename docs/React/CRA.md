@@ -6,6 +6,8 @@
 Extend Webpack-features without using eject.
 
 ## Proxy
+Ref.: [https://create-react-app.dev/docs/proxying-api-requests-in-development/](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
+
 We need to add this file called setupProxy.js under the src folder of the React App. You do not need to import this file anywhere. It is automatically registered when you start the development server.
 
 ```js
