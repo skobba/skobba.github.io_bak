@@ -9,7 +9,7 @@ Direct vs Transitive:
 └─────────────┘       └──────────┘      └────────────┘
 ```
 ### dependencies
-Main dependencies.
+Direct dependencies.
 
 ### devDependencies
 Dependencies needed for building.
