@@ -21,6 +21,11 @@ In npm versions 3 through 6, peerDependencies were not automatically installed, 
 
 Trying to install another plugin with a conflicting requirement may cause an error if the tree cannot be resolved correctly. For this reason, make sure your plugin requirement is as broad as possible, and not to lock it down to specific patch versions.
 
+### bundledDependencies
+This defines an array of package names that will be bundled when publishing the package
+
+    npm pack
+
 ### optionalDependencies
 Dependencies that don’t necessarily need to be installed. If a dependency can be used, but you would like npm to proceed if it cannot be found or fails to install, then you may put it in the optionalDependencies object.
 
