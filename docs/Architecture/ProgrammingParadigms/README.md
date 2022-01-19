@@ -8,3 +8,7 @@
     * ___logic___ in which the desired result is declared as the answer to a question about a system of facts and rules,
     * ___mathematical___ in which the desired result is declared as the solution of an optimization problem
     * ___reactive___ in which the desired result is declared with data streams and the propagation of change
+
+
+## ReactiveX
+ReactiveX is an API for asynchronous programming with observable streams. It combines the best ideas from the Observer pattern, the Iterator pattern, and functional programming.
