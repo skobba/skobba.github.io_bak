@@ -3,7 +3,7 @@
 * [https://kubernetes.github.io/ingress-nginx](https://kubernetes.github.io/ingress-nginx)
 * [https://github.com/nginxinc/kubernetes-ingress](https://github.com/nginxinc/kubernetes-ingress)
 
-Clone repo
+### Clone repo
 
         git clone git@github.com:nginxinc/kubernetes-ingress.git
 
@@ -50,3 +50,8 @@ Create custom resource definitions for VirtualServer and VirtualServerRoute, Tra
         kubectl apply -f common/crds/k8s.nginx.org_virtualserverroutes.yaml
         kubectl apply -f common/crds/k8s.nginx.org_transportservers.yaml
         kubectl apply -f common/crds/k8s.nginx.org_policies.yaml
+
+### Deploy the Ingress Controller
+
+        kubectl apply -f daemon-set/nginx-ingress.yaml
+
