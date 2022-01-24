@@ -54,4 +54,3 @@ Create custom resource definitions for VirtualServer and VirtualServerRoute, Tra
 ### Deploy the Ingress Controller
 
         kubectl apply -f daemon-set/nginx-ingress.yaml
-
