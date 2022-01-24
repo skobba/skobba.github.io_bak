@@ -22,7 +22,7 @@ Ref.: [https://www.tutorialworks.com/difference-docker-containerd-runc-crio-oci]
           │     │                    │
     ┌─────▼─────▼────┐       ┌───────▼─────┐
     │                │       │             │
-    │   containerd   │       │   docker    │
+    │   containerd   │       │    CRI-O    │
     │                │       │             │
     └────────┬───────┘       └───────┬─────┘
              │                       │
