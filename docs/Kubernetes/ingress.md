@@ -8,6 +8,7 @@
         git clone git@github.com:nginxinc/kubernetes-ingress.git
 
 ## Installation with Manifests
+Ref.: [https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-manifests/](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-manifests/)
 
         cd kubernetes-ingress/deployments
 
