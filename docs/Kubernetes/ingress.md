@@ -3,7 +3,46 @@
 * [https://kubernetes.github.io/ingress-nginx](https://kubernetes.github.io/ingress-nginx)
 * [https://github.com/nginxinc/kubernetes-ingress](https://github.com/nginxinc/kubernetes-ingress)
 
-### Clone repo
+## Overview
+```
+                   Internet
+                      │
+                      │
+                      │
+             ┌────────▼────────┐
+             │                 │
+             │  Load Balancer  │
+             │                 │
+             └────────┬────────┘
+                      │
+┌─────────────────────┼───────────────────┐
+│                     │                   │
+│ Kubernetes Cluster  │                   │
+│                     │                   │
+│            ┌────────▼────────┐          │
+│            │    Ingress      │          │
+│            │    Controller   │          │
+│            └───────┬─────────┘          │
+│                    │                    │
+│                    │                    │
+│            ┌───────▼─────────┐          │
+│            │    Ingress      │          │
+│            │    Rules        │          │
+│            └──┬─────────┬────┘          │
+│               │         │               │
+│               │         │               │
+│    ┌──────────▼───┐ ┌───▼────────┐      │
+│    │ Node1        │ │ Node2      │      │
+│    │              │ │            │      │
+│    │ ClusterIP    │ │ ClusterIP  │      │
+│    │              │ │            │      │
+│    │   Pod1       │ │    Pod2    │      │
+│    └──────────────┘ └────────────┘      │
+│                                         │
+└─────────────────────────────────────────┘
+```
+
+## Clone repo
 
         git clone git@github.com:nginxinc/kubernetes-ingress.git
 
