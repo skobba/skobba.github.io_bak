@@ -7,3 +7,4 @@
 * [humao.rest-client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 * [hediet.vscode-drawio](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
 * [zenghongtu.vscode-asciiflow2](https://marketplace.visualstudio.com/items?itemName=zenghongtu.vscode-asciiflow2)
+* [lyzerk/vscode-linecounter](https://marketplace.visualstudio.com/items?itemName=lyzerk.linecounter)
