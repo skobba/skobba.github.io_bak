@@ -1,12 +1,15 @@
 # haproxy
-apt upgrade
-    sudo apt update && sudo apt -y upgrade
-    sudo reboot
+```
+sudo apt update && sudo apt -y upgrade
+sudo reboot
+```
 
 Install
+
     sudo apt -y install haproxy 
 
 Config
+
     vi /etc/haproxy/haproxy.cfg
 
 ``` 
@@ -32,6 +35,7 @@ backend kworkers
 ```
 
 Restart haproxy
+
     systemctl restart haproxy
 
 ## HAProxy w/ no Backend
