@@ -33,3 +33,6 @@ backend kworkers
 
 Restart haproxy
     systemctl restart haproxy
+
+## HAProxy w/ no Backend
+![haproxy-no-backend.png](haproxy-no-backend.png)
