@@ -4,7 +4,7 @@
 npm i -D eslint-config-airbnb eslint-plugin-import
 ```
 
-##  Rules
+## Run Rules
 Run no-unused-vars
 ```bash
 npx eslint ./src --ext .ts,.tsx,.js,.jsx --no-eslintrc --parser "@typescript-eslint/parser" --env "es6" --env "node" --parser-options "{ecmaVersion: 2018}" --rule "{no-unused-vars: error}"
@@ -32,5 +32,56 @@ Access typescript rules:
 }
 ```
 
-
-
+## Complete Typescript Config
+```json
+{
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["jsx-a11y", "react", "react-hooks", "prettier", "prefer-arrow"],
+  "settings": {
+    "react": {
+      "version": "17"
+    }
+  },
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "singleQuote": true,
+        "printWidth": 120,
+        "tabWidth": 2
+      }
+    ],
+    "arrow-body-style": ["error", "as-needed"],
+    "prefer-arrow/prefer-arrow-functions": [
+      "warn",
+      {
+        "disallowPrototype": true,
+        "singleReturnOnly": false,
+        "classPropertiesAllowed": false
+      }
+    ],
+    "comma-dangle": [0, "never"],
+    "@typescript-eslint/no-var-requires": 0,
+    "no-undef": 0,
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off"
+  }
+}
