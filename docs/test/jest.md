@@ -10,3 +10,7 @@ Run single test
 Run single test (CRA):
 
     npm test -- -t 'test-name'
+
+Run in Jenkins (ci)
+
+    jest --ci --reporters=default --reporters=jest-junit
