@@ -7,3 +7,6 @@ DevSecOps is about introducing security in every aspect of the lifecycle of appl
 
 ## Secure DevOps Lifecycle
 ![devops-security.png](devops-security.png)
+
+## Securing DevOps Pipeline
+![securing-devops-pipeline.png](securing-devops-pipeline.png)
