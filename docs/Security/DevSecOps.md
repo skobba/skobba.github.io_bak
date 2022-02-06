@@ -5,5 +5,5 @@ DevSecOps is about introducing security in every aspect of the lifecycle of appl
 * Security-as-code culture
 * Incorporates security into every development step
 
-## Secure DevOps
+## Secure DevOps Lifecycle
 ![devops-security.png](devops-security.png)
