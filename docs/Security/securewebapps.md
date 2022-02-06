@@ -57,6 +57,22 @@
 * Default settings
 * Authentication with other components
 
-# OWASP (Open Web App Security Project) Top 10
+## OWASP (Open Web App Security Project) Top 10
 * Regulary take a look at the top 10 security risks [https://owasp.org/Top10](https://owasp.org/Top10)
 ![OWASP_top10_2017-2021.png](OWASP_top10_2017-2021.png)
+
+## Authentication Factors
+* Knowledge
+* Possession
+* Inherence
+
+### Authorization
+* Resource
+* Granularity
+* Type
+
+### Encryption
+* Communication security
+* Storage security
+* Forward security
+* Authenticated and authorized
