@@ -76,3 +76,15 @@
 * Storage security
 * Forward security
 * Authenticated and authorized
+
+## Securing Network Traffic
+* Don´t use SSL, it is Deprecated (Uses a PKI certificate, disable in client app and backend)
+* Use TLS (v1.0 is deprecated) >=v1.1
+
+### IPSec
+* Used to secure any type of network traffic
+* Does not imply using a VPN
+* Need control of all devices/services
+* Encapsulating Security Payload (ESP)
+* Authentication Header (AH)
+
