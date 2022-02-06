@@ -2,12 +2,12 @@
 
 ## Secure Code
 * Use-supplied data
-** Input Validation
-** Sanitization
-** Hidden fields
+  * Input Validation
+  * Sanitization
+  * Hidden fields
 * UI security controls
-** Easily bypassed
-** Maliciout URLS can be constructed
+  * Easily bypassed
+  * Maliciout URLS can be constructed
 
 ## Secure Coding Considerations
 * Generate unique session identifiers
