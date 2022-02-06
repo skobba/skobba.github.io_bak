@@ -19,6 +19,6 @@
 * Use existing trusted code where possible
 * After code testing, remove code comments that could be accessible to users
 * Apply updates
-** Newly modified code
-** Web app components in use
+ * Newly modified code
+ * Web app components in use
 
