@@ -25,4 +25,4 @@ MYVAR=$(sed -e 's/^"//' -e 's/"$//' <<<"$MYVAR")
 ```
 
 Result of last run command
-    $?
+```$?
