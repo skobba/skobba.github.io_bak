@@ -29,3 +29,10 @@ Result of last run command
 $?
 ```
 
+Standard output/error
+* File descriptor 1 is the standard output (stdout)
+* File descriptor 2 is the standard error (stderr)
+
+```
+g++ lots_of_errors 2>&1
+```
