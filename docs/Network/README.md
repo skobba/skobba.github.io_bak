@@ -1,4 +1,13 @@
 # Networking
+## Ports
+Identify open ports (netstat require net-tools, ss does not)
+```
+netstat -nplt
+
+or
+
+ss -nplt
+```
 
 ## iptables
 ### Add rule
