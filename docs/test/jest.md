@@ -13,4 +13,4 @@ Run single test (CRA):
 
 Run in Jenkins (ci)
 
-    jest --ci --reporters=default --reporters=jest-junit
+    jest --ci --watchAll=false --reporters=default --reporters=jest-junit
