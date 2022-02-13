@@ -43,3 +43,7 @@ myjson='[
 
 echo $myjson | jq '.[] | .name'
 ```
+
+## regex
+Extract number from string
+    echo "./pentaray_run2/Trace_220560.dat"|sed -r 's/.*_([0-9]*)\..*/\1/g'
