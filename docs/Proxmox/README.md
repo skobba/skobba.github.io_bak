@@ -28,6 +28,11 @@ lxc-attach -n <id> -- /sbin/ip a
 lxc-attach -n <id> -- /usr/bin/apt update
 ```
 
+Set locale
+```
+dpkg-reconfigure locales
+```
+
 ## VM
 ```
 qm unlock 100
