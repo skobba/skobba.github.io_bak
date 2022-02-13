@@ -299,6 +299,12 @@ used_by: []
 error execution phase preflight: [preflight] Some fatal errors occurred:
         [ERROR SystemVerification]: failed to parse kernel config: unable to load kernel module: "configs", output: "modprobe: FATAL: Module configs not found in directory /lib/modules/5.11.22-4-pve\n", err: exit status 1
 ```
+
+Is /lib/modules/ mounted?
+```
+pct set xxx --mp0 /lib/modules/$(uname -r),mp=/lib/modules/$(uname -r),ro=1
+```
+
 ### /dev/kmsg - Permission denied
 ```
 root@kworker153:~# /dev/kmsg
