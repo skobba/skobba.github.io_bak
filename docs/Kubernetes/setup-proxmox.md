@@ -302,7 +302,9 @@ error execution phase preflight: [preflight] Some fatal errors occurred:
 
 Is /lib/modules/ mounted?
 ```
-pct set xxx --mp0 /lib/modules/$(uname -r),mp=/lib/modules/$(uname -r),ro=1
+XXX=lxc id
+Y=mount point id (probably 3, check for next free id in proxmox)
+pct set XXX --mpY /lib/modules/$(uname -r),mp=/lib/modules/$(uname -r),ro=1
 ```
 
 ### /dev/kmsg - Permission denied
