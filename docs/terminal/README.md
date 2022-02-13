@@ -45,6 +45,10 @@ echo $myjson | jq '.[] | .name'
 ```
 
 ## regex
-Extract number from string
+Extract the text in group (1)
 
-    echo "./pentaray_run2/Trace_220560.dat"|sed -r 's/.*_([0-9]*)\..*/\1/g'
+    echo "kmaster180"|sed -r 's/([a-z]*)([0-9]*)/\1/g'
+
+Extract the number group (2)
+    
+    echo "kmaster180"|sed -r 's/([a-z]*)([0-9]*)/\2/g'
