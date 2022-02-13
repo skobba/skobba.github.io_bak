@@ -1,5 +1,10 @@
 # Git
 
+## interactive
+Remove untracked files 
+
+    git clean -i
+
 ## .gitconfig
 ```
 [user]
