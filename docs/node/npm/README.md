@@ -21,6 +21,14 @@ In npm versions 3 through 6, peerDependencies were not automatically installed, 
 
 Trying to install another plugin with a conflicting requirement may cause an error if the tree cannot be resolved correctly. For this reason, make sure your plugin requirement is as broad as possible, and not to lock it down to specific patch versions.
 
+Get info
+
+    npm info "eslint-config-airbnb@latest" peerDependencies
+
+Install peerDeps
+
+    npx install-peerdeps --dev eslint-config-airbnb
+
 ### bundledDependencies
 This defines an array of package names that will be bundled when publishing the package
 
