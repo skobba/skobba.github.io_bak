@@ -36,7 +36,7 @@ kubectl get pods -n kube-system
 
 Get log from pod
 ```
-kubectl -n kube-system logs kube-proxy-xxxxx
+kubectl -n kube-system logs kube-proxy-xxxxx -f
 ```
 
 Set worker role on node
