@@ -60,7 +60,20 @@ For baremetal
 
 For more information about bare metal deployments (and how to use port 80 instead of a random port in the 30000-32767 range), see [bare-metal considerations](https://kubernetes.github.io/ingress-nginx/deploy/baremetal/).
 
+Test
+```
+NAMESPACE       NAME                                         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)                      AGE
+default         service/demo                                 ClusterIP   10.110.15.207   <none>        80/TCP                       64m
+default         service/kubernetes                           ClusterIP   10.96.0.1       <none>        443/TCP                      77m
+ingress-nginx   service/ingress-nginx-controller             NodePort    10.105.28.129   <none>        80:30556/TCP,443:30637/TCP   69m
+ingress-nginx   service/ingress-nginx-controller-admission   ClusterIP   10.105.137.16   <none>        443/TCP                      69m
+kube-system     service/kube-dns                             ClusterIP   10.96.0.10      <none>        53/UDP,53/TCP,9153/TCP       77m
+```
 
+```
+curl demo.localdev.me:30556
+
+<html><body><h1>It works!</h1></body></html>
 
 
 ## Install with Manifests
