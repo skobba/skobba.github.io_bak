@@ -54,7 +54,13 @@ Now, forward a local port to the ingress controller:
 kubectl port-forward --namespace=ingress-nginx service/ingress-nginx-controller 8080:80
 ```
 
-Now what...
+For baremetal
+
+  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.1/deploy/static/provider/baremetal/deploy.yaml
+
+For more information about bare metal deployments (and how to use port 80 instead of a random port in the 30000-32767 range), see [bare-metal considerations](https://kubernetes.github.io/ingress-nginx/deploy/baremetal/).
+
+
 
 
 ## Install with Manifests
