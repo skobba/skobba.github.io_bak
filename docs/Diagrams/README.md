@@ -3,7 +3,8 @@
 [C4 model for visualising software architecture](https://c4model.com/) is a lean graphical notation technique for modelling the architecture of software systems.
 
 
-Apps for creating software 
+Apps for creating software architechture diagrams:
+
 * [PlantUML](https://plantuml.com/) allows to quickly write:
   * Sequence diagram
   * Usecase diagram
@@ -14,7 +15,7 @@ Apps for creating software
   * Deployment diagram
   * State diagram
   * Timing diagram
-* [mermaid-js](https://mermaid-js.github.io/mermaid)
+* [mermaid-js](https://mermaid-js.github.io/mermaid) allows to quickly write:
   * Flowchart
   * Sequence diagram
   * Class Diagram
