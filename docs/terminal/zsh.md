@@ -1,4 +1,8 @@
 # zsh
+Change to zsh
+```
+chsh -s $(which zsh)
+```
 
 Install OhMyZsh
 * Ref: https://ohmyz.sh/#install
