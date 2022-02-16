@@ -32,6 +32,14 @@ Set locale
 ```
 dpkg-reconfigure locales
 ```
+or
+```
+cat <<EOF >> ~/.bash_profile
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+EOF
+```
+
 
 ## VM
 ```
