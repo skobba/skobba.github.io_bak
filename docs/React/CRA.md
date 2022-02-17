@@ -23,6 +23,10 @@ module.exports = function(app) {
   );
 };
 ```
+## Source Maps
+```
+GENERATE_SOURCEMAP=false npm run build
+```
 
 ## Eject
 ```
