@@ -4,22 +4,27 @@
 * [https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/)
 
 Get
-
-  git clone https://github.com/nginxinc/kubernetes-ingress/
-  helm repo add nginx-stable https://helm.nginx.com/stable
-  helm repo update
+```
+git clone https://github.com/nginxinc/kubernetes-ingress/
+helm repo add nginx-stable https://helm.nginx.com/stable
+helm repo update
+```
 
 Installing via Helm Repository
+```
+helm install my-release nginx-stable/nginx-ingress --skip-crds
+```
 
-  helm install my-release nginx-stable/nginx-ingress --skip-crds
-
+```
 helm upgrade --install ingress-nginx ingress-nginx \
   --repo https://kubernetes.github.io/ingress-nginx \
   --namespace ingress-nginx --create-namespace
+```
   
 Upgrade via Helm Repository:
-
-  helm upgrade my-release nginx-stable/nginx-ingress
+```
+helm upgrade my-release nginx-stable/nginx-ingress
+```
 
 ## Instasll with Helm (kubernetes.github.io)
 * [https://kubernetes.github.io/ingress-nginx/deploy/](https://kubernetes.github.io/ingress-nginx/deploy/)
@@ -74,7 +79,10 @@ kube-system     service/kube-dns                             ClusterIP   10.96.0
 ```
 curl demo.localdev.me:30556
 
+Outputs:
+
 <html><body><h1>It works!</h1></body></html>
+```
 
 
 ## Install with Manifests
