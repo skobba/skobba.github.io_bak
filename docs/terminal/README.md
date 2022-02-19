@@ -2,6 +2,9 @@
 ## Open Finder from terminal
 ```open .```
 
+## fzf
+Fuzzy Finder
+
 ## cp
 - Copy with permissions ```cp -au ./data ./data.bk```
 
