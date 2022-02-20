@@ -22,6 +22,8 @@ kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manif
 ```
 
 ## Create Config
+The ip-range must be in the same range as the nodes.
+
 ```yaml
 
 # Create config from stdin
