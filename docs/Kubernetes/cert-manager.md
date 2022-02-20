@@ -17,8 +17,8 @@ helm repo add jetstack https://charts.jetstack.io
 helm install my-cert-manager --namespace cert-manager --create-namespace --version v1.7.1 jetstack/cert-manager
 ```
 ## Create Cluster Issuer
+Create Cluster Issuer from stdin
 ```
-# Create Cluster Issuer from stdin
 cat <<EOF | kubectl apply -f -
 apiVersion: cert-manager.io/v1
 kind: Issuer
