@@ -66,6 +66,11 @@ spec:
 EOF
 ```
 
+Expose nginx as a Service of type ClusterIP
+```
+kubectl expose deploy nginx --port 80
+```
+
 Create ingress resource
 ```
 cat <<EOF | kubectl apply -f -
