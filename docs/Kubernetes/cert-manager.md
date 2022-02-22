@@ -16,7 +16,40 @@ helm repo add jetstack https://charts.jetstack.io
 # Install the cert-manager helm chart and create namespace
 helm install my-cert-manager --namespace cert-manager --create-namespace --version v1.7.1 jetstack/cert-manager
 ```
-## Create Cluster Issuer
+
+## Install with manifest
+```
+kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.7.1/cert-manager.yaml
+``` 
+
+## Create Cluster Issuer (ACME)
+Ref.: [https://cert-manager.io/docs/configuration/acme/](https://cert-manager.io/docs/configuration/acme/)
+
+Create a basic ACME issues (nginx ingress)
+```
+cat <<EOF | kubectl apply -f -
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-staging
+spec:
+  acme:
+    # You must replace this email address with your own.
+    # Let's Encrypt will use this to contact you about expiring
+    # certificates, and issues related to your account.
+    email: gjermund@skobba.net
+    server: https://acme-staging-v02.api.letsencrypt.org/directory
+    privateKeySecretRef:
+      # Secret resource that will be used to store the account's private key.
+      name: example-issuer-account-key
+    # Add a single challenge solver, HTTP01 using nginx
+    solvers:
+    - http01:
+        ingress:
+          class: nginx
+EOF
+```
+     
 Create Cluster Issuer from stdin
 ```
 cat <<EOF | kubectl apply -f -
