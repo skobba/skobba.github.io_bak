@@ -3,7 +3,7 @@ Docs: [https://cert-manager.io/docs/](https://cert-manager.io/docs/)
 
 ## Securing nginx-ingress
 * [https://cert-manager.io/docs/tutorials/acme/nginx-ingress/](https://cert-manager.io/docs/tutorials/acme/nginx-ingress/)
-* [https://cert-manager.io/docs/tutorials/acme/nginx-ingress/](https://cert-manager.io/docs/tutorials/acme/nginx-ingress/)
+
 ### Deploy Cert Manager
 ```
 helm repo add jetstack https://charts.jetstack.io
