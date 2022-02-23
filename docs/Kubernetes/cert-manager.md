@@ -1,6 +1,9 @@
 # cert-manager
 Docs: [https://cert-manager.io/docs/](https://cert-manager.io/docs/)
 
+## Securing nginx-ingress
+* [https://cert-manager.io/docs/tutorials/acme/nginx-ingress/](https://cert-manager.io/docs/tutorials/acme/nginx-ingress/)
+
 ## Install
 
 Install CRD
