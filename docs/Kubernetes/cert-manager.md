@@ -4,10 +4,29 @@ Docs: [https://cert-manager.io/docs/](https://cert-manager.io/docs/)
 ## Securing nginx-ingress
 * [https://cert-manager.io/docs/tutorials/acme/nginx-ingress/](https://cert-manager.io/docs/tutorials/acme/nginx-ingress/)
 
+### Deploy Cert Manager
+```
+helm repo add jetstack https://charts.jetstack.io
+helm repo update
+kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.7.1/cert-manager.crds.yaml
+
+helm install \
+  cert-manager jetstack/cert-manager \
+  --namespace cert-manager \
+  --create-namespace \
+  --version v1.7.1 \
+```
+
+### Deploy ingress-nginx 
 ```
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 helm install quickstart ingress-nginx/ingress-nginx
+```
+
+### Configure Let’s Encrypt Issuer
+``` 
+
 ```
 
 ## Install
