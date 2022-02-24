@@ -3,6 +3,7 @@
 
 **There is not such thing as a stateless architetchture, just someone elses problem.**
 
+Common configuration for different vendors like Apache and nginx.
 
 Building blocks:
 * Pod
