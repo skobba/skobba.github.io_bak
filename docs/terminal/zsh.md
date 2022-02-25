@@ -25,6 +25,15 @@ Set theme
 echo ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc
 ```
 
+Run configure again
+```
+p10k configure
+exec zsh
+
+Config in:
+~/.p10k.zsh
+```
+
 ## Install Zsh-autosuggestions
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
