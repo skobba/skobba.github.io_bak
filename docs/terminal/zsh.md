@@ -4,7 +4,7 @@ Change to zsh
 chsh -s $(which zsh)
 ```
 
-Install OhMyZsh
+## Install OhMyZsh
 * Ref: https://ohmyz.sh/#install
 
 ```
@@ -36,4 +36,9 @@ Install Zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 echo 'source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'>>~/.zshrc
+```
+
+## Uninstall
+```
+uninstall_oh_my_zsh
 ```
