@@ -1,7 +1,8 @@
 # Ingress
 
-## List of Ingress Providers
-* [https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
+## Ingress Providers
+* [List of providers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
+* [Nginx Ingress Versions Table](https://gist.github.com/grigorkh/f8e4fd73e99f0fde06a51e2ed7c2156c)
 
 ## Overview
 An ingress controller is an Kubernetes resource that routes traffics from outside the cluster to whithin the cluster.
