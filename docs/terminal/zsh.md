@@ -22,7 +22,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 Set theme
 ```
-ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc
+echo ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc
 ```
 
 ## Install Zsh-autosuggestions
