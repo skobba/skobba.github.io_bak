@@ -15,7 +15,7 @@ chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-# Install Powerlevel10k Theme
+## Install Powerlevel10k Theme
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
@@ -25,16 +25,14 @@ Set theme
 ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
 ```
 
-___Now open a new shell and configure Powerlevel10k___
-
-Install Zsh-autosuggestions
+## Install Zsh-autosuggestions
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
 echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh'>>~/.zshrc
 ```
 
-Install Zsh-syntax-highlighting
+## Install Zsh-syntax-highlighting
 ```
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 
