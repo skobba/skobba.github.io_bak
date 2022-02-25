@@ -14,3 +14,8 @@ Exit:
 ```
 sqlite> .exit
 ```
+
+Describe table:
+```
+.schema table_name
+```
