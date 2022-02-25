@@ -17,15 +17,11 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 ## Install Powerlevel10k Theme
 ```
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 
-Set theme
-```
-echo ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc
-```
-
-Run configure again
+Configure p10k
 ```
 p10k configure
 exec zsh
