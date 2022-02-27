@@ -14,6 +14,16 @@ kind: KubeProxyConfiguration
 mode: "ipvs"
 ipvs:
   strictARP: true
+
+```
+
+or just with sed:
+```
+or with sed:
+```
+kubectl get cm -n kube-system kube-proxy -o yaml | \
+  sed -e 's|strictARP: false|strictARP: true|' | \
+  kubectl apply -f -
 ```
 
 # Install
