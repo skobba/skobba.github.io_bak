@@ -17,8 +17,6 @@ ipvs:
 
 ```
 
-or just with sed:
-```
 or with sed:
 ```
 kubectl get cm -n kube-system kube-proxy -o yaml | \
@@ -28,28 +26,16 @@ kubectl get cm -n kube-system kube-proxy -o yaml | \
 
 # Install
 
-## Create nginx test deploy and expose it
-```
-kubectl create deploy nginx --image nginx
-
-kubectl expose deploy nginx --port 80 --type LoadBalancer
-```
-
-Observe that LoadBalancer is pending.
-
-## Setup
 ```
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/namespace.yaml
 
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/metallb.yaml
 ```
 
-## Create Config
-The ip-range must be in the same range as the nodes.
+# Create Config
+Create config from stdin, the ip-range must be in the same range as the nodes.
 
 ```yaml
-
-# Create config from stdin
 cat <<EOF | kubectl apply -f -
 apiVersion: v1
 kind: ConfigMap
@@ -66,7 +52,3 @@ data:
 EOF
 ```
 
-## Test
-```
-curl 10.10.2.240
-```
