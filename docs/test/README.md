@@ -1,3 +1,7 @@
 # Test
 
-Just a test.
+## Types of testing
+* Unit
+* Integration
+* Functional
+* Stress
