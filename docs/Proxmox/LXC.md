@@ -1,5 +1,12 @@
 # LXC
 
+## Images
+* [http://download.proxmox.com/images/system/](http://download.proxmox.com/images/system/)
+
+Path to images:
+* LXC Template ```/var/lib/vz/template/cache```
+* LXC Config ```/etc/pve/lxc```
+
 Create
 ```
 pct create XXX /var/lib/vz/template/cache/ubuntu-20.04-standard_20.04-1_amd64.tar.gz \
