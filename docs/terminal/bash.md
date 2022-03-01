@@ -12,6 +12,14 @@ EOF
 )
 ```
 
+Multi-line into file:
+```
+cat >>~/somescript.sh<<EOF
+#!/bin/bash
+echo "some script"
+EOF
+```
+
 Copy files and flattening folder structure
 ```
 find ./src -iname '*.tgz' -exec cp \{\} ./dest/ \;
