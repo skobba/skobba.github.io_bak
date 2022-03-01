@@ -21,7 +21,7 @@ pct create XXX /var/lib/vz/template/cache/ubuntu-20.04-standard_20.04-1_amd64.ta
     -password \
     -unprivileged 1 \
     -net0 name=eth0,bridge=vmbr0,gw=10.10.2.1,ip=10.10.2.XXX/24,type=veth
-    ```
+```
 
 Destroy
 
