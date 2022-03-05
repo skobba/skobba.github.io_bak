@@ -4,6 +4,11 @@
 
 *After creating a storage pool to store your data, you can create your file system hierarchy. Hierarchies are simple yet powerful mechanisms for organizing information. They are also very familiar to anyone who has used a file system. ZFS allows file systems to be organized into hierarchies, where each file system has only a single parent. The root of the hierarchy is always the pool name. ZFS leverages this hierarchy by supporting property inheritance so that common properties can be set quickly and easily on entire trees of file systems.*
 
+## Diskutils
+Delelete file systems and rebuild partiontable.
+```
+wipefs -a /dev/sdc
+```
 
 ## Commands
 List disks
