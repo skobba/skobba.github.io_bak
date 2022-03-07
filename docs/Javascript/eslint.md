@@ -103,3 +103,8 @@ Access typescript rules:
   }
 }
 ```
+
+## Get errors from eslint
+```
+npm run lint | sed -r 'S/^.error.\s(.*)$/\1/g' | sort | uniq
+```
