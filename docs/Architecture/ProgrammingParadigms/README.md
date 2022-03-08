@@ -9,6 +9,8 @@
     * ___mathematical___ in which the desired result is declared as the solution of an optimization problem
     * ___reactive___ in which the desired result is declared with data streams and the propagation of change
 
+## Functional Programming
+* [https://dcl-prog.stanford.edu/](https://dcl-prog.stanford.edu/)
 
 ## ReactiveX
 ReactiveX is an API for asynchronous programming with observable streams. It combines the best ideas from the Observer pattern, the Iterator pattern, and functional programming.
