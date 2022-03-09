@@ -34,3 +34,8 @@ echo $myjson | jq '.[] | .name'
 ```
 cat packages.json | jq '.dependencies * .devDependencies | to_entries[]'
 ```
+
+***Create a csv from package.json***
+```
+cat ./package.json | jq '.dependencies * .devDependencies | to_entries[] | [.key, .value] | @csv' | sed 's/["\\^]//g' | sed 's/,/@/g'
+```
