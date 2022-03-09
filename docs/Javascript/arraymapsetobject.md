@@ -198,7 +198,6 @@ set.has('4'); // returns false because of mismatch in type
 ___Removing Duplicates___
 
 Sets inherently do not allow duplicate values when they are passed a linear iterable object like an array, but when they are passed an array of object they do allow duplicate objects.
-
 ```js
 // a linear array iterable
 const set = new Set([1, 2, 2, 4, 5, 5]);
@@ -206,7 +205,7 @@ console.log(set); // returns Set {1, 2, 4, 5}
 
 // array of objects
 const set = new Set([{a:1},{b:2},{a:1}]);
-console.log(set); // returns Set {{a:1},{b:2},{a:1}} with duplicate objects
+console.log(set); // returns Set 
 ```
 
 ___Delete___
