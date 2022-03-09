@@ -1,4 +1,4 @@
-# Array/Map/Set/Object
+# Array, Map, Set and Object
 Ref.: [https://codeburst.io/array-vs-set-vs-map-vs-object-real-time-use-cases-in-javascript-es6-47ee3295329b](https://codeburst.io/array-vs-set-vs-map-vs-object-real-time-use-cases-in-javascript-es6-47ee3295329b)
 
 ```js
