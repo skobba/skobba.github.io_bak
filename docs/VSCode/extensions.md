@@ -4,6 +4,7 @@
   * [diegolincoln.vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=diegolincoln.vscode-styled-components)
   * [redhat.fabric8-analytics](https://marketplace.visualstudio.com/items?itemName=redhat.fabric8-analytics)
   * [lyzerk/vscode-linecounter](https://marketplace.visualstudio.com/items?itemName=lyzerk.linecounter)
+  * [wix.vscode-import-cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 
 * Git
   * [mhutchie.git-graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
