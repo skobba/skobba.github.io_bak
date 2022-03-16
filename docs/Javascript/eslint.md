@@ -1,4 +1,12 @@
 # ESLint
+A good ESLint Config helps avoid mistakes that are hard to debug like cyclic imports and shadow variablers, it also prevent unnecessary code like unnecessary use of try/catch. And last but not least, it makes the code look nice with propper indends, correct quotes etc.
+
+It still stands between: eslint-config-airbnb vs. eslint-config-google vs. standard
+
+* [Comparing] (https://npmcompare.com/compare/eslint-config-airbnb,eslint-config-google,standard)
+
+Eslint-Config-Airbnb has more daily downloads, more weekly downloads, more monthly downloads, more stars on Github, more followers on Github and more forks.
+
 ## Airbnb ESLint Config
 ```
 npm i -D eslint-config-airbnb eslint-plugin-import
