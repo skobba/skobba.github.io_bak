@@ -112,6 +112,11 @@ Access typescript rules:
 }
 ```
 
+## Print Config
+```
+npx eslint --print-config ./src/components/Counter.tsx
+```
+
 ## Get errors from eslint
 ```
 npm run lint | sed -r 'S/^.error.\s(.*)$/\1/g' | sort | uniq
