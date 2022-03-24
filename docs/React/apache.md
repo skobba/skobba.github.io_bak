@@ -1,5 +1,5 @@
 # Apache
-Hosting via Apache using a path ("/myapp/")
+## React hostetd from Apache using a path ("/myapp/")
 
 httpd.conf:
 ```
@@ -15,3 +15,14 @@ DocumentRoot "/var/www/html"
     RewriteRule . /myapp/index.html [L]
 </Directory>
 ```
+
+## AllowEncodedSlashed
+Determines whether encoded path separators (```/```) in URLs are allowed to be passed through
+```
+DocumentRoot "/var/www/html"
+AllowEncodedSlashed
+
+<Directory "/var/www/html/myapp">
+...
+```
+
