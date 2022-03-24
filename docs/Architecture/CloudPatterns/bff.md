@@ -1,5 +1,61 @@
 # Backend for Frontend
 
+## JavaScript Applications with a Backend
+```
+
+   +-------------+  +--------------+ +---------------+
+   |             |  |              | |               |
+   |Authorization|  |    Token     | |   Resource    |
+   |  Endpoint   |  |   Endpoint   | |    Server     |
+   |             |  |              | |               |
+   +-------------+  +--------------+ +---------------+
+
+          ^                ^                   ^
+          |             (D)|                (G)|
+          |                v                   v
+          |
+          |         +--------------------------------+
+          |         |                                |
+          |         |          Application           |
+       (B)|         |            Server              |
+          |         |                                |
+          |         +--------------------------------+
+          |
+          |           ^     ^     +          ^    +
+          |        (A)|  (C)|  (E)|       (F)|    |(H)
+          v           v     +     v          +    v
+
+   +-------------------------------------------------+
+   |                                                 |
+   |                   Browser                       |
+   |                                                 |
+   +-------------------------------------------------+
+```
+
+## JavaScript Applications without a Backend
+```
+                         +---------------+           +--------------+
+                         |               |           |              |
+                         | Authorization |           |   Resource   |
+                         |    Server     |           |    Server    |
+                         |               |           |              |
+                         +---------------+           +--------------+
+
+                                ^     ^                 ^     +
+                                |     |                 |     |
+                                |(B)  |(C)              |(D)  |(E)
+                                |     |                 |     |
+                                |     |                 |     |
+                                +     v                 +     v
+
+   +-----------------+         +-------------------------------+
+   |                 |   (A)   |                               |
+   | Static Web Host | +-----> |           Browser             |
+   |                 |         |                               |
+   +-----------------+         +-------------------------------+
+```
+
+
 ## Considreations
 * How many backends?
 * [https://www.youtube.com/watch?v=UBFx3MSu1Rc](https://www.youtube.com/watch?v=UBFx3MSu1Rc)
