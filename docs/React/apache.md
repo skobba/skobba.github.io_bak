@@ -20,7 +20,7 @@ DocumentRoot "/var/www/html"
 Determines whether encoded path separators (```/```) in URLs are allowed to be passed through
 ```
 DocumentRoot "/var/www/html"
-AllowEncodedSlashed
+AllowEncodedSlashes On
 
 <Directory "/var/www/html/myapp">
 ...
