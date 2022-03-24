@@ -18,7 +18,8 @@ ___2021 Security Update___
 
 * In 2021 it is instead recommended to use a Back End for Front End approach for SPA security. This requires more moving parts*
 
-[https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps)
+* [https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps)
+* [https://datatracker.ietf.org/doc/draft-bertocci-oauth2-tmi-bff/](https://datatracker.ietf.org/doc/draft-bertocci-oauth2-tmi-bff/)
 
 ## Ref
 * [https://authguidance.com/](https://authguidance.com/)
