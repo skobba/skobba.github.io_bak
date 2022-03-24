@@ -2,6 +2,7 @@
 
 ## Considreations
 * How many backends?
+* [https://www.youtube.com/watch?v=UBFx3MSu1Rc](https://www.youtube.com/watch?v=UBFx3MSu1Rc)
 * [https://blog.bitsrc.io/bff-pattern-backend-for-frontend-an-introduction-e4fa965128bf](https://blog.bitsrc.io/bff-pattern-backend-for-frontend-an-introduction-e4fa965128bf)
 
 A BFF should not add new functionality!
