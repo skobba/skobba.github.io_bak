@@ -11,3 +11,10 @@ amplify add auth
 ## Findings
 * Stores access tokens in localstorage.
 * [https://stackoverflow.com/questions/65280171/aws-cognito-identity-service-provider-appears-to-store-access-token-in-local-sto](https://stackoverflow.com/questions/65280171/aws-cognito-identity-service-provider-appears-to-store-access-token-in-local-sto)
+
+## Access Token
+Options:
+* localstorage (default)
+* cookie
+* variable
+
