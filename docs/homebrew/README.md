@@ -1,5 +1,19 @@
 # Homebrew
-## Installed Packages
+
+## Some usefull programs
+```
+brew install --cask <name>
+
+itermm
+nextcloud
+visual-studio-code
+keepassx
+spectacle
+vlc
+```
+
+
+Show installed:
 ```brew list``` will show installed packages.
 
 ```brew list --cask``` will provide the items installed using Homebrew Cask.
