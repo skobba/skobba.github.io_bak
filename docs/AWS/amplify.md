@@ -7,9 +7,13 @@ npm install -g @aws-amplify/cli
 amplify configure
 ```
 
-User status:
+
 ```
+User status:
 amplify user status
+
+Continue working on another machine:
+amplify pull --appId <appid> --envName dev
 ```
 
 ![Amplify](amplify.png)
