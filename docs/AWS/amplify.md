@@ -3,7 +3,10 @@
 ## Toolchain
 Some AWS Amplify toolchain commands:
 
-Install and configure:
+### amplify
+Used to configure AWS resources.
+
+Install and configure for use:
 ```
 npm install -g @aws-amplify/cli
 
