@@ -37,6 +37,6 @@ Run `npm audit` for details
 ```
 
 Warnings from CI build:
-![amplify-warnings.jpg][amplify-warnings.jpg]
+![amplify-warnings.jpg](amplify-warnings.jpg)
 
 
