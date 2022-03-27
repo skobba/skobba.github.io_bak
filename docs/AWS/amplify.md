@@ -1,5 +1,8 @@
 # Amplify
 
+## Toolchain
+Some AWS Amplify toolchain commands:
+
 Install and configure:
 ```
 npm install -g @aws-amplify/cli
