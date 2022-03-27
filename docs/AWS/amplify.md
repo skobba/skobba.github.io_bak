@@ -44,7 +44,16 @@ Warnings from CI build:
 ![amplify-warnings.jpg](amplify-warnings.jpg)
 
 ## Notes and findings
+By choosing Amplify as infrastructure and CI there are certain choises that are made and desisoins that are taken for you.
+
+Identify which ones.
+* "next build && next export" identifies that it´s a SSG (static site generation) app
+* need to use the "amplify" command from adding/removing components from your app and for CI commands.
+* what to do if we need to create a new AIM user (in aws)?
+* what to do for a new developer to enter the team.
+
 * [https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#prerequisites](https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#prerequisites)
 * Folder structure - Find a structure for best matching local dev and CI env.
+* Lots of deprecated and security warnings from build and setup
 * Mono/multi-repo - Choose the best match for local dev and CI env.
 
