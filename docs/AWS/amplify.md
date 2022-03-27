@@ -14,8 +14,10 @@ npm install -g @aws-amplify/cli
 amplify configure
 ```
 
-
 ```
+Status:
+amplify status
+
 User status:
 amplify user status
 
