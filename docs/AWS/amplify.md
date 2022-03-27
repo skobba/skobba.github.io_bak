@@ -1,5 +1,5 @@
 # Amplify
-See also the alternative, [Serverless](https://www.serverless.com/).
+Framework that creates and manages a bunch of services in AWS, see also the alternative, [Serverless](https://www.serverless.com/).
 
 ## Toolchain
 Some AWS Amplify toolchain commands:
