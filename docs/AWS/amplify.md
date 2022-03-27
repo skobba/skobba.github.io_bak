@@ -36,5 +36,7 @@ To address all issues (including breaking changes), run:
 Run `npm audit` for details
 ```
 
+Warnings from CI build:
+![amplify-warnings.jpg][amplify-warnings.jpg]
 
 
