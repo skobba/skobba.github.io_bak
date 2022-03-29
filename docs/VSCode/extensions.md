@@ -5,6 +5,7 @@
   * [redhat.fabric8-analytics](https://marketplace.visualstudio.com/items?itemName=redhat.fabric8-analytics)
   * [lyzerk/vscode-linecounter](https://marketplace.visualstudio.com/items?itemName=lyzerk.linecounter)
   * [wix.vscode-import-cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+  * [graphql.vscode-graphql](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql)
 
 * Git
   * [mhutchie.git-graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
