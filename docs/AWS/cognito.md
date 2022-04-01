@@ -9,6 +9,7 @@ Cognito User Pools is a standards-based Identity Provider and supports identity 
 ## UserPool
 * Cognito user pool sign-in options can't be changed after the user pool has been created (email or sms)
 * Required attributes can't be changed once this user pool has been created (name, given_name)
+* Your user pool name can't be changed once this user pool is created
 
 ## Setup with Amplify
 ```
