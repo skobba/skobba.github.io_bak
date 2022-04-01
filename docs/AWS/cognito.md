@@ -6,19 +6,13 @@ Cognito User Pools is a standards-based Identity Provider and supports identity 
 * [Access control for Cognito users in AppSync](https://advancedweb.hu/how-to-use-cognito-with-appsync/)
 * [Multi-tenant w/ AppSync](https://theburningmonk.com/2021/03/how-to-secure-multi-tenant-applications-with-appsync-and-cognito/)
 
+## UserPool
+* Cognito user pool sign-in options can't be changed after the user pool has been created (email or sms)
+* Required attributes can't be changed once this user pool has been created (name, given_name)
+
 ## Setup with Amplify
 ```
 amplify init
 amplify add auth
 ```
-
-## Findings
-* Stores access tokens in localstorage.
-* [https://stackoverflow.com/questions/65280171/aws-cognito-identity-service-provider-appears-to-store-access-token-in-local-sto](https://stackoverflow.com/questions/65280171/aws-cognito-identity-service-provider-appears-to-store-access-token-in-local-sto)
-
-## Access Token
-Options:
-* localstorage (default)
-* cookie
-* variable
 
