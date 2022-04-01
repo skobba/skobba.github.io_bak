@@ -1,45 +1,13 @@
-# Amplify
-Framework that creates and manages a bunch of services in AWS, see also the alternative, [Serverless](https://www.serverless.com/).
+# Errors
 
-## Toolchain
-Some AWS Amplify toolchain commands:
+## Not able to pull Amplify app
+![amplify-pull-error.jpg](amplify-pull-error.jpg)
 
-### amplify
-Used to configure AWS resources.
+## Not able to delete Amplify app
+![amplify-delete-error.jpg](amplify-delete-error.jpg)
 
-Install and configure for use:
-```
-npm install -g @aws-amplify/cli
-
-amplify configure
-```
-
-```
-Status:
-amplify status
-
-User status:
-amplify user status
-
-Continue working on another machine:
-amplify pull --appId <appid> --envName dev
-```
-
-amplify init
-```
-Some next steps:
-"amplify status" will show you what you've added already and if it's locally configured or deployed
-"amplify add <category>" will allow you to add features like user login or a backend API
-"amplify push" will build all your local backend resources and provision it in the cloud
-"amplify console" to open the Amplify Console and view your project status
-"amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
-
-Pro tip:
-Try "amplify add api" to create a backend API and then "amplify push" to deploy everything
-```
-
-## Services
-![Amplify](amplify.png)
+## Github Issue
+![amplify-github-issue.jpg](amplify-github-issue.jpg)
 
 ## Warnings
 ```
