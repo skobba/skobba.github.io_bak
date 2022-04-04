@@ -14,6 +14,7 @@ Notes:
 What took time:
 * Trying to remove phantom Amplify app
 * Change repo and path for multi-repo
+* Force push on master made it break
 
 Warnings:
 * [https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#prerequisites](https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#prerequisites)
