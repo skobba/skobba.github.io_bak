@@ -25,6 +25,31 @@ Warnings:
 * [https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#prerequisites](https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#prerequisites)
 * Lots of deprecated and security warnings from build and setup
 
+## Build Settings
+If you change from mono- to multi-repo, or react to nextjs, you might need to change the Build Settings to reflect the change.
+
+AWS Amplify -> App Settings -> Build settings
+```yaml
+version: 1
+applications:
+  - frontend:
+      phases:
+        preBuild:
+          commands:
+            - yarn install
+        build:
+          commands:
+            - yarn run build
+      artifacts:
+        baseDirectory: build
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+    appRoot: 
+```
+
 ## Toolchain
 Some AWS Amplify toolchain commands:
 
