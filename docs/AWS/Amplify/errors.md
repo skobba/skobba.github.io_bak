@@ -8,7 +8,9 @@
 ## Not able to delete Amplify app
 ![amplify-delete-error.jpg](amplify-delete-error.jpg)
 
-## Github Issue
+## Github Issues
+* [https://github.com/aws-amplify/amplify-ui/issues/1602](https://github.com/aws-amplify/amplify-ui/issues/1602)
+
 ![amplify-github-issue.jpg](amplify-github-issue.jpg)
 
 ## Warnings
