@@ -16,6 +16,10 @@ What took time:
 * Change repo and path for multi-repo
 * Force push on master made it break
 
+Errors:
+* There was an issue connecting to your repo provider, click "Reconnect repository" in General Settings, and then try your build again.
+
+
 Warnings:
 * [https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#prerequisites](https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#prerequisites)
 * Lots of deprecated and security warnings from build and setup
