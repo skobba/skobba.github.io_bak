@@ -11,6 +11,10 @@ Notes:
 * Mono/multi-repo - Choose the best match for local dev and CI env.
 * Folder structure - Find a structure for best matching local dev and CI env
 
+What took time:
+* Trying to remove phantom Amplify app
+* Change repo and path for multi-repo
+
 Warnings:
 * [https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#prerequisites](https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#prerequisites)
 * Lots of deprecated and security warnings from build and setup
