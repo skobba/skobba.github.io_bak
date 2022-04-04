@@ -26,7 +26,7 @@ Warnings:
 * Lots of deprecated and security warnings from build and setup
 
 ## Build Settings
-If you change from mono- to multi-repo, or react to nextjs, you might need to change the Build Settings to reflect the change.
+If you change from mono- to multi-repo, or react to nextjs, you might need to change ```baseDirectory``` and ```appRoot``` the Build Settings to reflect the change.
 
 AWS Amplify -> App Settings -> Build settings
 ```yaml
