@@ -5,6 +5,7 @@ Cognito User Pools is a standards-based Identity Provider and supports identity 
 ## Ref
 * [Access control for Cognito users in AppSync](https://advancedweb.hu/how-to-use-cognito-with-appsync/)
 * [Multi-tenant w/ AppSync](https://theburningmonk.com/2021/03/how-to-secure-multi-tenant-applications-with-appsync-and-cognito/)
+* [https://creativedesignsguru.com/next-js-aws-amplify-cognito-oauth/](https://creativedesignsguru.com/next-js-aws-amplify-cognito-oauth/)
 
 ## UserPool
 * Cognito user pool sign-in options can't be changed after the user pool has been created (email or sms)
