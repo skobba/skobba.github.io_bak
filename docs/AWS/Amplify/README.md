@@ -25,6 +25,9 @@ Continue working on another machine:
 amplify pull --appId <appid> --envName dev
 ```
 
+## Amplify UI
+* [https://ui.docs.amplify.aws/components/authenticator](https://ui.docs.amplify.aws/components/authenticator)
+
 ## Services
 ![Amplify](amplify.png)
 
