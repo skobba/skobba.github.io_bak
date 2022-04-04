@@ -6,7 +6,8 @@ By choosing Amplify as infrastructure and CI there are certain choises that are 
 Notes:
 * Some adjustments to make nextjs fit to Amplify
   * "next build && next export" identifies that it´s a SSG (static site generation) app.
-  * Amplify needs a trailing slash at the end of signin URI 
+  * Amplify needs a trailing slash at the end of signin URI
+* User yarn and not npm
 * Need to use the "amplify" command from adding/removing components from your app and for CI commands.
 * Mono/multi-repo - Choose the best match for local dev and CI env.
 * Folder structure - Find a structure for best matching local dev and CI env
