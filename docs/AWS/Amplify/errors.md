@@ -10,6 +10,7 @@
 
 ## Github Issues
 * [https://github.com/aws-amplify/amplify-ui/issues/1602](https://github.com/aws-amplify/amplify-ui/issues/1602)
+* [https://github.com/aws-amplify/amplify-ui/issues/1615](https://github.com/aws-amplify/amplify-ui/issues/1615)
 
 ![amplify-github-issue.jpg](amplify-github-issue.jpg)
 
