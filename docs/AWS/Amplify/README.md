@@ -19,7 +19,7 @@ What took time:
 
 Errors:
 * There was an issue connecting to your repo provider, click "Reconnect repository" in General Settings, and then try your build again.
-
+* Module not found: Error: Can't resolve './aws-exports' in '/codebuild/output/src049202397/src/demo-amplify-blue/src'
 
 Warnings:
 * [https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#prerequisites](https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#prerequisites)
