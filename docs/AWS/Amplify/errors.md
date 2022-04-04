@@ -1,4 +1,6 @@
 # Errors
+## The blank-screen-error
+![amplify-blank-error.jpg](amplify-blank-error.jpg)
 
 ## Not able to pull Amplify app
 ![amplify-pull-error.jpg](amplify-pull-error.jpg)
