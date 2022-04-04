@@ -73,6 +73,8 @@ amplify user status
 Continue working on another machine:
 amplify pull --appId <appid> --envName dev
 ```
+## amplifyPush.sh
+* [https://github.com/aws-amplify/amplify-hosting/tree/main/scripts](https://github.com/aws-amplify/amplify-hosting/tree/main/scripts)
 
 ## Amplify UI
 * [https://ui.docs.amplify.aws/components/authenticator](https://ui.docs.amplify.aws/components/authenticator)
