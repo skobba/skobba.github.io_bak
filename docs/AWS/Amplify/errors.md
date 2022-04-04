@@ -9,8 +9,9 @@
 ![amplify-delete-error.jpg](amplify-delete-error.jpg)
 
 ## Github Issues
-* [https://github.com/aws-amplify/amplify-ui/issues/1602](https://github.com/aws-amplify/amplify-ui/issues/1602)
-* [https://github.com/aws-amplify/amplify-ui/issues/1615](https://github.com/aws-amplify/amplify-ui/issues/1615)
+* [amplify nextjs auth problem 1](https://github.com/aws-amplify/amplify-ui/issues/1602)
+* [amplify nextjs auth problem 2](https://github.com/aws-amplify/amplify-ui/issues/1615)
+* [amplify import auth problem](https://github.com/aws-amplify/amplify-hosting/issues/1271)
 
 ![amplify-github-issue.jpg](amplify-github-issue.jpg)
 
