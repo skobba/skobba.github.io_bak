@@ -70,6 +70,12 @@ amplify status
 User status:
 amplify user status
 
+Add Authentication:
+amplify add auth
+
+Add API:
+amplify add api
+
 Continue working on another machine:
 amplify pull --appId <appid> --envName dev
 ```
