@@ -63,12 +63,10 @@ npm install -g @aws-amplify/cli
 amplify configure
 ```
 
+Creating Amplify app:
 ```
-Status:
-amplify status
-
-User status:
-amplify user status
+Init:
+amplify init
 
 Add Authentication:
 amplify add auth
@@ -78,6 +76,23 @@ amplify add api
 
 Continue working on another machine:
 amplify pull --appId <appid> --envName dev
+
+If you change something in the web-portal, you need to pull the changes:
+amplify pull
+
+If you change something with the cli, you need to push the changes:
+amplify push
+
+Continue working on another machine:
+amplify pull --appId <appid> --envName dev
+```
+
+```
+Status:
+amplify status
+
+User status:
+amplify user status
 ```
 ## amplifyPush.sh
 * [https://github.com/aws-amplify/amplify-hosting/tree/main/scripts](https://github.com/aws-amplify/amplify-hosting/tree/main/scripts)
