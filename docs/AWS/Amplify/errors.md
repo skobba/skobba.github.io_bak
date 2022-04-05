@@ -1,4 +1,12 @@
 # Errors
+## Github Issues
+* [amplify nextjs auth problem 1](https://github.com/aws-amplify/amplify-ui/issues/1602)
+* [amplify nextjs auth problem 2](https://github.com/aws-amplify/amplify-ui/issues/1615)
+* [amplify import auth problem](https://github.com/aws-amplify/amplify-hosting/issues/1271)
+* [https://github.com/aws-amplify/amplify-hosting/issues/1271](https://github.com/aws-amplify/amplify-hosting/issues/1271)
+
+![amplify-github-issue.jpg](amplify-github-issue.jpg)
+
 ## The blank-screen-error
 ![amplify-blank-error.jpg](amplify-blank-error.jpg)
 
@@ -7,13 +15,6 @@
 
 ## Not able to delete Amplify app
 ![amplify-delete-error.jpg](amplify-delete-error.jpg)
-
-## Github Issues
-* [amplify nextjs auth problem 1](https://github.com/aws-amplify/amplify-ui/issues/1602)
-* [amplify nextjs auth problem 2](https://github.com/aws-amplify/amplify-ui/issues/1615)
-* [amplify import auth problem](https://github.com/aws-amplify/amplify-hosting/issues/1271)
-
-![amplify-github-issue.jpg](amplify-github-issue.jpg)
 
 ## Warnings
 ```
