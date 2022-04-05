@@ -13,6 +13,14 @@ Cognito User Pools is a standards-based Identity Provider and supports identity 
 * Required attributes can't be changed once this user pool has been created (name, given_name)
 * Your user pool name can't be changed once this user pool is created
 
+## .well-known
+```
+https://cognito-idp.{region}.amazonaws.com/{userPoolId}/.well-known/jwks.json
+
+Eg.:
+https://cognito-idp.eu-north-1.amazonaws.com/eu-north-1_pIxfJNdPg/.well-known/jwks.json
+```
+
 ## Setup with Amplify
 ```
 amplify init
