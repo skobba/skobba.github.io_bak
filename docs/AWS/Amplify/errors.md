@@ -1,5 +1,6 @@
 # Errors
 ## Github Issues
+* [503 ERROR The request could not be satisfied.](https://github.com/aws-amplify/amplify-hosting/issues/1935)
 * [amplify nextjs auth problem 1](https://github.com/aws-amplify/amplify-ui/issues/1602)
 * [amplify nextjs auth problem 2](https://github.com/aws-amplify/amplify-ui/issues/1615)
 * [amplify import auth problem](https://github.com/aws-amplify/amplify-hosting/issues/1271)
