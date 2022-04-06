@@ -1,6 +1,6 @@
 # NextJS
 * [Amplify support for Next.js SSR](https://docs.aws.amazon.com/amplify/latest/userguide/server-side-rendering-amplify.html#ssr-Amplify-support)
-
+* [Youtube tut 6h](https://www.youtube.com/watch?v=cLKLqpxPSws&t=7072s&ab_channel=JarrodWatts)
 ## SSR
 When deploying your Next.js SSR app, Amplify creates additional backend resources in your AWS account, including:
 
