@@ -13,3 +13,34 @@ When deploying your Next.js SSR app, Amplify creates additional backend resource
 2) An Amazon CloudFront distribution to serve the app. For information about CloudFront charges, see Amazon CloudFront Pricing.
 
 3) Four Lambda@Edge functions to customize the content that CloudFront delivers.
+
+## Caveats
+### <p> wrapped <div>
+Ref.: https://stackoverflow.com/questions/71706064/react-18-hydration-failed-because-the-initial-ui-does-not-match-what-was-render
+
+```js
+import Image from 'next/image'
+/**
+ * This might give that error
+ */
+export const IncorrectComponent = ()=>{
+  return(
+    <p>
+      <div>This is not correct and should never be done because the p tag has been abused</div>
+      <Image src='/vercel.svg' alt='' width='30' height='30'/>
+    </p>
+  )
+}
+
+/**
+ * This will work
+ */
+export const CorrectComponent = ()=>{
+  return(
+    <div>
+      <div>This is correct and should work because a div is really good for this task.</div>
+      <Image src='/vercel.svg' alt='' width='30' height='30'/>
+    </div>
+  )
+}
+```
