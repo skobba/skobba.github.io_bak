@@ -1,6 +1,11 @@
 # Helm
 
-## Install helm on Debian
+## Install Helm on osx
+```
+brew install helm
+```
+
+## Install Helm on Debian
 ```
 wget https://get.helm.sh/helm-v3.7.0-linux-amd64.tar.gz
 tar -zxvf helm-v3.7.0-linux-amd64.tar.gz
