@@ -1,5 +1,6 @@
 # Material UI
 * [Material UI Theme Editor](https://bareynol.github.io/mui-theme-creator/)
+* [Material palette generator](https://material.io/inline-tools/color/)
 
 # Breakpoints
 ```
