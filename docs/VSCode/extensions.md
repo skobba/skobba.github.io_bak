@@ -6,6 +6,7 @@
   * [lyzerk/vscode-linecounter](https://marketplace.visualstudio.com/items?itemName=lyzerk.linecounter)
   * [wix.vscode-import-cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
   * [graphql.vscode-graphql](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql)
+  * [GitHub.copilot-labs](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-labs)
 
 * Git
   * [mhutchie.git-graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
