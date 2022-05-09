@@ -9,6 +9,10 @@ The easiest way.
 const App = () => <img src="/path/image.svg" alt="" />;
 ```
 
+## React and D3 Versions
+<iframe src="https://stackblitz.com/edit/react-m9jc7i?embed=1&file=src/App.js&hideDevTools=1&theme=light&view=preview"
+     style="width:100%; height:600px; border:0; border-radius: 4px; overflow:hidden;"></iframe>
+
 ## Static w/ url-loader
 Transforms an image into a Data URL.
 
