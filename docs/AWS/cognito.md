@@ -13,6 +13,10 @@ Ref.:
 * [user-pools-without-hosted-ui](https://lifesaver.codes/answer/identity-providers-authentication-against-user-pools-without-hosted-ui)
 * [user-pool-hosted-ui-minimal-code-grant-sign-in-example-from-a-react-web-app](https://lifesaver.codes/answer/cognito-user-pool-hosted-ui-minimal-code-grant-sign-in-example-from-a-react-web-app-5284)
 
+## aws-amplify vs amazon-cognito-identity-js
+Ref.: 
+* [aws-amplify VS amazon-cognito-identity-js](https://www.maxivanov.io/aws-cognito-amplify-vs-amazon-cognito-identity-js-vs-aws-sdk/)
+
 ## UserPool
 * Cognito user pool sign-in options can't be changed after the user pool has been created (email or sms)
 * Required attributes can't be changed once this user pool has been created (name, given_name)
