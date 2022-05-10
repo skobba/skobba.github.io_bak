@@ -35,6 +35,10 @@ Con:
 ## Approach #3
 Use case: Large dataset and frequently updating visualization
 
+* React for structure
+* D3 for data calculation
+* D3 for rendering
+
 Pro:
 * The viz scales!
 * Use all the d3 functions!
