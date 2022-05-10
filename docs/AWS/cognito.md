@@ -13,9 +13,25 @@ Ref.:
 * [user-pools-without-hosted-ui](https://lifesaver.codes/answer/identity-providers-authentication-against-user-pools-without-hosted-ui)
 * [user-pool-hosted-ui-minimal-code-grant-sign-in-example-from-a-react-web-app](https://lifesaver.codes/answer/cognito-user-pool-hosted-ui-minimal-code-grant-sign-in-example-from-a-react-web-app-5284)
 
+## Libraries
+3 official code libraries that you can use:
+* Amplify (aws-amplify)
+* amazon-cognito-identity-js (amazon-cognito-identity-js)
+* [AWS SDK](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/welcome.html)
+
 ## aws-amplify vs amazon-cognito-identity-js
 Ref.: 
 * [aws-amplify VS amazon-cognito-identity-js](https://www.maxivanov.io/aws-cognito-amplify-vs-amazon-cognito-identity-js-vs-aws-sdk/)
+
+___amazon-cognito-identity-js___
+It used to be a standalone library but eventually it migrated to the Amplify project. It is now hosted as a package in the Amplify monorepo. In fact Amplify uses this package to make Cognito API requests. But you can use it without Amplify just fine. It is essentially a nice wrapper around lower-level AWS SDK (note it does not use aws-sdk package, it makes HTTP calls to AWS directly).
+
+* NodeJS support
+* Provides lower level (compared to Amplify) API to make Cognito calls.
+* Custom UI, no UI scaffolding support, only facilitates communication with the server.
+* It doesn't support secret-enabled Cognito app clients. "Generate client secret" must be unchecked in the app client settings.
+* You cannot use admin-level Cognito APIs (those that require AWS credentials) with amazon-cognito-identity-js.
+
 
 ## UserPool
 * Cognito user pool sign-in options can't be changed after the user pool has been created (email or sms)
