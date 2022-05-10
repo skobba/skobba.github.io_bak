@@ -1,4 +1,5 @@
 # React and D3
+Ref.: [http://slides.com/shirleywu/deck](http://slides.com/shirleywu/deck)
 
 ## Approach #1
 Use case: Small dataset and simple visualisation
