@@ -21,9 +21,18 @@ Eg.:
 https://cognito-idp.eu-north-1.amazonaws.com/eu-north-1_pIxfJNdPg/.well-known/jwks.json
 ```
 
-## Setup with Amplify
-```
-amplify init
-amplify add auth
-```
+## Authorization code grant with PKCE
+Ref.: 
+* https://docs.aws.amazon.com/cognito/latest/developerguide/authorization-endpoint.html#sample-authorization-code-grant-with-pkce
+* https://lifesaver.codes/answer/cognito-user-pool-hosted-ui-minimal-code-grant-sign-in-example-from-a-react-web-app-5284
 
+```
+GET https://mydomain.auth.us-east-1.amazoncognito.com/oauth2/authorize?
+                          response_type=code&
+                          client_id=ad398u21ijw3s9w3939&
+                          redirect_uri=https://YOUR_APP/redirect_uri&
+                          state=STATE&
+                          scope=aws.cognito.signin.user.admin&
+                          code_challenge_method=S256&
+                          code_challenge=CODE_CHALLENGE
+```
