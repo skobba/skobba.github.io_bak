@@ -1,8 +1,6 @@
 # Force Graph
-Ref.: [https://reactfordataviz.com/articles/force-directed-graphs-with-react-and-d3v7/](https://reactfordataviz.com/articles/force-directed-graphs-with-react-and-d3v7/)
-
-## Force parameters
-* [https://observablehq.com/@maliky/testing-the-d3-forces-parameters](https://observablehq.com/@maliky/testing-the-d3-forces-parameters)
+* [force-directed-graphs-with-react-and-d3](https://reactfordataviz.com/articles/force-directed-graphs-with-react-and-d3v7/)
+* [Force parameters](https://observablehq.com/@maliky/testing-the-d3-forces-parameters)
 
 ## d3-force-graph
 <iframe src="https://codesandbox.io/embed/d3-force-graph-dhtwe4?fontsize=14&hidenavigation=1&theme=dark"
