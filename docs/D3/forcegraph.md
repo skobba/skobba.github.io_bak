@@ -2,6 +2,10 @@
 * [force-directed-graphs-with-react-and-d3](https://reactfordataviz.com/articles/force-directed-graphs-with-react-and-d3v7/)
 * [Force parameters](https://observablehq.com/@maliky/testing-the-d3-forces-parameters)
 
+## d3-sticky-force-layout
+<iframe src="https://stackblitz.com/edit/react-canfnz?embed=1&file=src/Graph.js&view=preview"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"></iframe>
+
 ## d3-force-graph
 <iframe src="https://codesandbox.io/embed/d3-force-graph-dhtwe4?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
