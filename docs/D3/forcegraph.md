@@ -2,6 +2,14 @@
 * [force-directed-graphs-with-react-and-d3](https://reactfordataviz.com/articles/force-directed-graphs-with-react-and-d3v7/)
 * [Force parameters](https://observablehq.com/@maliky/testing-the-d3-forces-parameters)
 
+## d3-react-force-graph-les-miserables
+<iframe src="https://codesandbox.io/embed/d3-react-force-graph-les-miserables-32p592?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="d3-react-force-graph-les-miserables"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
 ## d3-sticky-force-layout
 <iframe src="https://stackblitz.com/edit/react-canfnz?embed=1&file=src/Graph.js&view=preview"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"></iframe>
