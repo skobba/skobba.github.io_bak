@@ -1,4 +1,5 @@
 # Performance
+Ref.: [monitoring-javascript-memory](https://trackjs.com/blog/monitoring-javascript-memory/)
 
 ## Start Chrome w/ Percise Memory Info
 ```
