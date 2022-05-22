@@ -44,3 +44,15 @@ Remove untracked files
   branch-name = "!git rev-parse --abbrev-ref HEAD"
   publish = "!git push -u origin $(git branch-name)"
 ```
+
+## Orphant Branch
+```
+cd repository
+git checkout --orphan orphan_name
+git rm -rf .
+rm '.gitignore'
+echo "#Orphan Braqnch" > README.md
+git add README.md
+git commit -a -m "Initial Commit"
+git push origin orphan_name
+```
