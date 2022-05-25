@@ -23,3 +23,24 @@ const root = d3.hierarchy(data);
 const links = root.links();
 const nodes = root.descendants();
 ```
+
+Structure:
+```js
+const family = d3.hierarchy({
+  name: "root",
+  children: [
+    { name: "child #1" },
+    {
+      name: "child #2",
+      children: [
+        { name: "grandchild #1" },
+        { name: "grandchild #2" },
+        { name: "grandchild #3" }
+      ]
+    }
+  ]
+});
+
+console.log("family: ", family.descendants());
+```
+    
