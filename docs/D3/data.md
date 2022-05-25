@@ -18,7 +18,8 @@ export const generateData = () => {
 ```
 
 ## Convert Hierarchy Data to Links and Nodes
-```
+```js
 const root = d3.hierarchy(data);
 const links = root.links();
 const nodes = root.descendants();
+```
