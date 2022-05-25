@@ -1,5 +1,6 @@
 # Data
-Normal distribution:
+
+## Generate Normal distribution
 ```js
 import * as d3 from 'd3';
 // Ref.: https://github.com/d3/d3-random/blob/main/README.md#randomNormal
@@ -15,3 +16,9 @@ export const generateData = () => {
   return actualData;
 };
 ```
+
+## Convert Hierarchy Data to Links and Nodes
+```
+const root = d3.hierarchy(data);
+const links = root.links();
+const nodes = root.descendants();
