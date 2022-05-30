@@ -1,6 +1,7 @@
 # Force Graph
 * [force-directed-graphs-with-react-and-d3](https://reactfordataviz.com/articles/force-directed-graphs-with-react-and-d3v7/)
 * [Force parameters](https://observablehq.com/@maliky/testing-the-d3-forces-parameters)
+* [testing-the-d3-forces-parameters](https://observablehq.com/@maliky/testing-the-d3-forces-parameters)
 
 ## Iterations and Alpha
 The force simulations as the name implies is a simulation on particles interacting with each other. Alpha is used to help converge the system by decaying at each iteration. The forces are multiplied by alpha, so at each iteration the forces become weaker until alpha reaches a very low value when the simulation stops.
