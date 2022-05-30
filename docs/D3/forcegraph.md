@@ -6,6 +6,18 @@
 ## Iterations and Alpha
 The force simulations as the name implies is a simulation on particles interacting with each other. Alpha is used to help converge the system by decaying at each iteration. The forces are multiplied by alpha, so at each iteration the forces become weaker until alpha reaches a very low value when the simulation stops.
 
+## Nodes
+```
+index - the node’s zero-based index into nodes
+x - the node’s current x-position
+y - the node’s current y-position
+vx - the node’s current x-velocity
+vy - the node’s current y-velocity
+
+fx - the node’s fixed x-position
+fy - the node’s fixed y-position
+```
+
 ## d3-react-force-graph-les-miserables
 <iframe src="https://codesandbox.io/embed/d3-react-force-graph-les-miserables-32p592?fontsize=14&hidenavigation=1&theme=dark&view=preview"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
