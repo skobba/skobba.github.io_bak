@@ -7,6 +7,12 @@ We can solve this problem by leveraging the D3 force directed layout in order to
 
 There is an easier way - WebCola.
 
+## start()
+```
+.start(10,15,20);
+
+The start() method now includes up to three integer arguments. In the example above, start will initially apply 10 iterations of layout with no constraints, 15 iterations with only structural (user-specified) constraints and 20 iterations of layout with all constraints including anti-overlap constraints. Specifying such a schedule is useful to allow the graph to untangle before making it relatively "rigid" with constraints.
+```
 
 Ref.: [https://observablehq.com/@mbostock/hello-cola](https://observablehq.com/@mbostock/hello-cola)
 
