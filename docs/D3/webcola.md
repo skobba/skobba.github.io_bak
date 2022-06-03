@@ -10,10 +10,11 @@ There is an easier way - WebCola.
 ## start()
 ```
 .start(10,15,20);
-
-The start() method now includes up to three integer arguments. In the example above, start will initially apply 10 iterations of layout with no constraints, 15 iterations with only structural (user-specified) constraints and 20 iterations of layout with all constraints including anti-overlap constraints. Specifying such a schedule is useful to allow the graph to untangle before making it relatively "rigid" with constraints.
 ```
 
+The start() method now includes up to three integer arguments. In the example above, start will initially apply 10 iterations of layout with no constraints, 15 iterations with only structural (user-specified) constraints and 20 iterations of layout with all constraints including anti-overlap constraints. Specifying such a schedule is useful to allow the graph to untangle before making it relatively "rigid" with constraints.
+
+## hello-cola
 Ref.: [https://observablehq.com/@mbostock/hello-cola](https://observablehq.com/@mbostock/hello-cola)
 
 <iframe src="https://codesandbox.io/embed/d3-react-force-graph-webcola-2owbg3?fontsize=14&hidenavigation=1&module=%2Fsrc%2FForceGraph.js&theme=dark&view=preview"
