@@ -9,6 +9,16 @@ We can solve this problem by leveraging the D3 force directed layout in order to
 There is an easier way - WebCola.
 
 ## start(10,15,20)
+Params:
+```
+initialUnconstrainedIterations: number = 0
+initialUserConstraintIterations: number = 0
+initialAllConstraintsIterations: number = 0
+gridSnapIterations: number = 0
+keepRunning: boolean = true
+centerGraph: boolean = true
+```
+
 The start() method now includes up to three integer arguments. In the example above, start will initially apply 10 iterations of layout with no constraints, 15 iterations with only structural (user-specified) constraints and 20 iterations of layout with all constraints including anti-overlap constraints. Specifying such a schedule is useful to allow the graph to untangle before making it relatively "rigid" with constraints.
 
 ## Constraints
