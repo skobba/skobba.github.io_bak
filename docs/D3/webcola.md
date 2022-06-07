@@ -1,4 +1,5 @@
 # Webcola
+Ref.: [https://ialab.it.monash.edu/webcola/](https://ialab.it.monash.edu/webcola/)
 
 ## Hierarchical representation of the data
 D3 provides out of the box hierarchical layout to compute positions of nodes in hierarchical way. However, hierarchical layout works on the data which is in a tree-like format (implicit parent-child structure), with a constraint that one node must not have more than one parent. Therefore, we cannot use d3-hierarchy to create tree-like layouts to denote hierarchical information when the data structure looks like graph.
@@ -13,6 +14,8 @@ There is an easier way - WebCola.
 ```
 
 The start() method now includes up to three integer arguments. In the example above, start will initially apply 10 iterations of layout with no constraints, 15 iterations with only structural (user-specified) constraints and 20 iterations of layout with all constraints including anti-overlap constraints. Specifying such a schedule is useful to allow the graph to untangle before making it relatively "rigid" with constraints.
+
+
 
 ## hello-cola
 Ref.: [https://observablehq.com/@mbostock/hello-cola](https://observablehq.com/@mbostock/hello-cola)
