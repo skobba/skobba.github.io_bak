@@ -6,6 +6,34 @@ Ref.:
 <iframe src="https://stackblitz.com/edit/node-j4toze?embed=1&file=package.json&hideDevTools=1&hideExplorer=1&hideNavigation=1&theme=light&view=preview"
      style="width:100%; height:410px; border:0; border-radius: 4px; overflow:hidden;"></iframe>
 
+## Generate Different Data on Each Request
+```js
+const { faker } = require('@faker-js/faker');
+
+let counter = 0;
+
+const user = {
+  get name() {
+    console.log('counter: ' + counter);
+    counter++;
+    return faker.name.findName();
+  },
+  get email() {
+    return faker.internet.email();
+  },
+  get counter() {
+    return counter % 3;
+  },
+};
+
+function differentData() {
+  return { messages: [user] };
+}
+
+module.exports = differentData;
+```
+
+## Generate Data
 ```js
 const { faker } = require('@faker-js/faker');
 
