@@ -1,12 +1,12 @@
 # faker-js
-Ref.:
-* [faker-not-creating-different-data-when-called](https://stackoverflow.com/questions/57779144/npm-module-faker-not-creating-different-data-when-called)
-* [getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)
+Ref.: [faker-not-creating-different-data-when-called](https://stackoverflow.com/questions/57779144/npm-module-faker-not-creating-different-data-when-called)
 
 <iframe src="https://stackblitz.com/edit/node-j4toze?embed=1&file=package.json&hideDevTools=1&hideExplorer=1&hideNavigation=1&theme=light&view=preview"
      style="width:100%; height:410px; border:0; border-radius: 4px; overflow:hidden;"></iframe>
 
-## Generate Different Data on Each Request
+## Generate Different Data with getter
+Ref.: [getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)
+
 ```js
 const { faker } = require('@faker-js/faker');
 
