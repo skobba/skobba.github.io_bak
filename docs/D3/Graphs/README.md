@@ -4,3 +4,4 @@
 ## Breadth First Search (BFS)
 Ref.: [https://jarednielsen.com/data-structure-graph-breadth-first-search/](https://jarednielsen.com/data-structure-graph-breadth-first-search/)
 
+___Adjacency List___ is a collection of unordered lists used to represent a finite graph.
