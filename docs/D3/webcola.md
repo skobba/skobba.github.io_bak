@@ -35,7 +35,15 @@ Dynamically generates constraints while layout progresses in order to prevent th
 ## symmetricDiffLinkLengths
 Computes ideal lengths on each link to make extra space around high-degree nodes, using 5 as the basic length.
 
-# hello-cola
+## d3-force-graph-webcola
+<iframe src="https://codesandbox.io/embed/d3-force-graph-ticks-webcola-i5oiw8?fontsize=14&hidenavigation=1&module=%2Fsrc%2FForceGraph.js&theme=dark&view=preview"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="d3-force-graph-ticks (webcola)"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
+## hello-cola
 Ref.: [https://observablehq.com/@mbostock/hello-cola](https://observablehq.com/@mbostock/hello-cola)
 
 <iframe src="https://codesandbox.io/embed/d3-react-force-graph-webcola-2owbg3?fontsize=14&hidenavigation=1&module=%2Fsrc%2FForceGraph.js&theme=dark&view=preview"
