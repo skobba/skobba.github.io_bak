@@ -41,7 +41,7 @@ Dependencies that don’t necessarily need to be installed. If a dependency can 
 
     npm install someDependency --save-optional
 
-    npm ci --no-optional
+    npm ci --omit-optional
 
 
 ## Scope
