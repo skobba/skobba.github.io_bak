@@ -1,11 +1,14 @@
 # Array, Map, Set and Object
 Ref.: [https://codeburst.io/array-vs-set-vs-map-vs-object-real-time-use-cases-in-javascript-es6-47ee3295329b](https://codeburst.io/array-vs-set-vs-map-vs-object-real-time-use-cases-in-javascript-es6-47ee3295329b)
 
+## Array
+___Index___
+Javascript arrays cannot have "string indexes". These are equivalent:
 ```js
-
+array.a = 'foo';
+array['a'] = 'foo';
 ```
 
-## Array
 ___Search/Find___
 
 ```js
