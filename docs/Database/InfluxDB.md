@@ -9,6 +9,21 @@ show databases
 use test
 ```
 
+### Meeasurreements
+```
+SHOW MEASUREMENTS
+```
+
+### Seriees
+```
+SHOW SERIES
+```
+
+### Retention
+```
+SHOW RETENTION POLICIES
+```
+
 ### Insert data
 ```
 insert test value=99.9
