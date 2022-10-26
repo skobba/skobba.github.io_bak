@@ -11,7 +11,7 @@
 ## Triadic Color Wheel
 A traditionally-balanced triadic color scheme focuses on one dominant color, with the other two evenly spaced colors both serving as accents.
 
-[Triadic Color Wheel](triadic-color-wheel.png)
+![Triadic Color Wheel](triadic-color-wheel.png)
 
 ## Breakpoints
 ```
