@@ -5,6 +5,14 @@
 * [default-theme](https://mui.com/material-ui/customization/default-theme/)
 * [The Color System](https://m2.material.io/design/color/the-color-system.html)
 
+## The System
+* [https://mui.com/system/basics](https://mui.com/system/basics)
+
+## Triadic Color Wheel
+A traditionally-balanced triadic color scheme focuses on one dominant color, with the other two evenly spaced colors both serving as accents.
+
+[Triadic Color Wheel](triadic-color-wheel.png)
+
 ## Breakpoints
 ```
 xs, extra-small: 0px
@@ -13,19 +21,16 @@ md, medium: 900px
 lg, large: 1200px
 xl, extra-large: 1536px
 ```
-
 ## CSS Baseline
 ```<CssBaseline />```
 
 Global reset, a collection of HTML element and attribute style-normalizations. Removes margin: 8px on body.
 
-## System
-* [https://mui.com/system/basics](https://mui.com/system/basics)
+
 
 ## styled-components
 
 ## sx prop
-
 
 ## Palette colors
 The theme exposes the following palette colors (accessible under theme.palette.):
@@ -44,3 +49,4 @@ The theme exposes the following palette colors (accessible under theme.palette.)
 
 # Theming
 * [https://mui.com/material-ui/customization/theming](https://mui.com/material-ui/customization/theming)
+
