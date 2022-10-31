@@ -47,6 +47,12 @@ The theme exposes the following palette colors (accessible under theme.palette.)
 
 ```success``` - used to indicate the successful completion of an action that user triggered.
 
-# Theming
+## Custom Colors
+Provide every color token (light, main, dark, and contrastText) when usingcustom colors for props in Material UI's components. Then you will be able to use it like this: ```<Button color="custom">```
+
+***(For TypeScript, you need to add module augmentation for the `custom` value)***
+     
+
+## Theming
 * [https://mui.com/material-ui/customization/theming](https://mui.com/material-ui/customization/theming)
 
