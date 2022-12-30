@@ -15,3 +15,6 @@ diskutil unmountDisk /dev/diskX
 ```
 dd if=./proxmox-ve_7.0-2.iso of=/dev/diskX bs=1m
 ```
+4. Add Progress Bar
+```
+status=progress
