@@ -17,4 +17,5 @@ Siden LoRa jobber i ISM -frekvensbåndene (433 MHz, 868 MHz og 915 MHz), den uts
 
 SX1261 -mottakeren med LoRa -modulasjon oppnår 4 – 6 dB mer følsomhet enn med FSK -modulasjon. Sammenlignet med CC1020 8 – 11 dB og i sammenligning med CC1101 13 – 17 dB mer følsomhet oppnås. Det er slående at jo lavere blir datahastigheten valgt, jo mer følsomhetsøkning kan oppnås med LoRa.
 
-
+## ISM-bånd
+ISM står for Industrial, Scientific and Medical og benytter frekvenser rundt 0,4, 0,8, 0,9, 1,8, 2,4, og 5,8 GHz.
