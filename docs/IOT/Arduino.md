@@ -12,8 +12,8 @@ if (driver.recv(buf, &buflen)) // Non-blocking
 }
 ```
 
-## Preferences library
-In ESP32 there is no EEPROM. Preferences is an Arduino library that uses ESP-IDF's NVS, which has wear levelling
+## ESP-IDF NVS (Non-Volatile Storage)
+ESP32 has no EEPROM. Preferences is an Arduino library that uses ESP-IDF's NVS, which has wear levelling
 
 ## Quadrature Encoders
 A quadrature encoder is an encoder that has two output channels, with one being offset by 90 electrical degrees, or one quarter of a cycle
