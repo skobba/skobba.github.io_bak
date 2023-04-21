@@ -4,12 +4,13 @@
 ```
 brew install --cask <name>
 
-itermm
+iterm2
 nextcloud
 visual-studio-code
 keepassx
 spectacle
 vlc
+eqmac
 ```
 
 
