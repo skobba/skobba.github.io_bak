@@ -1,11 +1,10 @@
 # Project life cycle and methodologies
 
-Waterfall / Agile.
-
 ![Project Life Cycle](plc.png)
 
+## Life cycle
 
-## Initiate a project
+### Initiate a project
 * Who are the stakeholders?
 * What are the client’s or customer’s goals?
 * What is the purpose and mission of the project?
@@ -15,7 +14,7 @@ Waterfall / Agile.
 * What skills and resources will the project require? 
 * What will the project cost? What are the benefits?
 
-## Make a plan
+### Make a plan
 In this phase, make a plan to get your project from start to finish. 
 
 Create a detailed project plan. What are the major milestones? What tasks or deliverables make up each milestone?  
@@ -28,7 +27,7 @@ Build out the schedule so you can properly manage the resources, budget, materia
 * Determind roles and responsibilities
 * Plan for risk and change
 
-## Executing and completing tasks
+### Executing and completing tasks
 * Manage the progress
 * Communicate
 * Make adjustments
@@ -43,10 +42,15 @@ Address weaknesses in your process or examine places where your team may need ad
 
 Adapt to changes in the project as they arise.
 
-## Closing a project
+### Closing a project
 * Ensure all tasks are completed
 * Confirm acceptance of the project outcome
 * Reflect on lessons learned (retrospective)
 * Communicate results with stakholders
 * Celebrate completion
 * Formaly move from the project
+
+
+## Methodologies
+
+### Waterfall and Agile
