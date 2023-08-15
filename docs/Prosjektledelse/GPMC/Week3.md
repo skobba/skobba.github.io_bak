@@ -141,3 +141,4 @@ ___Six Sigma___ involves reducing variations by ensuring that quality processes 
 
 ___Lean Six Sigma___ is a combination of Lean and Six Sigma approaches. It is often used in projects that aim to save money, improve quality, and move through processes quickly. Lean Six Sigma is also ideal for solving complex or high-risk problems. The 5S organization framework, the DMAIC process, and the use of Kanban boards are all components of this approach. 
 
+![agile-waterfall-lean](agile-waterfall-lean.png)
