@@ -125,6 +125,8 @@ The largest difference between these methodologies is that Lean streamlines proc
 
 [Which project management methodologies should you use?](https://www.teamwork.com/project-management-guide/project-management-methodologies/)
 
+*All approaches can be combined with others, depending on the needs of your project.*
+
 ___Waterfall___ is a traditional methodology in which tasks and phases are completed in a linear, sequential manner, and each stage of the project must be completed before the next begins. The project manager is responsible for prioritizing and assigning tasks to team members. In Waterfall, the criteria used to measure quality is clearly defined at the beginning of the project.
 
 ___Agile___ involves short phases of collaborative, iterative work with frequent testing and regularly-implemented improvements. Some phases and tasks happen at the same time as others. In Agile projects, teams share responsibility for managing their own work. Scrum and Kanban are examples of Agile frameworks, which are specific development approaches based on the Agile philosophy.
