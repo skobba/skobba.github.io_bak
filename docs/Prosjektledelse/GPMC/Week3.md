@@ -64,3 +64,10 @@ Adapt to changes in the project as they arise.
 | Quality                | Project manager makes plans and clearly defines criteria to measure quality at the beginning of the project.                                                                             | Team solicits ongoing stakeholder input and user feedback by testing products in the field and regularly implementing improvements. |
 | Communication          | Project manager continually communicates progress toward milestones and other key indicators to stakeholders, ensuring that the project is on track to meet the customer’s expectations. | Team is customer-focused, with consistent communication between users and the project team. |
 | Stakeholders           | Project manager continually manages and monitors stakeholder engagement to ensure the project is on track.                                                                               | Team frequently provides deliverables to stakeholders throughout the project. Progress toward milestones is dependent upon stakeholder feedback. |
+
+
+### Lean and Six Sigma
+___DMAIC___
+Define, measure, analyze, improve, and control
+
+
