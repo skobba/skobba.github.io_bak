@@ -18,3 +18,5 @@ Key competencies: Flexibility and handling ambiguity
 ## Key competencies: Flexibility and handling ambiguity
 As a project manager, having the flexibility and ability to handle ambiguity in a rapidly-changing business setting gives you an advantage. Mastering these competencies, along with enabling decision-making, effective communication skills, and strong organizational skills, will allow you to innovate and grow as a project manager and leader.
 
+## Interpersonal skills
+Communication, negotiation, conflict mediation, and understanding motivations.
