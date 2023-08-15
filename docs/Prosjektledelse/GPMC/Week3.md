@@ -1,4 +1,4 @@
-# Week1 - Project life cycle and methodologies
+# Week3 - Project life cycle and methodologies
 
 ![Project Life Cycle](plc.png)
 
