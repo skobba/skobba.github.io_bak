@@ -117,7 +117,7 @@ Make sure projects are aligned to the organization’s larger objectives by:
 ### Understand your target role
 To understand everything from minimum must-have requirements to skills that might help you stand out from the crowd, you can begin by researching and analyzing job descriptions across different organizations. 
 
-### Analyze job listings
+### Create job listings
 ___Pull up ten job descriptions for your target role___ Make sure the roles you select come from different companies, share similar titles, and are roles you would actually apply for. In each job description, you should be able to identify a section listing requirements for the role. 
 
 ___Combine all the job requirements___ Create a new Google document and copy over all the required responsibilities from all ten job descriptions. 
@@ -134,3 +134,16 @@ If you’re surprised by your results, you may need to spend more time learning 
 
 ___How do I know if I’m really right for my target role?___
 It’s perfectly normal to experience self-doubt at this stage of the process. Remember, this is a new career for you. You’re not expected to know everything about the role, and it’s likely that your existing skills and experience won’t line up perfectly. The more you learn about the role, the better you’ll understand what’s required for success, and the more you’ll know about how to prepare yourself for that success.
+
+### Create professional inventory
+Existing professional qualifications, and any other skills or experience you possess that might be relevant to your target role and of value to a potential employer.
+
+* Assemble a comprehensive list of the following:
+* Technical (hard) skills. These are skills relating to a specific task or situation such as programming, technical writing, project management, and more.
+* Non-technical (interpersonal) skills. These are the skills that enable people to navigate their environment, work well with others, perform well, and achieve their goals. They include skills like communication, leadership, team management, and more.
+* Personal qualities. These are positive attributes and personality traits such as being honest, having a good sense of humor, and being dependable. You can also include your professional interests on this list.
+* Education. This includes any post-secondary education, certifications, or independent classes completed online or offline.
+
+Tip: You do not need to limit your professional inventory to skills and qualities developed through professional experience. Consider any volunteer, extracurricular, or personal experiences that might help a hiring manager understand your capabilities. 
+
+Once you’ve created your inventory of skills and experience, you’re ready to line these up against your requirements list.
