@@ -102,3 +102,14 @@ Another example of governance within an organization is the creation and use of 
 
 #### Project governance
 As a project manager, you will be responsible for project governance. Project governance is the framework for how project decisions are made. Project governance helps keep projects running smoothly, on time, and within budget. Project governance involves all the key elements that make a project successful. It tells you what activities an organization does and who is responsible for those activities. Project governance covers policies, regulations, functions, processes, procedures, and responsibilities. 
+
+#### How project and corporate governance intersect
+Make sure projects are aligned to the organization’s larger objectives by:
+* Considering the long- and short-term interests of your organization
+* Making thoughtful decisions about which projects to take on and avoiding projects if you do not have sufficient resources
+* Providing timely, relevant, and reliable information to the board of directors and other major stakeholders 
+* Eliciting the input and buy-in of senior managers since they are the decision-makers 
+* During the initiation phase, prioritizing clear, reachable, and sustainable goals in order to reduce confusion and conflict
+* During the planning phase, assigning ownership and accountability to an experienced team to deliver, monitor, and control the process 
+* During the execution phase, learning from mistakes and adapting to new or improved knowledge
+
