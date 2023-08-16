@@ -83,7 +83,7 @@ Follow a consistent process. Following a clear change management process helps m
 ___Practice empathy___
 Changes are inevitable, but we are often resistant to them. By being empathetic to the challenges and anxiety change can bring, you can support the process in subtle ways. 
 
-____Use tools___
+___Use tools___
 Incorporating tools to assist in the adoption of a change can be very helpful. Here are a few examples you can use on your next project:
 
 * [Change Management at the Project Level](https://www.prosci.com/resources/articles/change-management-at-the-project-level)
