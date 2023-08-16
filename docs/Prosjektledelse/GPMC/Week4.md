@@ -59,3 +59,10 @@ ___Values___
 * Learning the company’s values
 * Clarifying the company’s expectations
 * Applying organizational culture to a project
+
+## Change Management
+Ask yourself the following questions:
+* How will the organization react to change?
+* Which influencers can affect change?
+* What are the best means of communication? 
+* What change management practices will lead to the successful implementation of my project? 
