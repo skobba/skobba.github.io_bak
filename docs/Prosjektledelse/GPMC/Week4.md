@@ -113,3 +113,24 @@ Make sure projects are aligned to the organization’s larger objectives by:
 * During the planning phase, assigning ownership and accountability to an experienced team to deliver, monitor, and control the process 
 * During the execution phase, learning from mistakes and adapting to new or improved knowledge
 
+## Uncover job opportunities
+### Understand your target role
+To understand everything from minimum must-have requirements to skills that might help you stand out from the crowd, you can begin by researching and analyzing job descriptions across different organizations. 
+
+### Analyze job listings
+___Pull up ten job descriptions for your target role___ Make sure the roles you select come from different companies, share similar titles, and are roles you would actually apply for. In each job description, you should be able to identify a section listing requirements for the role. 
+
+___Combine all the job requirements___ Create a new Google document and copy over all the required responsibilities from all ten job descriptions. 
+
+___Order requirements based on appearance frequency___ Certain requirements will likely appear in multiple descriptions. The more commonly they appear, the more likely it is that they’re essential for the role. Put the most frequently appearing requirements at the top of your list. For example, a requirement that appears in all ten descriptions would go at the very top.
+
+After completing these steps, you should have a clearer picture of which requirements are most common and important for the role. You may also have questions:
+
+___Why do requirements differ across job descriptions?___
+One of the most common reasons for this has to do with overly general job titles, or job titles that don’t necessarily communicate the specific scope of a given role at a particular company. For example, a program manager at one company might be focused on customer management, while at another company, the emphasis might be on project management. A Data Analyst might primarily use SQL at one company and Python at another. Because of these differences, it’s important to look beyond job titles. This is why we recommend the process outlined above—to help ensure you’re targeting the exact roles that are right for you—and that you understand the requirements for those exact roles.
+
+___Why are some requirements higher on my list than I thought they would be, while others I expected to see barely show up at all?___
+If you’re surprised by your results, you may need to spend more time learning what the role really entails, as you may have some preconceptions about the role that require adjusting. You might also need to do additional research to ensure you’re targeting the right roles in your job search. 
+
+___How do I know if I’m really right for my target role?___
+It’s perfectly normal to experience self-doubt at this stage of the process. Remember, this is a new career for you. You’re not expected to know everything about the role, and it’s likely that your existing skills and experience won’t line up perfectly. The more you learn about the role, the better you’ll understand what’s required for success, and the more you’ll know about how to prepare yourself for that success.
