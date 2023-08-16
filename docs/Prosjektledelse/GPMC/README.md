@@ -6,7 +6,7 @@ The review process for some assignments can take a little while, and it is a req
 
 There are six chapters in the curriculum:
 1. Foundations of Project Management
-2.  Project Initiation
+2.  Project Initiation (21 hours)
 3.  Project Execution
 4.  Project Planning
 5.  Agile Project Management
