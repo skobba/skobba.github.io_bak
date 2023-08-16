@@ -65,4 +65,26 @@ Ask yourself the following questions:
 * How will the organization react to change?
 * Which influencers can affect change?
 * What are the best means of communication? 
-* What change management practices will lead to the successful implementation of my project? 
+* What change management practices will lead to the successful implementation of my project?
+
+### Best practices
+___Be proactive___
+Proactive and inclusive change management planning can help keep any potentially impacted stakeholders aware of the upcoming changes.
+
+Incorporate change management into your project management steps. For example, you can schedule time during team meetings or create a feedback document to ensure that your team members know there is a place to voice their suggestions and concerns. 
+
+You can also plan steps towards the end of your project to introduce the deliverable to stakeholders in the form of demonstrations, question and answer forums, or marketing videos. You can factor all of these decisions into your plan so that any potential changes are less likely to impact your timeline. If these steps have not been built into your plan, you can escalate and stress the importance of a change management plan to your stakeholders. 
+
+___Communicate about upcoming changes___
+Communication should occur regularly among impacted stakeholders, the change management team, and the project team. Check in and communicate throughout the project about how the changes will provide a better experience for end users of the project deliverables. In this way, you support the process by providing everyone with the information they need to feel prepared to adjust to changes once the project is ready to launch. 
+
+Follow a consistent process. Following a clear change management process helps maintain consistency each time there is a change. The change management process should be established and documented early on in your project to guide how the project will handle change. Your organization may also have an overarching change management plan that can be adopted for your project. This may include when the promotion of the change should happen, when training should occur, when the launch or release will occur, and corresponding steps for each phase of the process. 
+
+___Practice empathy___
+Changes are inevitable, but we are often resistant to them. By being empathetic to the challenges and anxiety change can bring, you can support the process in subtle ways. 
+
+____Use tools___
+Incorporating tools to assist in the adoption of a change can be very helpful. Here are a few examples you can use on your next project:
+
+* [Change Management at the Project Level](https://www.prosci.com/resources/articles/change-management-at-the-project-level)
+* [5 Steps to Successful End-User Adoption](https://www.citrix.com/content/dam/citrix/en_us/documents/reference-material/5-steps-to-successful-end-user-adoption.pdf)
