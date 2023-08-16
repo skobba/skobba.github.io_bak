@@ -88,3 +88,4 @@ Incorporating tools to assist in the adoption of a change can be very helpful. H
 
 * [Change Management at the Project Level](https://www.prosci.com/resources/articles/change-management-at-the-project-level)
 * [5 Steps to Successful End-User Adoption](https://www.citrix.com/content/dam/citrix/en_us/documents/reference-material/5-steps-to-successful-end-user-adoption.pdf)
+* [Change-Management-Framework.pptx](Change-Management-Framework.pptx)
