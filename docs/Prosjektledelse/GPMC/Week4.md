@@ -89,3 +89,16 @@ Incorporating tools to assist in the adoption of a change can be very helpful. H
 * [Change Management at the Project Level](https://www.prosci.com/resources/articles/change-management-at-the-project-level)
 * [5 Steps to Successful End-User Adoption](https://www.citrix.com/content/dam/citrix/en_us/documents/reference-material/5-steps-to-successful-end-user-adoption.pdf)
 * [Change-Management-Framework.pptx](Change-Management-Framework.pptx)
+
+### Corporate and project governance
+___Governance___ in business is the management framework within which decisions are made and accountability and responsibility are determined. In simple terms, governance is understanding who is in charge. 
+
+#### Corporate governance
+A set of standards and practices that direct and control its actions. Corporate governance is the framework by which an organization achieves its goals and objectives. Corporate governance is also a way to balance the requirements of the various corporate entities, such as stakeholders, management, and customers. Corporate governance affects every part of an organization, including action plans, internal and external controls, and performance measurements.
+
+Governance and change management go hand-in-hand. Think back to the previous videos on change management. To successfully implement change management, it is essential that you understand the structure and culture of the organization. Effective governance in change management provides clearly defined roles and responsibilities during change. This enables the people within the organization to have a precise understanding of who makes decisions and of the relationship between those managing and participating in the change management process. 
+
+Another example of governance within an organization is the creation and use of steering committees. Steering committees decide on the priorities of an organization and manage the general course of its operations. The steering committee essentially acts as an advisory board or council to help the project manager and the company make and approve strategic decisions that affect both the company and the project. 
+
+#### Project governance
+As a project manager, you will be responsible for project governance. Project governance is the framework for how project decisions are made. Project governance helps keep projects running smoothly, on time, and within budget. Project governance involves all the key elements that make a project successful. It tells you what activities an organization does and who is responsible for those activities. Project governance covers policies, regulations, functions, processes, procedures, and responsibilities. 
