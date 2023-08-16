@@ -53,3 +53,9 @@ ___Values___
 * What are the company’s mission and value statements?
 * How might the person in this role contribute to the organization’s mission?
 * How does the organization support professional development and career growth?
+
+
+### A project manager’s relationship to organizational culture 
+* Learning the company’s values
+* Clarifying the company’s expectations
+* Applying organizational culture to a project
