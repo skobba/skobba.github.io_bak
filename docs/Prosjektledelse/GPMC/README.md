@@ -5,7 +5,7 @@ The price is $39 per month and the duration is set to take 27 weeks beside a nor
 The review process for some assignments can take a little while, and it is a requirement for finishing a chapter.
 
 There are six chapters in the curriculum:
-1. Foundations of Project Management
+1. Foundations of Project Management (18 hours)
 2.  Project Initiation (21 hours)
 3.  Project Execution
 4.  Project Planning
