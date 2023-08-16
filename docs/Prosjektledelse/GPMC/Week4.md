@@ -147,3 +147,19 @@ Existing professional qualifications, and any other skills or experience you pos
 Tip: You do not need to limit your professional inventory to skills and qualities developed through professional experience. Consider any volunteer, extracurricular, or personal experiences that might help a hiring manager understand your capabilities. 
 
 Once you’ve created your inventory of skills and experience, you’re ready to line these up against your requirements list.
+
+### Match your profile to the job requirements
+The concluding step in this process is to match your profile to the job requirements. The goal here is to make it easy for any hiring manager to see why you’re a great fit for their role. You’ll accomplish this by learning what to emphasize and focus on in your search, on your resume, and during interviews.
+
+To begin, go through your professional inventory of skills and experience, highlighting each item in green, orange, or red, depending on its relevance to your target role. Relevance is determined by whether a given skill appears on your role requirements list, how high it appears on your list, and how directly it aligns with your list. 
+
+For example, let’s say you’re interested in a program manager role. If you’re skilled at using project management software, and project management software skills are high on your job requirements list, then highlight that item in green. If you have some experience with tools that do not consistently show up on job descriptions but could still be relevant, highlight these skills in orange. 
+
+__Green__ should be used for skills that are directly relevant to your target role. You should look for roles that emphasize these skills. You should also highlight these skills on your resume, and be prepared to discuss them in an interview.
+
+__Orange__ should be used to identify those skills and experiences that are relevant for the role but not necessarily in a direct way. These are generally your transferable skills—skills that you bring with you from past experiences that can help you succeed in your new role. Plan to have to explain these to recruiters and hiring managers, as their relevance may not be immediately evident.
+
+__Red__ should be used for items that are not relevant for your job search. De-prioritize these skills, and steer clear of highlighting them on your resume and focusing on them during interviews.
+
+Of these three categories, the orange items are where you’ll need to focus extra attention. When it comes to transferable skills, you have to do the convincing, as you can’t count on a recruiter or hiring manager making the connection. For example, no job description for a project manager role calls for waitstaff experience. However, that project manager job description will likely mention excellent communication skills—which you would have developed during your hospitality career. When applying for the project manager role, make sure your resume specifically mentions excellent communication in addition to listing “waiter” or “waitress” as your previous occupation. Once you’ve categorized your skills and experience based on how well they align with the requirements for your target role, you’re ready to move your job search forward.
+
