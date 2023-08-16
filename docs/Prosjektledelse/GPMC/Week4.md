@@ -13,3 +13,11 @@ Project managers must clearly define roles and responsibilities in order to work
 Some project managers or department leads may have the same level of authority as the functional managers and operate more directly.
 
 ![Matrix](Matrix-org-struct.png)
+
+### Project Management Office (PMO)
+PMOs offer guidance and support to their organization’s project managers. They share best practices, project statuses, and direction for all of the organization’s projects while often taking on strategic projects themselves. The main functions of a PMO include:
+* Strategic planning and governance
+* Best practices
+* Common project culture 
+* Resource management
+* Creation of project documentation, archives, and tools
