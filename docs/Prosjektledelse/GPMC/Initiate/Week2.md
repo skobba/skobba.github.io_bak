@@ -83,3 +83,65 @@ Be specific in your answers. For instance, the plant care app SMART goal is:
 * ___Time-bound:___ The goal includes an 18-month timeframe.
 
 If you find that either goal does not meet all the SMART criteria, try revising it and answering the questions again.
+
+### SMART Goals
+__Original goal one:__ “Office Green will boost brand awareness.”
+
+__SMART Goal one:__ “Office Green will boost brand awareness with a new marketing
+and sales strategy and website update that will increase page views by 2K per
+month by the end of the year.”
+
+What makes this goal specific? Does it provide enough detail to avoid
+ambiguity?
+* The goal is specific because it’s clear what Office Green needs to do to achieve it
+(update the website and create a marketing and sales strategy to boost customer awareness
+of the brand).
+
+What makes this goal measurable? Does it include metrics to gauge success?
+* The goal is measurable because it sets a metric of a 2K monthly increase in
+monthly page views.
+
+What makes this goal attainable? Is it realistic given available time and
+resources?
+* The goal is attainable because the team has a full year to plan and execute the
+strategy. Two thousand additional page views per month is an increase of about 15%, which is
+in line with the results of previous marketing campaigns.
+
+What makes this goal relevant? Does it support project or business objectives?
+* The goal is relevant because increased brand awareness can bring in new
+customers. New customers should mean more sales, so this goal supports the project
+objective of increasing revenue by 5% by the end of the year.
+
+What makes this goal time-bound? Does it include a timeline or deadline?
+* The goal is time-bound because it sets a deadline of the end of the year.
+
+__Original goal two:__ “Office Green will raise their customer retention rate.”
+__SMART goal two:__ “Office Green will raise their overall customer retention rate by
+10% by the end of the year by implementing a new Operations & Training plan for
+the Plant Pals service.”
+
+What makes this goal specific? Does it provide enough detail to avoid
+ambiguity?
+* The goal is specific because it’s clear what Office Green needs to do to achieve it
+(Implement an Operations & Training plan that will improve on existing customer service
+standards and boost efficiency).
+
+What makes this goal measurable? Does it include metrics to gauge success?
+* The goal is measurable because it sets a metric of a 10% increase in customer
+retention rates.
+
+What makes this goal attainable? Is it realistic given available time and
+resources?
+* The goal is attainable because customer retention is already high and a large
+percentage of existing customers have expressed interest in the service. Many former
+customers have also stated that they left for landscapers that offered additional services, like
+Plant Pals.
+
+What makes this goal relevant? Does it support project or business objectives?
+* The goal is relevant because raising customer retention should lead to increased
+sales, which supports the project objective of increasing revenue by 5% by the end of the
+year.
+
+What makes this goal time-bound? Does it include a timeline or deadline?
+* The goal is time-bound because it sets a deadline of the end of the year.
+
