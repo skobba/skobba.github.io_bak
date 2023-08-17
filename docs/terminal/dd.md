@@ -1,6 +1,6 @@
-# dd
+# dd usb/sd operations
 
-## Write iso image to usb stick
+## Write iso image to sd card
 1. List disk on mac
 ``` 
 diskutil list
