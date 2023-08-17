@@ -116,6 +116,7 @@ What makes this goal time-bound? Does it include a timeline or deadline?
 * The goal is time-bound because it sets a deadline of the end of the year.
 
 __Original goal two:__ “Office Green will raise their customer retention rate.”
+
 __SMART goal two:__ “Office Green will raise their overall customer retention rate by
 10% by the end of the year by implementing a new Operations & Training plan for
 the Plant Pals service.”
