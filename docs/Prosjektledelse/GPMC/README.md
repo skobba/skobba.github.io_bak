@@ -15,4 +15,4 @@ There are six chapters in the curriculum:
 ## Ref
 * [https://www.coursera.org/google-certificates/project-management-certificate](https://www.coursera.org/google-certificates/project-management-certificate)
 * [https://www.pmi.org](https://www.pmi.org)
-
+* [How I passed the Google Project Management Certificate in a Week](https://rebelsguidetopm.com/google-project-management-certificate-tips/)
