@@ -146,4 +146,6 @@ year.
 What makes this goal time-bound? Does it include a timeline or deadline?
 * The goal is time-bound because it sets a deadline of the end of the year.
 
-# OKR
+## OKR
+__OKR__ is an acronym for objectives and key results. Objectives define what needs to be achieved and describe a desired outcome. Key results define how the project team knows whether or not they have met their objective.
+
