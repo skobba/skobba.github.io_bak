@@ -33,3 +33,12 @@ You might also consider questions about intangible benefits. These are gains tha
 * ___Employee productivity___. Will the project reduce employee’s overtime hours, saving the company money?
 * ___Brand perception.___ Is the project likely to improve the company’s brand perception and recognition, attracting more customers or providing a competitive advantage?
 
+### Calculating costs and benefits
+```
+(G-C)%C=ROI
+```
+
+In this formula, G represents the financial gains you expect from the project, and C represents the upfront and ongoing costs of your investment in the project.
+
+For example, imagine your project costs $6,000 up front plus $25 per month for 12 months. This equals $300 per year, but you estimate that the project will bring in $10,000 in revenue over the course of that year. Using the formula above, you calculate the ROI as: ($10,000 - $6,300) ÷ $6,300 = 0.58 = 58%
+
