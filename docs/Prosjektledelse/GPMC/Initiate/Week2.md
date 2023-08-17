@@ -18,7 +18,7 @@ SMART goals are well-defined goals that help keep projects on track. They’re s
 * Where should the goal be delivered?
 * Finally, to what degree? In other words, what are the requirements and constraints? 
 
-## Scenario
+### Scenario
 
 Review the scenario below. Then complete the step-by-step instructions.
 
@@ -84,7 +84,7 @@ Be specific in your answers. For instance, the plant care app SMART goal is:
 
 If you find that either goal does not meet all the SMART criteria, try revising it and answering the questions again.
 
-### SMART Goals
+### Created SMART Goals
 __Original goal one:__ “Office Green will boost brand awareness.”
 
 __SMART Goal one:__ “Office Green will boost brand awareness with a new marketing
@@ -146,3 +146,4 @@ year.
 What makes this goal time-bound? Does it include a timeline or deadline?
 * The goal is time-bound because it sets a deadline of the end of the year.
 
+# OKR
