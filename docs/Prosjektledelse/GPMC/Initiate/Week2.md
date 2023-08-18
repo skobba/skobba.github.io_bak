@@ -155,4 +155,9 @@ __OKR__ is an acronym for objectives and key results. Objectives define what nee
 * [How OKRs and KIPs work together](https://www.reflektive.com/blog/okrs-and-kpis-what-they-are-and-how-they-work-together/)
 * [Google OKR Playbook](https://www.whatmatters.com/resources/google-okr-playbook)
 
-
+Objectives meet the following criteria:
+* Aspirational
+* Aligned with organizational goals
+* Action-oriented
+* Concrete
+* Significant
