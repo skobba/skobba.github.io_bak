@@ -151,4 +151,8 @@ __OKR__ combine a goal and a metric to determine a measurable outcome.
 
 __OKR__ is an acronym for objectives and key results. Objectives define what needs to be achieved and describe a desired outcome. Key results define how the project team knows whether or not they have met their objective.
 
+* [OKR Examples](https://business.adobe.com/blog/basics/okr-examples)
+* [How OKRs and KIPs work together](https://www.reflektive.com/blog/okrs-and-kpis-what-they-are-and-how-they-work-together/)
+* [Google OKR Playbook](https://www.whatmatters.com/resources/google-okr-playbook)
+
 
