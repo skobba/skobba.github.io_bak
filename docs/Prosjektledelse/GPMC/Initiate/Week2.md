@@ -238,3 +238,29 @@ __Document, align, and communicate success__
 
 *It is best practice to get the key stakeholders or the steering committee to review and approve your success criteria. This becomes a mutual agreement on how all parties define the success of the project.*
 
+## Using OKRs to evaluate progress
+### Communicating and tracking OKRs
+Conducting regular check-ins and actively tracking progress with your team can help ensure that objectives are being met.
+
+* Share your OKRs with your team
+* Assign owners. Assign an owner to every key result so that everybody knows who’s responsible for what. This helps add clarity and increases accountability.
+
+### Measuring progress
+*One shortcut to determining the status of a project is to score or grade your OKRs.*
+
+Determine how you will score your OKRs. OKRs can be scored in different ways. You can score based on a percentage of the objective completed, the completion of certain milestones, or a scale of 1 to 10, for example. You can also use a “traffic light” scoring approach, where red means you didn’t make any progress, yellow means you made some progress, and green means you completed your objective.
+
+The simplest approach to scoring OKRs is the “yes/no” method, with “yes” meaning you achieved your objective and “no” meaning you didn’t. Using this approach, a key result such as “Launch a new widget marketing campaign” might be graded a 1 or 0 depending on whether it was launched (1) or not (0). 
+
+A more advanced scoring approach is to grade your key results on a scale. With this method, if a key result was to “Launch six new features” and only three new features were launched, the OKR might be graded 0.5. Generally, if the KR helped you achieve the objective, your OKR should receive a higher score; if it didn't, your OKR should receive a lower score. 
+
+### Google Scorecard Template
+OKRs are usually graded on a scale of 0.0 to 1.0, with 1.0 meaning the objective was fully achieved. Each individual key result is graded and then the grades are averaged to determine the score for that OKR.
+
+__Set your scoring expectations.__ With Google’s 0.0–1.0 scale, the expectation is to set ambitious OKRs and aim to achieve an average of at least 0.6 to 0.7 across all OKRs. For OKRs graded according to percentage achieved, the sweet spot is somewhere in the 60–70% range. Scoring lower may mean the team is not achieving what it could be. Scoring higher may mean the aspirational goals are not being set high enough. 
+
+__Schedule checkpoints.__ It’s important to regularly communicate the status of project OKRs with your team and senior managers. For example, it can be helpful to have monthly check-ins on the progress of OKRs to give both individuals and your team a sense of where they are. Typically, at the end of the quarter, you’ll grade each of your OKRs to evaluate how well the team did to achieve its goals.
+
+![OKRs-Scorecard](OKRs-Scorecard.png)
+
+
