@@ -217,3 +217,24 @@ Ref.: [thedigitalprojectmanager.com](https://thedigitalprojectmanager.com/projec
 
 __The Iron Triangle__
 ![iron-triangle](iron-triangle.png)
+
+## Success Criterias
+__Product quality__
+To measure the success of a product, consider including these metrics on your checklist: 
+* Track if you implemented the product’s priority requirements
+* Track and assess the product’s number of technical issues or defects
+* Measure the percentage of features you delivered or released at the end of the project
+
+__What is important to the customers or stakeholders__
+Strategic goals tie back to the business case and the reason you initiated the project in the first place. Often, you can measure the fulfillment of strategic goals via user or customer metrics. Metrics to consider include:
+* Evaluating user engagement with the product 
+* Measuring stakeholder and customer satisfaction via surveys
+* Tracking user adoption of the product by using sales data
+
+__Document, align, and communicate success__
+* Who ultimately says whether or not the project is successful?
+* What criteria will be measured to determine success?
+* What is the success of this project based on?
+
+*It is best practice to get the key stakeholders or the steering committee to review and approve your success criteria. This becomes a mutual agreement on how all parties define the success of the project.*
+
