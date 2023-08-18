@@ -18,6 +18,12 @@ SMART goals are well-defined goals that help keep projects on track. They’re s
 * Where should the goal be delivered?
 * Finally, to what degree? In other words, what are the requirements and constraints? 
 
+__Example Metrics__
+* Adoption metric
+* Efficiency metric
+* Engagement metric
+* Business metric
+
 ### Scenario
 
 Review the scenario below. Then complete the step-by-step instructions.
