@@ -214,3 +214,6 @@ __Flexibility__
 ### The Tripple constraint Model
 Ref.: [thedigitalprojectmanager.com](https://thedigitalprojectmanager.com/projects/scope-management/triple-constraint/)
 ![three-constraints](three-constraints2.png)
+
+__The Iron Triangle__
+![iron-triangle](iron-triangle.png)
