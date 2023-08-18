@@ -161,3 +161,5 @@ Objectives meet the following criteria:
 * Action-oriented
 * Concrete
 * Significant
+
+![OKRs](OKRs.png)
