@@ -163,3 +163,5 @@ Objectives meet the following criteria:
 * Significant
 
 ![OKRs](OKRs.png)
+
+## Scope
