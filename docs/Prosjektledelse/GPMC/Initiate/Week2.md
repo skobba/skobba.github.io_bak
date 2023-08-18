@@ -165,3 +165,37 @@ Objectives meet the following criteria:
 ![OKRs](OKRs.png)
 
 ## Scope
+
+### Asking scope-defining questions
+Make sure you understand the who, what, when, where, why, and how as it applies to the scope.
+
+__Stakeholders__
+* How did you arrive at the decision to ___? 
+* Did the request originate from the owner, customers, or other stakeholders? 
+* Who will approve the scope for the project? 
+
+__Goals__
+* What is the reason for ___? 
+* What isn't working in the ___? 
+* What is the end goal of this project? 
+
+__Deliverables__
+* What exactly needs to be updated? 
+* Does the ___ need a remodel? 
+
+__Resources__
+* What materials, equipment, and people will be needed? 
+* Will we need to hire contractors? 
+* Will we need to attain permits? 
+
+__Budget__
+* What is the budget for this project? Is it fixed or flexible? 
+
+__Schedule__
+* How much time do we have to complete the project? 
+* When does the project need to be completed? 
+* 
+__Flexibility__
+* How much flexibility is there? 
+* What is the highest priority: hitting the deadline, sticking to the budget, or making sure the result meets all the quality targets?
+
