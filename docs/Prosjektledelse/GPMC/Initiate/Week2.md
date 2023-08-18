@@ -212,4 +212,5 @@ __Flexibility__
 * __Collect costs for out-of-scope work.__ If out-of-scope work is required, be sure to document all costs incurred. That includes costs for work indirectly impacted by the increased scope. Be sure to indicate what the charges are for. 
 
 ### The Tripple constraint Model
+Ref.: [thedigitalprojectmanager.com](https://thedigitalprojectmanager.com/projects/scope-management/triple-constraint/)
 ![three-constraints](three-constraints2.png)
