@@ -1,4 +1,6 @@
 # Defining project goals, scope, and success criteria
+## Project charter
+An elevator pitch of your project objectives, project scope, and project responsibilities in order to get approval from key project stakeholders. In the charter, you should provide a short, succinct explanation of the main elements of your project before you get started.
 
 ## SMART Goals
 * __Specific__: The objective has no ambiguity for the project team to misinterpret. 
