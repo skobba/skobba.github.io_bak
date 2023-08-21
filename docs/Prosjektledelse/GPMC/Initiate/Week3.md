@@ -1,4 +1,6 @@
-# Roles and responsibilities
+# Working with stakeholders
+
+## Roles and responsibilities
 
 * The right skills and abilities to fill the role
 * Who is available?
@@ -24,3 +26,5 @@ __User__, considered primary stakeholders.
 __Project Manager__, considered primary stakeholders.
 
 ![team-roles](team-roles.png)
+
+## Evaluating stakeholders
