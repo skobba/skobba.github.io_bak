@@ -23,3 +23,4 @@ __User__, considered primary stakeholders.
 
 __Project Manager__, considered primary stakeholders.
 
+![team-roles](team-roles.png)
