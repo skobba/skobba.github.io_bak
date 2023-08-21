@@ -10,3 +10,16 @@ __Pre-assignment__, the sponsor assigns team members to your project.
 
 Team size, skills, availability, and motivation are the building blocks to creating your very own dream team. Always keep in mind that a project manager does not just select dream teams, they create dream teams through collaboration under great leadership.
 
+## Roles
+__Stakeholders__
+* Primary - directly affected by the outcome of the project.
+* Secondary - indirectly affected by the outcome of the project.
+
+__Sponsors__, another primary stakeholder, VIP, critical to communicate with, CEO could also be the project sponsor.
+
+__Team mambers__, considered primary stakeholders.
+
+__User__, considered primary stakeholders.
+
+__Project Manager__, considered primary stakeholders.
+
