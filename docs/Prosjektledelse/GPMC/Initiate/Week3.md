@@ -28,6 +28,16 @@ __Project Manager__, considered primary stakeholders.
 ![team-roles](team-roles.png)
 
 ## Evaluating stakeholders
+### Stakeholder Analysis
+Make a list of all the stakeholders the project impacts.
+* Who is invested in the project?
+* Who is impacted by this project?
+* Who contributes to this project? 
+
+Determine the level of interest and influence for each stakeholder—this step helps you determine who your key stakeholders are. Factors that will play a role in determining a stakeholder’s ability to participate in a project, like physical distance from the project and their existing workload. Various types of stakeholders—some will be active stakeholders with more opinions and touchpoints and others will be passive stakeholders
+
+You might want to form a steering committee during some projects. A steering committee is a collection of key stakeholders who have a high level of power and interest in a project. A steering committee can influence multiple departments within the organization, which means that they have the potential to release a greater number of resources to the project manager.  
 
 ![pgm_graph](pgm_graph.png)
 
+### Prioritizing stakeholders and generating their buy-in
