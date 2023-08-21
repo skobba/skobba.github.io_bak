@@ -42,6 +42,8 @@ Questions for stakeholders:
 
 
 ### Stakeholder Analysis
+Ref.: [Stakeholder-analysis-and-power-grid](Stakeholder-analysis-and-power-grid.pptx)
+
 Make a list of all the stakeholders the project impacts.
 * Who is invested in the project?
 * Who is impacted by this project?
