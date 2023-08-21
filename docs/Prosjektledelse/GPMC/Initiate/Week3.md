@@ -41,3 +41,7 @@ You might want to form a steering committee during some projects. A steering com
 ![pgm_graph](pgm_graph.png)
 
 ### Prioritizing stakeholders and generating their buy-in
+* Clearly mapping the work of the project to the goals of the stakeholder.
+* Describing how the project aligns with the goals of the stakeholder's department or team.
+* Listening to feedback from the stakeholder and finding ways to incorporate their feedback into the project's charter where appropriate.
+
