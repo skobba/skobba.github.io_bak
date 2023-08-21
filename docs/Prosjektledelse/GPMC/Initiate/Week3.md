@@ -28,3 +28,6 @@ __Project Manager__, considered primary stakeholders.
 ![team-roles](team-roles.png)
 
 ## Evaluating stakeholders
+
+![pgm_graph](pgm_graph.png)
+
