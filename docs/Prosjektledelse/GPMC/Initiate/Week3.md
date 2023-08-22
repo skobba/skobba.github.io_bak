@@ -68,11 +68,15 @@ You might want to form a steering committee during some projects. A steering com
 ## RACI Chart
 Ref.: [Template_-RACI-chart---Phase-1](Template_-RACI-chart---Phase-1.xlsx)
 
+*Often referred to as a Responsibility Assignment Matrix (RAM), RACI diagram, or RACI matrix.*
+
+Use it to get an overview over workload balance and avoid silos, where the knowledge and responsibility for a task falls on one person.
+
+You can document your team and stakeholders’ acknowledgment of these expectations through the project charter, meeting notes, and in the RACI chart itself. 
+
 ![RACI-chart](RACI-chart.png)
 
 ![RACI-chart2](RACI-chart2.png)
-
-*Often referred to as a Responsibility Assignment Matrix (RAM), RACI diagram, or RACI matrix.*
 
 A RACI chart creates clear roles and gives direction to each team member and stakeholder.
 
@@ -81,30 +85,35 @@ A RACI chart creates clear roles and gives direction to each team member and sta
 * C: Consulted: who gives input or feedback on work
 * I: Informed: who needs to know the outcome
 
-___Where possible, it is helpful to separate these roles.___
+*Where possible, it is helpful to separate these roles.*
 
-### Responsible
+### Types
+__1. Responsible__
+
 The ones who are actually doing the work.
  
 * What department does the work fall under?
 * Who will perform the work?
 
-### Accountable
+__2. Accountable__
 Making sure the task gets done. It is important to have only one individual accountable for each task.
 
 * Who will delegate the task to be completed?
 * Who will review the work to determine if the task is complete?
 
-### Consulted
+__3. Consulted__
 Have useful information to help complete the task. There is no maximum or minimum number of people who can be assigned a “consulted” role.
 
 * Who will the task impact?
 * Who will have input or feedback for the responsible person to help the work be completed?
 * Who are the subject matter experts (SMEs) for the task?
 
-### Informed
+__4. Informed__
 Need to know the final decisions that were made and when a task is completed.
 
 * Who cares about this task’s completion?
 * Who will be affected by the outcome?
+
+### Put your RACI into practice
+Share your RACI chart with your sponsors and stakeholders to get buy-in and sign-off. When you get stakeholder buy-in, you will be able to set clear expectations for your team and ensure that everyone is aligned on their responsibilities.
 
