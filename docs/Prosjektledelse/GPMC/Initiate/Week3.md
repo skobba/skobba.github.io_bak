@@ -74,7 +74,7 @@ Use it to get an overview over workload balance and avoid silos, where the knowl
 
 You can document your team and stakeholders’ acknowledgment of these expectations through the project charter, meeting notes, and in the RACI chart itself. 
 
-![RACI-chart](RACI-chart.png)
+![RACI-chart-example](RACI-chart-example.png)
 
 ![RACI-chart2](RACI-chart2.png)
 
