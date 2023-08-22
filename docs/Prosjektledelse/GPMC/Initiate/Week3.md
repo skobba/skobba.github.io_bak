@@ -117,3 +117,10 @@ Need to know the final decisions that were made and when a task is completed.
 ### Put your RACI into practice
 Share your RACI chart with your sponsors and stakeholders to get buy-in and sign-off. When you get stakeholder buy-in, you will be able to set clear expectations for your team and ensure that everyone is aligned on their responsibilities.
 
+## Why projects fail
+Some common problems:
+* Unrealistic expectations (don't commit to firm dates when initiating the project) 
+* Miscommunication
+* Lack of resources
+* Scope creep
+
