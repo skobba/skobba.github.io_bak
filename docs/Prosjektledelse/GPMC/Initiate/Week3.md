@@ -66,6 +66,8 @@ You might want to form a steering committee during some projects. A steering com
 * Listening to feedback from the stakeholder and finding ways to incorporate their feedback into the project's charter where appropriate.
 
 ## RACI Chart
+Ref.: [Template_-RACI-chart---Phase-1](Template_-RACI-chart---Phase-1.xlsx)
+
 *Often referred to as a Responsibility Assignment Matrix (RAM), RACI diagram, or RACI matrix.*
 
 A RACI chart creates clear roles and gives direction to each team member and stakeholder.
