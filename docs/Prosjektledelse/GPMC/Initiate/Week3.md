@@ -65,3 +65,40 @@ You might want to form a steering committee during some projects. A steering com
 * Describing how the project aligns with the goals of the stakeholder's department or team.
 * Listening to feedback from the stakeholder and finding ways to incorporate their feedback into the project's charter where appropriate.
 
+## RACI Chart
+*Often referred to as a Responsibility Assignment Matrix (RAM), RACI diagram, or RACI matrix.*
+
+A RACI chart creates clear roles and gives direction to each team member and stakeholder.
+
+* R: Responsible: who gets the work done
+* A: Accountable: who makes sure the work is done
+* C: Consulted: who gives input or feedback on work
+* I: Informed: who needs to know the outcome
+
+___Where possible, it is helpful to separate these roles.___
+
+### Responsible
+The ones who are actually doing the work.
+ 
+* What department does the work fall under?
+* Who will perform the work?
+
+### Accountable
+Making sure the task gets done. It is important to have only one individual accountable for each task.
+
+* Who will delegate the task to be completed?
+* Who will review the work to determine if the task is complete?
+
+### Consulted
+Have useful information to help complete the task. There is no maximum or minimum number of people who can be assigned a “consulted” role.
+
+* Who will the task impact?
+* Who will have input or feedback for the responsible person to help the work be completed?
+* Who are the subject matter experts (SMEs) for the task?
+
+### Informed
+Need to know the final decisions that were made and when a task is completed.
+
+* Who cares about this task’s completion?
+* Who will be affected by the outcome?
+
