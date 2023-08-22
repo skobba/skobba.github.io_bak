@@ -68,6 +68,8 @@ You might want to form a steering committee during some projects. A steering com
 ## RACI Chart
 Ref.: [Template_-RACI-chart---Phase-1](Template_-RACI-chart---Phase-1.xlsx)
 
+![RACI-chart](RACI-chart.png)
+
 *Often referred to as a Responsibility Assignment Matrix (RAM), RACI diagram, or RACI matrix.*
 
 A RACI chart creates clear roles and gives direction to each team member and stakeholder.
