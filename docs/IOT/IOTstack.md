@@ -11,7 +11,12 @@ sudo apt install -y curl
 ```
 
 ```
+sudo apt-get install screen
+```
+
+```
 cd /home/pi/
+screen
 curl -fsSL https://raw.githubusercontent.com/SensorsIot/IOTstack/master/install.sh | bash
 ```
 
