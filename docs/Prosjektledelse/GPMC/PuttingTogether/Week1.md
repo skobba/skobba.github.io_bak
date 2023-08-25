@@ -20,6 +20,16 @@ __Stick to the agenda.__ During meetings, discussions can sometimes go off topic
 
 __Follow up after the meeting.__ After the meeting, make sure to send out a meeting summary featuring the meeting notes and any action items. 
 
+## Work Breakdown Structure (WBS)
+A WBS is a deliverable-oriented breakdown of a project into smaller components. It’s a tool that sorts the milestones and tasks of a project into a hierarchy, in the order they need to be completed. 
+
+__Steps to build a WBS__
+
+1. Start with the high-level, overarching project picture. Brainstorm with your team to list the major deliverables and milestones. Example: Imagine you are planning a company event. Your major milestones might include categories like “secure venue,”  “finalize guest logistics,” and “establish agenda.”
+
+2. Identify the tasks that need to be performed in order to meet those milestones. Example: You could break a milestone like “secure venue” down into tasks like “research venues,” “tour and decorate space,” “make down payment,” and so on. 
+
+3. Examine those tasks and break them down further into sub-tasks. Example: You could break down a task like “tour and decorate space” further into sub-tasks like “organize decorating committee,” “purchase decorations,” “assign decorating responsibilities,” and so on.
 
 ## Milestones
 * Create milestones from the project as a whole
@@ -28,6 +38,7 @@ __Follow up after the meeting.__ After the meeting, make sure to send out a meet
 __Top-down scheduling:__ In this approach, the project manager lays out the higher-level milestones, then works to break down the effort into project tasks. The project manager works with their team to ensure that all tasks are captured.
 
 __Bottom-up scheduling:__ In this approach, the project manager looks at all of the individual tasks that need to be completed and then rolls those tasks into manageable chunks that lead to a milestone.
+
 
 ### Milestone-setting pitfalls
 Here are some things to avoid when setting milestones: 
