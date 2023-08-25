@@ -1,6 +1,9 @@
 # Planing phase components
+* Schedule
+* Budget
+* Risk management plan
 
-# Kick-off meeting best practices
+## Kick-off meeting best practices
 __Set the right time.__ Choose a meeting time that works for everyone. Be mindful of time zone differences. 
 
 __Set the right length.__ Choose an appropriate meeting length—no more than one hour. You don’t want to waste people’s time, but you also don’t want to run out of time. Kick-off meetings work best when you first share key information and then spend any additional time on questions and team building.
