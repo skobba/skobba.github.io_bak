@@ -25,3 +25,16 @@ __Follow up after the meeting.__ After the meeting, make sure to send out a meet
 * Create milestones from the project as a whole
 * Set deadlines for each milestones
 
+__Top-down scheduling:__ In this approach, the project manager lays out the higher-level milestones, then works to break down the effort into project tasks. The project manager works with their team to ensure that all tasks are captured.
+
+__Bottom-up scheduling:__ In this approach, the project manager looks at all of the individual tasks that need to be completed and then rolls those tasks into manageable chunks that lead to a milestone.
+
+### Milestone-setting pitfalls
+Here are some things to avoid when setting milestones: 
+
+__Don’t set too many milestones.__ When there are too many milestones, their importance is downplayed. And, if milestones are too small or too specific, you may end up with too many, making the project look much bigger than it really is to your team and stakeholders.  
+
+__Don’t mistake tasks for milestones.__ Remember that milestones should represent moments in time, and in order to map out how you will get to those moments, you need to assign smaller tasks to each milestone.
+
+__Don’t list your milestones and tasks separately.__ Make sure that tasks and milestones can be visualized together in one place, such as a project plan. This will help ensure that you are hitting your deadlines and milestones. 
+
