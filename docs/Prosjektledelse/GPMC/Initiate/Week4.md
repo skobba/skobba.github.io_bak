@@ -5,3 +5,12 @@
 
 ![project-charter](project-charter.png)
 
+
+## Project Management Tools
+* Asana
+* Basecamp
+* Trello
+* Jira
+* Monday.com
+* Microsoft Project or Project Libre
+* Smartsheet
