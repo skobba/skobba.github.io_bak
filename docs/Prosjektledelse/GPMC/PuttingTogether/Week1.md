@@ -24,6 +24,7 @@ __Follow up after the meeting.__ After the meeting, make sure to send out a meet
 A WBS is a deliverable-oriented breakdown of a project into smaller components. It’s a tool that sorts the milestones and tasks of a project into a hierarchy, in the order they need to be completed. 
 
 __Steps to build a WBS__
+Ref.: [How to create a work breakdown structure and why you should](https://www.lucidchart.com/blog/how-to-create-a-work-breakdown-structure-and-why-you-should)
 
 1. Start with the high-level, overarching project picture. Brainstorm with your team to list the major deliverables and milestones. Example: Imagine you are planning a company event. Your major milestones might include categories like “secure venue,”  “finalize guest logistics,” and “establish agenda.”
 
