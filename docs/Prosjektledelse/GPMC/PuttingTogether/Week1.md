@@ -19,3 +19,9 @@ __Share the agenda.__ Prior to the meeting, share the agenda with attendees via 
 __Stick to the agenda.__ During meetings, discussions can sometimes go off topic or take longer than expected. As a project manager, it is your job to keep the meeting on track by redirecting discussions to the items on the agenda. 
 
 __Follow up after the meeting.__ After the meeting, make sure to send out a meeting summary featuring the meeting notes and any action items. 
+
+
+## Milestones
+* Create milestones from the project as a whole
+* Set deadlines for each milestones
+
