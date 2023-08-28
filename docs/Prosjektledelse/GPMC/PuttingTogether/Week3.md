@@ -97,3 +97,10 @@ Tips for completing, ask yourself:
 * Were the materials created good quality? 
 * Were there any issues with labor contracts? 
 * How were your relationships with vendors? 
+
+__Request for proposal (RFP)__
+Sent to many vendors for the purposes of selecting the best offer. Ask Subject matter expert (SME) for input.
+
+__Statement of Work (SoW)__
+Sent to the selected vendor as an agreement.
+
