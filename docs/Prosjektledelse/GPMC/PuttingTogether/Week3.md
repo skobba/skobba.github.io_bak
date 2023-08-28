@@ -84,3 +84,16 @@ __Management reserves__
 While contingency reserves are used to cover the costs of identified risks, management reserves are used to cover the costs of unidentified risks. For example, if you were managing a construction project and a meteor hit your machinery, you could use management reserves to cover the costs of the damage. 
 
 Contingency reserves are an estimated amount, whereas management reserves are generally a percentage of the total cost of the project. To determine a project’s management reserves, you can estimate a percentage of the budget to set aside. This estimate is typically between 5–10%, but the amount is based on the complexity of the project. A project with a more complex scope may require higher management reserves. Note that the project manager will generally need approval from the project sponsor in order to use management reserves.
+
+## Procurement process
+The typical procurement process:
+* Initiating: planning what you need to meet your project goals
+* Selecting: deciding which suppliers and vendors to use
+* Contract writing: developing, reviewing, and signing contracts
+* Controlling: making payments and maintaining and ensuring quality
+* Completing: measuring your success
+
+Tips for completing, ask yourself:
+* Were the materials created good quality? 
+* Were there any issues with labor contracts? 
+* How were your relationships with vendors? 
