@@ -43,4 +43,24 @@ A __reserve analysis__ will help you account for any buffer funds you may need. 
 * [Microsoft Excel Budget Templates](https://create.microsoft.com/en-us/template/website-budget-142337c5-35f0-4e42-ab85-0643840d738c)
 * [Microsoft Excel Website Budget Template](https://create.microsoft.com/en-us/templates/budgets)
 
+## Overcoming budgeting challenges
+
+__Challenge 1: Budget pre-allocation__
+You may encounter situations where your budget is already set before you even start the project. Some organizations follow strict budgeting cycles, which can lead to cost estimations taking place before the scope of the project is completely defined.  
+
+Part of that planning includes making sure that you are tracking fixed and time- and materials-based expenses. Fixed contracts are usually paid for when certain milestones are reached. Time and materials contracts are usually paid for monthly, based on the hours worked and other fees associated with the work, such as travel and meal expenses. 
+
+__Challenge 2: Inaccurately calculating TCO__
+
+Try to avoid is underestimating the total cost of ownership (TCO) for project resources. TCO takes into account multiple elements that contribute to the cost of an item. It factors in the expenses associated with a product or service over its lifetime, rather than just upfront costs.
+
+ If you have a service requirement for a software technology that your team is using, for example, then it is important to budget for the costs of maintenance for that service. Additional types of costs you may need to account for when calculating TCO include warranties, supplies, required add-on costs, and upgrade costs.
+
+__Challenge 3: Scope creep__
+
+There are several factors that can lead to scope creep, such as: 
+* A vague Statement of Work (SoW)
+* Conversations and agreements about the project that aren’t officially documented
+* Unattainable timeframes and deadlines
+* Last-minute asks from priority stakeholders
 
