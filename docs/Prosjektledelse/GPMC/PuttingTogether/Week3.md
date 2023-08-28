@@ -64,3 +64,23 @@ There are several factors that can lead to scope creep, such as:
 * Unattainable timeframes and deadlines
 * Last-minute asks from priority stakeholders
 
+## Budgeting terms
+
+__Cash flow__ is the inflow and outflow of cash on your project. As a project manager, this is important to understand because you need funding (cash into your project) to keep your project running. 
+
+__CAPEX and OPEX__
+Expenses can be organized into different categories. Two of the most common are CAPEX (capital expenses) and OPEX (operating expenses).
+
+* CAPEX (capital expenses) are an organization's major, long-term, upfront expenses, such as buildings, equipment, and vehicles. They are generally for assets that the company will own and keep. The company incurs these expenses because they believe they will create a benefit for the company in the future. 
+
+* OPEX (operating expenses) are the short-term expenses that are required for the day-to-day tasks involved in running the company, such as wages, rent, and utilities. They are often recurring.
+
+__Contingency reserves__
+
+Sometimes, a project hits a snag and incurs additional expenses. One way to prepare for unplanned costs is by using contingency reserves. Contingency reserves are funds added to the estimated project cost to cover identified risks. These are also referred to as buffers.
+
+__Management reserves__
+
+While contingency reserves are used to cover the costs of identified risks, management reserves are used to cover the costs of unidentified risks. For example, if you were managing a construction project and a meteor hit your machinery, you could use management reserves to cover the costs of the damage. 
+
+Contingency reserves are an estimated amount, whereas management reserves are generally a percentage of the total cost of the project. To determine a project’s management reserves, you can estimate a percentage of the budget to set aside. This estimate is typically between 5–10%, but the amount is based on the complexity of the project. A project with a more complex scope may require higher management reserves. Note that the project manager will generally need approval from the project sponsor in order to use management reserves.
