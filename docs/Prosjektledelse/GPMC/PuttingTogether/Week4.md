@@ -31,5 +31,9 @@ __Step 3) Brainstorm the causes__
 
 Brainstorm areas of concern within each category. Reaches out to your team for help in identifying these possible causes. Fill in the lists with some of the causes that could be related to each category.
 
+__Step 4) Analyze the causes__
+
+Analyze the causes to identify the root cause of the existing problem so you can figure out how to mitigate it for the current project.
+
 ![fishbone-diagram](fishbone-diagram.png)
 
