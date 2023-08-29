@@ -19,5 +19,17 @@ Some examples of opportunities include:
 
 __Root cause__ is the initial cause of a situation that introduces a problem or risk. The purpose of using fishbone diagrams in risk management is to identify the root cause of a potential problem for a project or program.
 
+__Step 1) Define the problem__
+
+State the problem “trouble delivering products to downtown office buildings on time.” Add the problem to the head of his fishbone diagram. 
+
+__Step 2) Identify the categories__
+
+The types of categories that could be causing the problem. These categories will change depending on the type of problem or industry. Some common examples of categories include “people,” “technology,” “materials,” “transportation,” “money,” “time,” “environment,” and “procedures.” 
+
+__Step 3) Brainstorm the causes__
+
+Brainstorm areas of concern within each category. Reaches out to your team for help in identifying these possible causes. Fill in the lists with some of the causes that could be related to each category.
+
 ![fishbone-diagram](fishbone-diagram.png)
 
