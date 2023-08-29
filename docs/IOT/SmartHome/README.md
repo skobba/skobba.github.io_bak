@@ -13,3 +13,10 @@ pi@raspberrypi:~ $ lsusb
 Bus 001 Device 005: ID 10c4:ea60 Silicon Labs CP210x UART Bridge
 ...
 ```
+
+## Trouble Shooting
+
+__MAC channel access failure__
+
+Network error, see: https://www.zigbee2mqtt.io/advanced/zigbee/02_improve_network_range_and_stability.html#avoid-devices-from-awox
+
