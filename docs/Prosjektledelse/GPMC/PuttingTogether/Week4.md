@@ -59,3 +59,9 @@ __Accept__
 
 Accept the risk as the normal cost of doing business. Active acceptance of risk usually means setting aside extra funds to pay your way out of trouble. Passive acceptance of risk is the “do nothing” approach. While passive acceptance may be reasonable for smaller risks, it is not recommended for most single point of failure risks. It is also important to be proactive and mitigate risks ahead of time whenever possible, as this may save you from having to accept risks.
 
+## Types of task dependencies:
+* Finish to Start
+* Finish to Finish
+* Start to Start
+* Start to Finish
+
