@@ -14,3 +14,10 @@ Some examples of opportunities include:
 * Discounted materials 
 * Availability of additional resources (people, investments, equipment)
 
+## Fishbone diagram
+*Fishbone diagrams—also known as Ishikawa diagrams or cause-and-effect diagrams*
+
+__Root cause__ is the initial cause of a situation that introduces a problem or risk. The purpose of using fishbone diagrams in risk management is to identify the root cause of a potential problem for a project or program.
+
+![fishbone-diagram](fishbone-diagram.png)
+
