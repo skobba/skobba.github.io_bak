@@ -43,6 +43,8 @@ Once you have identified your risks and ranked them, give special attention to t
 
 For example, a lot of projects use subject matter experts (SMEs)—team members with a deep understanding of a particular job, process, department, function, technology, machine, material, or type of equipment. SMEs are involved to advise you throughout the project life cycle. Having only one SME familiar with a critical system on your team is an example of a single point of failure risk. This SME will only offer one perspective, and if they are the only person advising on the system, there is no one to offer another perspective.
 
+## Mitigation Plan
+
 __Avoid__
 
 This strategy seeks to sidestep—or avoid—the situation as a whole.
