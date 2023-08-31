@@ -43,5 +43,16 @@ Communication doesn’t end when you deliver your message, so be sure to follow 
 
 Obtain feedback from your audience to ensure that your message was received as you intended. 
 
+## Tips for communication plan 
+* __Project stakeholders:__ Have you created a RACI chart or stakeholder map of all your stakeholders? Who is your audience? Who will need to be informed at different points during the project life cycle? 
+* __Communication frequency and method:__ When and how often should you check in with your stakeholders? What methods of communication do they prefer? How much detail does each stakeholder need? 
+* __Goals:__ What is the goal of your communication? Do you need a response? Are you trying to encourage engagement or simply providing an update? 
+* __Barriers:__ Are there any time zone limitations? Language barriers? Do some stakeholders require time to reply or respond (e.g., an executive)? Are there any privacy or internet access issues? 
 
+*Check in with your audience about the effectiveness of your plan. Scheduling routine check-ins will help you understand what is and is not working so you can improve your plan.*
+
+__Evaluate where you may be over- or under-sharing information or missing stakeholders.__
+* Anonymous survey forms 
+* Polls or open feedback sessions during team meetings
+* One-on-one conversations and check-ins with key stakeholders
 
