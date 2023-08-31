@@ -51,6 +51,7 @@ Obtain feedback from your audience to ensure that your message was received as y
 
 *Check in with your audience about the effectiveness of your plan. Scheduling routine check-ins will help you understand what is and is not working so you can improve your plan.*
 
+![communication-plan](communication-plan.png)
 __Evaluate where you may be over- or under-sharing information or missing stakeholders.__
 * Anonymous survey forms 
 * Polls or open feedback sessions during team meetings
