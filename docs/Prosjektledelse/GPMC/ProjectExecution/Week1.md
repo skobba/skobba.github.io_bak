@@ -75,3 +75,26 @@ Identify project issues and put them into one of the following four categories:
 ![ROAM-analysis](ROAM-analysis.png)
 
 ### Communicating issues to stakeholders
+
+__Effective escalation emails__
+
+__Maintain a friendly tone__
+
+When drafting an escalation email, you may feel tempted to get straight to the point, especially when dealing with a stressful and time-sensitive problem. But keep in mind that it is important to address issues with grace. Consider opening your email with a simple show of goodwill, such as “I hope you’re doing well.” When describing the issue, aim for a blameless tone. Above all, keep the email friendly and professional. After all, you are asking for the recipient’s help. Be sure to close your email by thanking the recipient for their time.
+
+__State your connection to the project__
+
+Introduce yourself early in the email if you have less familiarity with the project stakeholders. Be sure to clearly state your name, role, and relationship to the project. This helps the reader understand why you are reaching out. Keep your introduction brief and to the point—a single sentence should suffice. If you know the person on the receiving end of the escalation email, you can simply reinforce your responsibility on the project before getting straight to the problem.
+
+__Explain the problem__
+
+Once you greet your recipient and briefly introduce yourself, explain the issue at hand. Clearly state the problem you need to solve. Provide enough context for the reader to understand the issue, but aim to keep your message as concise as possible. Avoid long, dense paragraphs that may obscure your message and tempt the reader to skim.
+
+__Explain the consequences__
+
+After explaining the problem, clearly outline the consequences. Describe specifically how this issue is negatively impacting the project or how it has the potential to negatively impact the project later in the project timeline. Again, keep your explanation concise and your tone friendly.
+
+__Propose a course of action and make a request__
+
+This is the central piece of a strong escalation email. In this section, you propose a solution (or solutions) and state what you need from the recipient. A thoughtful solution accompanied by a clear request lets the recipient know how they can help and moves you toward a resolution.
+
