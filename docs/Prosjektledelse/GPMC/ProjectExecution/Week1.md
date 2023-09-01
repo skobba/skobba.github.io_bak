@@ -73,3 +73,5 @@ Identify project issues and put them into one of the following four categories:
 * __Mitigated:__ The team has taken action to reduce the impact of the issue (or reduce the likelihood of a risk that has not yet materialized).
 
 ![ROAM-analysis](ROAM-analysis.png)
+
+### Communicating issues to stakeholders
