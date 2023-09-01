@@ -72,3 +72,4 @@ Identify project issues and put them into one of the following four categories:
 * __Accepted:__ The issue is minor or cannot be resolved, so the team chooses to accept and work around it.
 * __Mitigated:__ The team has taken action to reduce the impact of the issue (or reduce the likelihood of a risk that has not yet materialized).
 
+![ROAM-analysis](ROAM-analysis.png)
