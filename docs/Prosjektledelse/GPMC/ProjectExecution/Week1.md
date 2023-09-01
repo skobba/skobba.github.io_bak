@@ -61,4 +61,5 @@ You can format your report in a variety of ways depending on your audience and w
 
 ![project-status-report](project-status-report.png)
 
+## Managing changes, risk and dependencies
 
