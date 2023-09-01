@@ -98,3 +98,7 @@ __Propose a course of action and make a request__
 
 This is the central piece of a strong escalation email. In this section, you propose a solution (or solutions) and state what you need from the recipient. A thoughtful solution accompanied by a clear request lets the recipient know how they can help and moves you toward a resolution.
 
+__Escalation Email__
+![escalation-email](escalation-email.png)
+
+
