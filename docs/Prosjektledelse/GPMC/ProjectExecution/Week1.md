@@ -62,4 +62,13 @@ You can format your report in a variety of ways depending on your audience and w
 ![project-status-report](project-status-report.png)
 
 ## Managing changes, risk and dependencies
+### ROAM
+Analyze, prioritize, and manage risks that have already become issues. It's a great tool to keep teams organized, so they know what needs to be done to keep the project moving forward.
+
+Identify project issues and put them into one of the following four categories:
+
+* __Resolved:__ The issue has been eliminated and no longer poses a problem.
+* __Owned:__ The issue has been assigned to a team member who will monitor it through to completion.
+* __Accepted:__ The issue is minor or cannot be resolved, so the team chooses to accept and work around it.
+* __Mitigated:__ The team has taken action to reduce the impact of the issue (or reduce the likelihood of a risk that has not yet materialized).
 
