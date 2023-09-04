@@ -12,3 +12,18 @@ sudo raspi-config
 ```
 
 Display options -> Screen blanking [Disable]
+
+__Disable top menu__
+
+Panel Settings
+
+__Start chromium in fullscreen (kiosk mode)__
+
+
+```sh
+# Fullscreen
+chromium-browser --app=https://nrk.no/nyheter --start-fullscreen
+
+# Window size and position
+chromium-browser --app=https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-73742/Norge/Oslo/Oslo/Grefsen%20stasjon --window-size=400,900 --window-position=0,0
+```
