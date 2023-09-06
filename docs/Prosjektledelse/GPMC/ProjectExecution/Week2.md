@@ -42,4 +42,11 @@ It will be helpful for users to have some clear, easy-to-follow instructions tha
 * Compile notes in a single document and record any issues that are discovered. 
 You can create a digital spreadsheet or document that corresponds to your plan. It can have designated areas to track issues for each item that is tested, including the users’ opinions on the severity of each issue. This will help you prioritize fixes.
 
+### UAT feedback
+You can address the different types of feedback as follows:
+
+* Bugs or issues: Users might report technical issues, also known as bugs, or other types of issues after performing UAT. You can track and monitor these issues in a spreadsheet or equivalent system and prioritize which issues to fix. For instance, critical issues, such as not being able to access, download, or search the employee handbook, need to be prioritized over non-critical issues, such as feedback on the cover art of the handbook. 
+
+* Change requests: Sometimes the user might suggest minor changes to the product, service, or process after UAT. These types of requests or changes should also be managed and prioritized. Depending on the type and volume of the requests, you may want to share this data with your primary stakeholders, and you may also need to adjust your project timeline to implement these new requests. 
+
  
