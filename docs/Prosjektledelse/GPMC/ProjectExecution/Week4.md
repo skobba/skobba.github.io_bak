@@ -30,5 +30,7 @@ This doesn’t mean you need to come up with a solution all by yourself, however
 * Storming
 * Norming
 * Performing
+A performing team has already established its working procedures. Processes and workflows should already be in place as the team works together relatively seamlessly to complete tasks, reach milestones, and make progress toward the project goal. During the norming stage, you should codify norms, communicate them to the team, and reinforce them when needed.
+
 * Adjourning
 
