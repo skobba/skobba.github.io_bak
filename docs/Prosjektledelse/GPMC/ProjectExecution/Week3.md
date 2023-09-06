@@ -9,3 +9,10 @@ Productivity metrics typically measure progress and output over time. They allow
 * Projections - helps to predict an outcome based on the information the project team has now
 * Duration
 
+## Quality metrics
+* Changes
+* Issues
+* Cost
+* Happiness and satisfaction
+* Customer satisfaction scores
+
