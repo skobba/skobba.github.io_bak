@@ -49,4 +49,12 @@ You can address the different types of feedback as follows:
 
 * Change requests: Sometimes the user might suggest minor changes to the product, service, or process after UAT. These types of requests or changes should also be managed and prioritized. Depending on the type and volume of the requests, you may want to share this data with your primary stakeholders, and you may also need to adjust your project timeline to implement these new requests. 
 
- 
+ ## Continues Improvement
+ * PDCA
+ * DMAIC
+
+## Retrospective
+* Afer a milestone
+* ...
+* ...
+
