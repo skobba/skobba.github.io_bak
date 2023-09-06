@@ -25,3 +25,10 @@ Another way project managers provide air cover for their teams is to master the 
 
 This doesn’t mean you need to come up with a solution all by yourself, however. Instead of calling a team meeting to discuss the stakeholder’s request for a new flavor, you consult with only two trusted members of your team to help brainstorm solutions.
 
+## Bruce Tuckman's five stages of team development
+* Forming
+* Storming
+* Norming
+* Performing
+* Adjourning
+
