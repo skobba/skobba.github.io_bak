@@ -52,6 +52,12 @@ Providing evidence
 Connecting emotionally
 
 Conger´s four common influencing misstakes:
+* Provided evidence from company surveys to set the stage for her proposal.
+* Framed for common ground by noting how a new onboarding process might increase employee productivity.
+* Established credibility by outlining her previous experience with launching similar processes.
+* Connected emotionally by encouraging her audience to reflect on past experiences they may have endured as a new hire. 
+
+Eg.:
 * They'll often approach their audience too aggressively, and that tends to put people off ideas entirely.
 * They might also resist compromise, which is crucial for any kind of mutual agreement. *They'll focus too much on developing their argument for the idea and not enough time establishing credibility, framing for common ground, providing evidence and connecting emotionally.
 * They'll assume that they can work out an agreement through just one conversation.
