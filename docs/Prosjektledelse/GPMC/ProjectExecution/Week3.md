@@ -66,3 +66,5 @@ Use data visualization.
 
 * __Act__
 Solve the original business problem
+
+## Visualization
