@@ -45,4 +45,17 @@ Evaluate alternative actions, questions:
 * "Which option best serves the community as a whole, not just some members?”
 * "Which option leads me to act as the sort of person I want to be?”
 
+## Effective influencing
+Establishing credibility
+Framing for common ground
+Providing evidence
+Connecting emotionally
 
+Conger´s four common influencing misstakes:
+* They'll often approach their audience too aggressively, and that tends to put people off ideas entirely.
+* They might also resist compromise, which is crucial for any kind of mutual agreement. *They'll focus too much on developing their argument for the idea and not enough time establishing credibility, framing for common ground, providing evidence and connecting emotionally.
+* They'll assume that they can work out an agreement through just one conversation.
+
+*Undercut a case with aggressive and dismissive rhetoric.*
+
+## Using sources of power to influence
