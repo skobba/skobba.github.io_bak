@@ -70,4 +70,4 @@ Solve the original business problem
 ## Visualization
 * Charts
 * Infographics
-
+* [Using Google Docs](https://support.google.com/docs/answer/63824?co=GENIE.Platform%3DDesktop&hl=en)
