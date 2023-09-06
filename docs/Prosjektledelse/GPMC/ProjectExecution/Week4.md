@@ -31,6 +31,18 @@ This doesn’t mean you need to come up with a solution all by yourself, however
 * Norming
 * Performing
 A performing team has already established its working procedures. Processes and workflows should already be in place as the team works together relatively seamlessly to complete tasks, reach milestones, and make progress toward the project goal. During the norming stage, you should codify norms, communicate them to the team, and reinforce them when needed.
-
 * Adjourning
+
+## Framework for ethical decision-making
+[Markkula Center for Applied Ethics at Santa Clara University](https://www.scu.edu/ethics/ethics-resources/ethical-decision-making/)
+
+Question the ethics of an issue by asking yourself questions about the nature of the issue. Could your decision negatively impact another person or group of people? Does the issue go beyond what is legal or efficient? From there, you can proceed onto fact gathering.
+
+Evaluate alternative actions, questions:
+* "Which option will produce the most good and do the least harm?”
+* "Which option best respects the rights of all who have a stake?” 
+* "Which option treats people equally or proportionally?”
+* "Which option best serves the community as a whole, not just some members?”
+* "Which option leads me to act as the sort of person I want to be?”
+
 
