@@ -68,3 +68,6 @@ Use data visualization.
 Solve the original business problem
 
 ## Visualization
+* Charts
+* Infographics
+
