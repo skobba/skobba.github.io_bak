@@ -64,4 +64,6 @@ Eg.:
 
 *Undercut a case with aggressive and dismissive rhetoric.*
 
+*Did you consider the four steps of effective influencing? To make an effective case, you need to understand your audience and their values. Keiko’s top priority might not be sales numbers, so it’s important to explain how you can meet their specific needs. Only then can you identify concrete examples to tell a compelling story. Listening carefully to their concerns and offering to continue the conversation can make them feel understood. Finally, rebuilding trust can help you establish credibility.*
+
 ## Using sources of power to influence
