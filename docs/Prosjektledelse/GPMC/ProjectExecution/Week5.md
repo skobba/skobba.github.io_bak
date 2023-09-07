@@ -7,3 +7,11 @@ These principles are:
 * Structure your writing.
 * Check grammar, punctuation, and spelling.
 
+## Meetings
+
+Types:
+* Project kickoff
+* Status update
+* Stakeholder meeting
+* Retrospective
+
