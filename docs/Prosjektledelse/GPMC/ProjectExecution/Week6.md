@@ -69,3 +69,20 @@ Be sure to include the following elements in your completed closeout report:.
 * Next steps for the service
 * Links to project resources
 
+### Exemplar
+
+* The project closeout report includes a date, status, project team members and the project duration.
+
+* There is a brief Executive Summary that outlines the scope of the project, the completed deliverables, and issues that arose. 
+
+* The Key Accomplishments section includes tasks and milestones the team reached during the project. These include not only the work the team did, but the goals and results of their efforts. For example, “Implemented feedback from customer surveys, increasing on-time deliveries by 10% and satisfaction with customer service by more than 42%.”
+
+* Lessons Learned include things that went well and issues that arose throughout the project. For example, the employee training in advance of launch went well, which boosted employee efficiency. Things that went wrong include both the problem and the solution: “On-time deliveries went from 80% to 90% during the test launch, by hiring more drivers and reassessing delivery routes.”
+
+* The Open Items section includes areas of the project that need improvement, as well as operations procedures that require ongoing maintenance. 
+
+* The Next Steps and Future Considerations section includes next steps that future project managers should act on. For example, “Create an ongoing training schedule for employees.”
+
+* The Project Timeline includes start and end dates for each task and milestone.
+
+* The Resources and Project Archive section links to important project documents.
