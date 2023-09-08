@@ -1,4 +1,5 @@
 # Google Project Management Certificate
+A portfolio of project management artifacts and tools.
 
 The price is $39 per month and the duration is set to take 27 weeks beside a normal job.
 
