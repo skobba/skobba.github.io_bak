@@ -60,3 +60,12 @@ Grab and keep your stakeholders’ attention by varying the way that you present
 
 ![benefits-project-closing](benefits-project-closing.png)
 
+### Closeout report
+Be sure to include the following elements in your completed closeout report:.
+* An executive summary of the project
+* Key accomplishments and completed objectives
+* Lessons learned (what went well, what went wrong, and how to improve)
+* Open items to address
+* Next steps for the service
+* Links to project resources
+
