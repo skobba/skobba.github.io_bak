@@ -53,12 +53,6 @@ Discuss lessons you learned during the course of the project and any areas you h
 
 * __Keep your stakeholders engaged.__
 Grab and keep your stakeholders’ attention by varying the way that you present your data:
-
-* __Show:__ Play videos of demos, testimonials, or case studies.
-
-* __Storytell:__ Tell a story or anecdote related to the data in the report. 
-
-* __Engage:__ Ask for audience participation through questions, surveys, or quizzes.
-
-
-
+  1. __Show:__ Play videos of demos, testimonials, or case studies.
+  2. __Storytell:__ Tell a story or anecdote related to the data in the report. 
+  3. __Engage:__ Ask for audience participation through questions, surveys, or quizzes.
