@@ -56,3 +56,7 @@ Grab and keep your stakeholders’ attention by varying the way that you present
   1. __Show:__ Play videos of demos, testimonials, or case studies.
   2. __Storytell:__ Tell a story or anecdote related to the data in the report. 
   3. __Engage:__ Ask for audience participation through questions, surveys, or quizzes.
+
+
+![benefits-project-closing](benefits-project-closing.png)
+
