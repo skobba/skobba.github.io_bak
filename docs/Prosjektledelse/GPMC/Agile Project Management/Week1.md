@@ -69,3 +69,6 @@ volatility, uncertainty, complexity, and ambiguity
 
 * __Organizational transfer of learning:__ On Scrum Teams, everyone is encouraged to learn skills that may be new to them as they support other team members.
 
+## Kanban
+Kanban has two key benefits. First, it offers transparent visual feedback about the status of work in progress. Second, it ensures the team only accepts a sustainable amount of in-progress work.
+
