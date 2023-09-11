@@ -39,3 +39,7 @@ Mike Cohn, the inventor of the term “epic” as it relates to Scrum, describes
 *User stories may include customers wanting to read reviews of books on the website or wanting to add books to their cart. These user stories could fall into the “website creation” epic.*
 
 ![scrum-epics](scrum-epics.png)
+
+## Asana
+![asana-backlog-epics-subtasks](asana-backlog-epics-subtasks.png)
+
