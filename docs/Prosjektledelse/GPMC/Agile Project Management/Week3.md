@@ -4,6 +4,15 @@
 Ref.: [Product Backlog](https://www.scrumguides.org/scrum-guide.html#product-backlog)
 
 ## User Stories
+The typical template for a user story looks like this: 
+```
+As a <user role>, I want this <action> so that I can get this <value>.
+```
+Example user story might read:
+```
+As an avid reader, I want to be able to read reviews before I check out a book from my local branch so that I know I am getting a book I am interested in.
+```
+
 Include the following elements: 
 * User persona. What is your user like? What is their relation to the project? What goals do they have? 
 * Definition of Done. This refers to an agreed upon set of items that must be completed before a user story can be considered complete. 
