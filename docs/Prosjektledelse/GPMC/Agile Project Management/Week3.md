@@ -40,6 +40,9 @@ Mike Cohn, the inventor of the term “epic” as it relates to Scrum, describes
 
 ![scrum-epics](scrum-epics.png)
 
+## Relative estimation
+In relative estimation, instead of determining exactly how long a task will take, project managers compare the effort of a given task to the effort for another task. This becomes the estimate.
+
 ## Asana
 ![asana-backlog-epics-subtasks](asana-backlog-epics-subtasks.png)
 
