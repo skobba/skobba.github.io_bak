@@ -14,6 +14,8 @@ The five values of Scrum are:
 * Respect
 
 ## Roles
+*SCRUM is a self organizing team*
+
 ### The Scrum Master
 One key responsibility of the Scrum Master is to help the team understand and follow Scrum theory. More specifically, according to the Scrum Guide, “The Scrum Master is accountable for establishing Scrum as defined in the Scrum Guide. They do this by helping everyone understand Scrum theory and practice, both within the Scrum Team and the Organization. The Scrum Master is accountable for the Scrum Team’s effectiveness. They do this by enabling the Scrum Team to improve its practices, within the Scrum framework.” The Scrum Master makes sure that important meetings occur, like the Daily Scrum. In the same way that a coach would be aware of the game clock, the Scrum Master is tasked with making sure that the meeting is kept within the appropriate timebox. A timebox is a Scrum concept that refers to the estimated duration for an event.
 
