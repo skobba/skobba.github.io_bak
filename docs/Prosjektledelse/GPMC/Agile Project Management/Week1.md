@@ -50,3 +50,22 @@ Team members should be able to get their work done by designing their own work p
 
 * "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly." 
 In Agile, it is important to acknowledge that learning from successes and failures is continuous. No team is perfect. There will be mistakes, challenges, trials, and triumphs. Teams should reflect on all of these different aspects of their activities so that they can make necessary adjustments. 
+
+## VUCA
+volatility, uncertainty, complexity, and ambiguity
+
+## SCRUM
+[The New New Product Development Game](https://hbr.org/1986/01/the-new-new-product-development-game):
+
+* __Built-in instability:__ In the Scrum world, teams are given the freedom to achieve important outcomes with “challenging requirements.” Takeuchi and Nonaka explain that this gives teams “an element of tension” necessary to “carry out a project of strategic importance to the company.” 
+
+* __Self-organizing teams:__ Scrum Teams were intended to operate like their own start-up, with a unique order that lacks true hierarchy. These teams are considered self-organizing when they exhibit autonomy, continuous growth, and collaboration.  
+
+* __Overlapping development phases:__ Individuals on a Scrum Team must “work toward synchronizing their pace to meet deadlines.” At some point throughout the process, each individual’s pace starts to overlap with others, and eventually, a collective pace is formed within the team.
+
+* __Multi-learning:__ Scrum is a framework that relies heavily on trial and error. Scrum Team members also aim to stay up-to-date with changing market conditions and can then respond quickly to those conditions. 
+
+* __Subtle control:__ As we mentioned, Scrum Teams are self-organizing and operate like a start-up, but that doesn’t mean there is no structure at all. By creating checkpoints throughout the project to analyze team interactions and progress, Scrum Teams maintain control without hindering creativity. 
+
+* __Organizational transfer of learning:__ On Scrum Teams, everyone is encouraged to learn skills that may be new to them as they support other team members.
+
