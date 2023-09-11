@@ -28,3 +28,10 @@ Criteria:
 * __Estimable:__ The Definition of Done must be clear so that the team can give each user story an estimate. 
 * __Small:__ Each user story needs to be able to fit within a planned Sprint.
 * __Testable:__ A test can be conducted to check that it meets the criteria.
+
+## Epics
+An epic’s purpose is to help manage related user stories.
+
+Mike Cohn, the inventor of the term “epic” as it relates to Scrum, describes epic as a “very large user story”—one that could not be delivered within a single iteration and may need to be split into smaller stories. 
+
+![scrum-epics](scrum-epics.png)
