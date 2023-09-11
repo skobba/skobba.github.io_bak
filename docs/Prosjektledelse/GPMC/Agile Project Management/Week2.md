@@ -45,3 +45,8 @@ In traditional project management, scope management is the primary responsibilit
 There are also similarities between the Product Owner and project manager roles. For instance, both roles are tasked with stakeholder management. This means they both must practice and facilitate effective communication among team members and stakeholders.
 
 Additionally, in many companies—including Google—the definition of product or solution scope is the responsibility of a separate role called a product manager. So, it is important when joining any new company to discover how that company approaches the area of product definition, requirements development, and user research to understand what they consider to be the domain of the project manager. 
+
+## Barry Overeem's 
+[Characteristics of a Great Scrum Team](https://www.infoq.com/articles/great-scrum-team/)
+
+
