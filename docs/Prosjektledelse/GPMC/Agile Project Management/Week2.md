@@ -13,6 +13,9 @@ The five values of Scrum are:
 * Openness 
 * Respect
 
+## Blending methods
+Mixing several agile frameworks.
+
 ## Roles
 *SCRUM is a self organizing team*
 
