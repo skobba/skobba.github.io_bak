@@ -72,3 +72,7 @@ volatility, uncertainty, complexity, and ambiguity
 ## Kanban
 Kanban has two key benefits. First, it offers transparent visual feedback about the status of work in progress. Second, it ensures the team only accepts a sustainable amount of in-progress work.
 
+## XP
+The XP methodology aims to improve product quality and the ability to respond to changing customer needs. To that end, continuous integration and continuous refactoring help teams get quick feedback on the quality of the code or product.
+
+## LEAN
