@@ -32,6 +32,8 @@ Criteria:
 ## Epics
 An epic’s purpose is to help manage related user stories.
 
-Mike Cohn, the inventor of the term “epic” as it relates to Scrum, describes epic as a “very large user story”—one that could not be delivered within a single iteration and may need to be split into smaller stories. 
+Mike Cohn, the inventor of the term “epic” as it relates to Scrum, describes epic as a "very large user story"—one that could not be delivered within a single iteration and may need to be split into smaller stories.
+
+*User stories may include customers wanting to read reviews of books on the website or wanting to add books to their cart. These user stories could fall into the “website creation” epic.*
 
 ![scrum-epics](scrum-epics.png)
