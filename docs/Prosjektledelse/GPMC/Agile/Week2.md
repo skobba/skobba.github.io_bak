@@ -34,6 +34,8 @@ The role of the Scrum Master is sometimes confused with the role of the project 
 A Scrum Master is responsible for helping the team understand Scrum theory and practice. They ensure Scrum events take place and help the team focus on delivering value by removing impediments. But unlike a traditional project manager, they do not take on the management of changes in scope or priorities. Additionally, Scrum Masters do not maintain traditional project artifacts like Gantt charts.
 
 ### The Product Owner
+Youtube: [Agile Product Ownership in a Nutshell](https://www.youtube.com/watch?v=502ILHjX9EE)
+
 According to the Scrum Guide, “The Product Owner is responsible for maximizing the value of the product resulting from work of the Scrum Team. How this is done may vary widely across organizations, Scrum Teams, and individuals.” Product Owners maximize the value of the product by representing and expressing the voice of the customer throughout the project duration. A product isn’t useful to its customers if that product doesn’t fulfill their expectations and meet their needs. The Product Owner’s duties include:
 * Developing and explicitly communicating the Product Goal
 * Creating and clearly communicating Product Backlog items (The Product Backlog contains all of the features, requirements, and activities associated with deliverables to achieve the goal of the project.)
