@@ -10,3 +10,16 @@ As you read, ask yourself:
 * What alternatives are available to the decision-maker?
 * What would you recommend, and why?
 
+## Value Roadmap - Benefits, pitfalls, and best practices
+Each team or company may interpret the roadmap slightly differently. Here are some of the various types:
+* Project roadmap
+* Product roadmap
+* Value roadmap
+* Lean roadmap
+* Agile roadmap
+
+Roadmaps are often represented visually and many try to fit the roadmap on one page so that reviewers can notice the big picture of the product timeline.
+
+![value-roadmap](value-roadmap.png)
+
+
