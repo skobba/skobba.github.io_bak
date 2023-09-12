@@ -39,3 +39,37 @@ __Best practices__
 * If possible, clearly indicate the highest value items.
 * Make it visible to your wider stakeholder group so that they can use it for their planning. 
 * Conduct regular reviews of the roadmap with sponsors, stakeholders, and the team to ensure that it is still providing the blueprint for the project.
+
+## Responding to change over following a plan
+The best way to think about changing your plan is to break it down into three stages:
+* Identifying a needed change 
+* Deciding to make the change
+* Implementing the change
+
+### Step 1: Identifying a needed change 
+Here are some aspects of your project that may be candidates for change: scope, time, and costs (or resources). As we previously learned, these are called the “triple constraint,” and they provide a great framework for evaluating change in Agile and traditional projects.
+
+* In Agile, __scope__ refers to the contents of the product roadmap, the items in the Product Backlog, the intended deliverables of the project, and the intended users or customers. This is the “what” of the project.
+* __Time__ refers to the elements of time or layout of the deliverables over a period of time. This could include the product roadmap timeline, release schedule, or even the Sprint duration. This is the “when” of the project.
+* __Costs or resources__ refer to the makeup of the Development Team, project managers, and product owners, and other “business people” as well as the equipment available to create the deliverable. This is the “how” of the project.
+
+Agile projects are open to change in any of these three areas, and a needed change could be identified by any project stakeholders, including the Product Owner, Project Manager, Scrum Master, or the Development Team themselves. Sources of identified changes could include:
+* Customer feedback on early prototypes results in new features and some deleted features (scope change)
+* Sprint Retrospective identifies an area of understaffing (cost or resource change)
+* Critical project dependencies or deliverable dates have shifted, resulting in a change to the project roadmap (schedule or time change)
+
+### Step 2: Deciding to make the change
+Next, how do you decide to actually make the change? There are many decision-making models available to reference. Here are the basic steps involved in most of these models:
+* __Identify the “decider.”__ It is best to have a single person—generally the Product Owner or a senior stakeholder—in the role of decider to ensure consistency and accountability. 
+* __Develop and share what factors are important to the decision__, and gather supporting data that will help the decider make the decision.
+* __Openly discuss the benefits and costs of the decision.__ Identify areas of uncertainty and capture assumptions.
+* __Document the decision.__
+
+### Step 3: Implementing the change
+Once changes are approved, it is important to do several things:
+* __Document the change and decision-making process.__ Include meeting notes, pros/cons lists, assumptions, and data that went into making the decision to change the project.
+* __Capture the change in any affected artifacts.__ Update any roadmaps, Product Backlogs, staffing plans, and integration dates, and include a reference to the source of the change so that stakeholders can refer back to it. Consider using revision labels or dates on affected documents like “version 1.2” or “updated on December 20th” so that the team can clearly recognize that the document has changed.
+* __Share the change with all affected stakeholders.__  You can do this through many types of forums: in person at meetings, in documentation and meeting notes, and through email announcements. 
+* __Monitor the change for a certain amount of time.__  This ensures that the team is supportive and aware of the change.
+
+*If the change was not approved during the decision stage, you should still document the information and logic used to make the decision. You may even consider putting a change on hold while you wait for more information to make the decision with higher confidence.*
