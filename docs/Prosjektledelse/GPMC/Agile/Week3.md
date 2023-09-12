@@ -95,3 +95,24 @@ So what does the process of assigning story points entail? There are several spe
 * Agrees on the permitted points values. Some teams cap the size at a certain number, like 21. Some teams decide to jump from 21 to 100 as the next larger value. This is a team decision.
 * Identifies at least one anchor backlog item and agrees to assign it a points value. Some teams will choose two anchor items, one at the top of the range and one at the bottom of the range.
 * Sorts through the remaining backlog items as a team, agrees on an estimate for each item, and captures it in the backlog management system. 
+
+## Releasable Increment versus Minimum Viable Product
+__Product Increment__ is what is produced after a given Sprint and is considered releasable. The Scrum Guide states that "An Increment is a concrete stepping stone toward the Product Goal. Each Increment is additive to all prior Increments and thoroughly verified, ensuring that all Increments work together. In order to provide value, the Increment must be usable."
+
+### Potentially releasable product increment
+Potentially releasable (or shippable) Product Increment is a handy way for teams to think about the desired result of a Sprint. The goal for every Sprint is to result in a completed, tested, ready-to-ship addition to the product or solution. This doesn’t mean the product will actually ship to customers—that is why they use the word "potentially."
+
+### Definition of Done
+The Definition of Done is a formal description of the state of the potentially releasable Product Increment and what it means when it meets the quality measures required for the product. It is the team’s agreed-upon requirements for any backlog item that is considered “done.” In software projects, teams often decide that “done” means the software has been completed, reviewed, and has passed testing. In a non-software project, a Definition of Done may be a document including a legal review with approval or a formalized closeout report. The important part of figuring out your team’s Definition of Done is to have an explicit, shared understanding of what being “done” entails.
+
+But how do you know when a solution is shippable or releasable? In a Scrum Team, it is ultimately the decision of the Product Owner to ensure there is value before releasing an item. To determine this, they may consider a few things: 
+* Is the increment complete? 
+* Will it bring value and does it meet quality measures? Has it been well-tested? 
+* Is it usable by the end user? Can we use their direct or indirect feedback to improve future versions of the product?
+
+### Comparing Releasable Product Increment to Minimum Viable Product
+As you learned in the previous video, a minimum viable product (MVP) is a version of a product with just enough features to satisfy early customers. Eric Ries, an entrepreneur and author, coined the term in this 
+guide and defined an MVP as "that version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort." In other words, gathering insights from an MVP enables quicker feedback from users than developing a full-featured product that may not be 100% tested or secure. Some examples of an MVP could be a landing page for your website or a "buy now" button that doesn't do anything other than register that someone has clicked it. 
+
+A minimum viable product is a package of features that may take several sprints to develop, but every sprint’s goal is to produce a product increment. To differentiate between a potentially releasable increment and a MVP, let’s take our example of the online pet adoption app and the three features we discussed previously. We noted that each of these features on their own wasn’t a useful release of the solution. However, the Product Owner may decide that the MVP for this user experience is to implement these three requirements for cats only. By reducing the scope of the MVP, the Product Owner is able to release the solution into the marketplace and collect feedback from the users who wish to adopt cats. This feedback will be valuable not only for the cat adoption process but for any type of pet adoption in future iterations of the product. 
+
