@@ -33,7 +33,7 @@ __Pitfalls to avoid:__
 * Spending too much time fine-tuning delivery dates versus keeping them rough and improving specificity as the dates get closer
 * Putting all the work into creating the roadmap rather than producing the deliverables 
 
-__Best practices___
+__Best practices__
 * Make it highly noticeable to the team and refer to it frequently.
 * Clearly indicate the highest priority items.
 * If possible, clearly indicate the highest value items.
