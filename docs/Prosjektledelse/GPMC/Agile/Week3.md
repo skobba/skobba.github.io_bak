@@ -116,3 +116,24 @@ guide and defined an MVP as "that version of a new product which allows a team t
 
 A minimum viable product is a package of features that may take several sprints to develop, but every sprint’s goal is to produce a product increment. To differentiate between a potentially releasable increment and a MVP, let’s take our example of the online pet adoption app and the three features we discussed previously. We noted that each of these features on their own wasn’t a useful release of the solution. However, the Product Owner may decide that the MVP for this user experience is to implement these three requirements for cats only. By reducing the scope of the MVP, the Product Owner is able to release the solution into the marketplace and collect feedback from the users who wish to adopt cats. This feedback will be valuable not only for the cat adoption process but for any type of pet adoption in future iterations of the product. 
 
+## Sprint Retrospectives
+As a refresher, retrospectives are workshops or meetings that give project teams time to reflect on a project and brainstorm potential future improvements. In the Scrum framework, Sprint Retrospectives occur at the end of each Sprint, which is usually every one-to-four weeks. 
+
+Sprint Retrospectives are a key practice that supports the Scrum theory and values. They are a critical moment to inspect and adapt to the outcomes produced within the Sprint timebox. Retrospectives occur much more often in Scrum than in traditional project management,  so it is important to consider some best practices and pitfalls to avoid to help make them engaging and productive for the entire team.
+
+### Pitfalls
+* __Avoid too many gimmicks.__ There are many fun games and exercises that can be used by a Scrum Master when facilitating a Sprint Retrospective. However, not all teams enjoy this style. Consider using these exercises only occasionally or when the team asks for new ways of doing retrospectives.
+* __Try not to only focus on the negative.__ Not only is it necessary for the team to recognize what’s not working well, it is also important to highlight where they exceeded expectations. This ensures that the team both avoids failures and repeats successes as well.
+* __Avoid changing processes after each retrospective.__ It is okay to keep a new process in place for a few Sprints before deciding whether it was useful or not. You can always make note of opportunities for change, but try to wait a few Sprints before implementing new changes.
+
+### Best practices
+* Ask questions that require thoughtful discussion rather than a yes-or-no answer. For example, ask, “How could we have better achieved our Sprint Goal?” rather than “Did we achieve the Sprint Goal?””
+* Consider diverse styles of communication and participation. Make it easy for all team members to contribute their ideas and feedback. For example, not everyone feels comfortable speaking up in a large group. Try things like starting the retrospective with silent reflection by journaling or putting the team into pairs before starting a larger group conversation.
+* Cover the many aspects of the Sprint when conducting a retrospective.
+  1. The productivity and efficiency of the team
+  2. The scope and understanding of the definition of done
+  3. Communication and interactions within the team
+  4. Stakeholder communication
+  5. Progress towards more long-range release plans
+* Consider reflecting periodically on Scrum theory and values by asking specific questions. 
+For example, ask, “How could the team become more transparent?” or “How did we abide by our Scrum values in this Sprint?”
