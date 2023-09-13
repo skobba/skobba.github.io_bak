@@ -194,6 +194,8 @@ __Unstable product roadmap caused by product ambition__
 * Set up regular roadmap reviews with the entire team
 * Promote sharing knowledge between the Product Owner and the Development Team
 
+__Incomplete implementation of Scrum__
+* Your responsibility
 
 ### Soulutions to dynamic and cultual issues
 * Run a team brainstorm session
