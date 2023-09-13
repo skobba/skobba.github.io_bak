@@ -181,3 +181,4 @@ __Use Retrospectives to ask the team if anything is slowing them down__
 Retrospectives can help to identify issues, like if the team is waiting on dependencies or experiencing communication challenges. The project manager can also try doing more solution Demos with the team and ask the team to focus on only a few user stories per Sprint.
 
 __Us vs them with the business people__
+Ask for stakeholders to come to the Scrum Master for information
