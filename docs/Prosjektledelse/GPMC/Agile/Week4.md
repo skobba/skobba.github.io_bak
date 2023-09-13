@@ -221,3 +221,46 @@ Ref.:
 * [How to Combine DevOps and Agile](https://devops.com/how-to-combine-devops-and-agile/)
 * [Agile vs DevOps: What's the Difference?](https://www.cmswire.com/information-management/agile-vs-devops-whats-the-difference/#:~:text=Fundamentally%2C%20DevOps%20brings%20together%20two,the%20ever%2Dchanging%20consumer%20needs.&text=%2Dbased%20Shiftleft%2C%20explained%20how%20both%20Agile%20and%20DevOps%20are%20managed)
 * [The Convergence of Scrum and DevOps](https://www.scrum.org/resources/convergence-scrum-and-devops)
+
+## Scaling Agile
+
+### Scaled Agile Framework (SAFe)
+The most popular scaled framework is the 
+Scaled Agile Framework
+ or SAFe. SAFe is a Lean-Agile scaling framework that draws heavily on concepts from Kanban, Scrum, Extreme Programming (XP), DevOps, and Design Thinking methodologies. SAFe puts the goal of delivering value above all else—the first principle of SAFe is “take an economic view.” The framework organizes all work and teams into “Agile Release Trains” based on value streams; for example, sales. The SAFe framework is mature and provides detailed guidance on all elements of using SAFe, but some elements are more critical than others. Be sure to check back to the Agile principles and values in the manifesto to be sure you are preserving agility. 
+
+### Scrum of Scrums
+Scrum of Scrums
+ is a technique for integrating the work of multiple, smaller Scrum teams working on the same project or solution. Coordination among teams is critical to ensuring the deliverables from each team can be integrated into one larger, cohesive deliverable. 
+
+Scrum of Scrums involves the following elements:
+
+A group of at least 12 or more people divided into Scrum Teams of five to ten people each 
+
+Scrum of Scrums meetings, which are held once a week, twice a week, or daily. These meetings follow the same format as a Daily Scrum meeting but focus on the Scrum team. In these meetings, you’ll discuss questions like: “What did the team do yesterday? What problems occurred, if any, that are negatively affecting your team? What does your team want to accomplish before we meet again? Is your team blocked from moving forward on any tasks?”
+
+A Scrum Master or designated “ambassador” for each team that participates in the Scrum of Scrums meetings and a Scrum of Scrums Master who focuses on the overall Scrum process across multiple teams 
+
+Sprint Planning, Sprint Review, and Sprint Retrospective meetings 
+
+Beyond these very basic guidelines, there is no official framework or methodology to implement Scrum of Scrums. Scrum of Scrums assumes that teams have a good working understanding of Scrum and are able to apply the scaling principles to how they work. Building on this knowledge, they design and iterate their own approach to coordinate multiple teams working on the same product. 
+
+### Large-Scale Scrum (LeSS)
+Large-Scale Scrum (LeSS
+) is a framework that aims to maximize the Scrum team’s ability to deliver value and reduce waste in larger organizations. LeSS grew out of more than 600 experiments that expanded the practice of Scrum to larger groups. 
+
+LeSS includes ten principles for applying the value, elements, and overall purpose of Scrum across an organization. These principles were designed to create more customer- and collaboration-focused teams. LeSS teams prioritize learning, transparency, and customer needs.
+
+### Disciplined Agile Delivery (DAD)
+Disciplined Agile Delivery (DAD)
+ is a hybrid approach that combines the strategies from various Agile frameworks, including Kanban, LeSS, Lean Development, Extreme Programming, Agile Modeling, and more. DAD guides people through the process-related decisions that frameworks like SAFe and Scrum of Scrums leave open. DAD helps you develop a scaled Agile strategy based on context and desired outcomes.
+
+### The Spotify Model
+Another approach you may encounter is the “Spotify Model,” which we discussed in a previous reading. It is important to note that Spotify’s model is not a true Agile framework. There is no standard guide on how to implement it. The model began as a description of how Spotify overcame the challenges of scaling Agile. By focusing their efforts on culture, team autonomy, communication, accountability, and quality, they increased their agility over time. Spotify’s approach has had a huge impact on workflows and team structures across the tech world.
+
+### Best practices for scaling Agile
+No matter which framework you choose, it’s important to keep a few basic principles in mind:
+* Treat scaling models like SAFe, Scrum of Scrums, LeSS, etc., as general frameworks, not instruction manuals. 
+* Different situations require different solutions. It’s okay to mix and match elements from multiple frameworks, as long as you apply the principles and values of the Agile Manifesto.
+* Don’t try to scale without prior Agile experience. Going straight from Waterfall to scaled Agile can be risky without a knowledgeable guide.
+* Finally, and most importantly, don’t scale if it isn’t necessary. The larger your team, the more complex and difficult your project becomes. 
