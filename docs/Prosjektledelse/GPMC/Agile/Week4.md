@@ -169,16 +169,13 @@ When deciding which approach to use, ask yourself:
 ## Agile team challenges
 
 __Do more Demos of the solutions with the team__
-
-More Demos help to ensure the team is delivering on the value roadmap. Beyond additional Demos, the project manager can ask the team to focus on only a few user stories per Sprint and use Retrospectives to identify challenges.
+* More Demos help to ensure the team is delivering on the value roadmap. Beyond additional Demos, the project manager can ask the team to focus on only a few user stories per Sprint and use Retrospectives to identify challenges.
 
 __Focus on only a few user stories per Sprint__
-
-If the team is experiencing value delivery issues, one solution is to focus on a few stories per Sprint and finish an item before moving on. The project manager can also do more solution Demos with the team and use Retrospectives to identify challenges.
+* If the team is experiencing value delivery issues, one solution is to focus on a few stories per Sprint and finish an item before moving on. The project manager can also do more solution Demos with the team and use Retrospectives to identify challenges.
 
 __Use Retrospectives to ask the team if anything is slowing them down__
-
-Retrospectives can help to identify issues, like if the team is waiting on dependencies or experiencing communication challenges. The project manager can also try doing more solution Demos with the team and ask the team to focus on only a few user stories per Sprint.
+* Retrospectives can help to identify issues, like if the team is waiting on dependencies or experiencing communication challenges. The project manager can also try doing more solution Demos with the team and ask the team to focus on only a few user stories per Sprint.
 
 __Us vs them with the business people__
-Ask for stakeholders to come to the Scrum Master for information
+* Ask for stakeholders to come to the Scrum Master for information
