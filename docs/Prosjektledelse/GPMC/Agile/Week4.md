@@ -193,3 +193,5 @@ __Low team morale__
 * Run a team brainstorm session
 * Change up the workflows
 * Take a training class together
+* 6 hat technique
+
