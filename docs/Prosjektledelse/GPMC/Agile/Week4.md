@@ -179,3 +179,12 @@ __Use Retrospectives to ask the team if anything is slowing them down__
 
 __Us vs them with the business people__
 * Ask for stakeholders to come to the Scrum Master for information
+
+__Low team conflict__
+* If the team has low team conflict, it may indicate that team members are worried about starting a conflict in an unsafe environment. Other signs of team dynamics and culture issues include low team morale and low conflict.
+
+__Lots of team conflict__
+* If the team argues and experiences unresolved issues this may negatively impact the team's performance. Other signs of team dynamics and culture issues include low team morale and low conflict.
+
+__Low team morale__
+* If team members seem grumpy or irritated, there may be underlying team dynamics issues. Other signs of team dynamics and culture issues include lots of team conflict and low team conflict.
