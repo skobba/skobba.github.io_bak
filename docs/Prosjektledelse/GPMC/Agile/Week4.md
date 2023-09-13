@@ -189,6 +189,12 @@ __Lots of team conflict__
 __Low team morale__
 * If team members seem grumpy or irritated, there may be underlying team dynamics issues. Other signs of team dynamics and culture issues include lots of team conflict and low team conflict.
 
+__Unstable product roadmap caused by product ambition__
+* Agree up front how to handle new opportunities
+* Set up regular roadmap reviews with the entire team
+* Promote sharing knowledge between the Product Owner and the Development Team
+
+
 ### Soulutions to dynamic and cultual issues
 * Run a team brainstorm session
 * Change up the workflows
