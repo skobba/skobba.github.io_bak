@@ -264,3 +264,6 @@ No matter which framework you choose, it’s important to keep a few basic princ
 * Different situations require different solutions. It’s okay to mix and match elements from multiple frameworks, as long as you apply the principles and values of the Agile Manifesto.
 * Don’t try to scale without prior Agile experience. Going straight from Waterfall to scaled Agile can be risky without a knowledgeable guide.
 * Finally, and most importantly, don’t scale if it isn’t necessary. The larger your team, the more complex and difficult your project becomes. 
+
+### Key takeaway
+Scaling Agile can be as simple as putting two Scrum teams together into a Scrum of Scrums configuration or as sophisticated as training an organization of thousands in the SAFe framework. When you have a large team or a big deliverable that requires multiple workstreams, think about how you can scale to suit your situation. Remember that you can modify SAFe, LeSS, and other scaled frameworks to meet the needs of each project. Make sure your team understands Agile principles before you try to scale since scaling inevitably introduces more waste and complexity.
