@@ -194,4 +194,7 @@ __Low team morale__
 * Change up the workflows
 * Take a training class together
 * 6 hat technique
-
+* Encourage team members to support each other by pairing them to work on specific tasks
+* Show appreciation and encourage your team through coaching by setting up an event to celebrate their accomplishments
+* Team-building exercise on how to work better together
+* A coaching approach can help unify the team
