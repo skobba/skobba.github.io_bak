@@ -154,6 +154,13 @@ Understand motivations. Before your discussion, consider each stakeholder's moti
 
 * __Seek a win-win outcome.__ Finally, consider what it will take for the other side to be satisfied. Then, try to identify a way to ensure you are satisfied as well. There will be times when one party may have to compromise more than the other,  but a mutually beneficial agreement (an agreement that benefits all parties involved) should always be the goal. The next reading will cover strategies for achieving mutually beneficial agreements with stakeholders. 
 
+### Best practices for reaching a mutually beneficial agreement
+* __Share information.__ Sometimes in negotiations, one or both parties might think they need to withhold information in order to not give too much away. This isn’t very effective, though. It is best to strive for open lines of communication, where each party shares their worries and preferences. For instance, if your team’s last supplier provided you with low quality products, you might voice this as a concern so your expectations around quality are clear. 
+
+* __Ask questions and listen actively to responses.__ Just like you shared your concerns and expectations, you can ask the other party questions to clarify what their concerns and expectations are. That way, both parties will have shared all the necessary information to achieve a mutually beneficial agreement. 
+
+* __Propose multiple options whenever possible.__ In negotiations, presenting only one option or solution can set you up for failure because the other person might think your first offer is the only one. If the other party rejects all of your proposals, ask them to communicate which one they like best, as that may point you in the direction of finding a solution that works for everyone.
+
 ## Why projects fail
 Some common problems:
 * Unrealistic expectations (don't commit to firm dates when initiating the project) 
