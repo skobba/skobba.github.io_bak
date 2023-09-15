@@ -135,6 +135,25 @@ You will have to maintain good relationships with all of your stakeholders to en
 
 * __Once stakeholders have a vested interest, bring project problems to them.__ Ask your stakeholders: How would you handle this situation? What solutions come to mind?
 
+### Tips for navigating scope with stakeholders
+Understand motivations. Before your discussion, consider each stakeholder's motivations for wanting to adjust the project’s scope. Some of those motivations are budgetary (such as wanting to reduce the project’s costs), some are interpersonal (such as wanting more time to complete tasks), and some are related to personal career goals (such as maintaining their current position or striving for a promotion). Understanding your stakeholders’ motivations can help you work together to find a compromise. 
+
+* __Set the scene.__ Start the discussion with a reflection on why you are meeting. Remind your stakeholders why you are engaged in this project, and assure them that you all share a common goal.
+
+* __Listen first.__ Hear what your stakeholders have to say before you present your views. This will demonstrate your desire to understand the other party’s perspective. Acknowledging their point of view may make it easier for them to accept your suggestions or solutions when their ideas or opinions differ from yours.
+
+* __Ask questions to define goals.__ Be thorough and ask as many questions as you feel necessary to understand what the stakeholder wants. This might include getting them to define their customer or business goals. Strive for getting specific, measurable details from your stakeholders, so that later, you’ll be able to determine whether you’ve successfully met their goals. Eliciting language that is measurable (rather than subjective or unclear) will help you define goals. An example of a specific, measurable goal could be: “We want to cut the amount of time it takes customers to sign up for our newsletter by at least 30 percent.”
+
+* __Explain the "why" before the "what."__ When attempting to persuade stakeholders—or anyone, for that matter—to see things your way, explain the reasons for your request before describing what you want. For instance, start by explaining the value that could be added to your company or project by defining scope in a certain way. If stakeholders understand where you’re coming from first, they’re more likely to grant your request when you ask for it.
+
+* __Do not oversell.__ Sometimes it’s best to state your case and give others some time to respond. After you have presented your reasons, position, and request, withdraw slightly to give your audience time to process what you have said. Think of your silence, in this situation, as a sign of respect for your stakeholders; it shows them you want to hear from them. And, if they are quiet for a while, it means that you have stimulated thought.  
+
+* __Be creative.__ Working to find alternative solutions can quickly turn a heavy negotiation into an inspiring team effort. To find real solutions to negotiation stalemates, think creatively about all the aspects of the project. You may find that there is more than one solution to differing opinions. 
+
+* __Do not make it personal.__ Always focus on what is good for the project. If personal considerations enter into the discussion, reframe the conversation by bringing up objective facts.
+
+* __Seek a win-win outcome.__ Finally, consider what it will take for the other side to be satisfied. Then, try to identify a way to ensure you are satisfied as well. There will be times when one party may have to compromise more than the other,  but a mutually beneficial agreement (an agreement that benefits all parties involved) should always be the goal. The next reading will cover strategies for achieving mutually beneficial agreements with stakeholders. 
+
 ## Why projects fail
 Some common problems:
 * Unrealistic expectations (don't commit to firm dates when initiating the project) 
