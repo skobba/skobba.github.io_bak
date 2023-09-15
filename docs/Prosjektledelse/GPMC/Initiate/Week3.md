@@ -117,6 +117,24 @@ Need to know the final decisions that were made and when a task is completed.
 ### Put your RACI into practice
 Share your RACI chart with your sponsors and stakeholders to get buy-in and sign-off. When you get stakeholder buy-in, you will be able to set clear expectations for your team and ensure that everyone is aligned on their responsibilities.
 
+### Stakeholder management during project initiation
+* __Identify all the stakeholders at the beginning of your project or initiative.__ Get everyone involved as early as possible to set clear expectations, responsibilities, and boundaries. Identifying your stakeholders early on gives them ample time to voice any concerns they may have about the project or their role within it. If they feel a sense of ownership from the beginning, your stakeholders may be more likely to embrace their roles, give appropriate input, and help remove barriers to allow the project to move forward.  
+
+* __Keep the project vision clear.__ The project vision describes the need the project is fulfilling. It is important to have a clear, specific project vision because, as we have learned, stakeholders may apply pressure to increase the requirements, shorten the timeline, or cut resources. Ensuring that stakeholders have agreed upon the vision—and, more specifically, what "done" looks like—provides clarity for everyone involved with the project. Including highly-influential stakeholders in the strategic planning processes will make sure that all team members are aligned with project vision. 
+
+* __Equip your stakeholders with user-friendly resources at all times.__ This could mean creating a one-pager (a one-page document that provides an overview of your project) or weekly status report with the latest information and links to the main project artifacts. It may also mean ensuring everyone has access to necessary documentation.
+
+### Stakeholder management throughout the project life cycle
+You will have to maintain good relationships with all of your stakeholders to ensure they are satisfied and contributing to the team. The following strategies can help you get to know your stakeholders’ interests, concerns, and communication preferences and enlist their help throughout your project’s life cycle:
+
+* __Find out what stakeholders care about and why.__ Ask your stakeholders: What are your most important priorities and goals? What role would you like to play in this project? How will this project support you and your most important priorities?
+
+* __Adjust your communication frequency and approach based on stakeholder roles and preferences.__ Tell your stakeholders: Here’s how I plan to keep you informed—does that work for you?
+
+* __Enlist the help of senior stakeholders when necessary.__ Ask your stakeholders: Who else do you recommend I reach out to regarding this project? 
+
+* __Once stakeholders have a vested interest, bring project problems to them.__ Ask your stakeholders: How would you handle this situation? What solutions come to mind?
+
 ## Why projects fail
 Some common problems:
 * Unrealistic expectations (don't commit to firm dates when initiating the project) 
