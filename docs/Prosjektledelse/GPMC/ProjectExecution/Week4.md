@@ -46,12 +46,13 @@ Evaluate alternative actions, questions:
 * "Which option leads me to act as the sort of person I want to be?”
 
 ## Effective influencing
-Establishing credibility
-Framing for common ground
-Providing evidence
-Connecting emotionally
+Conger’s four steps of effective influencing:
+1. Establishing credibility
+2. Framing for common ground
+3. Providing evidence
+4. Connecting emotionally
 
-Conger´s four common influencing misstakes:
+Common influencing misstakes:
 * Provided evidence from company surveys to set the stage for her proposal.
 * Framed for common ground by noting how a new onboarding process might increase employee productivity.
 * Established credibility by outlining her previous experience with launching similar processes.
