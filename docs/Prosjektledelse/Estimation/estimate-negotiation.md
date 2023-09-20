@@ -9,3 +9,4 @@
 * Repeat what you think the other person said
 * Connect with their experience
 * Recognize judgments
+* Recognize buffer
