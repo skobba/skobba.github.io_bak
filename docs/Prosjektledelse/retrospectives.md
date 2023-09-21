@@ -1,6 +1,8 @@
 # Retrospectives
+*Retrospectives have to be positive. They have to be blameless, and the goal is to continuously improve ourselves, our team, and our processes.*
 
-Low participation during a retrospective can prevent a project team from making meaningful process improvements. Some effective techniques to encourage participation include:
+## Low participation
+__Low participation__ during a retrospective can prevent a project team from making meaningful process improvements. Some effective techniques to encourage participation include:
 
 __Pose a group question and ask for individual responses.__
 
