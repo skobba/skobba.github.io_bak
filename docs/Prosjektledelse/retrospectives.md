@@ -20,3 +20,11 @@ __Establish a safe environment for the team.__
 
 ## Accountability vs blame
 __Blame__ shuts people down instead of empowering them to share honestly. __Accountability__ doesn't involve assigning blame to specific team members for mistakes. Instead, it encourages the team to think holistically about mistakes and challenges in identify solutions for the future. Another benefit of accountability is that it encourages ownership. When a team member feels ownership over an aspect of the project, they may be more motivated throughout the project to ensure that aspect meets quality standards and helps the project progress towards the goal. 
+
+## Techniques to encourage accoutability
+* Come prepared with specific challenges to discuss as a group
+* Turn team complaints into smart action items
+
+* __Encourages ownership.__ A retrospective is a tool for process improvement, so participants need to be honest about improving performance. This is rooted in accountability, which helps team members feel ownership over an aspect of the project.
+* __Encourages the team to think holistically about mistakes.__ Accountability encourages team members to think holistically about mistakes and challenges. This helps the retrospective serve as a tool for process improvement.
+* __Identifies solutions for the future.__ Accountability encourages team members to think holistically, share honestly, and identify solutions for the future. This means that the retrospective can serve as a tool for process improvement.
