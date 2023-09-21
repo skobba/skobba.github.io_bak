@@ -35,3 +35,13 @@ __Accountability includes__:
 * __Encourages ownership.__ A retrospective is a tool for process improvement, so participants need to be honest about improving performance. This is rooted in accountability, which helps team members feel ownership over an aspect of the project.
 * __Encourages the team to think holistically about mistakes.__ Accountability encourages team members to think holistically about mistakes and challenges. This helps the retrospective serve as a tool for process improvement.
 * __Identifies solutions for the future.__ Accountability encourages team members to think holistically, share honestly, and identify solutions for the future. This means that the retrospective can serve as a tool for process improvement.
+
+## Addressing negativity
+*Ask yourself, is this conversation likely to feel stressful for the team?*
+
+Techniques for addressing negativity:
+* Aim to set a positive tone at the start of the meeting
+* Determine how you will set the tone of the meeting
+* Try anticipating any potential negativity by meeting one on one with team members before the retrospective happens.
+** Does this person feel insecure about the value they add to this team?
+** Does this person receive negative feedback on the quality of their work?
