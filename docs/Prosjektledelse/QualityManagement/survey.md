@@ -44,3 +44,10 @@ __Tips__
 * Don´t make assumptions about respondents
 * Don´t provide too much information
 
+## Presentation
+* Full report
+* Slides
+* Story telling
+
+*Storytelling is the process of turning facts into narrative to communicate something to your audience.*
+
