@@ -14,20 +14,18 @@
 
 Key questions about the outcomes, impact, and/or effectiveness of your project or program, whereas a survey question is designed to collect data, which can help you answer your evaluation questions.
 
-__Open-ended questions__
-Open-ended questions require more than one-word answers, such as yes or no.
+__Open-ended questions__ require more than one-word answers, such as yes or no.
 
 * What went well during the presentation?
 * What did you find most useful or interesting about the presentation? 
 
-__Close-ended questions____
-Can be answered with a single response, like yes or no or true or false or selecting a single answer from a list.
+__Close-ended questions___ can be answered with a single response, like yes or no or true or false or selecting a single answer from a list.
 
-Type 1:
+Type 1 (yes/no):
 * Did you order an appetizer?
 * Have you eaten at this restaurant before?
 
-Type 2:
+Type 2 (multiple choice):
 The second type of closed-ended question is multiple choice. You're usually instructed to select one of the answer options or to select all that apply.
 
 * How often do you dine at this location each month?
