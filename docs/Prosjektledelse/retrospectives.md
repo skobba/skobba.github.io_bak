@@ -47,4 +47,4 @@ Techniques for addressing negativity:
   * Does this person receive negative feedback on the quality of their work?
 * Consider asking team members individually to share their thoughts.
 * Call a meeting break
-
+* Anticipate potential negativity by meeting one-on-one with team members in advance.
