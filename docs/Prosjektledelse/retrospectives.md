@@ -45,3 +45,6 @@ Techniques for addressing negativity:
 * Try anticipating any potential negativity by meeting one on one with team members before the retrospective happens.
   * Does this person feel insecure about the value they add to this team?
   * Does this person receive negative feedback on the quality of their work?
+* Consider asking team members individually to share their thoughts.
+* Call a meeting break
+
