@@ -31,4 +31,9 @@ The second type of closed-ended question is multiple choice. You're usually inst
 * How often do you dine at this location each month?
 ** A range of answer options like zero to one, two to three, four to five, and five or more.
 
+__Tips__
+
+* Should be specific and address only one measurable aspect.
+* Don´t make assumptions about respondents
+* Don´t provide too much information
 
