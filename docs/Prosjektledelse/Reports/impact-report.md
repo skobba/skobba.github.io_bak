@@ -5,7 +5,8 @@
 Topics:
 * Executive summary
   * Project vision
-  * Key accomplishments
+  * Key accomplishments (The activities, tasks, and milestones that helped you find success.)
   * Lessons learned
 * Results
+* What worked
 * Next steps
