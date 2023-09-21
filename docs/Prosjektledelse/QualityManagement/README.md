@@ -1,5 +1,18 @@
 # Quality management
 
+## Management processes
+### Quality planning
+...
+
+### Quality control
+Quality control (QC) refers to the techniques that are used to ensure quality standards are maintained when a problem is identified. Quality assurance (QA) is a review process. QA uses testing and feedback to help project managers evaluate whether a project is moving towards delivering a high-quality service or product.
+
+### Quality standards
+...
+
+### Quality assurance
+...
+
 ## Effective Evauation Questions
 *An evaluation wuestion is a key question about the outcomes, impact, and/or effectiveness of your project, or a key aspect of your project*
 
@@ -12,7 +25,7 @@ There are two types of questions:
 
 ### Questions that help improve
 * How can we improve?
-* What is tworking and what is not?
+* What is working and what is not?
 * Which goals are being met?
 
 ### Questions for measuring and comparing
