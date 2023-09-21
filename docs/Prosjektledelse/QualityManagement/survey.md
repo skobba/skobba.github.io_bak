@@ -51,6 +51,11 @@ __Tips__
 
 *Storytelling is the process of turning facts into narrative to communicate something to your audience.*
 
+__Process for preparing an evaluation presentation:__
+* Consider your audience
+* Filter and analyze data
+* Shape the story of your findings.
+
 ### What to include in your evaluation presentation
 #### Introduction
 The introduction serves as a summary of your presentation and includes an overview of the project’s goals and desired outcomes. It should include a summary of your findings, lessons learned, and recommendations moving forward. This is a very important section of your presentation, but keep it brief. Your introduction should be no more than a paragraph and only include the most necessary information.  
