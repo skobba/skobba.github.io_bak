@@ -36,6 +36,8 @@ There are two types of questions:
 ## Evaluation indicators
 Evaluation indicators take your evaluation question and determine the specific type of response you are aiming for.
 
+Evaluation indicators state what you want to measure or evaluate, like the number of something, level of satisfaction, or demographic information. They help you take your evaluation questions and determine the specific type of response you need to collect.
+
 Evaluation indicators determine what data needs to be collected that will help you answer your evaluation questions.
 
 
