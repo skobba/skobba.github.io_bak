@@ -18,3 +18,5 @@ __Establish a safe environment for the team.__
 
 *To create a safe environment, remind the team that the retrospective is a meeting free from stakeholders or customers. You should also tell them that it’s safe to discuss problems. Beyond that, be sure to model participation, pose questions and ask for responses, and review the project timeline.*
 
+## Accountability vs blame
+__Blame__ shuts people down instead of empowering them to share honestly. __Accountability__ doesn't involve assigning blame to specific team members for mistakes. Instead, it encourages the team to think holistically about mistakes and challenges in identify solutions for the future. Another benefit of accountability is that it encourages ownership. When a team member feels ownership over an aspect of the project, they may be more motivated throughout the project to ensure that aspect meets quality standards and helps the project progress towards the goal. 
