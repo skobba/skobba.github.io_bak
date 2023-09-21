@@ -19,7 +19,7 @@ __Open-ended questions__ require more than one-word answers, such as yes or no.
 * What went well during the presentation?
 * What did you find most useful or interesting about the presentation? 
 
-__Close-ended questions___ can be answered with a single response, like yes or no or true or false or selecting a single answer from a list.
+__Close-ended questions__ can be answered with a single response, like yes or no or true or false or selecting a single answer from a list.
 
 Type 1 (yes/no):
 * Did you order an appetizer?
