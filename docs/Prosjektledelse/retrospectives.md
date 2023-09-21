@@ -24,6 +24,7 @@ __Blame__ shuts people down instead of empowering them to share honestly. __Acco
 ## Techniques to encourage accoutability
 * Come prepared with specific challenges to discuss as a group
 * Turn team complaints into smart action items
+* Push the team to idenfity its role in create a given challenge
 
 * __Encourages ownership.__ A retrospective is a tool for process improvement, so participants need to be honest about improving performance. This is rooted in accountability, which helps team members feel ownership over an aspect of the project.
 * __Encourages the team to think holistically about mistakes.__ Accountability encourages team members to think holistically about mistakes and challenges. This helps the retrospective serve as a tool for process improvement.
