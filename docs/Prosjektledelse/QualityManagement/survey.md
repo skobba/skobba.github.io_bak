@@ -14,6 +14,13 @@
 
 Key questions about the outcomes, impact, and/or effectiveness of your project or program, whereas a survey question is designed to collect data, which can help you answer your evaluation questions.
 
+Survey data helps to:
+* Determine if you're achieving your quality goals.
+* Identify where you need to make adjustments. 
+* Understand what's working and what's not working.
+* Assess the criteria you want to evaluate.
+* Provide data that will point out whether you've met your quality standards. 
+
 __Open-ended questions__ require more than one-word answers, such as yes or no.
 
 * What went well during the presentation?
