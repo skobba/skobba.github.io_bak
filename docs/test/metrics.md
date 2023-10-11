@@ -12,6 +12,8 @@ There are several other types of metrics that are relevant to how users perceive
 Ref.: [https://developer.chrome.com/docs/lighthouse/performance/first-meaningful-paint](https://developer.chrome.com/docs/lighthouse/performance/first-meaningful-paint)
 
 ## Important metrics
+Ref.: [https://web.dev/articles/user-centric-performance-metrics](https://web.dev/articles/user-centric-performance-metrics)
+
 *   **[First Contentful Paint (FCP)](https://web.dev/articles/fcp):** measures the time from when the page starts loading to when any part of the page's content is rendered on the screen. _(lab,field)_
 *   **[Largest Contentful Paint (LCP)](https://web.dev/articles/lcp):** measures the time from when the page starts loading to when the largest text block or image element is rendered on the screen. _(lab,field)_
 *   **[First Input Delay (FID)](https://web.dev/articles/fid):** measures the time from when a user first interacts with your site (when they click a link, tap a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to respond to that interaction. _(field)_
