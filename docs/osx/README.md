@@ -13,3 +13,8 @@
 ```
 defaults write com.apple.screencapture location /Users/gjermundskobba/Downloads
 ```
+
+## Missing python
+```
+sudo ln -s $(which python3) /usr/local/bin/python
+```
