@@ -27,6 +27,10 @@ List all databases with sizes
 Create database
 ```
 CREATE DATABASE mydb;
+
+# Command line samples
+createdb -U postgres mydb 
+podman exec Bemanning createdb -U postgres Bemanning
 ```
 
 Delete database
