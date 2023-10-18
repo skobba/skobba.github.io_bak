@@ -14,4 +14,7 @@ podman build -t skobba/frontend:latest .
 # CONTAINERS
 podman container ps -a
 podman container rm <ID>
+
+# Start Postgres
+podman run --name skobba_postgres -e POSTGRES_PASSWORD='qwe123' -d -p 5432:5432 postgres:13.8
 ```
