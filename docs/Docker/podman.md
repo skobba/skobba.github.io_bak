@@ -9,6 +9,7 @@ podman machine start
 # IMAGES
 podman image list 
 podman image rm <ID>
+podman build -t skobba/frontend:latest .
 
 # CONTAINERS
 podman container ps -a
