@@ -17,4 +17,12 @@ podman container rm <ID>
 
 # Start Postgres
 podman run --name skobba_postgres -e POSTGRES_PASSWORD='qwe123' -d -p 5432:5432 postgres:13.8
+
+# Copy file
+podman cp db_dump.sql skobba_postgres:/db_dump.sql
+
+# Container shell
+podman exec -it skobba_postgres bash
+
+podman exec skobba_postgres pg_restore -U postgres -d skobba /database_dump
 ```
