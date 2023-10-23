@@ -4,6 +4,7 @@ Manage containers, pods, and images with Podman. Seamlessly work with containers
 ```
 # MACHINE
 podman machine init
+podman machine init --cpus 4 --memory 4096 --disk-size 20
 podman machine start
 
 # IMAGES
