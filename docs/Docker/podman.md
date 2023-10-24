@@ -27,3 +27,13 @@ podman exec -it skobba_postgres bash
 
 podman exec skobba_postgres pg_restore -U postgres -d skobba /database_dump
 ```
+## Slow build time
+Install fuse-overlayfs
+
+```
+brew install fuse-overlayfs
+podman system reset
+podman info
+```
+
+
