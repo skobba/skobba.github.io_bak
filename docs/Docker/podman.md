@@ -4,13 +4,14 @@ Manage containers, pods, and images with Podman. Seamlessly work with containers
 ```
 # MACHINE
 podman machine init
-podman machine init --cpus 4 --memory 4096 --disk-size 20
+podman machine init --cpus 4 --memory 8192 --disk-size 20
 podman machine start
 
 # IMAGES
 podman image list 
 podman image rm <ID>
 podman build -t skobba/frontend:latest .
+time podman build -t skobba/reactapp:latest . --log-level=debug
 
 # CONTAINERS
 podman container ps -a
@@ -24,7 +25,6 @@ podman cp db_dump.sql skobba_postgres:/db_dump.sql
 
 # Container shell
 podman exec -it skobba_postgres bash
-
 podman exec skobba_postgres pg_restore -U postgres -d skobba /database_dump
 ```
 ## Build context
