@@ -27,3 +27,17 @@ Extract the text in group (1)
 Extract the number group (2)
     
     echo "kmaster180"|sed -r 's/([a-z]*)([0-9]*)/\2/g'
+
+## Play sound from Macos terminal
+```
+afplay /System/Library/Sounds/Funk.aiff
+say done
+```
+
+alias
+```
+alias saydone='(
+    afplay /System/Library/Sounds/Funk.aiff
+    say done
+)'
+```
