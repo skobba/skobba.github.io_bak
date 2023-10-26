@@ -56,5 +56,23 @@ az ad app list --show-mine --query "[].{id:appId, name:displayName, graphId:obje
 All service principals created by the currently logged in user:
 ```
 az ad sp list --show-mine --query "[].{id:appId, name:displayName, tenant:appOwnerTenantId}"
-
 ```
+
+## Using Microsoft Graph REST
+Get the appId and the corresponding objectId for the app
+```
+az ad app list --query "[].{ displayName: displayName, appId:appId, objectId:objectId }" --output table --all | sort
+```
+
+Use the objectId in a GET query
+```
+az rest --method GET --uri "https://graph.microsoft.com/v1.0/applications/<objectId>" --headers 'Content-Type=application/json' 
+``` 
+
+Use the objectId in a PATCH query (add redirect url to spa applicaiton)
+```
+UIREPLYURLS=`echo "["\"http://localhost:4000/redirect"\"]" | sed 's/;/\",\"/g'`
+SPA_PATCH=$(printf '%s\n' "$UIREPLYURLS" | jq -c '{"spa":{"redirectUris":.}}')
+az rest --method PATCH --uri "https://graph.microsoft.com/v1.0/applications/<objectId>" --headers 'Content-Type=application/json' --body="$SPA_PATCH"
+```
+
