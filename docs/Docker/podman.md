@@ -27,6 +27,17 @@ podman cp db_dump.sql skobba_postgres:/db_dump.sql
 podman exec -it skobba_postgres bash
 podman exec skobba_postgres pg_restore -U postgres -d skobba /database_dump
 ```
+
+## Pods
+```
+podman pod create --label myFirstPod
+podman pod create --label mySecondPod
+podman pod ps
+
+podman play kube some-mariadb.yaml
+```
+
+
 ## Build context
 If a build context is not specified, and at least one Containerfile is a local file, the directory in which it resides is used as the build context.
 
