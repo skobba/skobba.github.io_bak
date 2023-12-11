@@ -18,3 +18,8 @@ defaults write com.apple.screencapture location /Users/gjermundskobba/Downloads
 ```
 sudo ln -s $(which python3) /usr/local/bin/python
 ```
+
+## Show path in Finder
+```
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder
+```
