@@ -20,3 +20,12 @@ Copy ISO:
 sudo cp debian-live-12.4.0-amd64-cinnamon.iso /dev/disk4
 ```
 
+Enable Persistence
+Ref.: [https://live-team.pages.debian.net/live-manual/html/live-manual/customizing-run-time-behaviours.en.html#556](https://live-team.pages.debian.net/live-manual/html/live-manual/customizing-run-time-behaviours.en.html#556)
+
+
+Install Live Build (lb)
+```
+apt-get install live-build
+```
+
