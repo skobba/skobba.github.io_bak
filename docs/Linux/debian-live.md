@@ -18,10 +18,20 @@ sudo diskutil unmount /dev/disk4s1
 Copy ISO:
 ```
 sudo cp debian-live-12.4.0-amd64-cinnamon.iso /dev/disk4
+sudo cp debian-live-12.4.0-amd64-cinnamon.iso /dev/disk4s1
+
+
 ```
 
 ## Enable Persistence
 Ref.: [https://live-team.pages.debian.net/live-manual/html/live-manual/customizing-run-time-behaviours.en.html#556](https://live-team.pages.debian.net/live-manual/html/live-manual/customizing-run-time-behaviours.en.html#556)
+
+A persistence volume is any of the following:
+* a partition, identified by its GPT name.
+* a filesystem, identified by its filesystem label.
+* an image file located on the root of any readable filesystem (even an NTFS partition of a foreign OS), identified by its filename.
+
+
 
 ext4 setup:
 ```
