@@ -49,5 +49,10 @@ brew install fuse-overlayfs
 podman system reset
 podman info
 ```
-
+## Switch from docker
+```
+echo alias docker=podman >> ~/.zshrc
+sudo rm -rf  /usr/local/bin/docker
+sudo ln -s /usr/local/bin/podman /usr/local/bin/docker || true
+```
 
