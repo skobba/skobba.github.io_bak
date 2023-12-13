@@ -56,3 +56,11 @@ sudo rm -rf  /usr/local/bin/docker
 sudo ln -s /usr/local/bin/podman /usr/local/bin/docker || true
 ```
 
+## Azure Container Registry Login
+Get credentials:
+
+Azure -> Container registries -> Your Registry -> Access keys
+
+```
+docker login yourcontainerregistry.azurecr.io
+```
