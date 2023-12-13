@@ -64,3 +64,8 @@ Azure -> Container registries -> Your Registry -> Access keys
 ```
 docker login yourcontainerregistry.azurecr.io
 ```
+
+Pull test:
+```
+docker pull yourcontainerregistry.azurecr.io/cicdtestimage:xx
+```
