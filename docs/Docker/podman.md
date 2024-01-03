@@ -37,6 +37,34 @@ podman pod ps
 podman play kube some-mariadb.yaml
 ```
 
+## Create unix sockets (podman-mac-helper)
+1. Install helper
+```
+sudo podman-mac-helper install
+```
+
+2. Restart podman machine
+outputs:
+```
+Starting machine "skobbis"
+Waiting for VM ...
+Mounting volume... /Users:/Users
+Mounting volume... /private:/private
+Mounting volume... /var/folders:/var/folders
+API forwarding listening on: /var/run/docker.sock
+Docker API clients default to this address. You do not need to set DOCKER_HOST.
+Machine "skobbis" started successfully
+```
+
+3. Verify that socket file was created
+```
+ls -la /var/run/docker.sock
+```
+
+## Connection list
+```
+podman system connection list
+```
 
 ## Build context
 If a build context is not specified, and at least one Containerfile is a local file, the directory in which it resides is used as the build context.
