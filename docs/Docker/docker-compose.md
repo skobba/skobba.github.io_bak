@@ -12,3 +12,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 docker-compose version
 ```
+
+Enter shell
+```
+docker-compose exec server bash
+```
