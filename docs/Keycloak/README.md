@@ -9,3 +9,10 @@ Extend Keylcoak with API key: [https://www.zakariaamine.com/2019-06-14/extending
 
 ## NodeJs
 * Alternative adapter: https://www.npmjs.com/package/openid-client
+
+## well-known
+```
+http://keycloakhost:keycloakport/realms/demo/.well-known/openid-configuration
+
+http://localhost:28080/realms/main/.well-known/openid-configuration
+```
