@@ -17,3 +17,8 @@ Enter shell
 ```
 docker-compose exec server bash
 ```
+
+Copy file from container
+```
+docker-compose cp postgres:/root/keycloakdb ./keycloakdb
+```
