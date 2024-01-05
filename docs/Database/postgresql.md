@@ -96,6 +96,12 @@ Describe a Table
 \d tablename
 ```
 
+Dump/Backup
+```
+pg_dump -U dbuser dbname > dumpfile
+
+```
+
 Restore Backup
 ```
 pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d dbname ./dumpfile
