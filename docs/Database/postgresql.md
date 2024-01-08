@@ -128,7 +128,7 @@ Ref.: [https://jdbc.postgresql.org/documentation/ssl/](https://jdbc.postgresql.o
 
 NB:  Before trying to access your SSL enabled server from Java, make sure you can get to it via psql!
 
-´´´
+```
 psql -h localhost -U postgres
 psql (14.5)
 SSL connection (protocol: TLSv1.2, cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off)
@@ -137,5 +137,7 @@ Type "help" for help.
 postgres=#
 ```
 
-´´´
+### SSL Mode
+Possible values include disable , allow , prefer , require , verify-ca and verify-full. require , allow and prefer all default to a non-validating SSL factory and do not check the validity of the certificate or the host name. verify-ca validates the certificate, but does not verify the hostname. verify-full will validate that the certificate is correct and verify the host connected to has the same hostname as the certificate. Default is prefer.
+
 ![postgres-ssl.png](postgres-ssl.png)
