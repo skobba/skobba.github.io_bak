@@ -16,7 +16,7 @@ docker push gsdemo.azurecr.io/kcskobba
 
 ## Delete images
 Unused:
-``
+```
 docker images prune -a
 ```
 
