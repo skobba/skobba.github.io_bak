@@ -1,5 +1,5 @@
 # postgresql
-Install w/ brew
+# Brew
 ```
 brew install postgresql
 ```
@@ -13,15 +13,19 @@ If failed to start via brew
 ```
 rm /usr/local/var/postgresql@12/postmaster.pid
 ```
-
-Login
+## Login
 ```
 psql postgres
 ```
-
+## Databases
 List all databases with sizes 
 ```
 \l+
+```
+
+Connect to DB
+```
+\c dbname
 ```
 
 Create database
@@ -42,12 +46,13 @@ or from terminal:
 dropdb -U db_owner_username -i [-h host] mysitedb
 ```
 
-List Users
+## Users
+List users
 ```
 \du+
 ```
 
-With sql
+List users with sql
 ```
 SELECT usename AS role_name,
  CASE
@@ -69,11 +74,21 @@ Create User
 CREATE USER postgres WITH PASSWORD 'supersecret';
 ```
 
-Connect to DB
+Create SUPERUSER:
 ```
-\c dbname
+CREATE USER root;
+ALTER USER root WITH SUPERUSER;
 ```
 
+Set detailed permissions
+```
+ALTER USER myrole WITH OPTION1 OPTION2 OPTION3;
+These options range from CREATEDB, CREATEROLE, CREATEUSER
+
+ALTER USER librarian WITH NOSUPERUSER;
+```
+
+## Tables
 Create table
 ```
 CREATE TABLE films (
@@ -96,6 +111,7 @@ Describe a Table
 \d tablename
 ```
 
+## Backup and Restore
 Dump/Backup
 ```
 pg_dump -U dbuser dbname > dumpfile
@@ -107,16 +123,7 @@ Restore Backup
 pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d dbname ./dumpfile
 ```
 
-Create user:
-```
-CREATE USER root;
-ALTER USER root WITH SUPERUSER;
-```
+## SSL
+Ref.: [https://jdbc.postgresql.org/documentation/ssl/](https://jdbc.postgresql.org/documentation/ssl/)
 
-Set detailed permissions
-```
-ALTER USER myrole WITH OPTION1 OPTION2 OPTION3;
-These options range from CREATEDB, CREATEROLE, CREATEUSER
-
-ALTER USER librarian WITH NOSUPERUSER;
-```
+![postgres-ssl.png](postgres-ssl.png)
