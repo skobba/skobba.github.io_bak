@@ -126,4 +126,16 @@ pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d dbn
 ## SSL
 Ref.: [https://jdbc.postgresql.org/documentation/ssl/](https://jdbc.postgresql.org/documentation/ssl/)
 
+NB:  Before trying to access your SSL enabled server from Java, make sure you can get to it via psql!
+
+´´´
+psql -h localhost -U postgres
+psql (14.5)
+SSL connection (protocol: TLSv1.2, cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off)
+Type "help" for help.
+
+postgres=#
+```
+
+´´´
 ![postgres-ssl.png](postgres-ssl.png)
