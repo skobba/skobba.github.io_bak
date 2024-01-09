@@ -1,7 +1,7 @@
 # Postgres
 Disable ssl:
 ```
-az postgres server  update --resource-group myresourcegroup --name mydemoserver --ssl-enforcement Disabled
+az postgres flexible-server update --resource-group myresourcegroup --name mydemoserver --ssl-enforcement Disabled
 ```
 
 ## Create database
