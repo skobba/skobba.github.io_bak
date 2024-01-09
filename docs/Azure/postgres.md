@@ -45,5 +45,6 @@ Database=keycloak;Server=gspostgres.postgres.database.azure.com;UserId=keycloak;
 
 postgres://dbuser%40gspgdb:p4ssword@gspgdb.postgres.database.azure.com/postgres?sslmode=require
 
+postgresql://dbadmin:p4ssword@gspgdb.postgres.database.azure.com/flexibleserverdb?sslmode=require
 ```
 
