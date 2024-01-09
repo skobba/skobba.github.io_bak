@@ -38,26 +38,37 @@ Set Keycloak env
 az webapp config appsettings set --resource-group demo --name kcskobba --settings KC_DB="postgres" KC_DB_URL="jdbc:postgresql://gspostgres.postgres.database.azure.com:5432/keycloak" KC_DB_USERNAME="keycloak" KC_DB_PASSWORD="keycloak" KEYCLOAK_ADMIN="admin" KEYCLOAK_ADMIN_PASSWORD="admin1234"
 ```
 
-## App Service Plan
-Ref.: [https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans)
+## Customer Containers
+Ref.: [https://learn.microsoft.com/en-us/azure/app-service/tutorial-custom-container?tabs=azure-cli&pivots=container-linux](https://learn.microsoft.com/en-us/azure/app-service/tutorial-custom-container?tabs=azure-cli&pivots=container-linux)
 
+### Enable SSH to Linix Web App
 
-Isolate your app into a new App Service plan when:
+_This configuration doesn't allow external connections to the container. SSH is available only through the Kudu/SCM Site. The Kudu/SCM site is authenticated with your Azure account. root:Docker! should not be altered SSH. SCM/KUDU will use your Azure Portal credentials. Changing this value will result in an error when using SSH_
 
-1. The app is resource-intensive. The number may actually be lower depending on how resource intensive the hosted applications are, however as a general guidance, you may refer to the table below:
+Enabling ssh via port 2222 in Azure portal on Debian GNU/Linux 10 (buster):
+```
+FROM tiangolo/uwsgi-nginx-flask:python3.6
 
-| App Service Plan SKU | Max Apps                          |
-| -------------------- | --------------------------------- |
-| B1, S1, P1v2, I1v1   | 8                                 |
-| B2, S2, P2v2, I2v1   | 16                                |
-| B3, S3, P3v2, I3v1   | 32                                |
-| P0v3                 | 8                                 |
-| P1v3, I1v2           | 16                                |
-| P2v3, I2v2, P1mv3    | 32                                |
-| P3v3, I3v2, P2mv3    | 64                                |
-| I4v2, I5v2, I6v2     | Max density bounded by vCPU usage |
-| P3mv3, P4mv3, P5mv3  | Max density bounded by vCPU usage |
+RUN mkdir /code
+WORKDIR /code
+ADD requirements.txt /code/
+RUN pip install -r requirements.txt --no-cache-dir
+ADD . /code/
 
-2. You want to scale the app independently from the other apps in the existing plan.
+# ssh
+ENV SSH_PASSWD "root:Docker!"
+RUN apt-get update \
+        && apt-get install -y --no-install-recommends dialog \
+        && apt-get update \
+ && apt-get install -y --no-install-recommends openssh-server \
+ && echo "$SSH_PASSWD" | chpasswd 
 
-3. The app needs resource in a different geographical region.
+COPY sshd_config /etc/ssh/
+COPY init.sh /usr/local/bin/
+
+RUN chmod u+x /usr/local/bin/init.sh
+EXPOSE 8000 2222
+
+#CMD ["python", "/code/manage.py", "runserver", "0.0.0.0:8000"]
+ENTRYPOINT ["init.sh"]
+```
