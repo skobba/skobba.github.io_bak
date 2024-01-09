@@ -29,7 +29,10 @@ az postgres server firewall-rule create -g demo -s dbservername -n {rule_name} -
 "Azure Database for PostgreSQL flexible server" uses another SSL alg then "Azure Database for PostgreSQL single server"
 
 ## SSL for Postgres in Production
-Ref.: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-connect-tls-ssl
+Ref.: 
+* https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-connect-tls-ssl
+* https://learn.microsoft.com/en-gb/azure/postgresql/single-server/concepts-certificate-rotation?WT.mc_id=Portal-SqlAzureExtension#what-do-i-need-to-do-to-maintain-connectivity
+
 
 ## AZURE_POSTGRESQL_CONNECTIONSTRING
 ```
