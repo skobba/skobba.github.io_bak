@@ -1,5 +1,43 @@
 # App Service
 
+## Create WebApp
+Create a web app with an image from a private Azure Container Registry
+```
+az webapp create -g MyResourceGroup -p MyPlan -n MyUniqueAppName -i myregistry.azurecr.io/docker-image:tag
+
+az webapp create -g demo -p ASP-demo-83a0 -n gjermundsapp -i gsdemo.azurecr.io/kcskobba
+```
+
+Add vnet to a webapp
+```
+az webapp vnet-integration add -g MyResourceGroup -n MyWebapp --vnet MyVnetName --subnet MySubnetName -s [slot]
+
+az webapp vnet-integration add -g demo -n gjermundsapp --vnet vnet-acquapgb --subnet subnet-obkpbupj
+```
+
+## Start/Stop
+```
+az webapp start --name kcskobba --resource-group demo
+az webapp stop --name kcskobba --resource-group demo
+```
+
+## Set env vars
+```
+az webapp config appsettings set --resource-group <resource-group-name> --name <app-name> --settings PGADMIN_DEFAULT_EMAIL="user@domain.com" PGADMIN_DEFAULT_PASSWORD="SuperSecret"
+
+az webapp config appsettings set --resource-group demo --name gspgadmin4 --settings PGADMIN_DEFAULT_EMAIL="demo@demo.com" PGADMIN_DEFAULT_PASSWORD="demo1234" PGADMIN_CONFIG_ENHANCED_COOKIE_PROTECTION="False" PGADMIN_CONFIG_CONSOLE_LOG_LEVEL="10"
+```
+
+Set docker cred
+```
+az webapp config appsettings set --resource-group demo --name kcskobba --settings DOCKER_REGISTRY_SERVER_URL="https://gsdemo.azurecr.io" DOCKER_REGISTRY_SERVER_USERNAME="gsdemo" DOCKER_REGISTRY_SERVER_PASSWORD="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+```
+
+Set Keycloak env
+```
+az webapp config appsettings set --resource-group demo --name kcskobba --settings KC_DB="postgres" KC_DB_URL="jdbc:postgresql://gspostgres.postgres.database.azure.com:5432/keycloak" KC_DB_USERNAME="keycloak" KC_DB_PASSWORD="keycloak" KEYCLOAK_ADMIN="admin" KEYCLOAK_ADMIN_PASSWORD="admin1234"
+```
+
 ## App Service Plan
 Ref.: [https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans)
 
