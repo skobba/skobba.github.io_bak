@@ -45,7 +45,34 @@ Ref.: [https://learn.microsoft.com/en-us/azure/app-service/tutorial-custom-conta
 
 _This configuration doesn't allow external connections to the container. SSH is available only through the Kudu/SCM Site. The Kudu/SCM site is authenticated with your Azure account. root:Docker! should not be altered SSH. SCM/KUDU will use your Azure Portal credentials. Changing this value will result in an error when using SSH_
 
-Enabling ssh via port 2222 in Azure portal on Debian GNU/Linux 10 (buster):
+__Enabling ssh via port 2222 in Azure portal on Debian GNU/Linux 10 (buster)__
+
+sshd_config
+```
+Port 			2222
+ListenAddress 		0.0.0.0
+LoginGraceTime 		180
+X11Forwarding 		yes
+Ciphers aes128-cbc,3des-cbc,aes256-cbc,aes128-ctr,aes192-ctr,aes256-ctr
+MACs                    hmac-sha1,hmac-sha1-96
+StrictModes 		yes
+SyslogFacility 		DAEMON
+PasswordAuthentication 	yes
+PermitEmptyPasswords 	no
+PermitRootLogin 	yes
+```
+
+init.sh
+```
+#!/bin/bash
+set -e
+
+echo "Starting SSH ..."
+service ssh start
+
+python /code/manage.py runserver 0.0.0.0:8000
+```
+Dockerfile
 ```
 FROM tiangolo/uwsgi-nginx-flask:python3.6
 
