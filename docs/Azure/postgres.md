@@ -48,6 +48,12 @@ Ref.:
 * https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-connect-tls-ssl
 * https://learn.microsoft.com/en-gb/azure/postgresql/single-server/concepts-certificate-rotation?WT.mc_id=Portal-SqlAzureExtension#what-do-i-need-to-do-to-maintain-connectivity
 
+## Connect with psql
+```
+psql --host=<server_name>.postgres.database.azure.com --port=5432 --username=<admin_user>@<server_name> --dbname=postgres
+
+psql postgresql://<admin_user>%40<server_name>@<server_name>.postgres.database.azure.com:5432/postgres
+```
 
 ## AZURE_POSTGRESQL_CONNECTIONSTRING
 ```
