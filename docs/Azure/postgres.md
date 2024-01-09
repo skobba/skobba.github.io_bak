@@ -25,7 +25,7 @@ az postgres up -g demo -s gspgdb -d mydb -u gjermund -p p4ssword
 az postgres flexible-server create -n gspgdb -g demo --location "northeurope" --admin-user dbadmin --admin-password p4ssword
 ```
 
-### ### Create (flexible server) with vnet
+### Create (flexible server) with vnet
 ```
 az postgres flexible-server create -n gspgdb --subnet /subscriptions/{SubID}/resourceGroups/{ResourceGroup}/providers/Microsoft.Network/virtualNetworks/{VNetName}/subnets/{SubnetName}
 
