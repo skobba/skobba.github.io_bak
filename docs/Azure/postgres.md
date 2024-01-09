@@ -1,5 +1,8 @@
 # Postgres
+
 ## Encryption
+SSL/TLS Ref.: [https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-networking-ssl-tls](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-networking-ssl-tls)
+
 ___Data encryption can only be configured during creation of a new server, not as an update to the existing Flexible Server. You may also wish to restore existing PITR backup to a new server and enable data encryption with Customer Managed Keys.___
 
 Disable ssl with:
