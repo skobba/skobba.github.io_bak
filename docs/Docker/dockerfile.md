@@ -19,6 +19,38 @@ ENTRYPOINT /usr/sbin/sshd -D -o ListenAddress=0.0.0.0
 ## SSH on Linux Web App for Containers in Azure
 Ref.: [https://azureossd.github.io/2022/04/27/2022-Enabling-SSH-on-Linux-Web-App-for-Containers/](https://azureossd.github.io/2022/04/27/2022-Enabling-SSH-on-Linux-Web-App-for-Containers/)
 
+init_container.sh
+```sh
+#!/bin/sh
+set -e
+
+# Get env vars in the Dockerfile to show up in the SSH session
+eval $(printenv | sed -n "s/^\([^=]\+\)=\(.*\)$/export \1=\2/p" | sed 's/"/\\\"/g' | sed '/=/s//="/' | sed 's/$/"/' >> /etc/profile)
+
+echo "Starting SSH ..."
+service ssh start
+
+# Start Gunicorn
+exec gunicorn -b 0.0.0.0:8000 app:app
+```
+
+sshd_config
+```
+Port 			2222
+ListenAddress 		0.0.0.0
+LoginGraceTime 		180
+X11Forwarding 		yes
+Ciphers aes128-cbc,3des-cbc,aes256-cbc,aes128-ctr,aes192-ctr,aes256-ctr
+MACs hmac-sha1,hmac-sha1-96
+StrictModes 		yes
+SyslogFacility 		DAEMON
+PasswordAuthentication 	yes
+PermitEmptyPasswords 	no
+PermitRootLogin 	yes
+Subsystem sftp internal-sftp
+```
+
+Dockerfile
 ```docker
 FROM python:3.10-slim
 WORKDIR /app/
