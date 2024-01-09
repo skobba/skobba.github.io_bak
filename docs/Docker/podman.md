@@ -37,7 +37,8 @@ podman pod ps
 podman play kube some-mariadb.yaml
 ```
 
-## Create unix sockets (podman-mac-helper)
+## Create unix socket
+### podman-mac-helper
 1. Install helper
 ```
 sudo podman-mac-helper install
@@ -59,6 +60,13 @@ Machine "skobbis" started successfully
 3. Verify that socket file was created
 ```
 ls -la /var/run/docker.sock
+```
+
+### DOCKER_HOST
+```
+export DOCKER_HOST=unix:///run/user/1000/podman/podman.sock
+
+export DOCKER_HOST=ssh://core@127.0.0.1:53473/run/user/1412831964/podman/podman.sock
 ```
 
 ## Connection list
