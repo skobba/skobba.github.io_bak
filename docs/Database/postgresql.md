@@ -166,6 +166,16 @@ Reload config:
 select pg_reload_conf();
 ```
 
+### Test connection
+psql:
+```
+psql "host=postgres user=keycloak sslmode=disable"
+```
+
+connection info:
+```
+\conninfo
+```
 
 ### Checking for connections using SSL/TLS
 ```
