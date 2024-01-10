@@ -5,9 +5,8 @@ Create a web app with an image from a private Azure Container Registry
 ```
 az webapp create -g MyResourceGroup -p MyPlan -n MyUniqueAppName -i myregistry.azurecr.io/docker-image:tag
 
-az webapp create -g demo -p ASP-demo-83a0 -n gjermundsapp -i gsdemo.azurecr.io/kcskobba
-
-az webapp create -g demo -p ASP-demo-83a0 -n gskeycloak --deployment-container-image-name gsdemo.azurecr.io/keycloak:1
+# With startup command
+az webapp create -g demo -p ASP-demo-83a0 -n gskeycloak --deployment-container-image-name gsdemo.azurecr.io/keycloak:1 --startup-file start-dev
 ```
 
 Add vnet to a webapp
