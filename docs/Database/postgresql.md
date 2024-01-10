@@ -147,7 +147,26 @@ postgres=#
 ### Enforce SSL
 View pg_hba_file_rules from the pg_hba.conf file:
 ```
-ble pg_hba_file_rules;
+table pg_hba_file_rules;
+```
+Edit pg_hba.conf and add hostssl to all:
+```
+Shell
+# TYPE   DATABASE       USER    ADDRESS            METHOD
+local    all            all                        peer
+host     all            all     127.0.0.1/32       scram-sha-256
+host     all            all     ::1/128            scram-sha-256
+hostssl  all            all     0.0.0.0/0          md5
+hostssl  replication    all     10.124.33.113/24   md5
+```
+
+### Checking for connections using SSL/TLS
+```
+select pg_ssl.pid, pg_ssl.ssl, pg_ssl.version,
+           pg_sa.backend_type, pg_sa.usename, pg_sa.client_addr
+           from pg_stat_ssl pg_ssl
+           join pg_stat_activity pg_sa
+             on pg_ssl.pid = pg_sa.pid;
 ```
 
 
