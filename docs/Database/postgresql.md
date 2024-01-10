@@ -111,11 +111,11 @@ Describe a Table
 \d tablename
 ```
 
-## Get config_file and data data_directory
+## Get config_file, data_directory and log_destination
 ```
 show config_file;
-
 SELECT setting FROM pg_settings WHERE name = 'data_directory';
+show log_destination;
 ```
 
 ## Backup and Restore
@@ -143,6 +143,13 @@ Type "help" for help.
 
 postgres=#
 ```
+
+### Enforce SSL
+View pg_hba_file_rules from the pg_hba.conf file:
+```
+ble pg_hba_file_rules;
+```
+
 
 ### SSL Mode
 Possible values include disable , allow , prefer , require , verify-ca and verify-full. require , allow and prefer all default to a non-validating SSL factory and do not check the validity of the certificate or the host name. verify-ca validates the certificate, but does not verify the hostname. verify-full will validate that the certificate is correct and verify the host connected to has the same hostname as the certificate. Default is prefer.
