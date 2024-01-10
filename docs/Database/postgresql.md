@@ -149,6 +149,7 @@ View pg_hba_file_rules from the pg_hba.conf file:
 ```
 table pg_hba_file_rules;
 ```
+
 Edit pg_hba.conf and add hostssl to all:
 ```
 Shell
@@ -159,6 +160,12 @@ host     all            all     ::1/128            scram-sha-256
 hostssl  all            all     0.0.0.0/0          md5
 hostssl  replication    all     10.124.33.113/24   md5
 ```
+
+Reload config:
+```
+select pg_reload_conf();
+```
+
 
 ### Checking for connections using SSL/TLS
 ```
