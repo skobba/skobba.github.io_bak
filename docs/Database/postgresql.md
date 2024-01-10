@@ -110,9 +110,12 @@ Describe a Table
 ```
 \d tablename
 ```
-## Get config_file path
+
+## Get config_file and data data_directory
 ```
-show config_file ;
+show config_file;
+
+SELECT setting FROM pg_settings WHERE name = 'data_directory';
 ```
 
 ## Backup and Restore
