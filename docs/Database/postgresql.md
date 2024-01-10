@@ -110,6 +110,10 @@ Describe a Table
 ```
 \d tablename
 ```
+## Get config_file path
+```
+show config_file ;
+```
 
 ## Backup and Restore
 Dump/Backup
