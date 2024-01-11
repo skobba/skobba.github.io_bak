@@ -134,6 +134,7 @@ pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d dbn
 Ref.: 
 * [https://jdbc.postgresql.org/documentation/ssl/](https://jdbc.postgresql.org/documentation/ssl/)
 * [https://www.percona.com/blog/enabling-and-enforcing-ssl-tls-for-postgresql-connections/](https://www.percona.com/blog/enabling-and-enforcing-ssl-tls-for-postgresql-connections/)
+* [https://demirhuseyinn-94.medium.com/postgresql-ssl-configuration-to-connect-database-114f867d96e0](https://demirhuseyinn-94.medium.com/postgresql-ssl-configuration-to-connect-database-114f867d96e0)
 
 NB:  Before trying to access your SSL enabled server from Java, make sure you can get to it via psql!
 
