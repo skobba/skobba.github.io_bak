@@ -105,3 +105,6 @@ Pull test:
 ```
 docker pull yourcontainerregistry.azurecr.io/cicdtestimage:xx
 ```
+
+## Remove ghost/phantom containers
+___If you are not able to remove a ghost/phantom container, just delete the podman vm machine and create a new one___
