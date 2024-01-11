@@ -151,6 +151,7 @@ postgres=#
 
 Creating certificates:
 ```
+cd /var/lib/postgresql/data
 openssl req -nodes -new -x509 -keyout server.key -out server.crt -subj "/C=US/L=NYC/O=Percona/CN=postgres"
 chmod 400 server.{crt,key}
 chown postgres:postgres server.{crt,key}
@@ -161,11 +162,7 @@ ls -la server.{crt,key}
 Alter system:
 ```
 alter system set ssl=on;
-NB: Do not run in same transaction!
-select pg_reload_conf();
 ```
-
-Edit
 
 Reaload config
 ```
@@ -180,6 +177,8 @@ table pg_hba_file_rules;
 
 Edit pg_hba.conf and add hostssl to all:
 ```
+vi /var/lib/postgresql/data/pg_hba.conf
+
 Shell
 # TYPE   DATABASE       USER    ADDRESS            METHOD
 local    all            all                        peer
@@ -219,9 +218,11 @@ table pg_hba_file_rules ;
 ```
 
 ### Test connection
-psql:
+psql (disable or require):
 ```
 psql "host=postgres user=keycloak sslmode=disable"
+
+psql "host=postgres user=keycloak sslmode=require"
 ```
 
 connection info:
