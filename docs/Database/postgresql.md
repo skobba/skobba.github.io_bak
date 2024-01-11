@@ -146,6 +146,31 @@ Type "help" for help.
 postgres=#
 ```
 
+### Enable SSL
+
+Creating certificates:
+```
+openssl req -nodes -new -x509 -keyout server.key -out server.crt -subj "/C=US/L=NYC/O=Percona/CN=postgres"
+chmod 400 server.{crt,key}
+chown postgres:postgres server.{crt,key}
+ls -la server.{crt,key}
+```
+
+
+Alter system:
+```
+alter system set ssl=on;
+NB: Do not run in same transaction!
+select pg_reload_conf();
+```
+
+Edit
+
+Reaload config
+```
+select pg_reload_conf();
+```
+
 ### Enforce SSL
 View pg_hba_file_rules from the pg_hba.conf file:
 ```
@@ -163,9 +188,33 @@ hostssl  all            all     0.0.0.0/0          md5
 hostssl  replication    all     10.124.33.113/24   md5
 ```
 
+Result (observe the hostssl added at the bottom):
+```
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
+
+# "local" is for Unix domain socket connections only
+local   all             all                                     trust
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            trust
+# IPv6 local connections:
+host    all             all             ::1/128                 trust
+# Allow replication connections from localhost, by a user with the
+# replication privilege.
+local   replication     all                                     trust
+host    replication     all             127.0.0.1/32            trust
+host    replication     all             ::1/128                 trust
+
+hostssl all all all md5
+```
+
 Reload config:
 ```
 select pg_reload_conf();
+```
+
+Check config:
+```
+table pg_hba_file_rules ;
 ```
 
 ### Test connection
