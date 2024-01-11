@@ -169,6 +169,11 @@ Reaload config
 select pg_reload_conf();
 ```
 
+openssl
+```
+openssl s_client -connect postgres:5432 -starttls postgres
+```
+
 ### Enforce SSL
 View pg_hba_file_rules from the pg_hba.conf file:
 ```
