@@ -230,6 +230,11 @@ psql "host=postgres user=keycloak sslmode=disable"
 psql "host=postgres user=keycloak sslmode=require"
 ```
 
+openssl
+```
+openssl s_client -connect postgres:5432 -starttls postgres
+```
+
 connection info:
 ```
 \conninfo
