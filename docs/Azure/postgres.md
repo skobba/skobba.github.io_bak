@@ -47,7 +47,7 @@ az postgres flexible-server create -n gspgdb --subnet /subscriptions/{SubID}/res
 az postgres flexible-server create -n gspgdb -g demo --location "northeurope" --admin-user dbadmin --admin-password p4ssword --vnet vnet-acquapgb --address-prefixes 10.0.0.0/24 --subnet subnet-obkpbupj --subnet-prefixes 10.0.0.0/24
 
 NB: Check that the subnet is correct in the vnet!
-az postgres flexible-server create -n gspgdb2 -g demo --location "northeurope" --admin-user dbadmin --admin-password P4ssword --vnet vnet-acquapgb --subnet subnet-nqnlui6nuir6e
+az postgres flexible-server create -n gspgdb -g demo --location "northeurope" --admin-user dbadmin --admin-password P4ssword --vnet vnet-acquapgb --subnet subnet-nqnlui6nuir6e
 ```
 
 ### Create firewall rule
