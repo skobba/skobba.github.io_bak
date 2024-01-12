@@ -63,6 +63,13 @@ Ref.:
 * https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-connect-tls-ssl
 * https://learn.microsoft.com/en-gb/azure/postgresql/single-server/concepts-certificate-rotation?WT.mc_id=Portal-SqlAzureExtension#what-do-i-need-to-do-to-maintain-connectivity
 
+## Connect with psql and ssl
+Download [DigiCert Global Root CA](https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem) for Azure Postgres flexible server.
+
+```
+psql "sslmode=verify-full sslrootcert=DigiCertGlobalRootCA.crt.pem host=gspgdb.postgres.database.azure.com dbname=postgres user=keycloak"
+```
+
 ## Connect with psql
 ```
 psql --host=<server_name>.postgres.database.azure.com --port=5432 --username=<admin_user>@<server_name> --dbname=postgres
