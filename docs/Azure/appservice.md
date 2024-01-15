@@ -42,6 +42,11 @@ az webapp config appsettings set --resource-group demo --name kcskobba --setting
 ## Customer Containers
 Ref.: [https://learn.microsoft.com/en-us/azure/app-service/tutorial-custom-container?tabs=azure-cli&pivots=container-linux](https://learn.microsoft.com/en-us/azure/app-service/tutorial-custom-container?tabs=azure-cli&pivots=container-linux)
 
+### Continuous deployment with custom containers
+When you enable this option, App Service adds a webhook to your repository in Azure Container Registry or Docker Hub. Your repository posts to this webhook whenever your selected image is updated with docker push. The webhook causes your App Service app to restart and run docker pull to get the updated image.
+
+WebApp -> Deployment Center -> Settings
+
 ### Enable SSH to Linix Web App
 
 _This configuration doesn't allow external connections to the container. SSH is available only through the Kudu/SCM Site. The Kudu/SCM site is authenticated with your Azure account. root:Docker! should not be altered SSH. SCM/KUDU will use your Azure Portal credentials. Changing this value will result in an error when using SSH_
