@@ -12,6 +12,8 @@ spectacle
 vlc
 eqmac
 stats
+podman
+podman-desktop
 ```
 
 
