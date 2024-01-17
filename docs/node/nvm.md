@@ -2,6 +2,11 @@
 * Implemented as a POSIX-compliant function
 * Should work on sh, dash, bash, ksh, zsh
 
+## node folder
+```
+~/.nvm/versions/node/v20.10.0
+```
+
 ## Install
 > curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
