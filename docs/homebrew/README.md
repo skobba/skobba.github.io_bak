@@ -4,16 +4,19 @@
 ```
 brew install --cask <name>
 
-iterm2
-nextcloud
-visual-studio-code
-keepassx
 spectacle
-vlc
-eqmac
 stats
+
+iterm2
+visual-studio-code
+
+nvm
 podman
 podman-desktop
+
+nextcloud
+keepassx
+vlc
 ```
 
 
