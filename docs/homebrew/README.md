@@ -11,6 +11,7 @@ keepassx
 spectacle
 vlc
 eqmac
+stats
 ```
 
 
