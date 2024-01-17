@@ -1,4 +1,7 @@
-# nvm 
+# nvm
+* Implemented as a POSIX-compliant function
+* Should work on sh, dash, bash, ksh, zsh
+
 ## Install
 > curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
