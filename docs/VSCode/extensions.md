@@ -7,6 +7,7 @@
   * [wix.vscode-import-cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
   * [graphql.vscode-graphql](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql)
   * [GitHub.copilot-labs](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-labs)
+  * [Red Hat Dependency Analytics](https://github.com/fabric8-analytics/fabric8-analytics-vscode-extension)
 
 * Git
   * [mhutchie.git-graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
