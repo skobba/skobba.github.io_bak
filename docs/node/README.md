@@ -35,8 +35,8 @@ cat <<EOF
 3. Activate corepack (node v16 or later):
     corepack enable
 4. Set correct npm version:
-    corepack prepare npm@10.2.3
+    corepack prepare npm@10.2.3 --activate
 4. Set correct pnpm version:
-    corepack prepare pnpm@8.11.0
+    corepack prepare pnpm@8.11.0 --activate
 EOF
 ```
