@@ -6,8 +6,10 @@
 ```
 ~/.nvm/versions/node/v20.10.0
 ```
+## Install on Mac
+> brew install nvm
 
-## Install
+## Install on Linux
 > curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 Make sure it´s added to .zshrc:
