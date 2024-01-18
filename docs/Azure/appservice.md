@@ -47,6 +47,12 @@ When you enable this option, App Service adds a webhook to your repository in Az
 
 WebApp -> Deployment Center -> Settings
 
+### Ports
+__WEBSITES_PORT__
+
+For a custom container, the custom port number on the container for App Service to route requests to. By default, App Service attempts automatic port detection of ports 80 and 8080. This setting isn't injected into the container as an environment variable.¨
+
+
 ### Enable SSH to Linix Web App
 
 _This configuration doesn't allow external connections to the container. SSH is available only through the Kudu/SCM Site. The Kudu/SCM site is authenticated with your Azure account. root:Docker! should not be altered SSH. SCM/KUDU will use your Azure Portal credentials. Changing this value will result in an error when using SSH_
