@@ -28,15 +28,21 @@ cat toolversions.txt
 echo 
 
 cat <<EOF
-1. Install nvm: 
-    brew install nvm
-2. Set correct node version: 
-    nvm use 20.10.0
-3. Activate corepack (node v16 or later):
-    corepack enable
-4. Set correct npm version:
-    corepack prepare npm@10.2.3 --activate
-4. Set correct pnpm version:
-    corepack prepare pnpm@8.11.0 --activate
+Set correct versions of nvm, node, npm and pnpm.
+
+# Install nvm
+brew install nvm
+
+# Node version
+nvm use
+
+# Activate corepack (node v16 or later)
+corepack enable
+
+# Set correct npm version
+corepack prepare npm@10.2.3 --activate
+
+# Set correct pnpm version
+corepack prepare pnpm@8.11.0 --activate
 EOF
 ```
