@@ -48,10 +48,17 @@ When you enable this option, App Service adds a webhook to your repository in Az
 WebApp -> Deployment Center -> Settings
 
 ### Ports
+_App Service assumes your custom container is listening on port 80. If your container listens to a different port, set the WEBSITES_PORT app setting in your App Service app._
+
 __WEBSITES_PORT__
 
 For a custom container, the custom port number on the container for App Service to route requests to. By default, App Service attempts automatic port detection of ports 80 and 8080. This setting isn't injected into the container as an environment variable.¨
 
+### Environment variables
+You can check your vars here:
+```
+https://<app-name>.scm.azurewebsites.net/Env.
+```
 
 ### Enable SSH to Linix Web App
 
