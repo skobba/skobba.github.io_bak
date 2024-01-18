@@ -30,3 +30,13 @@ nvm ls-remote
 nvm install 12.16.3
 nvm use 12.16.3
 ```
+
+## Set default
+```
+nvm alias default 20.10.0
+```
+
+## Set from .envrc
+```
+nvm use
+```
