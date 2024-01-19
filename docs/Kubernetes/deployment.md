@@ -3,6 +3,8 @@
 ## Deployment Strategies
 Ref.: [https://medium.com/@vinodvamanbhat/mastering-deployment-strategies-ensuring-smooth-application-rollouts-e9fefe1092b8](https://medium.com/@vinodvamanbhat/mastering-deployment-strategies-ensuring-smooth-application-rollouts-e9fefe1092b8)
 
+![kubernetes-deployment-strategy.png](kubernetes-deployment-strategy.png)
+
 ### Big Bang Deployment
 An all-at-once approach. It means the new software version is made live simultaneously, replacing the older version. While this approach can be simple, it also carries risks. If there's a problem, the entire system can be affected.
 
