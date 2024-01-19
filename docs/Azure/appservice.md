@@ -1,4 +1,8 @@
 # App Service
+## List webapps
+```
+az webapp list --query "[].{hostName: defaultHostName, state: state}" -otable
+```
 
 ## Create WebApp
 Create a web app with an image from a private Azure Container Registry
