@@ -2,14 +2,14 @@
 
 ## Running Argo CD locally
 
-### Clone repo
+### Deploy Argo CD
 ```
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+or
 git clone https://github.com/argoproj/argo-cd
 cd argo-cd
-```
-
-### Install
-```kubectl create namespace argocd
+kubectl create namespace argocd
 kubectl apply -n argocd --force -f manifests/install.yaml
 ```
 
