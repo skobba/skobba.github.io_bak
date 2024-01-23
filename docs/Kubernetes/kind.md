@@ -52,9 +52,6 @@ Run proxy
 kubectl proxy
 ```
 
-Open Dashboard
-* [http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:dashboard-kubernetes-dashboard:https/proxy/#/login](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:dashboard-kubernetes-dashboard:https/proxy/#/login)
-
 Create a user and attach the necessary permission with service-account.yaml:
 ```
 apiVersion: v1
@@ -81,3 +78,16 @@ Create user
 ```
 kubectl apply -f service-account.yaml
 ```
+
+Create token
+```
+kubectl create token admin-user -n kubernetes-dashboard
+```
+
+Get the token
+```
+kubectl describe serviceaccount admin-user -n kubernetes-dashboard
+```
+
+Open Dashboard
+* [http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:dashboard-kubernetes-dashboard:https/proxy/#/login](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:dashboard-kubernetes-dashboard:https/proxy/#/login)
