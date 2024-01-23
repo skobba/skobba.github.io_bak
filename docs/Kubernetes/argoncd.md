@@ -1,4 +1,4 @@
-# argoncd
+# argocd
 
 ## Running Argo CD locally
 
