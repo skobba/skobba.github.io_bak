@@ -13,7 +13,7 @@ kubectl create namespace argocd
 kubectl apply -n argocd --force -f manifests/install.yaml
 ```
 
-### Scale down any Argo CD instance in your cluster¶
+### Scale down any Argo CD instance in your cluster
 Make sure that Argo CD is not running in your development cluster by scaling down the deployments.
 
 ```
