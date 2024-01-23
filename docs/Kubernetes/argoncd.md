@@ -27,6 +27,8 @@ kubectl -n argocd scale deployment/argocd-notifications-controller --replicas 0
 ```
 
 ### Start local services (virtualized toolchain inside Docker)
+NB: Did not work!
+
 The started services assume you are running in the namespace where Argo CD is installed.
 
 You can set the current context default namespace as follows:
@@ -38,3 +40,12 @@ When you use the virtualized toolchain, starting local services is as simple as 
 ```
 make start
 ```
+
+### Start local services (running on local machine)
+```
+brew install goreman
+
+export KUBECONFIG=~/.kube/config-kind
+make start-local
+```
+
