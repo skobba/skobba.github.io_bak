@@ -1,11 +1,12 @@
 # Kind
 _Tool for running local Kubernetes clusters using Docker container “nodes”. kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI._
 
-Install
+## Install
 ```
 brew install minikub
 ```
 
+## Create cluster
 Config
 ```yaml
 # 4 node (3 workers) cluster config
@@ -38,7 +39,7 @@ CoreDNS is running at https://127.0.0.1:50102/api/v1/namespaces/kube-system/serv
 To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
 
-Install Kubernetes Dashboard
+## Install Kubernetes Dashboard
 ```
 helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
 
