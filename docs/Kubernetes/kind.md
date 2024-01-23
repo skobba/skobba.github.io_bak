@@ -38,3 +38,20 @@ CoreDNS is running at https://127.0.0.1:50102/api/v1/namespaces/kube-system/serv
 To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
 
+Install Kubernetes Dashboard
+```
+helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
+
+Time to deploy our Kubernetes Dashboard with one single command —
+
+helm install dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --create-namespace
+```
+
+Run proxy
+```
+kubectl proxy
+```
+
+Open Dashboard
+* [http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:dashboard-kubernetes-dashboard:https/proxy/#/login](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:dashboard-kubernetes-dashboard:https/proxy/#/login)
+
