@@ -53,3 +53,38 @@ export KUBECONFIG=~/.kube/config-kind
 make start-local
 ```
 
+### Service creates 
+```
+The Argo CD API server on port 8080
+The Argo CD UI server on port 4000
+The Helm registry server on port 5000
+
+
+14:20:56                     redis | Starting redis on port 5300
+14:20:56                git-server | Starting git-server on port 5700
+14:20:56                       dex | Starting dex on port 5200
+14:20:56               repo-server | Starting repo-server on port 5400
+14:20:56             helm-registry | Starting helm-registry on port 5800
+14:20:56 applicationset-controller | Starting applicationset-controller on port 6000
+14:20:56              notification | Starting notification on port 6100
+14:20:56                controller | Starting controller on port 5000
+14:20:56                cmp-server | Starting cmp-server on port 5500
+14:20:56                api-server | Starting api-server on port 5100
+14:20:56                        ui | Starting ui on port 5600
+14:20:56               dev-mounter | Starting dev-mounter on port 5900
+```
+
+### Create password
+```
+argocd admin initial-password -n argocd
+```
+
+### Access UI
+* [http://localhost:4000/applications](http://localhost:4000/applications)
+
+### Login with argocd
+```
+argocd login <ARGOCD_SERVER>
+
+argocd login localhost:8080
+```
