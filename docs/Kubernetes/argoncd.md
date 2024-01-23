@@ -1,6 +1,10 @@
 # argocd
 
 ## Running Argo CD locally
+### Install argocd on Mac
+```
+brew install argocd
+```
 
 ### Deploy Argo CD
 ```
