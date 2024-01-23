@@ -87,4 +87,23 @@ argocd admin initial-password -n argocd
 argocd login <ARGOCD_SERVER>
 
 argocd login localhost:8080
+
+Available Commands:
+  account     Manage account settings
+  admin       Contains a set of commands useful for Argo CD administrators and requires direct Kubernetes access
+  app         Manage applications
+  appset      Manage ApplicationSets
+  cert        Manage repository certificates and SSH known hosts entries
+  cluster     Manage cluster credentials
+  completion  output shell completion code for the specified shell (bash or zsh)
+  context     Switch between contexts
+  gpg         Manage GPG keys used for signature verification
+  help        Help about any command
+  login       Log in to Argo CD
+  logout      Log out from Argo CD
+  proj        Manage projects
+  relogin     Refresh an expired authenticate token
+  repo        Manage repository connection parameters
+  repocreds   Manage repository connection parameters
+  version     Print version information
 ```
