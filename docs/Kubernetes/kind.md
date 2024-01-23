@@ -5,3 +5,24 @@ Install
 ```
 brew install minikub
 ```
+
+Config
+```yaml
+# 4 node (3 workers) cluster config
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+  image: kindest/node:v1.28.0
+- role: worker
+  image: kindest/node:v1.28.0
+- role: worker
+  image: kindest/node:v1.28.0
+- role: worker
+  image: kindest/node:v1.28.0
+```
+
+Create cluster
+```
+kind create cluster --config=config.yml
+```
