@@ -14,7 +14,22 @@ These tools allow you to simulate various types of failures and disruptions, suc
 ### Chaos Mesh
 ```
 curl -sSL https://mirrors.chaos-mesh.org/v2.3.0/install.sh | bash
+
+# For kind
+curl -sSL https://mirrors.chaos-mesh.org/v2.6.2/install.sh | bash -s -- --local kind
 ```
+
+Accessing the Chaos Mesh Dashboard:
+```
+# Initiate the following port-forward command
+kubectl port-forward -n chaos-testing svc/chaos-dashboard 2333:2333
+
+# Browser
+http://localhost:2333/#/dashboard
+```
+
+Run some Chaos experiments...
+
 
 ### Gremlin
 
