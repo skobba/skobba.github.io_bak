@@ -11,6 +11,11 @@ These tools allow you to simulate various types of failures and disruptions, suc
 * Kube-Monkey
 * Chaos Kube
 
+### Chaos Mesh
+```
+curl -sSL https://mirrors.chaos-mesh.org/v2.3.0/install.sh | bash
+```
+
 ### Gremlin
 
 Install
