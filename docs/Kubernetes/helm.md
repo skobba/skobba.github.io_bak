@@ -1,20 +1,27 @@
 # Helm
+A chart can be either an 'application' or a 'library' chart.
 
-## Install Helm on osx
+__Application__ charts are a collection of templates that can be packaged into versioned archives to be deployed.
+
+__Library__ charts provide useful utilities or functions for the chart developer. They're included as a dependency of application charts to inject those utilities and functions into the rendering pipeline. Library charts do not define any templates and therefore cannot be deployed.
+
+## Install
+osx:
 ```
 brew install helm
 ```
 
-## Install Helm on Debian
+Debian:
 ```
 wget https://get.helm.sh/helm-v3.7.0-linux-amd64.tar.gz
 tar -zxvf helm-v3.7.0-linux-amd64.tar.gz
 mv linux-amd64/helm /usr/local/bin
 ```
 
-## Install Jenkins Chart
+Jenkins Chart:
 ```
 helm repo add jenkins https://charts.jenkins.io
 
 helm search repo jenkins
 ```
+
