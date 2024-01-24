@@ -6,6 +6,13 @@ _Tool for running local Kubernetes clusters using Docker container “nodes”. 
 brew install minikub
 ```
 
+## Basic
+```
+kind get clusters
+
+kubectl cluster-info
+```
+
 ## Create cluster
 Config
 ```sh
