@@ -8,7 +8,9 @@ brew install minikub
 
 ## Create cluster
 Config
-```yaml
+```sh
+
+cat <<EOF >cluster.config
 # 4 node (3 workers) cluster config
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
@@ -21,11 +23,10 @@ nodes:
   image: kindest/node:v1.28.0
 - role: worker
   image: kindest/node:v1.28.0
-```
+EOF
 
-Create cluster
-```
-kind create cluster --config=config.yaml
+# Create cluster
+kind create cluster --config=cluster.config
 ```
 
 Use cluster 
