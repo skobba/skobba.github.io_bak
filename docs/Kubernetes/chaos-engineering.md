@@ -31,28 +31,3 @@ http://localhost:2333/#/dashboard
 ```
 
 Run some Chaos experiments...
-
-
-### Gremlin
-
-Install
-```
-helm repo add gremlin https://helm.gremlin.com
-
-kubectl create namespace gremlin
-
-GREMLIN_TEAM_ID=GTeam
-GREMLIN_CLUSTER_ID=kind
-GREMLIN_TEAM_SECRET=sOmeSecreT
-
-helm install gremlin gremlin/gremlin --namespace gremlin \
-    --set gremlin.hostPID=true \
-    --set gremlin.secret.managed=true \
-    --set gremlin.secret.type=secret \
-    --set gremlin.secret.teamID=$GREMLIN_TEAM_ID \
-    --set gremlin.secret.clusterID=$GREMLIN_CLUSTER_ID \
-    --set gremlin.secret.teamSecret=$GREMLIN_TEAM_SECRET \
-    --set 'tolerations[0].effect=NoSchedule' \
-    --set 'tolerations[0].key=node-role.kubernetes.io/master' \
-    --set 'tolerations[0].operator=Exists'
-```
