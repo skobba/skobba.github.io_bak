@@ -103,7 +103,9 @@ To do this, you'll start a different Pod to act as a client. The container withi
 
 Watch:
 ```
-kubectl get hpa php-apache --watch
+watch kubectl get hpa php-apache --watch
+
+watch kubectl describe hpa php-apache
 ```
 
 Load:
