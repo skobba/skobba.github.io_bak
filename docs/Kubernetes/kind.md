@@ -135,3 +135,8 @@ kubectl describe serviceaccount admin-user -n kubernetes-dashboard
 
 Open Dashboard
 * [http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:dashboard-kubernetes-dashboard:https/proxy/#/login](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:dashboard-kubernetes-dashboard:https/proxy/#/login)
+
+Add metricsScraper
+```
+helm upgrade dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --set="service.externalPort=8080,resources.limits.cpu=200m,metricsScraper.enabled=true"
+```
