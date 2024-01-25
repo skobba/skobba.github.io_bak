@@ -127,7 +127,9 @@ spec:
       - periodSeconds: 600
         type: Pods
         value: 1
+        periodSeconds: 60 # (i.e., scale down one pod every 10 min
       selectPolicy: Max
+      stabilizationWindowSeconds: 0
     scaleUp:
       policies:
       - periodSeconds: 60
