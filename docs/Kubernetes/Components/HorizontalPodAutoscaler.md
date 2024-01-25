@@ -97,7 +97,7 @@ To do this, you'll start a different Pod to act as a client. The container withi
 
 Watch:
 ```
-watch kubectl get hpa php-apache --watch
+watch kubectl describe hpa php-apache
 
 watch kubectl get hpa
 ```
@@ -108,7 +108,8 @@ kubectl run -i --tty load-generator --rm --image=busybox:1.28 --restart=Never --
 ```
 
 ## Create Declarative 
-```docker
+```yml
+cat <<EOF | kubectl apply -f -
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
@@ -144,4 +145,8 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: php-apache
+EOF
+
+
+
 ```
