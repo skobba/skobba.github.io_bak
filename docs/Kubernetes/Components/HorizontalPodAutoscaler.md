@@ -112,3 +112,40 @@ Load:
 ```
 kubectl run -i --tty load-generator --rm --image=busybox:1.28 --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://php-apache; done"
 ```
+
+## Create Declarative 
+```docker
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: php-apache
+  namespace: default
+spec:
+  behavior:
+    scaleDown:
+      policies:
+      - periodSeconds: 600
+        type: Pods
+        value: 1
+      selectPolicy: Max
+    scaleUp:
+      policies:
+      - periodSeconds: 60
+        type: Percent
+        value: 900
+      selectPolicy: Max
+      stabilizationWindowSeconds: 0
+  maxReplicas: 7
+  metrics:
+  - resource:
+      name: cpu
+      target:
+        averageUtilization: 50
+        type: Utilization
+    type: Resource
+  minReplicas: 1
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: php-apache
+```
