@@ -7,8 +7,8 @@ brew install minikub
 ```
 
 ## Create cluster
-Inline:
-```
+### Ingress ready (not working)
+```sh
 cat <<EOF | kind create cluster --config=-
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
@@ -30,7 +30,7 @@ nodes:
 EOF
 ```
 
-From file:
+### Generic from file:
 ```sh
 
 cat <<EOF >cluster.config
