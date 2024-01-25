@@ -92,12 +92,6 @@ Since each pod requests 200 milli-cores by kubectl run, this means an average CP
 kubectl autoscale deployment php-apache --cpu-percent=50 --min=1 --max=10
 ```
 
-## Check hpa
-```
-# You can use "hpa" or "horizontalpodautoscaler"; either name works OK.
-kubectl get hpa
-```
-
 ## Increase the load
 To do this, you'll start a different Pod to act as a client. The container within the client Pod runs in an infinite loop, sending queries to the php-apache service.
 
@@ -105,7 +99,7 @@ Watch:
 ```
 watch kubectl get hpa php-apache --watch
 
-watch kubectl describe hpa php-apache
+watch kubectl get hpa
 ```
 
 Load:
