@@ -33,7 +33,7 @@ EOF
 ### Generic from file:
 ```sh
 
-cat <<EOF >cluster.config
+cat <<EOF | kind create cluster --config=-
 # 4 node (3 workers) cluster config
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
@@ -47,12 +47,9 @@ nodes:
 - role: worker
   image: kindest/node:v1.28.0
 EOF
-
-# Create cluster
-kind create cluster --config=cluster.config
 ```
 
-Use cluster 
+## Use cluster 
 ```
 kubectl cluster-info --context kind-kind
 
@@ -68,6 +65,11 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 kind get clusters
 
 kubectl cluster-info
+```
+
+## port-forward
+```
+kubectl port-forward -n default svc/php-apache 30008:80
 ```
 
 ## Ingress Countour
