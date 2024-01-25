@@ -96,6 +96,7 @@ kubectl proxy
 
 Create a user and attach the necessary permission with service-account.yaml:
 ```
+cat <<EOF | kubectl create -f -
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -114,6 +115,7 @@ subjects:
 - kind: ServiceAccount
   name: admin-user
   namespace: kubernetes-dashboard
+EOF
 ```
 
 Create user
