@@ -89,9 +89,9 @@ Time to deploy our Kubernetes Dashboard with one single command —
 helm install dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --create-namespace
 ```
 
-Run proxy
+Add metricsScraper
 ```
-kubectl proxy
+helm upgrade dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --set="service.externalPort=8080,resources.limits.cpu=200m,metricsScraper.enabled=true"
 ```
 
 Create a user and attach the necessary permission with service-account.yaml:
@@ -118,11 +118,6 @@ subjects:
 EOF
 ```
 
-Create user
-```
-kubectl apply -f service-account.yaml
-```
-
 Create token
 ```
 kubectl create token admin-user -n kubernetes-dashboard
@@ -133,10 +128,11 @@ Get the token
 kubectl describe serviceaccount admin-user -n kubernetes-dashboard
 ```
 
+Run proxy
+```
+kubectl proxy
+```
+
 Open Dashboard
 * [http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:dashboard-kubernetes-dashboard:https/proxy/#/login](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:dashboard-kubernetes-dashboard:https/proxy/#/login)
 
-Add metricsScraper
-```
-helm upgrade dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --set="service.externalPort=8080,resources.limits.cpu=200m,metricsScraper.enabled=true"
-```
