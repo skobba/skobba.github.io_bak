@@ -107,6 +107,17 @@ Load:
 kubectl run -i --tty load-generator --rm --image=busybox:1.28 --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://php-apache; done"
 ```
 
+```yml
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: php-apache-node
+          operator: In
+          values:
+          - "true"
+```
+
 ## Create Declarative 
 ```yml
 cat <<EOF | kubectl apply -f -
@@ -146,7 +157,4 @@ spec:
     kind: Deployment
     name: php-apache
 EOF
-
-
-
 ```
