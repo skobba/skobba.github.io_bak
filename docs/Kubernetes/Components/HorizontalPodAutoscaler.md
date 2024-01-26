@@ -2,6 +2,7 @@
 Ref.: [https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/)
 
 ## Install metrics-server
+__Edit yaml__
 
 For kind:
 ```
@@ -28,6 +29,7 @@ metadata:
           failureThreshold: 3
           httpGet:
             path: /livez
+...
 ```
 
 Apply:
@@ -36,8 +38,16 @@ kubectl apply -f components.yaml
 ```
 
 ## Run and expose php-apache server
-php-apache.yaml
-```yml
+### Label Nodes
+Scales on only two nodes.
+```
+kubectl label nodes kind-worker2 php-apache-node=true
+kubectl label nodes kind-worker3 php-apache-node=true
+```
+
+### Create Deplpyment
+```sh
+cat <<EOF | kubectl apply -f -
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -61,6 +71,22 @@ spec:
             cpu: 500m
           requests:
             cpu: 200m
+
+      ## nodeAffinity
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: php-apache-node
+                operator: In
+                values:
+                - "true"
+
+      ## nodeSelector
+      # nodeSelector:
+      #  php-apache-node: "true"
+
 ---
 apiVersion: v1
 kind: Service
@@ -69,16 +95,16 @@ metadata:
   labels:
     run: php-apache
 spec:
+  # ports:
+  # - port: 80
   ports:
-  - port: 80
+    - port: 80
+      targetPort: 80
+      nodePort: 30009
   selector:
     run: php-apache
-
-```
-
-Apply:
-```
-kubectl apply -f php-apache.yaml
+  type: NodePort
+EOF
 ```
 
 ## Create the HorizontalPodAutoscaler 
@@ -105,17 +131,6 @@ watch kubectl get hpa
 Load:
 ```
 kubectl run -i --tty load-generator --rm --image=busybox:1.28 --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://php-apache; done"
-```
-
-```yml
-  nodeAffinity:
-    requiredDuringSchedulingIgnoredDuringExecution:
-      nodeSelectorTerms:
-      - matchExpressions:
-        - key: php-apache-node
-          operator: In
-          values:
-          - "true"
 ```
 
 ## Create Declarative 
