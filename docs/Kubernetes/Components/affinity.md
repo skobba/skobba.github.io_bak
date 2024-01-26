@@ -2,7 +2,7 @@
 
 ## Hard/Soft
 * __Hard affinity__ AKA "required node affinity", defined in the pod template under spec: ___affinity:nodeAffinity:requiredDuringSchedulingIgnoredDuringExecution___. This specifies conditions that a node must meet for a pod to schedule to it.
-* ___Soft affinity__ AKA "preferred known affinity", defined in the pod template under spec: ___affinity:nodeAffinity:preferredDuringSchedulingIgnoredDuringExecution___. This specifies conditions that a node should preferably meet, but if they are not present, it is still okay to schedule the pod (as long as hard affinity criteria are met).
+* __Soft affinity__ AKA "preferred known affinity", defined in the pod template under spec: ___affinity:nodeAffinity:preferredDuringSchedulingIgnoredDuringExecution___. This specifies conditions that a node should preferably meet, but if they are not present, it is still okay to schedule the pod (as long as hard affinity criteria are met).
 
 ## Node Selector vs. Node Affinity
 * Both node selectors and node affinity can use Kubernetes labels—metadata assigned to a node. 
