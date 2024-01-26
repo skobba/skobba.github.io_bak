@@ -17,6 +17,66 @@
 kubectl label nodes <target-node-name> special-node=true
 ```
 
+## Use in deployment
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php-apache
+spec:
+  selector:
+    matchLabels:
+      run: php-apache
+  template:
+    metadata:
+      labels:
+        run: php-apache
+    spec:
+      containers:
+      - name: php-apache
+        image: registry.k8s.io/hpa-example
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 500m
+          requests:
+            cpu: 200m
+
+      ## nodeAffinity
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: php-apache-node
+                operator: In
+                values:
+                - "true"
+
+      ## nodeSelector
+      # nodeSelector:
+      #  php-apache-node: "true"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: php-apache
+  labels:
+    run: php-apache
+spec:
+  # ports:
+  # - port: 80
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30009
+  selector:
+    run: php-apache
+  type: NodePort
+```
+
 ## Assigning pods
 ```yml
 apiVersion: v1
