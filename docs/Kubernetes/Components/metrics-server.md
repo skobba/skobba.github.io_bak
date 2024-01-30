@@ -35,13 +35,17 @@ Apply:
 kubectl apply -f components.yaml
 ```
 
-
 ## Intall with Helm
 ```
-helm upgrade --install metrics-server bitnami/metrics-server --create-namespace --namespace metrics-server \
---set apiService.create=true
---set extraArgs.kubelet-insecure-tls=true
---set extraArgs.kueblet-preferred-address-types=InternalIP
+helm repo add bitnami https://charts.bitnami.com/bitnami
+
+helm search repo metrics-server
+
+helm upgrade --install metrics-server bitnami/metrics-server \
+--create-namespace --namespace metrics-server \
+--set apiService.create=true \
+--set --extraArgs.kubelet-insecure-tls=true \
+--set --extraArgs.kubelet-preferred-address-types=InternalIP
 ```
 
 ## The problem with TLS
