@@ -34,7 +34,17 @@ Apply:
 kubectl apply -f components.yaml
 ```
 
-## Intall with Helm
+## Intall with Helm (artifacthub.io) NOT WORKING!
+```
+helm upgrade --install metrics-server metrics-server/metrics-server -n metrics-server \
+--create-namespace --namespace metrics-server \
+--set args="{--kubelet-insecure-tls}"
+
+# Using upgrade to add args
+helm upgrade metrics-server metrics-server/metrics-server --set args="{--kubelet-insecure-tls}" -n metrics-server
+```
+
+## Intall with Helm (Bitnani) NOT WORKING!
 ```
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
