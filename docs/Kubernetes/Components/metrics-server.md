@@ -1,7 +1,6 @@
 # Metrics Server
 
 ## Install
-
 For kind:
 ```
 wget https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
@@ -72,4 +71,9 @@ The first step is quite easy and is explained in the [Kubernetes docs](https://k
 apiVersion: kubelet.config.k8s.io/v1beta1
 kind: KubeletConfiguration
 serverTLSBootstrap: true
+```
+
+## Troubleshoot 
+```
+kubectl get apiservices
 ```
