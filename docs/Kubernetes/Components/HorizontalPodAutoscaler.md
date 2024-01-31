@@ -143,7 +143,10 @@ EOF
 ## Configure Minimum and Maximum CPU Constraints for a Namespace
 Ref.: [https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-constraint-namespace/](https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-constraint-namespace/)
 
+```
 1000m == 1 CPU
+1.5 == 1.5 CPU
+```
 
 ```
 apiVersion: v1
@@ -165,3 +168,5 @@ kubectl get services -o json | grep kubernetes.fqdn
 kubectl -n kube-system get svc kube-dns
 kubectl -n namespace get ep
 ```
+
+## How it works
