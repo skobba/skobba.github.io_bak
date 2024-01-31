@@ -34,14 +34,12 @@ Apply:
 kubectl apply -f components.yaml
 ```
 
-## Intall with Helm (artifacthub.io) NOT WORKING!
+## Intall with Helm (artifacthub.io)
 ```
 helm upgrade --install metrics-server metrics-server/metrics-server -n metrics-server \
---create-namespace --namespace metrics-server \
---set args="{--kubelet-insecure-tls}"
-
-# Using upgrade to add args
-helm upgrade metrics-server metrics-server/metrics-server --set args="{--kubelet-insecure-tls}" -n metrics-server
+    --create-namespace --namespace metrics-server \
+    --set args="{--kubelet-preferred-address-types=InternalIP}" \
+    --set args="{--kubelet-insecure-tls=true}"
 ```
 
 ## Intall with Helm (Bitnani) NOT WORKING!
