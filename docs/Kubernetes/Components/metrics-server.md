@@ -83,6 +83,11 @@ kind: KubeletConfiguration
 serverTLSBootstrap: true
 ```
 
+## Query metrics-server
+```
+kubectl get --raw /apis/metrics.k8s.io/v1beta1/nodes
+```
+
 ## Troubleshoot 
 ```
 kubectl get apiservices
