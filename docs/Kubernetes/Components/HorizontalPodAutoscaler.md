@@ -139,3 +139,20 @@ spec:
     name: php-apache
 EOF
 ```
+
+## Configure Minimum and Maximum CPU Constraints for a Namespace
+Ref.: [https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-constraint-namespace/](https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-constraint-namespace/)
+
+```
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: cpu-min-max-demo-lr
+spec:
+  limits:
+  - max:
+      cpu: "800m"
+    min:
+      cpu: "200m"
+    type: Container
+```
