@@ -158,3 +158,10 @@ spec:
       cpu: "200m"
     type: Container
 ```
+
+## DNS tools
+```
+kubectl get services -o json | grep kubernetes.fqdn
+kubectl -n kube-system get svc kube-dns
+kubectl -n namespace get ep
+```
