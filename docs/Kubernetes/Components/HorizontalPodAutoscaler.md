@@ -111,10 +111,9 @@ spec:
   behavior:
     scaleDown:
       policies:
-      - periodSeconds: 600
+      - periodSeconds: 60
         type: Pods
         value: 1
-        periodSeconds: 60 # (i.e., scale down one pod every 10 min
       selectPolicy: Max
       stabilizationWindowSeconds: 0
     scaleUp:
@@ -169,4 +168,31 @@ kubectl -n kube-system get svc kube-dns
 kubectl -n namespace get ep
 ```
 
-## How it works
+## Rules
+__periodSeconds__ The first policy (Pods) allows at most 4 replicas to be scaled down in one minute. The second policy (Percent) allows at most 10% of the current replicas to be scaled down in one minute.
+```
+behavior:
+  scaleDown:
+    policies:
+    - type: Pods
+      value: 4
+      periodSeconds: 60
+    - type: Percent
+      value: 10
+      periodSeconds: 60
+```
+
+_Pods are removed by the HPA to 10% per minute OR no more than 5 Pods are removed per minute._ __selectPolicy__ Min means that the autoscaler chooses the policy that affects the smallest number of Pods.
+```
+behavior:
+  scaleDown:
+    policies:
+    - type: Percent
+      value: 10
+      periodSeconds: 60
+    - type: Pods
+      value: 5
+      periodSeconds: 60
+    selectPolicy: Min
+```
+
