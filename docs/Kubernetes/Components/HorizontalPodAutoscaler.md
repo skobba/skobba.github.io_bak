@@ -142,9 +142,18 @@ EOF
 ## Configure Minimum and Maximum CPU Constraints for a Namespace
 Ref.: [https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-constraint-namespace/](https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-constraint-namespace/)
 
+Units are in two formats:
 ```
 1000m == 1 CPU
 1.5 == 1.5 CPU
+```
+
+Limits and requets:
+```
+limits:
+  cpu: 500m <- Max limit for startup etc.
+requests:
+  cpu: 200m <- Expected usage
 ```
 
 ```
