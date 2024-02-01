@@ -14,24 +14,24 @@ Ref.: [https://kubernetes.io/docs/reference/kubectl/cheatsheet/](https://kuberne
 kubectl patch svc php-apache -p '{"spec":{"externalIPs":["127.0.0.1"]}}'
 kubectl patch svc php-apache -p '{"spec":{"externalIPs":["10.153.134.11"]}}'
 
-kubectl patch deployment mydep -n dis -p '
+kubectl patch deployment mydeploy -n myns -p '
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mydep
+  name: mydeploy
   namespace: myns
 spec:
+  replicas: 1
   template:
     spec:
       containers:
-        - resources:
-          name: mydep
-          limits:
-            cpu: 500m
-          requests:
-            cpu: 200m
+        - name: mydeploy
+          resources:
+            limits:
+              cpu: 500m
+            requests:
+              cpu: 200m
 '
-```
 ```
 
 ## Resources
