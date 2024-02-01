@@ -1,12 +1,11 @@
 # Kubernetes
 *Created by Google*
 
-Logical and distributed primitives
+__Logical and distributed primitives:__
+
 ![primitives.png](primitives.png)
 
-Common configuration for different vendors like Apache and nginx.
-
-Building blocks:
+__Building blocks:__
 * Pod
 * Service
 * ConfigMap
