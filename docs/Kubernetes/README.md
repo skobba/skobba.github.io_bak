@@ -1,5 +1,7 @@
 # Kubernetes
-*Created by Google*
+* Created by Google
+* First Cloud Native project member
+* [Kubernetes Pattern](kubernetes-patterns.pdf)
 
 __Logical and distributed primitives:__
 
