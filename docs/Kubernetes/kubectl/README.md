@@ -9,16 +9,29 @@ echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc 
 ## Cheat sheet
 Ref.: [https://kubernetes.io/docs/reference/kubectl/cheatsheet/](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
-## 
-Node IP address for Minikube using following command
-```
-kubectl cluster-info
-```
-
 ## Patch
-```
+```sh
 kubectl patch svc php-apache -p '{"spec":{"externalIPs":["127.0.0.1"]}}'
 kubectl patch svc php-apache -p '{"spec":{"externalIPs":["10.153.134.11"]}}'
+
+kubectl patch deployment mydep -n dis -p '
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydep
+  namespace: myns
+spec:
+  template:
+    spec:
+      containers:
+        - resources:
+          name: mydep
+          limits:
+            cpu: 500m
+          requests:
+            cpu: 200m
+'
+```
 ```
 
 ## Resources
