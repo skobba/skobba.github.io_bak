@@ -1,13 +1,13 @@
 # Proxy
 Ref.: [https://docs.opnsense.org/manual/reverse_proxy.html](https://docs.opnsense.org/manual/reverse_proxy.html)
 
+___Proxying is the action of transferring data between a client and a server over two independent connections.___
+
 ## Direction of Communication:
 
 __Proxy (Forward Proxy):__ A proxy typically handles client requests and acts on behalf of clients to access resources on the Internet or other servers. It sits between client devices (e.g., browsers) and the external servers, forwarding client requests to those servers and returning the responses to the clients.
 
 __Reverse Proxy:__ A reverse proxy, on the other hand, handles requests from clients on behalf of backend servers. It sits between clients and the server infrastructure, forwarding client requests to the appropriate backend servers and returning the responses to clients.
-    
-_Proxying is the action of transferring data between a client and a server over two independent connections._
 
 ## Reverse proxy
 _Why should a reverse proxy be used?_
