@@ -12,6 +12,38 @@ Partitions               ->     Logical Volumes
 Disks                    ->     Volume Groups
 ```
 
+
+## Create a thin pool
+```
+lvcreate --type thin-pool -L 50G data
+
+lvcreate --type thin-pool -L|--size Size[m|UNIT] VG
+      [ -l|--extents Number[PERCENT] ]
+      [ -i|--stripes Number ]
+      [ -I|--stripesize Size[k|UNIT] ]
+      [ -T|--thin ]
+      [ -c|--chunksize Size[k|UNIT] ]
+      [    --thinpool LV_new ]
+      [    --discards passdown|nopassdown|ignore ]
+      [    --errorwhenfull y|n ]
+      [    --poolmetadatasize Size[m|UNIT] ]
+      [    --poolmetadataspare y|n ]
+      [ COMMON_OPTIONS ]
+      [ PV ... ]
+```
+
+## Create a thin LV in a thin pool
+```
+lvcreate -V 50G -n kubernetes --thinpool data pve
+
+lvcreate -V|--virtualsize Size[m|UNIT] --thinpool LV VG
+    [ --type thin ] (implied)
+    [ -T|--thin ]
+    [ COMMON_OPTIONS ]
+```
+
+## Div
+
 ```sh
 lvm> vgs
   VG  #PV #LV #SN Attr   VSize    VFree 
