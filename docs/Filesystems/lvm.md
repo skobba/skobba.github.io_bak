@@ -58,3 +58,15 @@ nvme0n1                      259:0    0 931.5G  0 disk
       ├─pve-vm--202--disk--0 252:7    0     4G  0 lvm  
       └─pve-vm--301--disk--0 252:8    0    50G  0 lvm
 ```
+
+lvs
+```
+root@pvemini:~# lvs
+  LV            VG  Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  data          pve twi-aotz-- 794.30g             0.49   0.25                            
+  root          pve -wi-ao----  96.00g                                                    
+  swap          pve -wi-ao----   8.00g                                                    
+  vm-100-disk-0 pve Vwi-aotz--  50.00g data        3.26                                   
+  vm-202-disk-0 pve Vwi-aotz--   4.00g data        17.97                                  
+  vm-301-disk-0 pve Vwi-aotz--  50.00g data        3.15
+```
