@@ -25,6 +25,11 @@ helm repo add jenkins https://charts.jenkins.io
 helm search repo jenkins
 ```
 
+## Use
+```
+helm list --all-namespaces
+```
+
 ## Upgrade
 ```
 helm upgrade dashboard kubernetes-dashboard/kubernetes-dashboard --set="service.externalPort=8080,resources.limits.cpu=200m,metricsScraper.enabled=true"
