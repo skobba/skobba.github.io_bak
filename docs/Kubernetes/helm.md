@@ -28,6 +28,8 @@ helm search repo jenkins
 ## Use
 ```
 helm list --all-namespaces
+
+helm get manifest redis-stack-server -n redis
 ```
 
 ## Upgrade
