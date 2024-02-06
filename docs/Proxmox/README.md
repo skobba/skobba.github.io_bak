@@ -1,7 +1,8 @@
 # Proxmox
 
 ## Directories
-* Template ```/var/lib/vz/template/iso```
+* VM images ```/var/lib/vz/images/<VMID>```
+* ISO images ```/var/lib/vz/template/iso```
 * LXC Template ```/var/lib/vz/template/cache```
 * LXC Config ```/etc/pve/lxc```
 
