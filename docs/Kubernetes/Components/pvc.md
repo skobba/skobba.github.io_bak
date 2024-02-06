@@ -20,7 +20,7 @@ spec:
   volumes:
   - name: pvc-mount
     persistentVolumeClaim:
-      claimName: YOUR_CLAIM_NAME_HERE
+      claimName: pvc-03eda0f0-9be4-4030-ac7c-f647dbdd090d
 
 EOF
 ```
