@@ -74,3 +74,25 @@ EOF
 
 systemctl restart network.service
 ```
+
+## Create first lxc
+```sh
+ID=900
+GW=10.10.9.1
+IP=10.10.9.107/24
+pct create $ID /var/lib/vz/template/cache/debian-12-standard_12.2-1_amd64.tar.zst \
+    -arch amd64 \
+    -ostype ubuntu \
+    -hostname debterm \
+    -features keyctl=1,nesting=1 \
+    -cores 1 \
+    -memory 2048 \
+    -swap 0 \
+    -storage local-zfs \
+    -password password \
+    -unprivileged 1 \
+    -net0 name=eth0,bridge=vmbr0,gw=$GW,ip=$IP,type=veth
+
+pct start 900
+
+```
