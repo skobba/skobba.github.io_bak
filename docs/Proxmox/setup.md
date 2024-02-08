@@ -16,7 +16,7 @@ apt update && apt -y full-upgrade
 reboot
 ```
 
-# zsh
+## Setup zsh
 Script that setup zsh, OhMyZsh, Powerlevel10k
 
 ```
@@ -33,5 +33,14 @@ echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh'>>~/.zshrc
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 echo 'source .zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'>>~/.zshrc
 exec zsh
-
 ```
+## Download lxc images
+```
+pushd /var/lib/vz/template/cache/
+wget http://download.proxmox.com/images/system/ubuntu-20.04-standard_20.04-1_amd64.tar.gz
+wget http://download.proxmox.com/images/system/debian-12-standard_12.2-1_amd64.tar.zst
+wget http://download.proxmox.com/images/system/debian-11-standard_11.7-1_amd64.tar.zst
+popd
+```
+
+
