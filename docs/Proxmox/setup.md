@@ -16,12 +16,14 @@ apt update && apt -y full-upgrade
 reboot
 ```
 
-## Setup zsh
+## Setup zsh and apt
 Script that setup zsh, OhMyZsh, Powerlevel10k
 
 ```
 apt update
-apt -y install zsh git
+apt -y install zsh git screen
+
+
 chsh -s /bin/zsh
 apt-get -y install zsh
 chsh -s $(which zsh)
