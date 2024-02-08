@@ -43,30 +43,10 @@ wget http://download.proxmox.com/images/system/debian-11-standard_11.7-1_amd64.t
 popd
 ```
 
-## Setup bridge
+## Setup bridges
 
 ```sh
 cat <<EOF >> /etc/network/interfaces
-auto vmbr0
-iface vmbr0 inet static
-        address 10.10.9.111/24
-        gateway 10.10.9.1
-        bridge-ports enp5s0f0
-        bridge-stp off
-        bridge-fd 0
-
-auto vmbr1
-iface vmbr1 inet manual
-        bridge-ports none
-        bridge-stp off
-        bridge-fd 0
-
-auto vmbr1
-iface vmbr1 inet manual
-        bridge-ports none
-        bridge-stp off
-        bridge-fd 0
-
 auto vmbr1
 iface vmbr1 inet manual
         bridge-ports none
@@ -86,7 +66,7 @@ iface clust1 inet manual
         bridge-fd 0
 
 auto clust3
-iface clust1 inet manual
+iface clust3 inet manual
         bridge-ports none
         bridge-stp off
         bridge-fd 0
