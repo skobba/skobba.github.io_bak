@@ -60,7 +60,7 @@ iface clust1 inet manual
         bridge-fd 0
 
 auto clust2
-iface clust1 inet manual
+iface clust2 inet manual
         bridge-ports none
         bridge-stp off
         bridge-fd 0
