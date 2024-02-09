@@ -32,7 +32,13 @@ poweroff
 ## Disk management
 __To see the mounted disks__
 ```
-apk add udisks2
+apk update
 
+apk add util-linux
+lsblk
+
+or
+
+apk add udisks2
 udisksctl status
 ```
