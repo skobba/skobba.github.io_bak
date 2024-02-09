@@ -22,3 +22,8 @@ or
 
 service networking restart
 ```
+
+## Shutdown
+```
+poweroff
+```
