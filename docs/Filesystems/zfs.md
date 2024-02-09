@@ -17,7 +17,7 @@ lsblk
 ls -lh /dev/disk/by-path/
 ```
 
-## Create pool
+## Pools
 
 __Create raid 10 pool__
 
@@ -51,6 +51,7 @@ __Create a raid2 pool__
 zpool create tank raidz2 sdc sdd sde sdf
 ```
 
+## Dataset
 __Create a container for individual file systems__
 ```
 zfs create tank/kubernetes
@@ -88,6 +89,11 @@ zfs list -o name | grep my | xargs -n1 zfs destroy -r
 __List snapshots for a pool__
 ```
 zfs list  -t snapshot -r rpool
+```
+
+## History
+```
+zpool history -i
 ```
 
 ## Encryption
