@@ -1,5 +1,7 @@
 # Alpine
-Ref.: [Kubernetes on alpine](https://wiki.alpinelinux.org/wiki/K8s)
+Ref.: 
+* [Kubernetes on alpine](https://wiki.alpinelinux.org/wiki/K8s)
+* [https://github.com/red-lichtie/alpine-cloud-init](https://github.com/red-lichtie/alpine-cloud-init)
 
 ## Network
 Interfaces
