@@ -5,20 +5,21 @@
 *After creating a storage pool to store your data, you can create your file system hierarchy. Hierarchies are simple yet powerful mechanisms for organizing information. They are also very familiar to anyone who has used a file system. ZFS allows file systems to be organized into hierarchies, where each file system has only a single parent. The root of the hierarchy is always the pool name. ZFS leverages this hierarchy by supporting property inheritance so that common properties can be set quickly and easily on entire trees of file systems.*
 
 ## Diskutils
-Delelete file systems and rebuild partiontable.
+__Delelete file systems and rebuild partiontable__
 ```
 wipefs -a /dev/sdc
 ```
 
-## Commands
-List disks
+__List disks__
 ```
 lsblk
 
 ls -lh /dev/disk/by-path/
 ```
 
-Create raid 10 pool
+## Create pool
+
+__Create raid 10 pool__
 
 *Creating a RAID1 pool of two drives, and then adding another pair of mirroring drives creates a RAID 10 pool where data is striped over two mirrors.*
 
@@ -45,18 +46,18 @@ config:
 
 ```
 
-Create a raid2 pool
+__Create a raid2 pool__
 ```
 zpool create tank raidz2 sdc sdd sde sdf
 ```
 
-Create a container for individual file systems
+__Create a container for individual file systems__
 ```
 zfs create tank/kubernetes
 ```
-Set the inherited properties.
 
-After the file system hierarchy is established, set up any properties to be shared among all users:
+__Set the inherited properties__
+_After the file system hierarchy is established, set up any properties to be shared among all user_
 
 ```
 # Allready mounted: zfs set mountpoint=/tank/kubernetes tank/kubernetes
@@ -65,21 +66,28 @@ zfs set compression=on tank/kubernetes
 zfs get compression tank/kubernetes
 ```
 
-Listing ZFS Datasets
+__Listm datasets__
 ```
 zfs list
 
 zfs list -o name
 ```
-Mount dataset
+
+__Mount dataset__
 ```
 zfs set mountpoint=/mnt/data tank/data
 ```
 
-Destroy dataset recursive
+__Destroy dataset recursive__
 ```
 zfs destroy
 zfs list -o name | grep my | xargs -n1 zfs destroy -r
+```
+
+## Snapshots
+__List snapshots for a pool__
+```
+zfs list  -t snapshot -r rpool
 ```
 
 ## Encryption
