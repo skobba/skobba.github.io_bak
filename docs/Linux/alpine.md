@@ -1,4 +1,5 @@
 # Alpine
+Ref.: [Kubernetes on alpine](https://wiki.alpinelinux.org/wiki/K8s)
 
 ## Network
 Interfaces
@@ -26,4 +27,12 @@ service networking restart
 ## Shutdown
 ```
 poweroff
+```
+
+## Disk management
+__To see the mounted disks__
+```
+apk add udisks2
+
+udisksctl status
 ```
