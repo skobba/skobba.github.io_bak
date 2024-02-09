@@ -13,10 +13,13 @@ pushd /var/lib/vz/template/cloudinit
 wget https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/cloud/nocloud_alpine-3.19.1-x86_64-uefi-cloudinit-r0.qcow2
 
 # create a new VM with VirtIO SCSI controller
-qm create 9000 --memory 2048 --net0 virtio,bridge=vmbr0 --scsihw virtio-scsi-pci
+qm create 9000 --memory 2048 --net0 virtio,bridge=vmbr0 --scsihw virtio-scsi-single
+
+# import the downloaded disk to the local-lvm storage, attaching it as a SCSI drive
+qm set 9000 --scsi0 local-zfs:0,import-from=/var/lib/vz/template/cloudinit/nocloud_alpine-3.19.1-x86_64-uefi-cloudinit-r0.qcow2
 
 # Configure a CD-ROM drive
-qm set 9000 --ide2 local-lvm:cloudinit
+qm set 9000 --ide2 local-zfs:cloudinit
 
 # This will speed up booting, because VM BIOS skips the testing for a bootable CD-ROM.
 qm set 9000 --boot order=scsi0
@@ -27,11 +30,8 @@ qm set 9000 --serial0 socket --vga serial0
 # Convert the VM into a template, quickly create linked clones. The deployment from VM templates is much faster than creating a full clone (copy).
 qm template 9000
 
-# import the downloaded disk to the local-lvm storage, attaching it as a SCSI drive
-qm set 9000 --scsi0 local-lvm:0,import-from=/var/lib/vz/template/cloudinit/nocloud_alpine-3.19.1-x86_64-uefi-cloudinit-r0.qcow2
-
 # Deploy such a template by cloning:
-qm clone 9000 123 --name ubuntu2
+qm clone 9000 123 --name alpineci
 
 # SSH public key used for authentication, and configure the IP setup:
 qm set 123 --sshkey ~/.ssh/id_rsa.pub
