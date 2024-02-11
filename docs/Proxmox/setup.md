@@ -4,6 +4,8 @@
 Remove enterprise repository
 ```
 rm /etc/apt/sources.list.d/pve-enterprise.list
+rm /etc/apt/sources.list.d/ceph.list
+
 apt update && apt -y full-upgrade
 ```
 
@@ -11,7 +13,7 @@ Add no-subscription or pve-test repository
 ```
 vi /etc/apt/sources.list
 
-deb http://download.proxmox.com/debian bullseye pve-no-subscription
+deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
 apt update && apt -y full-upgrade
 reboot
 ```
