@@ -57,3 +57,39 @@ or
 apk add udisks2
 udisksctl status
 ```
+
+## cloud-init
+```
+cat <<EOF >> /etc/cloud/cloud.cfg
+# Set the datasource to be auto-discovered
+datasource_list: [ None ]
+
+# Specify users and groups to create
+system_info:
+  default_user:
+    name: myuser
+    lock_passwd: true
+    gecos: My User
+    groups: [wheel]
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+
+network:
+  version: 2
+  ethernets:
+    eth0:
+      addresses: [10.10.9.84/24]
+      gateway4: 10.10.9.1
+      nameservers:
+        addresses: [1.1.1.1, 8.8.8.8]
+
+# Set the hostname
+hostname: myhostname
+
+# Disable managing resolv.conf
+manage_resolv_conf: false
+
+# Disable setting hostname during boot
+set_hostname: false
+EOF
+```
+
