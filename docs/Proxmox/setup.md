@@ -21,7 +21,7 @@ Script that setup zsh, OhMyZsh, Powerlevel10k
 
 ```
 apt update
-apt -y install zsh git screen
+apt -y install zsh git screen jq
 
 
 chsh -s /bin/zsh
