@@ -59,6 +59,13 @@ udisksctl status
 ```
 
 ## cloud-init
+__Enable and start__
+```
+rc-update add cloud-init default
+rc-service cloud-init start
+```
+
+__Config__
 ```
 cat <<EOF >> /etc/cloud/cloud.cfg
 # Set the datasource to be auto-discovered
