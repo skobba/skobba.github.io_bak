@@ -8,6 +8,10 @@ Ref.:
 2. Install on local hd with:
 ```
 setup-alpine
+
+# select
+Allow root ssh login: yes
+How would you like to use it: sys
 ```
 
 ## apk
