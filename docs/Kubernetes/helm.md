@@ -36,3 +36,10 @@ helm get manifest redis-stack-server -n redis
 ```
 helm upgrade dashboard kubernetes-dashboard/kubernetes-dashboard --set="service.externalPort=8080,resources.limits.cpu=200m,metricsScraper.enabled=true"
 ```
+
+## CRD
+Command to view the CRDs associated with the ArgoCD Helm chart. This can be useful for understanding the resources that ArgoCD will manage within your Kubernetes cluster.
+```
+helm show crds <chart>
+```
+
