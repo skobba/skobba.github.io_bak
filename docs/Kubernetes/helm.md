@@ -1,5 +1,9 @@
 # Helm
-A chart can be either an 'application' or a 'library' chart.
+_Helm allows you to create and use charts in your Kubernetes clusters. A Helm chart is a layer on top of your resources that logically combines them, and allows you to treat them as a single entity for their lifecycle._
+
+_An example: If you have an application that is comprised of 2 deployments, a namespace, a service account, and service. Without Helm you are creating and updating these items separately and individually. Helm allows you to group these into a chart as a single unit. Another benefit of Helm is the ability to parameterize certain aspects of this “application” (the manifests) so that you can specify different values from different requirements._
+
+_A chart can be either an 'application' or a 'library' chart._
 
 __Application__ charts are a collection of templates that can be packaged into versioned archives to be deployed.
 
