@@ -6,12 +6,21 @@ Ref.:
 ## Install from iso
 1. Download iso from [https://alpinelinux.org/downloads/](https://alpinelinux.org/downloads/) and boot from the iso.
 2. Install on local hd with:
+
 ```
 setup-alpine
 
 # select
 Allow root ssh login: yes
 How would you like to use it: sys
+```
+
+## Enable ssh
+```
+vi /etc/ssh/sshd_config
+PermitRootLogin yes
+
+service sshd restart
 ```
 
 ## apk
