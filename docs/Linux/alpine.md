@@ -3,6 +3,13 @@ Ref.:
 * [Kubernetes on alpine](https://wiki.alpinelinux.org/wiki/K8s)
 * [https://github.com/red-lichtie/alpine-cloud-init](https://github.com/red-lichtie/alpine-cloud-init)
 
+## Install from iso
+1. Download iso from [https://alpinelinux.org/downloads/](https://alpinelinux.org/downloads/) and boot from the iso.
+2. Install on local hd with:
+```
+setup-alpine
+```
+
 ## apk
 Common repos:
 ```
