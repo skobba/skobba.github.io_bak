@@ -1,4 +1,10 @@
 # config
+## Context
+List and get current:
+```
+kubectl config get-contexts
+kubectl config current-context
+```
 
 ## Storage
 ```
