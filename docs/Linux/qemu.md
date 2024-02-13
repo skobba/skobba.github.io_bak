@@ -1,4 +1,23 @@
 # QEMU
+## Files
+```
+# Check file info
+qemu-img info debian.qcow2
+
+# Resize
+qemu-img resize debian.qcow2 8G
+
+```
+
+## Run with qemu-system-x86_64
+```sh
+qemu-system-x86_64 \
+    -m 2048 \
+    -smp 2 \
+    -drive file=debian-11-nocloud-amd64-20240211-1654.qcow2,media=disk,if=virtio \
+    -nic user,model=virtio \
+    -nographic
+```
 
 ## List vms
 ```
