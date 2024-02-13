@@ -1,4 +1,11 @@
 # QEMU
+
+## List vms
+```
+qm list
+qm list | awk '{print $1, $2}'
+```
+
 ## Snapshot
 ```
 # Snap
