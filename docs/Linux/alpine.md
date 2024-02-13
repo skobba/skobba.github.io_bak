@@ -51,6 +51,20 @@ EOF
 ```
 
 ## Services
+List:
+```
+rc-status --servicelist
+rc-status --servicelist | grep started
+```
+
+## Start/Stop
+```sh
+service <service_name> start
+service <service_name> stop
+service <service_name> restart
+```
+
+Network:
 ```
 /etc/init.d/networking restart
 
