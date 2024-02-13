@@ -6,12 +6,12 @@ qm list
 qm list | awk '{print $1, $2}'
 ```
 
-## List vms using watch
+## List running vms using watch
 ```
 # Create a file
 cat >./list_vms.sh<<EOF
 #!/bin/bash
-qm list | awk '{print $1, $2}'
+qm list | awk '$3 == "running" {print $1, $2}'
 EOF
 chmod +x ./list_vms.sh
 
