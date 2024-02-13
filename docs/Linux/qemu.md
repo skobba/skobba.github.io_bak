@@ -1,8 +1,14 @@
 # QEMU
 ## Snapshot
 ```
-qm rollback <vmid> <snap-name>
+# Snap
 qm snapshot <vmid> <snap-name>
+
+# Delete
+qm delsnapshot <vmid> <snap-name>
+
+# Rollback
+qm snapshot <vmid> rollback <snapshot_name>
 ```
 
 ## iso from vm
