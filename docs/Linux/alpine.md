@@ -64,6 +64,15 @@ service <service_name> stop
 service <service_name> restart
 ```
 
+## boot
+Enable service on boot:
+```
+rc-update add containerd boot
+
+# See result
+rc-update
+```
+
 Network:
 ```
 /etc/init.d/networking restart
