@@ -6,6 +6,21 @@ qm list
 qm list | awk '{print $1, $2}'
 ```
 
+## List vms using watch
+```
+# Create a file
+cat >./list_vms.sh<<EOF
+#!/bin/bash
+qm list | awk '{print $1, $2}'
+EOF
+chmod +x ./list_vms.sh
+
+# Time
+watch -n 1 ./list_vms.sh 2>/dev/null
+# No time
+watch --no-title -n 1 ./list_vms.sh
+```
+
 ## Snapshot
 ```
 # Snap
