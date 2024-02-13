@@ -3,6 +3,7 @@
 ```
 # Snap
 qm snapshot <vmid> <snap-name>
+qm snapshot 401 ip -d "New iP: 10.10.9.41"
 
 # Delete
 qm delsnapshot <vmid> <snap-name>
