@@ -15,6 +15,12 @@ Allow root ssh login: yes
 How would you like to use it: sys
 ```
 
+## Shutdown/Reboot
+```
+poweroff
+reboot
+```
+
 ## Enable ssh
 ```
 vi /etc/ssh/sshd_config
