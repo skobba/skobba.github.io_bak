@@ -56,7 +56,11 @@ helm list --all-namespaces
 helm get manifest redis-stack-server -n redis
 ```
 
-## Create
+## Render chart with template
+__helm template__ is a command-line tool provided by Helm, the Kubernetes package manager. It allows you to render Helm charts locally without installing them onto a Kubernetes cluster. This command generates Kubernetes YAML manifests based on the values provided in the chart's __values.yaml__ file and any overrides you specify.
+```
+helm template mymysql bitnami/mysql
+```
 
 
 ## Upgrade
