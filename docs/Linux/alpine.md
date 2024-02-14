@@ -94,7 +94,7 @@ poweroff
 ```
 
 ## Disk management
-__To see the mounted disks__
+### View mounted disks
 ```
 apk update
 
@@ -107,3 +107,14 @@ apk add udisks2
 udisksctl status
 ```
 
+### Resize disk
+```
+# after the virtual disk has already been expanded
+apk add --no-cache cfdisk e2fsprogs-extra
+
+# choose partition then "Resize" > "Write" (to finalize)
+cfdisk
+
+# replace * with partition you are resizing
+resize2fs /dev/*
+```
