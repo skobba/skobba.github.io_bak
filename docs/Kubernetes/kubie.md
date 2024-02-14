@@ -23,3 +23,14 @@ brew install kdash
 kubie ctx
 kubie ns
 ```
+
+## zsh
+Add kubectl to the list of plugins in ~/.zshrc
+```
+...
+plugins=(
+  ...
+  kubectl
+  ...
+)
+```
