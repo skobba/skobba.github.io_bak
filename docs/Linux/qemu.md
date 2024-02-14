@@ -3,10 +3,20 @@
 ```
 # Check file info
 qemu-img info debian.qcow2
+```
 
-# Resize
+## Resize
+```
+# Image
 qemu-img resize debian.qcow2 8G
 
+# Disk
+qm resize 400 scsi0 +5G
+```
+
+## Show info on vm
+```
+qm show 400
 ```
 
 ## Run with qemu-system-x86_64
