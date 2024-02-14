@@ -13,3 +13,14 @@ k-get-pods-on-node-func() {
 # Assign the function to an alias
 alias k-get-pods-on-node='k-get-pods-on-node-func'
 ```
+
+## ssh to a node
+```sh
+
+k-ssh-func() {
+    ssh -o StrictHostKeyChecking=accept-new "root@10.10.9.$1"
+}
+
+# Assign the function to an alias
+alias k-ssh='k-ssh-func'
+```
