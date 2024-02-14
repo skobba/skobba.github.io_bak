@@ -29,6 +29,15 @@ helm repo add jenkins https://charts.jenkins.io
 helm search repo jenkins
 ```
 
+## Repo
+```
+helm repo add bitnami https://charts.bitnami.com/bitnami
+
+helm search repo bitnami/word
+
+helm show readme bitnami/wordpress
+```
+
 ## Use
 ```
 helm list --all-namespaces
