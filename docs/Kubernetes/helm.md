@@ -9,6 +9,17 @@ __Application__ charts are a collection of templates that can be packaged into v
 
 __Library__ charts provide useful utilities or functions for the chart developer. They're included as a dependency of application charts to inject those utilities and functions into the rendering pipeline. Library charts do not define any templates and therefore cannot be deployed.
 
+__Structure__
+```
+foo/
+├── .helmignore   # Contains patterns to ignore when packaging Helm charts.
+├── Chart.yaml    # Information about your chart
+├── values.yaml   # The default values for your templates
+├── charts/       # Charts that this chart depends on
+└── templates/    # The template files
+    └── tests/    # The test files
+```
+
 ## Install
 osx:
 ```
@@ -44,6 +55,9 @@ helm list --all-namespaces
 
 helm get manifest redis-stack-server -n redis
 ```
+
+## Create
+
 
 ## Upgrade
 ```
