@@ -2,8 +2,8 @@
 * [https://metallb.universe.tf/](https://metallb.universe.tf/)
 
 MetalLB hooks into your Kubernetes cluster, and provides a network load-balancer implementation. In short, it allows you to create Kubernetes services of type LoadBalancer in clusters that don’t run on a cloud provider, and thus cannot simply hook into paid products to provide load balancers.
-
-# Setup
+## Preparations
+__Enable IPVs with edit__
 ```
 kubectl edit configmap -n kube-system kube-proxy
 
@@ -17,15 +17,20 @@ ipvs:
 
 ```
 
-or with sed:
+__Enable IPVs with sed__
 ```
-kubectl get cm -n kube-system kube-proxy -o yaml | \
-  sed -e 's|strictARP: false|strictARP: true|' | \
-  kubectl apply -f -
+# see what changes would be made, returns nonzero returncode if different
+kubectl get configmap kube-proxy -n kube-system -o yaml | \
+sed -e "s/strictARP: false/strictARP: true/" | \
+kubectl diff -f - -n kube-system
+
+# actually apply the changes, returns nonzero returncode on errors only
+kubectl get configmap kube-proxy -n kube-system -o yaml | \
+sed -e "s/strictARP: false/strictARP: true/" | \
+kubectl apply -f - -n kube-system
 ```
 
-# Install
-
+## Install (yaml)
 ```
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/namespace.yaml
 
