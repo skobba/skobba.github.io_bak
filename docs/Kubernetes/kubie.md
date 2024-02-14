@@ -5,10 +5,17 @@ Ref.: [https://blog.sbstp.ca/introducing-kubie/](https://blog.sbstp.ca/introduci
 * _Unlike Kubectx and Kubens, which change global config files, Kubie isolates shells from each other, never altering the global config files._
 
 ## Install
+Linux
 ```
 wget https://github.com/sbstp/kubie/releases/download/v0.23.0/kubie-linux-amd64
 mv kubie-linux-amd64 kubie
 chmod +x kubie
+```
+
+Mac
+```
+brew tap kdash-rs/kdash
+brew install kdash
 ```
 
 ## Usage
