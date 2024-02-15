@@ -26,11 +26,13 @@ osx:
 brew install helm
 ```
 
-Debian:
+apt:
 ```
-wget https://get.helm.sh/helm-v3.7.0-linux-amd64.tar.gz
-tar -zxvf helm-v3.7.0-linux-amd64.tar.gz
-mv linux-amd64/helm /usr/local/bin
+curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | tee /usr/share/keyrings/helm.gpg > /dev/null
+apt-get install apt-transport-https --yes
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | tee /etc/apt/sources.list.d/helm-stable-debian.list
+apt-get update
+apt-get install helm
 ```
 
 Jenkins Chart:
