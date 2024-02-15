@@ -22,14 +22,7 @@ echo 'source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'>>~/.zsh
 exec zsh
 ```
 
-## kube-ps1
-```sh
-brew install kube-ps1
-cat >>~/.zshrc<<EOF
-source ~/.oh-my-zsh/plugins/kube-ps1/kube-ps1.plugin.zsh
-PROMPT='$(kube_ps1)'$PROMPT
-EOF
-```
+
 
 ## Install OhMyZsh
 * Ref: https://ohmyz.sh/#install
@@ -37,6 +30,22 @@ EOF
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+
+### Plugins
+kube-ps1
+```sh
+# Mac
+brew install kube-ps1
+
+# Linux
+# git clone
+
+cat >>~/.zshrc<<EOF
+source ~/.oh-my-zsh/plugins/kube-ps1/kube-ps1.plugin.zsh
+PROMPT='$(kube_ps1)'$PROMPT
+EOF
+```
+
 
 ## Install Powerlevel10k Theme
 ```
