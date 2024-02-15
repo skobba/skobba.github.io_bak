@@ -47,6 +47,23 @@ address-pools:
       - 10.10.9.125-10.10.9.129
 ```
 
+ipaddresspool.yaml
+```
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: cheap
+  namespace: metallb-system
+spec:
+  addresses:
+  - 10.10.9.125-10.10.9.129
+```
+
+Check
+```
+kubectl describe -n metallb-system ipaddresspool
+```
+
 
 ## Install (yaml)
 ```
