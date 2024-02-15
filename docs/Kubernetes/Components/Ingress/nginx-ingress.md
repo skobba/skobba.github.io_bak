@@ -6,7 +6,7 @@
     * NGINX Plus-based (commercial option)
 
 
-## Install with Helm (nginx.com)
+## nginx.com (ingress-nginx)
 * [https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/)
 
 Get
@@ -32,7 +32,7 @@ Upgrade via Helm Repository:
 helm upgrade my-release nginx-stable/nginx-ingress
 ```
 
-## Instasll with Helm (kubernetes.github.io)
+## kubernetes.github.io (nginx-ingress)
 * [https://kubernetes.github.io/ingress-nginx/deploy/](https://kubernetes.github.io/ingress-nginx/deploy/)
 
 Install
