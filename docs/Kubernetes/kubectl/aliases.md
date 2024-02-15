@@ -2,6 +2,7 @@
 ```
 cat >>~/.zshrc<<EOF
 alias kk="kubie ctx"
+alias k="kubectl"
 
 k-get-pods-on-node-func() {
     pods=$(kubectl get pods --all-namespaces -o wide --field-selector spec.nodeName=$1)
