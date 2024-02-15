@@ -18,7 +18,7 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh'>>~/.zshrc
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
-echo 'source .zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'>>~/.zshrc
+echo 'source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'>>~/.zshrc
 exec zsh
 ```
 
@@ -64,7 +64,7 @@ echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh'>>~/.zshrc
 ```
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 
-echo 'source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh'>>~/.zshrc
+echo 'source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'>>~/.zshrc
 ```
 
 ## Uninstall
@@ -74,6 +74,16 @@ uninstall_oh_my_zsh
 
 ## zsh_codex 
 ```
-apt install python3-pip
+vi ~/.zshrc
+plugins=(git kubectl zsh_codex)
+bindkey '^X' create_completion
+
+
+apt install pipx
+# NB: pipx does everything
+# python3-pip python3-venv  
+pipx install openai
+
+cd ~/.oh-my-zsh/custom/plugins/
 git clone https://github.com/tom-doerr/zsh_codex.git
 ```
