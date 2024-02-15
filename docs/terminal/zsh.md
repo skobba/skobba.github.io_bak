@@ -22,6 +22,15 @@ echo 'source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'>>~/.zsh
 exec zsh
 ```
 
+## Kubernetes supercharged
+[Gist](https://gist.github.com/skobba/18ecf4dcdb6835acbf9c5efbe0c407bc):
+```
+wget https://gist.github.com/18ecf4dcdb6835acbf9c5efbe0c407bc.git](https://gist.githubusercontent.com/skobba/18ecf4dcdb6835acbf9c5efbe0c407bc/raw/f9a9103702489d278f1cd013235a81fa05d6f6cf/k8s-aliases.sh
+chmod +x aliases.sh
+echo "~/aliases.sh" >> ~/.zshrc
+source ~/.zshrc
+```
+
 
 
 ## Install OhMyZsh
