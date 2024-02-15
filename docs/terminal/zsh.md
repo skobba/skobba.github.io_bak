@@ -71,3 +71,9 @@ echo 'source .zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'>>~/.zshrc
 ```
 uninstall_oh_my_zsh
 ```
+
+## zsh_codex 
+```
+apt install python3-pip
+git clone https://github.com/tom-doerr/zsh_codex.git
+```
