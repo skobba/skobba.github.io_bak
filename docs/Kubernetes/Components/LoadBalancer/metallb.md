@@ -33,10 +33,20 @@ kubectl apply -f - -n kube-system
 ## Install (helm)
 ```
 helm repo add metallb https://metallb.github.io/metallb
-helm install metallb metallb/metallb
-
-helm install metallb metallb/metallb -f values.yaml
+helm repo update
+kubectl create ns metallb-system
+helm install metallb metallb/metallb -f values.yaml -n metallb-system
 ```
+
+values.yaml
+```
+address-pools:
+  - name: default
+    protocol: layer2
+    addresses:
+      - 10.10.9.125-10.10.9.129
+```
+
 
 ## Install (yaml)
 ```
