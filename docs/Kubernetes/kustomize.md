@@ -1,4 +1,5 @@
 # kustomize
+Youtube: [https://www.youtube.com/watch?v=spCdNeNCuFU](https://www.youtube.com/watch?v=spCdNeNCuFU)
 
 ## Install
 ```
