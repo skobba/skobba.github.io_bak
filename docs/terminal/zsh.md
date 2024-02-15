@@ -1,4 +1,9 @@
 # zsh
+## Install without root
+```
+/usr/local/bin/
+```
+
 Change to zsh
 ```
 chsh -s $(which zsh)
@@ -83,6 +88,12 @@ echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh'>>~/.zshrc
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 
 echo 'source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'>>~/.zshrc
+```
+
+## kdash
+```
+wget https://github.com/kdash-rs/kdash/releases/download/v0.6.0/kdash-linux.tar.gz
+tar -C /usr/local/bin -xzf kdash-linux.tar.gz
 ```
 
 ## Uninstall
