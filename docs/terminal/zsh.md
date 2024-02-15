@@ -8,7 +8,7 @@ or
 chsh -s /bin/zsh
 ```
 
-## Script that setup zsh, OhMyZsh, Powerlevel10k
+## Short script that setup zsh, OhMyZsh, Powerlevel10k
 ```sh
 apt-get -y install zsh
 chsh -s $(which zsh)
@@ -20,6 +20,15 @@ echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh'>>~/.zshrc
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 echo 'source .zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'>>~/.zshrc
 exec zsh
+```
+
+## kube-ps1
+```sh
+brew install kube-ps1
+cat >>~/.zshrc<<EOF
+source ~/.oh-my-zsh/plugins/kube-ps1/kube-ps1.plugin.zsh
+PROMPT='$(kube_ps1)'$PROMPT
+EOF
 ```
 
 ## Install OhMyZsh
