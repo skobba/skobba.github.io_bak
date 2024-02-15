@@ -86,4 +86,12 @@ pipx install openai
 
 cd ~/.oh-my-zsh/custom/plugins/
 git clone https://github.com/tom-doerr/zsh_codex.git
+
+# Result
+OpenAI API config file created at /Users/rep/.config/openaiapirc
+Please edit it and add your organization ID and secret key
+If you do not yet have an organization ID and secret key, you
+need to register for OpenAI Codex:
+https://openai.com/blog/openai-codex/
+
 ```
