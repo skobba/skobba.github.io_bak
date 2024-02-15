@@ -30,6 +30,14 @@ sed -e "s/strictARP: false/strictARP: true/" | \
 kubectl apply -f - -n kube-system
 ```
 
+## Install (helm)
+```
+helm repo add metallb https://metallb.github.io/metallb
+helm install metallb metallb/metallb
+
+helm install metallb metallb/metallb -f values.yaml
+```
+
 ## Install (yaml)
 ```
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/namespace.yaml
