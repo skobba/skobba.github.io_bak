@@ -1,8 +1,7 @@
 # Krew
 _Package manager for kubectl plugins. It allows you to easily discover, install, and manage kubectl plugins, which are additional commands or features that extend the functionality of kubectl._
 
-## Install zsh
-
+__Install krew in zsh__
 ```
 (
   set -x; cd "$(mktemp -d)" &&
@@ -20,7 +19,7 @@ Add the $HOME/.krew/bin directory to your PATH environment variable. To do this,
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 ```
 
-## Brew
+__Install tail__
 ```
 kubectl krew install tail
 kubectl tail -h
