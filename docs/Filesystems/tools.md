@@ -29,3 +29,20 @@ lrwxrwxrwx 1 root root 10 Feb 18 20:59 scsi-SATA_INTEL_SSDSC2KB24_BTYS8206070424
 lsblk -o NAME,UUID /dev/sda
 blkid /dev/sda
 ```
+
+## blkdiscard
+For flash-based storage, if the disk was previously used, you may wish to do a full-disk discard (TRIM/UNMAP), which can improve performance:
+```
+blkdiscard -f scsi-SATA_INTEL_SSDSC2KB24_BTYS82060704240AGN
+```
+
+## sgdisk
+Clear the partition table:
+```
+sgdisk --zap-all scsi-SATA_INTEL_SSDSC2KB24_BTYS82060704240AGN
+```
+
+Create bootloader partition
+```
+sgdisk     -n1:1M:+512M   -t1:EF00 scsi-SATA_INTEL_SSDSC2KB24_BTYS82060704240AGN
+```
