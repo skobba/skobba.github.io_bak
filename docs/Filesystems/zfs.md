@@ -51,6 +51,11 @@ __Create a raid2 pool__
 zpool create tank raidz2 sdc sdd sde sdf
 ```
 
+__ZFS pool is no longer using the disk__
+```
+zpool export tank
+```
+
 ## Dataset
 __Create a container for individual file systems__
 ```
@@ -67,7 +72,7 @@ zfs set compression=on tank/kubernetes
 zfs get compression tank/kubernetes
 ```
 
-__Listm datasets__
+__List datasets__
 ```
 zfs list
 
@@ -77,6 +82,15 @@ zfs list -o name
 __Mount dataset__
 ```
 zfs set mountpoint=/mnt/data tank/data
+```
+
+__Unmount dataset__
+```
+zfs unmount tank
+
+# Stop any ZFS services
+systemctl stop zfs-import-cache
+systemctl stop zfs-mount
 ```
 
 __Destroy dataset recursive__
