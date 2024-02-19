@@ -1,6 +1,8 @@
 # Ubuntu
 
 ## Add zfs support
+__Advanced installation of Ubuntu with "ZFS on Root" was never part of the installer (basic installation was previously an option), but with Ubuntu 22.04, it was rolled back even more with the removal of zsys.__
+
 ```
 sudo apt udpate
 sudo apt install zfsutils-linux
