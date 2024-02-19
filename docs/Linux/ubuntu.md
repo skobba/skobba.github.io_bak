@@ -14,7 +14,9 @@ sudo apt install zfs-initramfs
 ```
 
 ## Root on ZFS
-Ref.: https://openzfs.github.io/openzfs-docs/Getting%20Started/Ubuntu/Ubuntu%2022.04%20Root%20on%20ZFS.html#step-1-prepare-the-install-environment
+Ref.: 
+* https://openzfs.github.io/openzfs-docs/Getting%20Started/Ubuntu/Ubuntu%2022.04%20Root%20on%20ZFS.html#step-1-prepare-the-install-environment
+* https://www.medo64.com/2022/05/installing-uefi-zfs-root-on-ubuntu-22-04/
 
 __NB: Always use the long /dev/disk/by-id/* aliases with ZFS!__
 
