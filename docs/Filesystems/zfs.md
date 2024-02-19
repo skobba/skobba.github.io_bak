@@ -110,6 +110,46 @@ zfs list  -t snapshot -r rpool
 zpool history -i
 ```
 
+## zdb
+Check the name
+```
+zdb -l /dev/sdb
+
+# Result
+failed to unpack label 0
+failed to unpack label 1
+------------------------------------
+LABEL 2
+------------------------------------
+    version: 5000
+    name: 'rpool'
+    state: 0
+    txg: 4
+    pool_guid: 7567958798130254195
+    errata: 0
+    hostid: 459579541
+    hostname: 'ubuntu-server'
+    top_guid: 14396637372501169223
+    guid: 14396637372501169223
+    vdev_children: 1
+    vdev_tree:
+        type: 'disk'
+        id: 0
+        guid: 14396637372501169223
+        path: '/dev/disk/by-id/scsi-SATA_INTEL_SSDSC2KB24_BTYS820606UV240AGN-part4'
+        whole_disk: 0
+        metaslab_array: 131
+        metaslab_shift: 31
+        ashift: 12
+        asize: 236842909696
+        is_log: 0
+        create_txg: 4
+    features_for_read:
+        com.delphix:hole_birth
+        com.delphix:embedded_data
+    labels = 2 3
+```
+
 ## Encryption
 [https://arstechnica.com/gadgets/2021/06/a-quick-start-guide-to-openzfs-native-encryption/](https://arstechnica.com/gadgets/2021/06/a-quick-start-guide-to-openzfs-native-encryption/)
 
