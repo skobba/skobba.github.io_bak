@@ -154,10 +154,82 @@ zfs create -o mountpoint=/ \
 zfs create -o mountpoint=/boot bpool/BOOT/ubuntu_$UUID
 ```
 
+Create datasets:
+```
+zfs create -o com.ubuntu.zsys:bootfs=no -o canmount=off \
+    rpool/ROOT/ubuntu_$UUID/usr
+zfs create -o com.ubuntu.zsys:bootfs=no -o canmount=off \
+    rpool/ROOT/ubuntu_$UUID/var
+zfs create rpool/ROOT/ubuntu_$UUID/var/lib
+zfs create rpool/ROOT/ubuntu_$UUID/var/log
+zfs create rpool/ROOT/ubuntu_$UUID/var/spool
+
+zfs create -o canmount=off -o mountpoint=/ \
+    rpool/USERDATA
+zfs create -o com.ubuntu.zsys:bootfs-datasets=rpool/ROOT/ubuntu_$UUID \
+    -o canmount=on -o mountpoint=/root \
+    rpool/USERDATA/root_$UUID
+chmod 700 /mnt/root
+```
+
+Bind the virtual filesystems from the LiveCD environment to the new system and chroot into it:
+```
+mount --make-private --rbind /dev  /mnt/dev
+mount --make-private --rbind /proc /mnt/proc
+mount --make-private --rbind /sys  /mnt/sys
+chroot /mnt /usr/bin/env DISK=$DISK1 UUID=$UUID bash --login
+```
+
+Even if you prefer a non-English system language, always ensure that en_US.UTF-8 is available:
+```
+dpkg-reconfigure locales tzdata keyboard-configuration console-setup
+```
+
+Create the EFI filesystem, perform these steps for both UEFI and legacy (BIOS) booting:
+```
+apt install --yes dosfstools
+
+mkdosfs -F 32 -s 1 -n EFI ${DISK1}-part1
+mkdir /boot/efi
+echo /dev/disk/by-uuid/$(blkid -s UUID -o value ${DISK1}-part1) \
+    /boot/efi vfat defaults 0 0 >> /etc/fstab
+mount /boot/efi
+```
+
+```
+mkdir /boot/efi/grub /boot/grub
+echo /boot/efi/grub /boot/grub none defaults,bind 0 0 >> /etc/fstab
+mount /boot/grub
+```
+
+Install GRUB/Linux/ZFS in the chroot environment for the new system:
+
+Choose one of the following options:
+```
+apt install --yes \
+    grub-efi-amd64 grub-efi-amd64-signed linux-image-generic \
+    shim-signed zfs-initramfs zsys
+```
+
+```
+apt purge --yes os-prober
+passwd
+
+mkswap -f ${DISK1}-part2
+echo /dev/disk/by-uuid/$(blkid -s UUID -o value ${DISK1}-part2) \
+    none swap discard 0 0 >> /etc/fstab
+swapon -a
+
+
+addgroup --system lpadmin
+addgroup --system lxd
+addgroup --system sambashare
 
 
 
+update-grub
 
+```
 
 
 
