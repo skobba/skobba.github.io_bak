@@ -18,7 +18,7 @@ When deploying your Next.js SSR app, Amplify creates additional backend resource
 ### <p> wrapped <div>
 Ref.: https://stackoverflow.com/questions/71706064/react-18-hydration-failed-because-the-initial-ui-does-not-match-what-was-render
 
-```js
+```
 import Image from 'next/image'
 /**
  * This might give that error

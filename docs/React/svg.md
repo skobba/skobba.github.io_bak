@@ -5,7 +5,7 @@
 ## Static
 The easiest way.
 
-```js
+```
 const App = () => <img src="/path/image.svg" alt="" />;
 ```
 
