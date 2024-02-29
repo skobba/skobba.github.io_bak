@@ -28,3 +28,40 @@ jest.mock('./api.js', () => ({
   getRandom: jest.fn(() => 10),
 }));
 ```
+
+### axios-retry
+```js
+const axios = require('axios');
+const axiosRetry = require('axios-retry').default;
+
+axiosRetry(axios, {
+  retries: 3,
+  retryDelay: (...arg) => axiosRetry.exponentialDelay(...arg, 1000),
+  retryCondition(error) {
+    switch (error.response.status) {
+      //retry only if status is 500 or 501
+      case 500:
+      case 501:
+        return true;
+      default:
+        return false;
+    }
+  },
+  onRetry: (retryCount, error, requestConfig) => {
+    console.log(`retry count: `, retryCount);
+    if (retryCount == 2) {
+      requestConfig.url = 'https://postman-echo.com/status/200';
+    }
+  },
+});
+
+(async () => {
+  try {
+    const res = await axios.get('https://postman-echo.com/status/500');
+    console.log(`inside async:`, res.status);
+  } catch (err) {
+    console.error(`Error occurred: `, err.message);
+  }
+})();
+```
+
