@@ -19,3 +19,12 @@ Run in Jenkins (ci)
 ## Mocking
 * jest.mock("axios") would mock the entire module
 * jest.mock("axios") could interfere with the jest.spyOn(axios, "get"); call.
+
+### jest.mock
+```
+jest.mock('./api.js', () => ({
+  ...jest.requireActual('./api.js'),
+  fetchData: jest.fn(() => { status: 404}),
+  getRandom: jest.fn(() => 10),
+}));
+```
