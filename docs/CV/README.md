@@ -1,7 +1,8 @@
 # CV
 
 Her kommer cv...
-  
+
+# Projects
 ## Norwegian Maritime Authority, Ship register (03.2020 - 05.2020)
 The Norwegian Maritime Authority is a government agency under the jurisdiction of the Ministry of Trade, Industry and Fisheries and the Ministry of Climate and Environment. It serves as the regulatory and supervisory authority for ensuring the safety of life, health, the environment, and material assets on vessels flying the Norwegian flag and foreign vessels in Norwegian waters. The Norwegian Maritime Authority is located in Haugesund, where the authority employs 200 staff members, which Gjermund shared office together. 
 
