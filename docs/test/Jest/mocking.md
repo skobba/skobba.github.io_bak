@@ -1,25 +1,7 @@
-# Jest
-## Basic
-List tests
-
-    jest --listTests
-    
-Run single test
-
-    jest ./path/to/some.test.js
-
-Run single test (CRA):
-
-    npm test -- -t 'test-name'
-
-Run in Jenkins (ci)
-
-    jest --ci --watchAll=false --reporters=default --reporters=jest-junit
-
-## Mocking
+# Mocking
 Ref.: [https://vhudyma-blog.eu/3-ways-to-mock-axios-in-jest/](https://vhudyma-blog.eu/3-ways-to-mock-axios-in-jest/)
 
-### jest.mock
+## jest.mock
 ```
 jest.mock('./api.js', () => ({
   ...jest.requireActual('./api.js'),
@@ -28,7 +10,7 @@ jest.mock('./api.js', () => ({
 }));
 ```
 
-### axios-retry
+## axios-retry
 ```js
 const axios = require('axios');
 const axiosRetry = require('axios-retry').default;
