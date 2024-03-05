@@ -9,6 +9,10 @@ jest.mock('./api.js', () => ({
   getRandom: jest.fn(() => 10),
 }));
 ```
+## axios-mock-adapter
+axios.create() doesn't work with axios-mock-adapter directly because axios-mock-adapter requires an instance of Axios to be passed to it in order to intercept requests.
+
+When you use axios.create(), you're creating a new instance of Axios, separate from the global Axios instance. This means that when you pass the Axios instance created with axios.create() to axios-mock-adapter, it's intercepting requests made with that particular instance.
 
 ## axios-retry
 ```js
