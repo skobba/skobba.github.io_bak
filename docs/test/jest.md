@@ -17,8 +17,7 @@ Run in Jenkins (ci)
     jest --ci --watchAll=false --reporters=default --reporters=jest-junit
 
 ## Mocking
-* jest.mock("axios") would mock the entire module
-* jest.mock("axios") could interfere with the jest.spyOn(axios, "get"); call.
+Ref.: [https://vhudyma-blog.eu/3-ways-to-mock-axios-in-jest/](https://vhudyma-blog.eu/3-ways-to-mock-axios-in-jest/)
 
 ### jest.mock
 ```
