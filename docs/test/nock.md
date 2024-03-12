@@ -1,4 +1,7 @@
 # nock
+__NB: Use testEnvironment: 'jsdom'__
+
+_When you use testEnvironment: 'jsdom', you're specifying that your tests should run in a JSDOM environment. However, nock works by intercepting HTTP requests at the Node.js level. In the JSDOM environment, requests made by client-side JavaScript code are not intercepted by nock, because JSDOM simulates the browser environment where requests are handled by the browser, not by Node.js._
 
 Testing of axios-retry with nock:
 ```js
