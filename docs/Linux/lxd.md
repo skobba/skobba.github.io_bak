@@ -72,6 +72,9 @@ kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0
 kubeadm token create --print-join-command
 
 echo "$joinCommand --ignore-preflight-errors=all" > /joincluster.sh
+
+# If failed, try again with:
+sudo kubeadm reset
 ```
 
 ## Init container
