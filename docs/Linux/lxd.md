@@ -39,7 +39,42 @@ cat k8s-profile-config | lxc profile edit k8s
 lxc profile list
 ```
 
-### Init container
+### Create zfs pool and lxd storage configuration
+Ref: https://documentation.ubuntu.com/lxd/en/stable-4.0/storage/#zfs
+```
+sudo zpool create lxd-pool mirror /dev/sdc /dev/sdb -f
+lxc storage create lxd-pool zfs source=lxd-pool
+lxc storage show lxd
+```
+
+### Create lxd container from profile
+```
+lxc launch ubuntu:22.04 kmaster --profile k8s
+```
+
+### Using container
+```
+cat bootstrap-kube.sh | lxc exec kmaster bash
+```
+
+## k8s init
+```
+kubeadm config images pull
+
+kubeadm init --pod-network-cidr=192.168.0.0/16 --ignore-preflight-errors=all
+
+mkdir /root/.kube
+cp /etc/kubernetes/admin.conf /root/.kube/config
+
+kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/tigera-operator.yaml
+kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/custom-resources.yaml
+
+kubeadm token create --print-join-command
+
+echo "$joinCommand --ignore-preflight-errors=all" > /joincluster.sh
+```
+
+## Init container
 ```
 lxd init --minimal
 
