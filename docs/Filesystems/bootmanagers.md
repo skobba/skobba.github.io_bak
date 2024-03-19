@@ -43,3 +43,24 @@ sudo grub-install /dev/sda --target=x86_64-efi --efi-directory=/boot/efi/
 # Deleting entry
 sudo efibootmgr -b <bootnum> -B
 ```
+
+### /boo/efi during installation
+``` 
+root@supermicro:~# cat /etc/fstab
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# systemd generates mount units based on this file, see systemd.mount(5).
+# Please run 'systemctl daemon-reload' after making changes here.
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sdb2 during installation
+UUID=d007fa48-229f-40d9-a1d1-b7e90a2249ac /               ext4    errors=remount-ro 0       1
+# /boot/efi was on /dev/sdb1 during installation
+UUID=FEB1-680E  /boot/efi       vfat    umask=0077      0       1
+# swap was on /dev/sdb3 during installation
+UUID=fc18ccfa-e8da-400d-9ab7-8e7fe19e9056 none            swap    sw              0       0
+```
