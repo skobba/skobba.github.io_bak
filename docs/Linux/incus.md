@@ -26,6 +26,15 @@ apt update
 apt install incus
 ```
 
+## Host
+```
+apt-get install util-linux
+cat /etc/fstab (look for swap)
+free -h
+/sbin/swapoff /dev/sdb3
+free -h
+```
+
 ## Initialize Incus
 ```
 incus admin init
