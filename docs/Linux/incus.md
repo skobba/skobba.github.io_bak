@@ -47,20 +47,6 @@ EOF
 
 ```
 
-## Basics
-```
-incus launch images:ubuntu/22.04 first
-
-incus copy first second
-
-incus list
-
-incus exec first -- bash
-
-incus file pull first/etc/hosts .
-incus file push hosts first/etc/hosts
-```
-
 ## Profile
 View:
 ```
@@ -86,7 +72,7 @@ devices:
   eth0:
     name: eth0
     nictype: bridged
-    parent: lxdbr0
+    parent: incusbr0
     type: nic
   kmsg:
     path: /dev/kmsg
@@ -94,10 +80,33 @@ devices:
     type: unix-char
   root:
     path: /
-    pool: lxd
+    pool: default
     type: disk
 name: k8s
 used_by: []
 EOF
+```
 
+## Network
+Add bridge
+```
+incus profile device add k8s eth0 nic nictype=bridged parent=lxdbr0
+
+incus network list
+```
+
+## Basics
+```
+incus launch images:ubuntu/22.04 first --profile k8s
+
+incus copy first second
+
+incus list
+
+incus stop first ; incus delete first
+
+incus exec first -- bash
+
+incus file pull first/etc/hosts .
+incus file push hosts first/etc/hosts
 ```
