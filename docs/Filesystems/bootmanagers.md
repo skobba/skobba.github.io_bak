@@ -22,6 +22,16 @@ Check boot order
 # View entries
 efibootmgr
 
+BootCurrent: 0000
+Timeout: 1 seconds
+BootOrder: 0003,0000,0006,0007,0002,0001
+Boot0000* ubuntu
+Boot0001  Network Card
+Boot0002* UEFI: Built-in EFI Shell
+Boot0003  Hard Drive
+Boot0006* ubuntu
+Boot0007* UEFI OS
+
 # Changing Boot Order
 sudo efibootmgr -o 0013,0012,0014
 
