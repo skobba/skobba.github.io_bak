@@ -8,8 +8,8 @@ systemctl list-units -t service --state running
 ## Static IP
 vi /etc/network/interfaces
 ```
-    auto eth0
-    iface eth0 inet static
-        address 10.0.0.2/24
-        gateway 10.0.0.1
+auto enp5s0f0
+iface enp5s0f0 inet static
+    address 10.10.9.250/24
+    gateway 10.10.9.1
 ```
