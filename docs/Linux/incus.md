@@ -107,6 +107,6 @@ incus stop first ; incus delete first
 
 incus exec first -- bash
 
-incus file pull first/etc/hosts .
-incus file push hosts first/etc/hosts
+incus file pull first/root/k8s-setup.sh .
+incus file push k8s-setup.sh first/root/k8s-setup.sh
 ```
