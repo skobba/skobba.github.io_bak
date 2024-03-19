@@ -1,6 +1,31 @@
 # Incus
 _Incus is a modern, secure and powerful system container and virtual machine manager._
 
+## Install
+Setup the key
+```
+mkdir -p /etc/apt/keyrings
+curl -fsSL https://pkgs.zabbly.com/key.asc -o /etc/apt/keyrings/zabbly.asc
+```
+
+Add the apt repository
+```
+vi /etc/apt/sources.list.d/zabbly-incus-stable.sources
+NB: Change bookworm to bullseye for debian 11
+
+Enabled: yes
+Types: deb
+URIs: https://pkgs.zabbly.com/incus/stable
+Suites: bookworm
+Components: main
+Signed-By: /etc/apt/keyrings/zabbly.asc
+```
+
+```
+apt update
+apt install incus
+```
+
 ## Initialize Incus
 ```
 incus admin init
