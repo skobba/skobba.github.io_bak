@@ -1,6 +1,19 @@
 # systemd and SysV
 _Systemd and SysV are both init systems used in Unix-like operating systems such as Linux._
 
+List of distributions:
+* Ubuntu - systemd
+* Debian - systemd
+* CentOS - systemd
+* Fedora - systemd
+* Red Hat Enterprise Linux (RHEL) - systemd
+* openSUSE - systemd
+* Arch Linux - systemd
+* Linux Mint - systemd
+* Manjaro - systemd
+* Elementary OS - systemd
+
+
 ## SysV:
 * The traditional init system used in Unix-like operating systems. It follows the System V Unix conventions.
 * SysV init relies on shell scripts located in specific directories (/etc/init.d/ and /etc/rc.d/) to start and stop services.
