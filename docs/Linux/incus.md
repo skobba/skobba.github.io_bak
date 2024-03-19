@@ -31,10 +31,12 @@ apt install incus
 incus admin init
 incus admin init --minimal
 
-cat <<EOF | incus admin init --preseed
+NB: skipped this:
 config:
   core.https_address: 192.0.2.1:9999
   images.auto_update_interval: 15
+
+cat <<EOF | incus admin init --preseed
 networks:
 - name: incusbr0
   type: bridge
@@ -57,4 +59,45 @@ incus exec first -- bash
 
 incus file pull first/etc/hosts .
 incus file push hosts first/etc/hosts
+```
+
+## Profile
+View:
+```
+incus profile list
+
+incus profile show k8s
+```
+
+Create
+```
+cat <<EOF | incus profile edit k8s
+config:
+  limits.cpu: "2"
+  limits.memory: 2GB
+  limits.memory.swap: "false"
+  linux.kernel_modules: ip_tables,ip6_tables,nf_nat,overlay,br_netfilter
+  raw.lxc: "lxc.apparmor.profile=unconfined\nlxc.cap.drop= \nlxc.cgroup.devices.allow=a\nlxc.mount.auto=proc:rw
+    sys:rw"
+  security.privileged: "true"
+  security.nesting: "true"
+description: Incus profile for Kubernetes
+devices:
+  eth0:
+    name: eth0
+    nictype: bridged
+    parent: lxdbr0
+    type: nic
+  kmsg:
+    path: /dev/kmsg
+    source: /dev/kmsg
+    type: unix-char
+  root:
+    path: /
+    pool: lxd
+    type: disk
+name: k8s
+used_by: []
+EOF
+
 ```
