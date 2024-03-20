@@ -1,7 +1,38 @@
 # QEMU
 ## Install
 ```
+# KVM and qemu
+apt update
+apt -y install qemu-kvm libvirt-clients libvirt-daemon-system virtinst bridge-utils
+
 apt -y install qemu-utils qemu-system-x86 qemu-system-gui
+
+# KVM - the --no-install-recommends apt option prevent installation of extraneous graphical packages:
+apt -y install --no-install-recommends qemu-system libvirt-clients libvirt-daemon-system
+
+# setup libvirtd
+systemctl start libvirtd
+systemctl enable libvirtd
+
+adduser <youruser> libvirt
+
+# Creating a new guest
+virt-install --virt-type kvm --name bookworm-amd64 \
+--cdrom ~/debian-testing-amd64-netinst.iso \
+--os-variant debian12 \
+--disk size=10 --memory 1024
+
+# Check CPU flags
+egrep -m 1 "svm|vmx" /proc/cpuinfo
+svm -> AMD CPU capable of virtualization.
+vmx -> Intel CPU capable of virtualization.
+```
+
+## Basic
+```
+qemu-img create -f qcow2 debian.qcow 2G
+wget  https://cdimage.debian.org/cdimage/daily-builds/daily/arch-latest/amd64/iso-cd/debian-testing-amd64-netinst.iso
+qemu-system-x86_64 -hda debian.img -cdrom debian-testing-amd64-netinst.iso -boot d -m 512
 ```
 
 ## Files
