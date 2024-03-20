@@ -19,11 +19,12 @@ systemctl enable libvirtd
 # Add user to group
 adduser youruser libvirt
 usermod -a -G libvirt youruser
+usermod -a -G kvm youruser
 
 # Creating a new guest
 wget https://cdimage.debian.org/cdimage/weekly-builds/amd64/iso-cd/debian-testing-amd64-netinst.iso
 
-virt-install --virt-type kvm --name bookworm-amd64 \
+virt-install --virt-type kvm --name bookworm-2 \
 --cdrom debian-testing-amd64-netinst.iso \
 --disk size=10 --memory 1024
 
@@ -46,13 +47,26 @@ getent passwd | cut -d: -f1
 groups libvirt-qemu
 
 # Grant access
-sudo chown -R :kvm /home/user/kvm
-sudo chmod -R g+rwX /home/user/kvm
+chown -R :kvm /home/user/kvm
+chmod -R g+rwX /home/user/kvm
+chmod -R +x /home/user/kvm
 
 ls -ld /home/user/kvm
 
 
 
+```
+## Troubleshoot
+```
+ERROR    Cannot create user runtime directory '/run/user/0/libvirt': Permission denied
+# Test
+virsh capabilities
+# su (from the root account) doesn't set XDG_RUNTIME_DIR
+
+```
+## virsh
+```
+virsh list
 ```
 
 ## Config
