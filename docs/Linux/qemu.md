@@ -21,9 +21,10 @@ adduser youruser libvirt
 usermod -a -G libvirt youruser
 
 # Creating a new guest
-wget 
+wget https://cdimage.debian.org/cdimage/weekly-builds/amd64/iso-cd/debian-testing-amd64-netinst.iso
+
 virt-install --virt-type kvm --name bookworm-amd64 \
---cdrom ~/debian-testing-amd64-netinst.iso \
+--cdrom debian-testing-amd64-netinst.iso \
 --disk size=10 --memory 1024
 
 # Check CPU flags
@@ -38,7 +39,22 @@ kvm-ok
 # module check
 lsmod|grep kvm
 
+# You will need to grant the 'libvirt-qemu' user search permissions for the following directories: ['/root']
+getent passwd | cut -d: -f1
+
+# list groups for users
+groups libvirt-qemu
+
+# Grant access
+sudo chown -R :kvm /home/user/kvm
+sudo chmod -R g+rwX /home/user/kvm
+
+ls -ld /home/user/kvm
+
+
+
 ```
+
 ## Config
 ```
 vi /etc/libvirt/qemu.conf
