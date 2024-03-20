@@ -30,3 +30,25 @@ su -l
 adduser <your_username_here> sudo
 logout
 ```
+
+## Bridge
+```
+apt-get -y install bridge-utils
+
+# Create a Bridge Interface
+ip link add br0 type bridge
+
+# Configure the Bridge Interface
+ip addr add 192.168.1.100/24 dev br0
+
+# Up
+ip link set dev br0 up
+
+vi /etc/default/lxd-bridge
+USE_LXD_BRIDGE="false"
+LXD_BRIDGE="br0"
+
+
+brctl show
+
+```
