@@ -23,3 +23,10 @@ PermitRootLogin yes
 
 systemctl restart ssh
 ```
+
+## Root enable sudo
+```
+su -l
+adduser <your_username_here> sudo
+logout
+```
