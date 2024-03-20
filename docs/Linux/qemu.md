@@ -14,7 +14,9 @@ apt -y install --no-install-recommends qemu-system libvirt-clients libvirt-daemo
 systemctl start libvirtd
 systemctl enable libvirtd
 
-adduser <youruser> libvirt
+# Add user to group
+adduser youruser libvirt
+usermod -a -G libvirt youruser
 
 # Creating a new guest
 virt-install --virt-type kvm --name bookworm-amd64 \
@@ -26,6 +28,13 @@ virt-install --virt-type kvm --name bookworm-amd64 \
 egrep -m 1 "svm|vmx" /proc/cpuinfo
 svm -> AMD CPU capable of virtualization.
 vmx -> Intel CPU capable of virtualization.
+
+# cpu-checker
+apt install cpu-checker -y
+kvm-ok
+
+lsmod|grep kvm
+
 ```
 
 ## Basic
