@@ -1,4 +1,9 @@
 # QEMU
+## Install
+```
+apt -y install qemu-utils qemu-system-x86 qemu-system-gui
+```
+
 ## Files
 ```
 # Check file info
