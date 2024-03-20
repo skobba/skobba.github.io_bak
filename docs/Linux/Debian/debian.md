@@ -1,4 +1,4 @@
-# Debian
+# Setup
 
 ## View Services
 ```
