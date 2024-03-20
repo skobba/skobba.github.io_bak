@@ -1,4 +1,7 @@
 # QEMU
+Virtualization with KVM ( Kernel-based Virtual Machine ) + QEMU.
+It requires that the CPU on your computer has a feature Intel VT or AMD-V. 
+
 ## Install
 ```
 # KVM and qemu
