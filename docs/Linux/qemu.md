@@ -10,7 +10,7 @@ apt -y install qemu-kvm libvirt-clients libvirt-daemon-system virtinst bridge-ut
 apt -y install qemu-utils qemu-system-x86 qemu-system-gui
 
 # KVM - the --no-install-recommends apt option prevent installation of extraneous graphical packages:
-apt -y install --no-install-recommends qemu-system libvirt-clients libvirt-daemon-system
+apt -y install --no-install-recommends qemu-system libvirt-clients libvirt-daemon-system virtinst
 
 # setup libvirtd
 systemctl start libvirtd
@@ -21,6 +21,7 @@ adduser youruser libvirt
 usermod -a -G libvirt youruser
 
 # Creating a new guest
+wget 
 virt-install --virt-type kvm --name bookworm-amd64 \
 --cdrom ~/debian-testing-amd64-netinst.iso \
 --disk size=10 --memory 1024
