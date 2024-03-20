@@ -7,7 +7,6 @@ It requires that the CPU on your computer has a feature Intel VT or AMD-V.
 # KVM and qemu
 apt update
 apt -y install qemu-kvm libvirt-clients libvirt-daemon-system virtinst bridge-utils
-
 apt -y install qemu-utils qemu-system-x86 qemu-system-gui
 
 # KVM - the --no-install-recommends apt option prevent installation of extraneous graphical packages:
@@ -24,7 +23,6 @@ usermod -a -G libvirt youruser
 # Creating a new guest
 virt-install --virt-type kvm --name bookworm-amd64 \
 --cdrom ~/debian-testing-amd64-netinst.iso \
---os-variant debian12 \
 --disk size=10 --memory 1024
 
 # Check CPU flags
@@ -36,8 +34,13 @@ vmx -> Intel CPU capable of virtualization.
 apt install cpu-checker -y
 kvm-ok
 
+# module check
 lsmod|grep kvm
 
+```
+## Config
+```
+vi /etc/libvirt/qemu.conf
 ```
 
 ## Basic
