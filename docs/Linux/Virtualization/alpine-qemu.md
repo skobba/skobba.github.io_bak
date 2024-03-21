@@ -45,4 +45,19 @@ sda      8:0    0    8G  0 disk
 sr0     11:0    1 1024M  0 rom
 
 pkill -f qemu-system-x86_64
+
+virt-install \
+  --name alp1 \
+  --memory 2048 \
+  --vcpus 2 \
+  --disk /kvm/images/alpine.qcow2 \
+  --import \
+  --os-variant debian11 \
+  --noautoconsole
+
+myvm=alp1
+virsh shutdown $myvm
+virsh destroy $myvm ; virsh undefine $myvm
+
+noautoconsole
 ```
