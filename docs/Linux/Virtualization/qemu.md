@@ -20,6 +20,7 @@ systemctl enable libvirtd
 adduser youruser libvirt
 usermod -a -G libvirt youruser
 usermod -a -G kvm youruser
+usermod -a -G libvirt-qemu rep
 
 # Creating a new guest
 wget https://cdimage.debian.org/cdimage/weekly-builds/amd64/iso-cd/debian-testing-amd64-netinst.iso
@@ -67,6 +68,10 @@ virsh capabilities
 ## virsh
 ```
 virsh list
+virsh shutdown bookworm
+virsh destroy bookworm
+virsh undefine bookworm
+virsh vol-delete --pool vg0 bookworm.img
 ```
 
 ## Config

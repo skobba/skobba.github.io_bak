@@ -1,5 +1,4 @@
 # LXD
-
 ## Getting started
 ###  Create profile
 Profile:
