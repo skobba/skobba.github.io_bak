@@ -51,11 +51,20 @@ iface lo inet loopback
 
 auto eth0
 iface eth0 inet static
-    address 10.10.9.111/24
-    gateway 10.10.9.1
+    address 192.168.122.41/24
+    gateway 192.168.122.1
 EOF
+```
 
-echo c1n1 > /etc/hostname
+Hostname
+```
+hostname myhost
+
+Set hostname permanently:
+echo myhost > /etc/hostname
+
+vi /etc/hosts
+echo "127.0.0.1   myhost" >> /etc/hosts
 
 uuidgen > /etc/machine-id
 
