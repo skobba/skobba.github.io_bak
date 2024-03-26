@@ -122,5 +122,14 @@ Please edit it and add your organization ID and secret key
 If you do not yet have an organization ID and secret key, you
 need to register for OpenAI Codex:
 https://openai.com/blog/openai-codex/
+```
 
+## aliases
+```
+cat <<EOF >> ~/.zshrc
+alias k="kubectl"
+alias kk="kubie ctx"
+alias kkn="kubie ns"
+alias kkk="kdash"
+EOF
 ```
