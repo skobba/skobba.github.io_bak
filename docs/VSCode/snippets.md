@@ -159,7 +159,26 @@ My snippets:
 		],
 		"description": "console.log"
 	},
-
+	"eof-k": {
+		"prefix": "eof",
+		"body": [
+		  "kubectl apply -f - <<EOF",
+		  "$1",
+		  "EOF",
+		  ""
+		],
+		"description": "eof kubectl"
+	},
+	"eof-echo": {
+		"prefix": "eof-echo",
+		"body": [
+		  "cat <<EOF",
+		  "$1",
+		  "EOF",
+		  ""
+		],
+		"description": "eof echo"
+	},
 	"Flexbox Sample 1": {
 		"prefix": "fbsample1",
 		"body": [
