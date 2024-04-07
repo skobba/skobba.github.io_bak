@@ -96,6 +96,7 @@ qemu-img info debian.qcow2
 ```
 # Info
 qemu-img info alp.qcow2
+virt-df -a alp.qcow2 -h
 
 # Image
 qemu-img resize alp.qcow2 8G
@@ -106,14 +107,22 @@ dd if=/dev/urandom of=2Gdummyfile bs=1M count=2048
 # Reclaim space
 virt-sparsify --in-place alp.qcow2
 
-# Disk
-virt-df -a debian.qcow2 -h
-
 # 1. Create the new disk
 qemu-img create -f qcow2 alp.qcow2 70G
 
 # Resize
 virt-resize in.qcow2 out.qcow2
+
+and
+
+apk add e2fsprogs-extra
+
+# Resize the partition
+parted alp.qcow2 resizepart 1 100%
+
+# Resize the filesystem
+resize2fs /dev/vda1
+
 ```
 
 ## Show info on vm
