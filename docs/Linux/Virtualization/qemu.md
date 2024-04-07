@@ -98,7 +98,13 @@ qemu-img info debian.qcow2
 qemu-img info alp.qcow2
 
 # Image
-qemu-img resize debian.qcow2 8G
+qemu-img resize alp.qcow2 8G
+
+# dummy file
+dd if=/dev/urandom of=2Gdummyfile bs=1M count=2048
+
+# Reclaim space
+virt-sparsify --in-place alp.qcow2
 
 # Disk
 virt-df -a debian.qcow2 -h
