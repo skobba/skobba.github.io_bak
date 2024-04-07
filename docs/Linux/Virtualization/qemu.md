@@ -94,11 +94,20 @@ qemu-img info debian.qcow2
 
 ## Resize
 ```
+# Info
+qemu-img info alp.qcow2
+
 # Image
 qemu-img resize debian.qcow2 8G
 
 # Disk
-qm resize 400 scsi0 +5G
+virt-df -a debian.qcow2 -h
+
+# 1. Create the new disk
+qemu-img create -f qcow2 alp.qcow2 70G
+
+# Resize
+virt-resize in.qcow2 out.qcow2
 ```
 
 ## Show info on vm
