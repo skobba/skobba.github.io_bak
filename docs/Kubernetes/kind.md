@@ -3,10 +3,28 @@ _Tool for running local Kubernetes clusters using Docker container “nodes”. 
 
 ## Install
 ```
+brew install kind
 brew install minikub
 ```
 
 ## Create cluster
+Create kind-config.yaml
+```
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+- role: worker
+- role: worker
+- role: worker
+```
+
+Run
+```
+kind create cluster --config kind-config.yaml --name fournodes
+```
+
+## Setup cluster
 ### Ingress ready (not working)
 ```sh
 cat <<EOF | kind create cluster --config=-
