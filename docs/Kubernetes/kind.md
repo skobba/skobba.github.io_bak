@@ -24,6 +24,12 @@ Run
 kind create cluster --config kind-config.yaml --name fournodes
 ```
 
+## Cluster Network
+Get the cluster subnet for Metallb
+```
+podman network inspect -f '{{range .Subnets}}{{if eq (len .Subnet.IP) 4}}{{.Subnet}}{{end}}{{end}}' kind
+```
+
 ## Setup cluster
 ### Ingress ready (not working)
 ```sh
