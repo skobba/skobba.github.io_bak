@@ -220,7 +220,16 @@ My snippets:
 		  "};"
 		],
 		"description": "PropTypes"
-	  }
+	  },
+	"Code Block": {
+	  "prefix": "cb",
+	  "body": [
+	    "```",
+	    "$1",
+	    "```"
+	  ],
+	  "description": "Code Block"
+	}
 
 }
 ```
