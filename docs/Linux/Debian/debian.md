@@ -15,6 +15,12 @@ iface enp5s0f0 inet static
 
 systemctl restart networking
 ```
+## Fix locale
+```
+echo "" >> ~/.zshrc
+echo "export LC_ALL=en_US.UTF-8" >> ~/.zshrc
+echo "export LANG=en_US.UTF-8" >> ~/.zshrc
+```
 
 ## Enable ssh
 ```
