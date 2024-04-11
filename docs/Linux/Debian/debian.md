@@ -18,9 +18,7 @@ systemctl restart networking
 
 ## Enable ssh
 ```
-vi /etc/ssh/ssh_config
-PermitRootLogin yes
-
+sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 systemctl restart ssh
 ```
 
