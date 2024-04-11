@@ -2,8 +2,10 @@
 
 ## interactive
 Remove untracked files 
-
     git clean -i
+
+Remove tracked files
+    git reset --hard
 
 ## User contribution statistics
 ```
