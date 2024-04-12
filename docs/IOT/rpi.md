@@ -18,14 +18,14 @@ Remember: chmod +x /etc/X11/Xsession.d/99chrome
 ```
 export DISPLAY=:0
 
-exec chromium-browser --app=https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-73742/Norge/Oslo/Oslo/Grefsen%20stasjon --window-size=500,900 --window-position=0,0 &
-sleep 5
 exec chromium-browser --app=https://aggr.trade/2j17 --window-size=500,700 --window-position=0,0 &
+sleep 20
+exec chromium-browser --app=https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-73742/Norge/Oslo/Oslo/Grefsen%20stasjon --window-size=500,900 --window-position=0,0 &
 sleep 20
 
 # Get windows ids
-yr_id=$(wmctrl -l | awk 'NR==2 {print $1}')
-btc_id=$(wmctrl -l | awk 'NR==3 {print $1}')
+btc_id=$(wmctrl -l | awk 'NR==2 {print $1}')
+yr_id=$(wmctrl -l | awk 'NR==3 {print $1}')
 
 # Move them by refrencing the class
 xdotool windowmove "$yr_id" 0 1400
@@ -35,6 +35,7 @@ xdotool windowmove "$btc_id" 0 0
 # Click on yr to get graph
 sleep 10
 xdotool mousemove 303 1528 click 1
+
 ```
 
 ## Settings
