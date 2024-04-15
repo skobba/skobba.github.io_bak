@@ -1,4 +1,5 @@
 # argocd
+Ref.: [Your complete guide to declarative installation and management with the App of Apps approach ](https://www.cncf.io/blog/2024/03/07/unlocking-argocd-your-complete-guide-to-declarative-installation-and-management-with-the-app-of-apps-approach/)
 
 ## Running Argo CD locally
 ### Install argocd on Mac
