@@ -11,52 +11,55 @@ Enable Wireguard plugin:
 System -> Firmware -> Plugins 
 ```
 
-### Local profile
+### Add Instance
 Add:
 * Name: wg1
 * Listen port: 51820
 * Tunnel address: 10.50.50.1/24
-* Generate SSL
+* Generate server SSL
 
-### Interfaces
+### Add Interface
 * Add device wg1 to a new interface WG1.
-* Enabel WG1 interface.
+* NB: Enabel WG1 interface!!
+
+### Install wireguard-tools
+```
+brew install wireguard-tools
+```
+
+### Generate client-keys
+```sh
+wg genkey | tee clientprivatekey | wg pubkey > clientpublickey
+```
+
+### Create Peer
+* Name: mac1
+* Allowed IPs: 10.50.50.15/32
+* Public key: <client public key>
+
+### Create Configuration File
+```
+[Interface]
+PrivateKey = <client private key>
+Address = 10.15.2.10/32
+DNS = 10.10.1.1
+
+[Peer]
+PublicKey = <server public key>
+Endpoint = 84.214.96.160:51820
+AllowedIPs = 0.0.0.0/0
+```
 
 ### Firewall rules
 * WG1: Allow all in
 * WAN: Allow in, proto: UDP, Destination port range: 51820, Destination: WAN Address
 
 
-### Create Peer
-* Name: mac1
-* Allowed IPs: 10.50.50.15/32
-
-### Client - generate pub/pri-keys
-```
-brew install wireguard-tools
-```
-
-Add tunnel
-```sh
-wg genkey | tee privatekey | wg pubkey > publickey
-```
-
-Create Configuration File
-```
-[Interface]
-PrivateKey = <privatekey>
-Address = 10.50.50.15/32
-DNS = 1.1.1.1
-
-[Peer]
-PublicKey = <publickey>
-Endpoint = 84.214.96.160:51820
-AllowedIPs = 0.0.0.0/0
-```
-
-Start the Tunnel
+### Start/stop the Tunnel
 ```sh
 sudo wg-quick up ./config-file.conf
+sudo wg-quick down ./config-file.conf
+```
 
 Verify Connection
 ```sh
