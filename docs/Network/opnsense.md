@@ -15,7 +15,7 @@ System -> Firmware -> Plugins
 Add:
 * Name: wg1
 * Listen port: 51820
-* Tunnel address: 10.50.50.1/24
+* Tunnel address: 10.15.2.0/24
 * Generate server SSL
 ![wireguard-instances](wireguard-instances.png)
 
@@ -35,7 +35,7 @@ wg genkey | tee clientprivatekey | wg pubkey > clientpublickey
 
 ### Create Peer
 * Name: mac1
-* Allowed IPs: 10.50.50.15/32
+* Allowed IPs: 10.15.2.10/32
 * Public key: <client public key>
 ![wireguard-peers](wireguard-peers.png)
 
