@@ -17,6 +17,7 @@ Add:
 * Listen port: 51820
 * Tunnel address: 10.50.50.1/24
 * Generate server SSL
+![wireguard-instances](wireguard-instances.png)
 
 ### Add Interface
 * Add device wg1 to a new interface WG1.
@@ -36,6 +37,7 @@ wg genkey | tee clientprivatekey | wg pubkey > clientpublickey
 * Name: mac1
 * Allowed IPs: 10.50.50.15/32
 * Public key: <client public key>
+![wireguard-peers](wireguard-peers.png)
 
 ### Create Configuration File
 ```
@@ -53,7 +55,7 @@ AllowedIPs = 0.0.0.0/0
 ### Firewall rules
 * WG1: Allow all in
 * WAN: Allow in, proto: UDP, Destination port range: 51820, Destination: WAN Address
-
+![wireguard-fw-rules](wireguard-fw-rules.png)
 
 ### Start/stop the Tunnel
 ```sh
@@ -61,7 +63,8 @@ sudo wg-quick up ./config-file.conf
 sudo wg-quick down ./config-file.conf
 ```
 
-Verify Connection
+### Verify Connection
 ```sh
 wg show
 ```
+![opnsense-wireguard-dash](opnsense-wireguard-dash.png)
