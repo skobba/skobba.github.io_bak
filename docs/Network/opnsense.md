@@ -70,3 +70,33 @@ sudo wg-quick down ./config-file.conf
 wg show
 ```
 ![opnsense-wireguard-dash](opnsense-wireguard-dash.png)
+
+### scriptmanager
+```sh
+brew install danielfiller30/tap/scriptmanager
+```
+
+### Apple script for easy access (not working)
+1. Create an Automator Application:
+
+Open Automator
+Choose "Application" as the document type.
+Search for "Run Shell Script" in the Library pane and drag it to the workflow area.
+Paste your bash script into the Run Shell Script action.
+
+2. Save the Automator Application:
+
+Save the Automator application with a descriptive name like "VPN Starter".
+
+3. Create an AppleScript to Trigger the Automator Application:
+
+Open AppleScript Editor (you can find it in the Applications folder or by searching with Spotlight).
+Write an AppleScript to trigger your Automator application. It should be something like:
+```
+tell application "System Events"
+    tell application process "VPN Starter" -- Replace "VPN Starter" with the name of your Automator application
+        click menu bar item 1 of menu bar 1
+        click menu item "Start VPN" of menu 1 of menu bar item 1 of menu bar 1 -- Change "Start VPN" to the name of your menu item if it's different
+    end tell
+end tell
+```
