@@ -8,4 +8,8 @@ System -> Settings -> Administration
 
 ## Setup Public Service
 
+## Settings
+Enable HAProxy
+
 ## Setup WAN Firewall
+
