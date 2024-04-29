@@ -23,8 +23,9 @@ reboot
 
 ## Enable ssh
 ```
-vi /etc/ssh/sshd_config
-PermitRootLogin yes
+apk add openssh
+
+sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 service sshd restart
 ```
