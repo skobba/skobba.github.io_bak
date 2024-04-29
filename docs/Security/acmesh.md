@@ -115,5 +115,18 @@ DEPLOY_HAPROXY_HOT_UPDATE=yes \
   DEPLOY_HAPROXY_STATS_SOCKET=/var/run/haproxy/admin.sock \
   DEPLOY_HAPROXY_PEM_PATH=/etc/haproxy/certs \
   acme.sh --deploy -d demo.skobba.net --deploy-hook haproxy
+
+Result:
+[Mon Apr 29 10:28:47 UTC 2024] The domain 'demo.skobba.net' seems to have a ECC cert already, lets use ecc cert.
+[Mon Apr 29 10:28:47 UTC 2024] Deploying PEM file
+[Mon Apr 29 10:28:47 UTC 2024] Moving new certificate into place
+[Mon Apr 29 10:28:47 UTC 2024] Creating new certificate '/etc/haproxy/certs/demo.skobba.net.pem' over HAProxy stats socket.
+[Mon Apr 29 10:28:47 UTC 2024] Success
 ```
 
+## Check
+Once complete, you can check if the certificate was added in HAProxy with socat:
+```sh
+echo "show ssl cert /etc/haproxy/certs/demo.skobba.net.pem" |\
+   socat /var/run/haproxy/admin.sock -
+```
