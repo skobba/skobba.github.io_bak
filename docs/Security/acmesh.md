@@ -14,8 +14,7 @@ adduser acme haproxy
 
 ## Install acme
 ```sh
-apk add openssl
-apk add socat
+apk add openssl socat git sudo
 
 mkdir -p /usr/local/share/acme.sh
 
@@ -46,7 +45,7 @@ touch: /var/lib/acme/.acme.sh/http.header: No such file or directory
 [Mon Apr 29 09:50:12 UTC 2024] Create account key ok.
 [Mon Apr 29 09:50:12 UTC 2024] Registering account: https://acme-staging-v02.api.letsencrypt.org/directory
 [Mon Apr 29 09:50:13 UTC 2024] Registered
-[Mon Apr 29 09:50:13 UTC 2024] ACCOUNT_THUMBPRINT='xoZ01AnX8PW-qAps3NsKCl9VQMIdxcDXUqjVpLzBC6M'
+[Mon Apr 29 09:50:13 UTC 2024] ACCOUNT_THUMBPRINT='MgqMNzGBSUxKCgZrebIj1Hw84dvAYC_gcYVwd599664'
 
 ```
 
@@ -56,13 +55,21 @@ Create the directory for certificates:
 mkdir /etc/haproxy/certs
 chown haproxy:haproxy /etc/haproxy/certs
 chmod 770 /etc/haproxy/certs
+
+mkdir -p /var/run/haproxy
+chown haproxy:haproxy /var/run/haproxy
+chmod 770 /var/run/haproxy
+
+chown haproxy:haproxy /var/run/haproxy/admin.sock
+chmod 770 /var/run/haproxy/admin.sock
+
 ```
 
 ## Edit /etc/haproxy/haproxy.cfg to add the challenge response
 ```sh
 global
     stats socket /var/run/haproxy/admin.sock level admin mode 660
-    setenv ACCOUNT_THUMBPRINT 'u_hKzpzn0fdBI05KBRnmWddb7Sl4fVWOf3D99giIG6Q'
+    setenv ACCOUNT_THUMBPRINT 'MgqMNzGBSUxKCgZrebIj1Hw84dvAYC_gcYVwd599664'
 
 frontend web
     bind :80
@@ -78,7 +85,15 @@ acme.sh --issue \
    --stateless \
    --server letsencrypt_test --debug
 
-Result:
+Correct:
+[Mon Apr 29 10:25:14 UTC 2024] Your cert is in: /var/lib/acme/.acme.sh/demo.skobba.net_ecc/demo.skobba.net.cer
+[Mon Apr 29 10:25:14 UTC 2024] Your cert key is in: /var/lib/acme/.acme.sh/demo.skobba.net_ecc/demo.skobba.net.key
+[Mon Apr 29 10:25:14 UTC 2024] The intermediate CA cert is in: /var/lib/acme/.acme.sh/demo.skobba.net_ecc/ca.cer
+[Mon Apr 29 10:25:14 UTC 2024] And the full chain certs is there: /var/lib/acme/.acme.sh/demo.skobba.net_ecc/fullchain.cer
+[Mon Apr 29 10:25:15 UTC 2024] _on_issue_success
+[Mon Apr 29 10:25:15 UTC 2024] '' does not contain 'dns'
+
+Wrong Result:
 [Mon Apr 29 09:55:57 UTC 2024] Using CA: https://acme-staging-v02.api.letsencrypt.org/directory
 [Mon Apr 29 09:55:57 UTC 2024] Creating domain key
 [Mon Apr 29 09:55:57 UTC 2024] The domain key is here: /var/lib/acme/.acme.sh/demo.skobba.net_ecc/demo.skobba.net.key
