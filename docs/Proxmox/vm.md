@@ -4,6 +4,11 @@
 ## qm
 Ref.: [https://pve.proxmox.com/pve-docs/qm.1.html](https://pve.proxmox.com/pve-docs/qm.1.html)
 
+## qmrestore
+```sh
+qmrestore vzdump-qemu-152-2024_04_30-11_44_04.vma.lzo 190
+```
+
 ## CloudInit
 ```
 mkdir /var/lib/vz/template/cloudinit
