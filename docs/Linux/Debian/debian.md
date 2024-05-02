@@ -36,6 +36,7 @@ logout
 ```
 
 ## Bridge
+### bridge-utils
 ```
 apt-get -y install bridge-utils
 
@@ -54,5 +55,26 @@ LXD_BRIDGE="br0"
 
 
 brctl show
-
 ```
+
+### init
+From
+```
+iface enp5s0f0 inet static
+    address 10.10.1.250/24
+    gateway 10.10.1.1
+```
+
+To
+```
+iface enp5s0f0 inet manual
+
+iface br0 inet static
+    address 10.10.1.250/24
+    gateway 10.10.1.1
+    bridge_ports enp5s0f0
+    bridge_stp off
+    bridge_fd 0
+    bridge_maxwait 0
+```
+_Manual, meaning it will not have an IP address assigned directly._
