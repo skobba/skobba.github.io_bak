@@ -64,6 +64,12 @@ __helm template__ is a command-line tool provided by Helm, the Kubernetes packag
 helm template mymysql bitnami/mysql
 ```
 
+## Values file
+```
+helm get values myrelease
+
+helm show values oci://registry-1.docker.io/bitnamicharts/keycloak
+```
 
 ## Upgrade
 ```
