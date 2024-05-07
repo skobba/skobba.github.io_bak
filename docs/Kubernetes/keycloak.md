@@ -26,10 +26,8 @@ frontend fe_domains
     bind :443 ssl crt /etc/haproxy/certs/ strict-sni
 
     # Set HTTP version to 1.1
-    # http-request set-header X-Forwarded-Proto http if !{ ssl_fc }
-    # http-request set-header X-Forwarded-Proto https if { ssl_fc }
-    http-request set-header X-Forwarded-Proto https
-    http-request set-header X-Forwarded-Port 443
+    http-request set-header X-Forwarded-Proto http if !{ ssl_fc }
+    http-request set-header X-Forwarded-Proto https if { ssl_fc }
     
     # Set Host header to the original host
     http-request set-header Host %[hdr(host)]
@@ -41,7 +39,7 @@ frontend fe_domains
     # Set X-Forwarded-For header to include the client's IP address
     http-request set-header X-Forwarded-For %[src]
 
-    # .well-known
+    # .well-known (acme.sh)
     http-request return status 200 content-type text/plain lf-string "%[path,field(-1,/)].${ACCOUNT_THUMBPRINT}\n" if { path_beg '/.well-known/acme-challenge/' }
 
     ## acl
