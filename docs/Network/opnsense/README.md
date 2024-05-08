@@ -39,6 +39,7 @@ wg genkey | tee clientprivatekey | wg pubkey > clientpublickey
 * Name: mac1
 * Allowed IPs: 10.15.2.10/32
 * Public key: <client public key>
+
 ![wireguard-peers](wireguard-peers.png)
 
 ### Create Configuration File
