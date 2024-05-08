@@ -1,4 +1,4 @@
-# netshoow
+# netshoot
 *a Docker + Kubernetes network trouble-shooting swiss-army container*
 
 * [https://github.com/nicolaka/netshoot](https://github.com/nicolaka/netshoot)
