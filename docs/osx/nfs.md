@@ -7,3 +7,8 @@ mount -o vers=4,resvport -t nfs 10.10.1.200:/mnt/rpool/movies /Users/youruser/nf
 # Umount
 # diskutil unmount force  /Users/youruser/nfs_share
 ```
+
+## Show mounts
+```sh
+showmount -p4 -e 10.10.1.200
+```
