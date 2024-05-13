@@ -9,4 +9,4 @@ wget https://download.sys.truenas.net/TrueNAS-SCALE-Dragonfish/24.04.0/TrueNAS-S
 
 ## Permissions
 
-[truenas-nfs-permissions.png](truenas-nfs-permissions.png)
+![truenas-nfs-permissions.png](truenas-nfs-permissions.png)
