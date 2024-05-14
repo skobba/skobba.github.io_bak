@@ -1,6 +1,7 @@
 # NFS
 
 * Statefullness from version 4
+* By default ```mount``` begins from upper NFS protocol version and descends to lower
 
 ## NFSv4 ACL
 Set NFSv4 ACL -> Datasets -> Edit -> Advanced -> ACL Mode -> SMB/NFSv4
