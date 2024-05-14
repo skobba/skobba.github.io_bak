@@ -30,3 +30,29 @@ spec:
       persistentVolumeClaim:
         claimName: my-lamp-site-data
 ```
+
+## NFS
+Ref.: https://github.com/kubernetes/examples/tree/master/staging/volumes/nfs
+
+You can't specify NFS mount options in a Pod spec. You can either set mount options server-side or use /etc/nfsmount.conf. You can also mount NFS volumes via PersistentVolumes which do allow you to set mount options.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-pd
+spec:
+  containers:
+  - image: registry.k8s.io/test-webserver
+    name: test-container
+    volumeMounts:
+    - mountPath: /my-nfs-data
+      name: test-volume
+  volumes:
+  - name: test-volume
+    nfs:
+      server: my-nfs-server.example.com
+      path: /my-nfs-volume
+      readOnly: true
+```
+
