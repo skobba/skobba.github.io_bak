@@ -44,3 +44,11 @@ Standard output/error
 ```
 g++ lots_of_errors 2>&1
 ```
+
+For loop with curl
+```sh
+for i in {1..1000}; do
+    curl --max-time 1 https://skobba.net
+    sleep 1
+done
+```
