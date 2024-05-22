@@ -1,6 +1,7 @@
-# Wireguard
+# Setup Wireguard
 
-## Setup Wireguard
+## Setup Server
+### Enable Wireguard
 Ref.: https://www.youtube.com/watch?v=b58PpuIsQ3A
 
 Enable Wireguard plugin:
@@ -13,48 +14,52 @@ Add:
 * Name: wg1
 * Listen port: 51820
 * Tunnel address: 10.15.2.0/24
-* Generate server SSL
+* Generate server SSL (you will use the Public Key in your peers, read clients, config file)
 ![wireguard-instances](wireguard-instances.png)
 
 ### Add Interface
 * Add device wg1 to a new interface WG1.
 * NB: Enabel WG1 interface!!
 
-### Install wireguard-tools
-```
-brew install wireguard-tools
-```
-
+## Setup mac client
 ### Generate client-keys
 ```sh
 wg genkey | tee clientprivatekey | wg pubkey > clientpublickey
 ```
 
-### Create Peer
+### Create Peer in OPNsense
 * Name: mac1
 * Allowed IPs: 10.15.2.10/32
-* Public key: <client public key>
+* Public key: <clientpublickey>
 
 ![wireguard-peers](wireguard-peers.png)
 
-### Create Configuration File
-NB: Change the ip address!
-```
-[Interface]
-PrivateKey = <client private key>
-Address = 10.15.2.10/32
-DNS = 10.10.1.1
-
-[Peer]
-PublicKey = <server public key>
-Endpoint = 84.214.96.160:51820
-AllowedIPs = 0.0.0.0/0
-```
-
-### Firewall rules
+### Firewall rules in OPNsense
 * WG1: Allow all in
 * WAN: Allow in, proto: UDP, Destination port range: 51820, Destination: WAN Address
 ![wireguard-fw-rules](wireguard-fw-rules.png)
+
+### Install wireguard-tools on mac
+```
+brew install wireguard-tools
+```
+
+### Create Configuration File
+NB: Change the __Address__ for each client
+
+```
+[Interface]
+PrivateKey = <clientprivatekey>
+__Address__ = 10.15.2.10/32
+DNS = 10.10.1.1
+
+[Peer]
+PublicKey = <serverpublickey>
+Endpoint = 84.214.96.160:51820
+AllowedIPs = 0.0.0.0/0
+```
+Get the __PublicKey__ from:
+![opnsense-wireguard-interface-publickey](opnsense-wireguard-interface-publickey.png)
 
 ### Start/stop the Tunnel
 ```sh
