@@ -50,7 +50,7 @@ NB: Change the __Address__ for each client
 ```
 [Interface]
 PrivateKey = <clientprivatekey>
-__Address__ = 10.15.2.10/32
+Address = 10.15.2.10/32
 DNS = 10.10.1.1
 
 [Peer]
