@@ -1,4 +1,23 @@
 # OPNSense
+## Setup
+Download the amd64 - dvd -> [https://opnsense.org/download](https://opnsense.org/download)
+
+Create virtual bridges.
+
+Create vm.
+
+### Install opnsense
+Start the vm, let it boot into live mode and login as installer/opnsense.
+
+Run:
+```sh
+installer
+```
+Select:
+* ZFS
+* stripe
+
+Shutdown and remove the CDROM from the vm.
 
 ## DNS
 Ref.: 
