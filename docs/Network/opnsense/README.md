@@ -2,6 +2,11 @@
 ## Setup
 Download the amd64 - dvd -> [https://opnsense.org/download](https://opnsense.org/download)
 
+Unzip to iso with:
+```sh
+bzip2 -dk OPNsense-xxxxxxxx.iso
+```
+
 Create virtual bridges.
 
 Create vm.
