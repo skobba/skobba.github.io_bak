@@ -5,6 +5,7 @@
 * ISO images ```/var/lib/vz/template/iso```
 * LXC Template ```/var/lib/vz/template/cache```
 * LXC Config ```/etc/pve/lxc```
+* VM Config ```/etc/pve/qemu-server```
 
 ## Some Commands
 List ids
