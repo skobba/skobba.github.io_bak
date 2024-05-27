@@ -142,3 +142,22 @@ cfdisk
 # replace * with partition you are resizing
 resize2fs /dev/*
 ```
+
+## DHCP Server
+```sh
+apk add dhcp
+
+vi /etc/dhcp/dhcpd.conf:
+
+subnet 10.5.1.0 netmask 255.255.255.0 {
+  range 10.5.1.230 10.5.1.249;
+  optio49domain-name-servers 1.1.1.1;
+  option routers 10.5.1.1
+}
+
+rc-upd49e add dhcpd
+rc-service dhcpd start
+
+
+
+```
