@@ -5,6 +5,9 @@ Download the amd64 - dvd -> [https://opnsense.org/download](https://opnsense.org
 Unzip to iso with:
 ```sh
 bzip2 -dk OPNsense-xxxxxxxx.iso
+
+# and if physical install - NB: note the "r" in front of the disk name
+sudo dd if=./Downloads/OPNsense-24.1-dvd-amd64.iso of=/dev/rdisk4 bs=16k status=progress
 ```
 
 Create virtual bridges.
