@@ -26,3 +26,22 @@ pct create XXX /var/lib/vz/template/cache/ubuntu-20.04-standard_20.04-1_amd64.ta
 Destroy
 
     pct destroy XXX --destroy-unreferenced-disks --purge
+
+## Restore
+```sh
+
+pct restore 101 ./vzdump-lxc-101-2024_05_26-12_59_17.tar.zst
+
+# Result
+400 Parameter verification failed.
+storage: storage 'local' does not support container directories
+pct restore <vmid> <ostemplate> [OPTIONS]
+```
+
+With storage:
+```sh
+pct restore 101 ./vzdump-lxc-101-2024_05_26-12_59_17.tar.zst --storage local-zfs
+
+Other param:
+--rootfs local-zfs
+```
