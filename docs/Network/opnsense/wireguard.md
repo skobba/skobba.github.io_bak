@@ -16,6 +16,7 @@ Add:
 * Tunnel address: 10.15.2.0/24
 * Generate server SSL (you will use the Public Key in your peers, read clients, config file)
 ![wireguard-instances](wireguard-instances.png)
+* Check "Enable Wireguard" and "Apply" to create interface (or you will get an error in the next step).
 
 ### Add Interface
 * Add device wg1 to a new interface WG1.
