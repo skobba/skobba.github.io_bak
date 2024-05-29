@@ -36,10 +36,14 @@ wg genkey | tee CLIENTPRIVATEKEY | wg pubkey > CLIENTPUBLICKEY
 ![wireguard-peers](wireguard-peers.png)
 
 ### Firewall rules in OPNsense
+#### WAN
 * WG1: Allow all in
 * WAN: Allow in, proto: UDP, Destination port range: 51820, Destination: WAN Address
+
 ![wireguard-fw-rules](wireguard-fw-rules.png)
 
+#### WG1
+![opnsense-firewall-wireguard.png](opnsense-firewall-wireguard.png)
 ### Install wireguard-tools on mac
 ```
 brew install wireguard-tools
