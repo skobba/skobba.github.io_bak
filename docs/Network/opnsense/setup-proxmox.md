@@ -1,4 +1,6 @@
 # Setup OPNSense on Proxmox
+Ref.:
+* [https://www.youtube.com/watch?v=vJBoCgptF-0](https://www.youtube.com/watch?v=vJBoCgptF-0)
 
 ## Install OPNSense
 Download the amd64 - dvd -> [https://opnsense.org/download](https://opnsense.org/download)
