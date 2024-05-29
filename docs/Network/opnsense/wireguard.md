@@ -25,13 +25,13 @@ Add:
 ## Setup mac client
 ### Generate client-keys
 ```sh
-wg genkey | tee clientprivatekey | wg pubkey > clientpublickey
+wg genkey | tee CLIENTPRIVATEKEY | wg pubkey > CLIENTPUBLICKEY
 ```
 
 ### Create Peer in OPNsense
 * Name: mac1
 * Allowed IPs: 10.15.2.10/32
-* Public key: <clientpublickey>
+* Public key: CLIENTPUBLICKEY
 
 ![wireguard-peers](wireguard-peers.png)
 
@@ -50,12 +50,12 @@ NB: Change the __Address__ for each client
 
 ```
 [Interface]
-PrivateKey = <clientprivatekey>
+PrivateKey = CLIENTPRIVATEKEY
 Address = 10.15.2.10/32
 DNS = 10.10.1.1
 
 [Peer]
-PublicKey = <serverpublickey>
+PublicKey = SERVERPUBLICKEY
 Endpoint = 84.214.96.160:51820
 AllowedIPs = 0.0.0.0/0
 ```
