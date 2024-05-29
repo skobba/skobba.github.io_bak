@@ -20,7 +20,8 @@ Add:
 
 ### Add Interface
 * Add device wg1 to a new interface WG1.
-* NB: Enabel WG1 interface!!
+* NB: Enabel WG1 interface
+![opnsense-wireguard-enable-interface.png](opnsense-wireguard-enable-interface.png)
 
 ## Setup mac client
 ### Generate client-keys
