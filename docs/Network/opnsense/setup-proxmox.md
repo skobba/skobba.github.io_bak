@@ -1,6 +1,7 @@
 # Setup OPNSense on Proxmox
 Ref.:
-* [https://www.youtube.com/watch?v=vJBoCgptF-0](https://www.youtube.com/watch?v=vJBoCgptF-0)
+* [Ultimate Beginner's Guide to OpnSense - Installation - Part 1 ](https://www.youtube.com/watch?v=vJBoCgptF-0)
+* [OPNSense Firewall Rules Explained](https://www.youtube.com/watch?v=kYFNa_zpeII)
 
 ## Install OPNSense
 Download the amd64 - dvd -> [https://opnsense.org/download](https://opnsense.org/download)
