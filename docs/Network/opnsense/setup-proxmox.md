@@ -22,15 +22,25 @@ NB: After install is completed, don´t let it reboot! Press Ctl-C to abort reboo
 
 ## Setup OPNSense
 ### Initial Setup
-At this step:
+Tasks:
+* Install TP cabels
+* Setup WiFi Router with LAN IP: 10.5.1.1/24
+* Setup ```LAN```and ```OPT1```
+
+Status:
 * OPNSense __does not__ have internet
 * Proxmox has internet
 
 ![opnsense-init-setup.png](opnsense-init-setup.png)
 
 ### Intermediat Setup
+Task:
+* Change TP cables (marked in red)
+* Change WiFi Router LAN IP range from ```10.5.1.1/24```fro ```0.10.1.1/24```
+
+Status:
 * Proxmox __does not__ have internet
-At this step:
+* WAN cable now goes to OPNSense and not WiFi Router
 * OPNSense has internet
 * Setup is more or less complete with the following interfaces
 ** WAN <- for internet access
@@ -40,6 +50,12 @@ At this step:
 ![opnsense-intermediat-setup.png](opnsense-intermediat-setup.png)
 
 ### Final Setup
+Tasks:
+* Setup ```MNG``` interface on OPNSense with IP range ```10.5.1.1/24```
+* Add loopback cable (in red)
+* Chech that you can access both Proxmox and OPNSense
+
+Status:
 * OPNSense has internet
 * Proxmox has internet (via the loopback cabel from ```VIR``` to ```MNG```
 
