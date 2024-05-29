@@ -43,6 +43,8 @@ wg genkey | tee CLIENTPRIVATEKEY | wg pubkey > CLIENTPUBLICKEY
 ![wireguard-fw-rules](wireguard-fw-rules.png)
 
 #### WG1
+Enable access from VPN clients to local networks.
+
 ![opnsense-firewall-wireguard.png](opnsense-firewall-wireguard.png)
 ### Install wireguard-tools on mac
 ```
