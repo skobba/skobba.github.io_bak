@@ -1,4 +1,6 @@
 # Bare Metal
+High level overview of running kubernetes on bare metal.
+
 ## Hypervisors and Network Overview
 ![k8s-bare-metal-hypervisors.png](k8s-bare-metal-hypervisors.png)
 
@@ -7,4 +9,11 @@
 
 ## Physical and Virtual Network Diagram
 ![k8s-bare-metal-network-diagram.png](k8s-bare-metal-network-diagram.png)
+
+## Cluster Configuration
+### One App per Cluster
+![k8s-cluster-configuration.png](k8s-cluster-configuration.png)
+
+### All Apps in One Cluster
+![k8s-cluster-configuration-one-app-per-cluster.png](k8s-cluster-configuration-one-app-per-cluster.png)
 
