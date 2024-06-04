@@ -1,5 +1,6 @@
 # ingress-nginx
-
+Ref.:
+* [Docs - deploy](https://kubernetes.github.io/ingress-nginx/deploy/) 
 ## Generate TSL
 https://kubernetes.github.io/ingress-nginx/examples/PREREQUISITES/#test-http-service
 
