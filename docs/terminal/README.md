@@ -18,6 +18,11 @@ Fuzzy Finder
 ```
 watch kubectl get pods -n kube-system
 ```
+## ripgrep
+Recursively searches directories for a regex pattern.
+```sh
+rg 'pattern'
+```
 
 ## regex
 Extract the text in group (1)
