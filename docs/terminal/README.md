@@ -2,6 +2,11 @@
 ## Open Finder from terminal
 ```open .```
 
+## kitty
+Ref.: https://sw.kovidgoyal.net/kitty/
+
+A sexy terminal.
+
 ## fzf
 Fuzzy Finder
 
