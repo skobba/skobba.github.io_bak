@@ -7,6 +7,12 @@ Ref.: https://sw.kovidgoyal.net/kitty/
 
 A sexy terminal.
 
+### bat (better then cat)
+Automatically highlights source code based on the file type, making it easier to read and understand.
+```sh
+brew install bat
+```
+
 ## fzf
 Fuzzy Finder
 
