@@ -11,9 +11,9 @@ High level overview of running kubernetes on bare metal.
 ![k8s-bare-metal-network-diagram.png](k8s-bare-metal-network-diagram.png)
 
 ## Cluster Configuration
-### One App per Cluster
+### All Apps in One Cluster
 ![k8s-cluster-configuration-all-apps-in-one-cluster.png](k8s-cluster-configuration-all-apps-in-one-cluster.png)
 
-### All Apps in One Cluster
+### One App per Cluster
 ![k8s-cluster-configuration-one-app-per-cluster.png](k8s-cluster-configuration-one-app-per-cluster.png)
 
