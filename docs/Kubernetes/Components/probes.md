@@ -23,7 +23,7 @@ spec:
     - /bin/sh
     - -c
     - touch /tmp/ready && sleep 1d
-    readynessProbe:
+    readinessProbe:
       exec:
         command:
         - cat
