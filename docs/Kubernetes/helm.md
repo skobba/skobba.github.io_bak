@@ -72,8 +72,15 @@ helm show values oci://registry-1.docker.io/bitnamicharts/keycloak
 ```
 
 ## Upgrade
+Latest version will be specified unless the '--version' flag is set.
+ 
+### values
 ```
 helm upgrade dashboard kubernetes-dashboard/kubernetes-dashboard --set="service.externalPort=8080,resources.limits.cpu=200m,metricsScraper.enabled=true"
+```
+### reuse-values
+```sh
+helm upgrade --reuse-values bitnami/nginx mydeployname --version=18.1.0
 ```
 
 ## CRD
