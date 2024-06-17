@@ -1,5 +1,10 @@
 # Job
 ## Create
+```sh
+k -n myns create job --help
+k -n myns create job neb-new-job --image=busybox:1.31.0 --dry-run=client -oyaml > job.yaml -- sh -c "sleep 2 && echo done"
+```
+
 ```yaml
 apiVersion: batch/v1
 kind: Job
