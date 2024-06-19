@@ -1,6 +1,42 @@
 # ingress-nginx
 Ref.:
-* [Docs - deploy](https://kubernetes.github.io/ingress-nginx/deploy/) 
+* [Docs - deploy](https://kubernetes.github.io/ingress-nginx/deploy/)
+
+## Basic Ingress (two paths)
+```sh
+kubectl apply -f - <<EOF
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: world
+  namespace: world
+  annotations:
+    # this annotation removes the need for a trailing slash when calling urls
+    # but it is not necessary for solving this scenario
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: world.universe.mine
+    http:
+      paths:
+      - path: /asia
+        pathType: Prefix
+        backend:
+          service:
+            name: asia
+            port:
+              number: 80
+      - path: /europe
+        pathType: Prefix
+        backend:
+          service:
+            name: europe
+            port:
+              number: 80
+EOF
+```
+
 ## Generate TSL
 https://kubernetes.github.io/ingress-nginx/examples/PREREQUISITES/#test-http-service
 
