@@ -1,4 +1,4 @@
-# ElasticSearch
+# Elastic
 ## Elastic Stack
 ![Elastic Stack](elasticstack.png "Elastic Stack")
 

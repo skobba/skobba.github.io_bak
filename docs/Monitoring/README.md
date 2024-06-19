@@ -1,3 +1,0 @@
-# Monitoring
-
-source: `{{ page.path }}`
