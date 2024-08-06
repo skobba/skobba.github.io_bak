@@ -6,7 +6,7 @@ Methods available:
 * TCP Socket: Attempt to open a TCP connection.
 * Exec Command: Execute a command inside the container.
 
-## readinessProbe with cat
+## Create readinessProbe on Pod with cat
 
 ```yaml
 apiVersion: v1
@@ -30,6 +30,43 @@ spec:
         - /tmp/ready
       initialDelaySeconds: 5
       periodSeconds: 10
+```
+
+## Create readinessProbe on Deployment with stat
+```sh
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: welcome-message-generator
+  name: welcome-message-generator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: welcome-message-generator
+  strategy: {}
+  
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: welcome-message-generator
+    spec:
+      containers:
+      - image: httpd:alpine
+        name: httpd
+        ports:
+        - containerPort: 80
+        resources: {}
+        readinessProbe:
+          exec:
+            command:
+            - stat
+            - /tmp/ready
+          initialDelaySeconds: 5
+          periodSeconds: 5
 ```
 
 ## livenessProbe and readinessProbe with http
