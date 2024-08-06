@@ -13,6 +13,8 @@ Two separate environments – the "blue" environment, which hosts the current ve
 
 ### Canary Deployment
 Releasing a new version to a small subset of users or a “canary group.” This approach helps identify and address issues before a full rollout.
+* Create a new-deployment
+* Reduce the replicas on the old-deployment
 
 ### Rolling Deployment
 Release the new version incrementally to a subset of your infrastructure. You gradually move from one part of your infrastructure to another until the new version is deployed everywhere.
