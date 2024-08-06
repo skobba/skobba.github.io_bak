@@ -33,7 +33,7 @@ spec:
 ```
 
 ## Create readinessProbe on Deployment with stat
-```sh
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
