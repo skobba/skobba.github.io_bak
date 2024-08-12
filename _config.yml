@@ -1,18 +1,113 @@
-title: Developer Handbook
-lang: en
-description: A developers handbook
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-remote_theme: rundocs/jekyll-rtd-theme
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Skobbis
+email: gjermund@skobba.net
+description: >- # this means to ignore newlines until "baseurl:"
+  A developers handbook.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "skobba.net" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: skobba
+github_username:  skobba
 
-readme_index:
-  with_frontmatter: true
+# theme: just-the-docs
 
-exclude:
-  - Makefile
-  - Gemfile
-  - Gemfile.lock
+# collections:
+#   pages:
+#     output: true
+#     permalink: /:path/
+
+# Build settings
+markdown: kramdown
+#theme: minima
+theme: just-the-docs
+
+plugins_dir: _plugins
 
 plugins:
-  - jekyll-avatar
-# - jemoji
-# - jekyll-mentions
+  - jekyll-feed
+  - jekyll-titles-from-headings
+  - jekyll-readme-index
+  - jekyll-optional-front-matter
+  - jekyll-toc
+
+collections:
+  tests:
+    permalink: "/:collection/:path/"
+    output: true
+  tutorials:
+    permalink: "/:collection/:path/"
+    output: true
+
+just_the_docs:
+  show_level1_heading: true
+  show_toplevel_sidebar: true
+  show_nav: true
+  collections:
+    tests:
+      name: Tests
+      nav_fold: true
+    tutorials:
+      name: Tutorials
+      nav_fold: true
+
+defaults:
+  - scope:
+      path: "_tests"
+    values:
+      layout: "project"
+      category: "general"
+      toc: true
+
+toc:
+  min_level: 1
+  max_level: 6
+  ordered_list: false
+  no_toc_section_class: no_toc_section
+  list_id: toc
+  list_class: section-nav
+  sublist_class: ''
+  item_class: toc-entry
+  item_prefix: toc-
+
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
+
+readme_index:
+  enabled:          true
+  remove_originals: false
+  with_frontmatter: false
+
+# include:
+#   - _pages
+# include:
+#   - CONTRIBUTING.md
+#   - README.md
+#   - _pages
+#   - _tutorials
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

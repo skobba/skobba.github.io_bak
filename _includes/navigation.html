@@ -1,0 +1,19 @@
+<nav class="sidebar">
+    <ul>
+      {% assign pages = site.pages | where_exp: "page", "page.path contains '/_pages/'" %}
+      {% assign grouped_pages = pages | group_by: "path" %}
+      
+      {% for folder in grouped_pages %}
+        {% if folder.name != "index.md" %}
+          <li>
+            <strong>{{ folder.name | remove: '_pages/' | remove: '/' }}</strong>
+            <ul>
+              {% for page in folder.items %}
+                <li><a href="{{ page.url }}">{{ page.title | default: page.name }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>

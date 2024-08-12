@@ -1,3 +1,0 @@
-# RedHat
-
-Enterprise suite.
