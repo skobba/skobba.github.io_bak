@@ -1,3 +1,0 @@
-# Tuts
-
-Here is the tuts...
